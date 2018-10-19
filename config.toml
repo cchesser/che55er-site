@@ -1,0 +1,34 @@
+baseurl = "https://che55er.io"
+DefaultContentLanguage = "en"
+title = "che55er thoughts"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[Params]
+  subtitle = "che55er thoughts"
+  logo = "img/avatar-icon.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  useHLJS = true
+  socialShare = true
+
+[Author]
+  name = "Carl Chesser"
+  website = "che55er.io"
+  email = "cchesser@gmail.com"
+  github = "cchesser"
+  twitter = "che55er"
+  linkedin = "carl.chesser"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
