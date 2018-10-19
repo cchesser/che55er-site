@@ -1,15 +1,15 @@
 baseurl = "https://che55er.io"
 DefaultContentLanguage = "en"
-title = "che55er thoughts"
+title = "Carl Chesser Thoughts"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
+publishDir = "_deploy"
 
 [Params]
-  subtitle = "che55er thoughts"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
