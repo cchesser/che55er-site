@@ -1,3 +1,0 @@
-## Welcome
-
-I'm planning to start putting my thoughts here...
