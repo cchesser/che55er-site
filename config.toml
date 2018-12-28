@@ -1,6 +1,6 @@
 baseurl = "https://che55er.io"
 DefaultContentLanguage = "en"
-title = "Carl Chesser Thoughts"
+title = "thoughts"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsStyle = "trac"
@@ -8,6 +8,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 publishDir = "_deploy"
+googleAnalytics = "UA-131402196-1"
 
 [Params]
   logo = "img/avatar-icon.png"
@@ -29,6 +30,17 @@ publishDir = "_deploy"
   linkedin = "carl.chesser"
 
 [[menu.main]]
-    name = "Blog"
+    name = "talks"
+    url = "talks/"
+    weight = 2
+
+[[menu.main]]
+    name = "guides"
+    url = "guides/"
+    weight = 3
+
+[[menu.main]]
+    name = "blog"
     url = ""
     weight = 1
+
