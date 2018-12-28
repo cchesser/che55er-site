@@ -3,11 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://che55er.io/</loc>
+    <loc>https://che55er.io/post/simple-email-process/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://che55er.io/page/about/</loc>
+    <loc>https://che55er.io/about/</loc>
   </url>
   
   <url>
@@ -16,12 +17,27 @@
   </url>
   
   <url>
-    <loc>https://che55er.io/page/</loc>
+    <loc>https://che55er.io/post/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://che55er.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://che55er.io/guides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://che55er.io/talks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://che55er.io/</loc>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

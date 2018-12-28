@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Carl Chesser Thoughts</title>
+    <title>thoughts</title>
     <link>https://che55er.io/</link>
-    <description>Recent content on Carl Chesser Thoughts</description>
+    <description>Recent content on thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Simple Email Process</title>
+      <link>https://che55er.io/post/simple-email-process/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/simple-email-process/</guid>
+      <description>As I have explored ways to be more productive, I generally find that everyone has a way in which they process their emails. Given that email is such a common element of communication that everyone deals with, and it has been around for a long time, there are generally several different ways of optimizing this continuous amount of content. Here is my process of how I manage my email at work, which I realize is quite simple.</description>
+    </item>
+    
+    <item>
       <title>About me</title>
-      <link>https://che55er.io/page/about/</link>
+      <link>https://che55er.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
-      <guid>https://che55er.io/page/about/</guid>
+      <guid>https://che55er.io/about/</guid>
       <description>My name is Carl Chesser. I&amp;rsquo;m an engineer who attempts to draw stuff to communicate my ideas.</description>
+    </item>
+    
+    <item>
+      <title>guides</title>
+      <link>https://che55er.io/guides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/guides/</guid>
+      <description>Here are some of the guides I have built. These are intended to be concise that can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as simple set of notes that hopefully can further remind others of the content. Some of these are very basic, essentially just an image to help serve as a reminder of content.</description>
+    </item>
+    
+    <item>
+      <title>talks</title>
+      <link>https://che55er.io/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/</guid>
+      <description>Diagnose Your Lethargic JVM   If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development. This skill becomes even more critical once you are required to troubleshoot and evaluate your service in a unique production environment. Understanding what operations are consuming most of our CPU time, as well as, what areas of your code are wasting resources will greatly improve your ability to diagnose a sluggish JVM.</description>
     </item>
     
   </channel>
