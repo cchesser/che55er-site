@@ -13,7 +13,7 @@ Some view this as [lateral thinking](https://en.wikipedia.org/wiki/Lateral_think
 
 Early in my software engineering career, I was given the advice of when you get stuck on a problem, to get up an go get a Coke from the vending machine, and then come back to the problem. This simple break from that mode of thinking, allowed you to re-approach the problem which can possibly help you get out of being stuck. While I don't find this simple trick really engaging in creative thinking, it does hit some of the same simple points of getting unstuck on how you are viewing a problem. To achieve having your brain re-engaged, it actually required you to briefly disengage.
 
-Therefore, I found creative thinking a combination of lateral thinking with an inviting environment to allow your brain to wander. This combination helps you both view problems differently, but not force your mind to solve some problem with the typical conditional paths in your brain. While I'm in now way a scientist that studies the brain, I do believe these to be effective ingredients to reach a creative thinking period.
+Therefore, I found creative thinking a combination of lateral thinking with an inviting environment to allow your brain to wander. This combination helps you both view problems differently, but not force your mind to solve some problem with the typical conditional paths in your brain. While I'm in no way a scientist that studies the brain, I do believe these to be effective ingredients to reach a creative thinking period.
 
 ### The Large Dog Method
 
