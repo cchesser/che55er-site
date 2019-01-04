@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Large Dog Method: A Path to Creative Thinking</title>
+      <link>https://che55er.io/post/large-dog-method/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/large-dog-method/</guid>
+      <description>As I talk with other engineers, I have found a common question that typically arises on &amp;ldquo;How do you make time to stay current on technology?&amp;rdquo; Other flavors of the same question are, &amp;ldquo;What podcasts do you listen to?&amp;rdquo;, or &amp;ldquo;How do you find technical articles that are good to read?&amp;rdquo; While I seek these same things, I find that many times people do not often talk about how can they optimize how their brain can process the things they have been learning.</description>
+    </item>
     
     <item>
       <title>Simple Email Process</title>
