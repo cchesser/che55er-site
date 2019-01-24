@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Fri, 11 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Design Principles of the pptx Language</title>
+      <link>https://che55er.io/post/design-principles-of-the-pptx-language/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/design-principles-of-the-pptx-language/</guid>
+      <description>The pptx Language A few months ago, I was speaking with a senior member of our engineering leadership team, and he stated that the only language he has been coding in lately, is pptx (referring to the file extension of Microsoft PowerPoint). While this statement was delivered with humor, I found it to be true with many engineers. As they grew with experience, so did the amount of time they spent giving presentations.</description>
+    </item>
     
     <item>
       <title>Don&#39;t Let Donuts Taste Like Defects</title>
