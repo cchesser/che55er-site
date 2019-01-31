@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Think Twice Before Emailing</title>
+      <link>https://che55er.io/post/think-twice-before-emailing/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/think-twice-before-emailing/</guid>
+      <description>I previously posted a short set of notes of how I apply my simple process of digesting emails. However, I think there are some other important rules of when to produce email. In this short post, I will share a couple things to keep in mind before you send an email.
+Email is where your keystrokes go to die Several years back, I watched this talk by Scott Hanselman on Scaling Yourself, which touches on several topics on how to improve your productivity.</description>
+    </item>
     
     <item>
       <title>Design Principles of the pptx Language</title>
