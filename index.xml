@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Drawing 101</title>
+      <link>https://che55er.io/post/drawing-101/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/drawing-101/</guid>
+      <description>I previously posted a set of design principles about building presentation slides. In this post, I shared how you can improve the effectiveness of your visual aides, by authoring your own images. This post is going to be a simple starter of how I began including images in my presentations and notes.
+Equipment Required For this tutorial, I&amp;rsquo;m using the following equipment:
+ Dry erase whiteboard and a black marker iPhone (can be pretty old like mine) and using its built in Camera app Preview app on macOS  You can of course use other equipment to do this tutorial, but I wanted to share how I started capturing my images in a very basic way.</description>
+    </item>
     
     <item>
       <title>Think Twice Before Emailing</title>
