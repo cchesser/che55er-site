@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thank You Emails</title>
+      <link>https://che55er.io/post/thank-you-emails/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/thank-you-emails/</guid>
+      <description>Here is a short post on the importance of thanking people, and a common way I achieve this through email. This is also the final part of my trilogy on guidance with email (Email Trilogy blog series).
+Throughout our work, we are continuously challenged with newer problems to solve. As we encounter these obstacles, we realize we can&amp;rsquo;t do it alone. Consequently, we routinely ask others for help. In my experience, I found I was often asking other engineers to present in a technical meetup that I was helping organize.</description>
+    </item>
     
     <item>
       <title>Drawing 101</title>
