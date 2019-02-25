@@ -26,3 +26,5 @@ I found that I didn't like having a lot of rules organizing everything into othe
 # Have a moment when your inbox is empty
 
 There is a value to having your primary inbox cleared. For a long time of my career, I didn't value this, but often found that I would occasionally miss responding to an email or increase the daily tax on my mind on what I needed to respond to (check out [Getting Things Done by David Allen](https://gettingthingsdone.com/) for more on having a reliable way of inventorying incoming tasks). I have been using this process for several months, and it has really lowered how much context switching I was having with email, and being more productive when I focused on addressing email.
+
+_This is the first part of the [Email Trilogy](/blog-series#email-trilogy) blog series_.

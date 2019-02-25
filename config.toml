@@ -30,17 +30,24 @@ googleAnalytics = "UA-131402196-1"
   linkedin = "carl.chesser"
 
 [[menu.main]]
+    name = "blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "series"
+    url = "blog-series/"
+    weight = 2
+
+[[menu.main]]
     name = "talks"
     url = "talks/"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "guides"
     url = "guides/"
-    weight = 3
+    weight = 4
 
-[[menu.main]]
-    name = "blog"
-    url = ""
-    weight = 1
+
 
