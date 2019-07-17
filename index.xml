@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Power of Murphy&#39;s Law</title>
+      <link>https://che55er.io/post/power-of-murphys-law/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/power-of-murphys-law/</guid>
+      <description>I recently built a guide on decision making, which included several different elements on how we form ideas and decisions. The purpose of this guide was to highlight common areas that typically cause strain on us humans when we are in the act of technical decision making. I plan to author another series of blog posts, that take each part of this guide, and expand it with some added dialogue.</description>
+    </item>
     
     <item>
       <title>Visualize Progress through Contrast</title>
