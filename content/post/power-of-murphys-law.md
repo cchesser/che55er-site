@@ -13,7 +13,7 @@ Murphy's Law was something I learned early in my professional career. If you are
 
 This belief was reminded to me when I used to work in a machine shop, and you would extensively try to control all the sources of variance that may disrupt what you were machining. There would always be some unforeseen source that would cause you to incorrectly remove too much material, which would then violate the necessary tolerances of the very thing you were trying to build (requiring you to build it again). Whenever this would happen, I would hear my boss just say: "Murphy...".
 
-I believe this though (that anything can fail) that can shape our thinking and decision making in ways we don't always expect. In the next two sections, I will share what I have found where this way of thinking was helpful and also hurtful.
+I believe this thought (that anything can fail) that can shape our thinking and decision making in ways we don't always expect. In the next two sections, I will share what I have found where this way of thinking was helpful and also hurtful.
 
 ## The Good: Plan for Failure
 
