@@ -3,20 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://che55er.io/post/decisions-the-pursuit-of-options/</loc>
+    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://che55er.io/post/</loc>
-    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://che55er.io/</loc>
+    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://che55er.io/post/novelty-trap/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://che55er.io/</loc>
-    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -74,21 +77,19 @@
   </url>
   
   <url>
-    <loc>https://che55er.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://che55er.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://che55er.io/blog-series/</loc>
   </url>
   
   <url>
+    <loc>https://che55er.io/categories/</loc>
+  </url>
+  
+  <url>
     <loc>https://che55er.io/guides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://che55er.io/tags/</loc>
   </url>
   
   <url>

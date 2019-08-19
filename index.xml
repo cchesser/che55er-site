@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Decisions: The Pursuit of Options</title>
+      <link>https://che55er.io/post/decisions-the-pursuit-of-options/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/decisions-the-pursuit-of-options/</guid>
+      <description>The Talk Back in June, I gave a talk at Cerner&amp;rsquo;s DevCon conference on decision making, called: Decisions: The Pursuit of Options. The talk has been published on YouTube for your viewing pleasure:
+  The Guide Here is the guide that I produced for this talk, which is designed for a 11x17 print-out of the notes that were covered in the slides. You can find the print-out version and references in my Guides section.</description>
+    </item>
     
     <item>
       <title>The Novelty Trap</title>
@@ -149,7 +159,7 @@ Email Trilogy  Simple Email Process: A simple set of notes on how I consume emai
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/talks/</guid>
-      <description>Diagnose Your Lethargic JVM   If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development. This skill becomes even more critical once you are required to troubleshoot and evaluate your service in a unique production environment. Understanding what operations are consuming most of our CPU time, as well as, what areas of your code are wasting resources will greatly improve your ability to diagnose a sluggish JVM.</description>
+      <description>Decisions: The Pursuit of Options   One of the most powerful things we can do is make a decision. With the ever growing landscape of technology choices, we are faced with making a decision on a frequent basis. While decision making is not something we view as a core activity of engineering, it is the one thing we are doing at all levels of our architectures. This type of activity not only deserves our focus, but should also be considered as part of our craft that we pursue with improvement.</description>
     </item>
     
   </channel>
