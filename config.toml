@@ -27,7 +27,7 @@ googleAnalytics = "UA-131402196-1"
   email = "cchesser@gmail.com"
   github = "cchesser"
   twitter = "che55er"
-  linkedin = "carl.chesser"
+  linkedin = "carl-chesser"
 
 [[menu.main]]
     name = "blog"
