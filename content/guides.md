@@ -8,6 +8,22 @@ Here are some of the guides I have built. These are intended to be concise so th
 
 ---
 
+## Getting Started with Chaos Experiments
+
+![Getting Started with Chaos Experiments](/img/getting-started-w-chaos-experiments.png)
+
+[Get the 8.5 x 11" PDF version](/guides/getting-started-w-chaos-exp-guide.pdf)
+
+_This guide includes a second page, to convert the guide into a paper airplane._
+
+### References:
+
+* [Chaos Engineering](https://www.oreilly.com/library/view/chaos-engineering/9781491988459/): Book by Ali Basiri, Nora Jones, Aaron Blohowiak, Lorin Hochstein, Casey Rosenthal that gives great guidance on getting started with chaos engineering principles.
+* [Awesome Chaos Engineering](https://github.com/dastergon/awesome-chaos-engineering): A curated list of chaos engineering resources.
+* [Release It! (2nd edition) - Design and Deploy Production-Ready Software](https://pragprog.com/book/mnee2/release-it-second-edition): Book by Michael Nygard on stability patterns that improve resiliency in your software systems.
+
+---
+
 ## Decisions: The Pursuit of Options
 
 ![Decisions: The Pursuit of Options](/img/decision-guide.png)
