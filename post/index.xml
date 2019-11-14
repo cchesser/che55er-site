@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>QCon San Francisco 2019 Recap</title>
+      <link>https://che55er.io/post/qcon-sf-2019-recap/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/qcon-sf-2019-recap/</guid>
+      <description>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.</description>
+    </item>
     
     <item>
       <title>Decisions: The Pursuit of Options</title>
