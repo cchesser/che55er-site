@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Defrag your Calendar</title>
+      <link>https://che55er.io/post/defrag-your-calendar/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/defrag-your-calendar/</guid>
+      <description>Time is a one of your most valuable assets. As engineers grow with their skills and past contributions, they get invited to participate in more meetings within their day. These meetings get scheduled in time slots that show as available on their calendar, or sometimes even when they are already shown as busy - posing as a conflict. This can commonly result in their day being broken down into many different meetings, with small windows of free time on their schedule.</description>
+    </item>
     
     <item>
       <title>QCon San Francisco 2019 Recap</title>
@@ -18,7 +27,8 @@
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/post/qcon-sf-2019-recap/</guid>
-      <description>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.</description>
+      <description>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.
+Overview QCon is a conference which organizes its talks into specific tracks.</description>
     </item>
     
     <item>
@@ -46,7 +56,7 @@
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/post/power-of-murphys-law/</guid>
-      <description>I recently built a guide on decision making, which included several different elements on how we form ideas and decisions. The purpose of this guide was to highlight common areas that typically cause strain on us humans when we are in the act of technical decision making. I plan to author another series of blog posts, that take each part of this guide, and expand it with some added dialogue.</description>
+      <description>I recently built a guide on decision making, which included several different elements on how we form ideas and decisions. The purpose of this guide was to highlight common areas that typically cause strain on us humans when we are in the act of technical decision making. I plan to author another series of blog posts, that take each part of this guide, and expand it with some added dialogue. For this first post, I&amp;rsquo;m going focus on Murphy&amp;rsquo;s Law and its influence on our ability to make technical decisions.</description>
     </item>
     
     <item>
@@ -122,7 +132,7 @@ Email is where your keystrokes go to die Several years back, I watched this talk
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/post/large-dog-method/</guid>
-      <description>As I talk with other engineers, I have found a common question that typically arises on &amp;ldquo;How do you make time to stay current on technology?&amp;rdquo; Other flavors of the same question are, &amp;ldquo;What podcasts do you listen to?&amp;rdquo;, or &amp;ldquo;How do you find technical articles that are good to read?&amp;rdquo; While I seek these same things, I find that many times people do not often talk about how can they optimize how their brain can process the things they have been learning.</description>
+      <description>As I talk with other engineers, I have found a common question that typically arises on &amp;ldquo;How do you make time to stay current on technology?&amp;rdquo; Other flavors of the same question are, &amp;ldquo;What podcasts do you listen to?&amp;quot;, or &amp;ldquo;How do you find technical articles that are good to read?&amp;rdquo; While I seek these same things, I find that many times people do not often talk about how can they optimize how their brain can process the things they have been learning.</description>
     </item>
     
     <item>
