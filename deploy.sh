@@ -6,6 +6,8 @@ rm -rf _deploy
 echo -e "\033[0;32mCloning the publish site...\033[0m"
 git clone git@github.com:cchesser/cchesser.github.io.git _deploy
 
+# git submodule update --init --recursive
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 hugo
 cd _deploy
