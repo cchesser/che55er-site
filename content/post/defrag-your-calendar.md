@@ -27,7 +27,7 @@ Software engineers are an example of [knowledge workers](https://en.wikipedia.or
 
 While it is expected that you will many times have breaks during these periods of working on a problem, there is a known tax of getting into a problem space. Once you are into that problem space and are interrupted to go do something else (ex. go to another meeting), you have to pay a similar tax again to continue working on that problem. Therefore, it is generally optimal to avoid how many times you are interrupted once you are entering into that problem space. Hence, you value contiguous blocks of time, just like your old magnetic hard drive for optimally reading data 😄.
 
-_Note: It is common with large contiguous blocks of time to take small breaks to allow your mind to briefly wander if you find you are suck on a problem. These small breaks should be controlled by you to dictate when they are needed, not by external forces which lack association to your problem solving process._
+_Note: It is common with large contiguous blocks of time to take small breaks to allow your mind to briefly wander if you find you are stuck on a problem. These small breaks should be controlled by you to dictate when they are needed, not by external forces which lack association to your problem solving process._
 
 ## Defrag your calendar
 
