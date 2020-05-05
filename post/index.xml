@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://che55er.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Share a CHANGELOG</title>
+      <link>https://che55er.io/post/share-a-changelog/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/share-a-changelog/</guid>
+      <description>Introduction I recently tried a new experiment at work which I&amp;rsquo;m calling &amp;ldquo;The CHANGELOG.&amp;rdquo; My goal with this experiment is to improve the communication within my team and with all the product groups I routinely work with. I thought it would be helpful to share some of my notes here on what and why I decided to do it.
+The Name You may be wondering why I&amp;rsquo;m calling this &amp;ldquo;The CHANGELOG.</description>
+    </item>
     
     <item>
       <title>Defrag your Calendar</title>
