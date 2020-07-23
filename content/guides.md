@@ -8,6 +8,24 @@ Here are some of the guides I have built. These are intended to be concise so th
 
 ---
 
+## Innovation Invigoration
+
+![Innovation Invigoration](/img/innovation-invigoration-guide.png)
+
+* [11" x 17" - Complete Version](/guides/innovation-invigoration-guide.pdf): This version may not be that convenient for most when at home, as we don't normally print on 11 x 17" layouts. Therefore, check out the Home Edition 👇!
+* [Home Edition! 8.5 x 11" version with paper airplane pattern on the back](/guides/innovation-invigoration-guide-home-edition.pdf): Check out [this video](https://twitter.com/che55er/status/1286332322774749184) to see how you can build it 🛩️! Noticed, this is themed as a pterodactyl for Cerner's DevCon 2020 theme.
+
+### References:
+
+* [The Large Dog Method: A Path to Creative Thinking]({{< ref "/post/large-dog-method" >}}): past blog by me with more specifics
+* [Complexity is Outside the Code](https://www.youtube.com/watch?v=sIWekh32LG4): by Jessica Kerr
+* [Do schools kill creativity?](https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity): Sir Ken Robinson
+* [Good to Great](https://www.jimcollins.com/article_topics/articles/good-to-great.html): by Jim Collins
+* [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc): by Rich Hickey
+* [3 tools to become more creative](https://www.youtube.com/watch?v=g-YScywp6AU): by Balder Onarheim
+
+---
+
 ## Getting Started with Chaos Experiments
 
 ![Getting Started with Chaos Experiments](/img/getting-started-w-chaos-experiments.png)
