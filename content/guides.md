@@ -8,6 +8,12 @@ Here are some of the guides I have built. These are intended to be concise so th
 
 ---
 
+## Hitchhiker's Guide to Meetings - Virtual Edition
+
+![Hitchhiker's Guide to Meetings - Virtual Edition](/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png)
+
+[Get the 8.5 x 11" PDF version](/guides/hitchhikers-guide-to-meetings-virtual-edition.pdf), which is the updated version of the _Hitchhiker's Guide to Meetings_ that includes newer content for virtual meetings.
+
 ## Innovation Invigoration
 
 ![Innovation Invigoration](/img/innovation-invigoration-guide.png)
