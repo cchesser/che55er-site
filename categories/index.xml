@@ -6,10 +6,6 @@
     <description>Recent content in Categories on thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
-    <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    
-	<atom:link href="https://che55er.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><atom:link href="https://che55er.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

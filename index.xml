@@ -7,10 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 12 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hitchhiker&#39;s Guide to Meetings: Virtual Edition</title>
+      <link>https://che55er.io/post/hitchhikers-guide-to-meetings-virtual-edition/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/hitchhikers-guide-to-meetings-virtual-edition/</guid>
+      <description>Two years ago, I worked on a guide that I called the Hitchhiker&amp;rsquo;s Guide to Meetings. This guide highlighted many of the lessons I had learned over the years involving meetings at work. I have found having this guide to be a helpful reminder on things to continue to practice with the goal of optimizing time in meetings. With this year&amp;rsquo;s change of virtual meetings being the primary means of engagement, I wanted to make an update to this guide to highlight some of these newer lessons with the virtual format.</description>
+    </item>
     
     <item>
       <title>Seek the Second Story</title>
