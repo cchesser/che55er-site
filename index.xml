@@ -221,7 +221,7 @@ Decision Making Album  Decisions: The Pursuit of Options: A talk which I go over
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/talks/</guid>
-      <description>Innovation Invigoration   When I began my career in software engineering, I was fueled by the joy of programming and working through unique problems knowing that an answer would be discoverable through my trusty debugger and perseverance. As my career grew in the field, I began to learn more of the challenging constraints with large systems, human organizations, and complexity that seemed untamable. Through additional exposure to these larger problems that no longer could be tackled through the use of my beloved debugger, I began to see how it required different care and feeding at both the personal and team level to overcome these challenges.</description>
+      <description>Chaos with Care    Slides  In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company.</description>
     </item>
     
   </channel>
