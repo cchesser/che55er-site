@@ -50,7 +50,12 @@ googleAnalytics = "UA-131402196-1"
     weight = 4
 
 [[menu.main]]
+    name = "articles"
+    url = "articles/"
+    weight = 5
+
+[[menu.main]]
     name = "projects"
     url = "projects/"
-    weight = 5
+    weight = 6
 
