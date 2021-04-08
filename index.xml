@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Universal Diagrams</title>
+      <link>https://che55er.io/post/universal-diagrams/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/universal-diagrams/</guid>
+      <description>Diagraming is a powerful way of communicating ideas to others. In this past year, I have found how much I have missed the time of just working with a group and using a whiteboard to convey our ideas. In the past few months, I have referenced past diagrams or shared recent examples which included a few properties in the diagram that I believe are useful. In this short blog post, I will share some thoughts on the power of diagrams which use simple universal symbols.</description>
+    </item>
+    
     <item>
       <title>CHANGELOG: What I&#39;ve Learned</title>
       <link>https://che55er.io/post/changelog-what-ive-learned/</link>
@@ -185,6 +194,16 @@ Email is where your keystrokes go to die Several years back, I watched this talk
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/about/</guid>
       <description>My name is Carl Chesser. I&amp;rsquo;m an engineer who attempts to draw stuff to communicate my ideas.</description>
+    </item>
+    
+    <item>
+      <title>articles</title>
+      <link>https://che55er.io/articles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/articles/</guid>
+      <description>Here are some of my other writings that you won&amp;rsquo;t find in my blog.
+  How Cerner Drives Adoption Efficiency Using New Relic Developer Tools and Resources (New Relic, February 2021) Applying Chaos Engineering in Healthcare: Getting Started with Sensitive Workloads (InfoQ, September 2020)  This article was also included in Real World Chaos Engineering (InfoQ, December 2020)   Code Reviews: There is a Better Way (Cerner, May 2018) The 30 Days of Code Experiment (Cerner, August 2013)  </description>
     </item>
     
     <item>
