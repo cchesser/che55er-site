@@ -8,6 +8,20 @@ Here are some of the guides I have built. These are intended to be concise so th
 
 ---
 
+## Words Matter
+
+![Words Matter](/img/words-matter-guide.png)
+
+[Get the 8.5 x 11" PDF version with paper airplane pattern on the back](/guides/words-matter-guide.pdf)
+
+<button class="btn"><i class="fa fa-home"></i></button>
+
+### References
+
+* [Architect Elevator](https://www.youtube.com/watch?v=Zq2VcRZmz78): by Gregor Hohpe
+* [The Idealcast - Episode 8](https://itrevolution.com/the-idealcast-episode-8/): by Gene Kim with guest Michael Nygard on _Architecture as the Organizing Logic for Components and the Means for their Construction_.
+* [Hacker Laws](https://github.com/dwmkerr/hacker-laws): Great inventory of commonly referenced laws, theories, and principles in software development.
+
 ## Hitchhiker's Guide to Meetings - Virtual Edition
 
 ![Hitchhiker's Guide to Meetings - Virtual Edition](/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png)
