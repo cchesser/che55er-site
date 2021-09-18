@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
     <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
-    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KCDC 2021 Recap</title>
+      <link>https://che55er.io/post/kcdc-2021-recap/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/post/kcdc-2021-recap/</guid>
+      <description>These last two days was KCDC in Kansas City. This was my first in-person developer conference since late 2019. While there were still restrictions (wearing masks), it was a fantastic time to see people again. I was able to meet up with past colleagues and discover new people at lunch and through talks, an experience that immediately filled a void in my life. While I have participated in other virtual conferences since the pandemic started, the in-person session was a great experience.</description>
+    </item>
+    
     <item>
       <title>Universal Diagrams</title>
       <link>https://che55er.io/post/universal-diagrams/</link>
@@ -240,7 +249,7 @@ Decision Making Album  Decisions: The Pursuit of Options: A talk which I go over
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/talks/</guid>
-      <description>Chaos with Care    Slides  In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company.</description>
+      <description>Docs as Code  KCDC 2021 Recap: Blog post that summarized my experience at the conference and all of my notes. Website Slides  Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.</description>
     </item>
     
   </channel>
