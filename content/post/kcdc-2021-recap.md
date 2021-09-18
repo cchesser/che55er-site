@@ -3,7 +3,7 @@ title: "KCDC 2021 Recap"
 date: 2021-09-17
 ---
 
-These last two days was [KCDC](https://www.kcdc.info) in Kansas City. This was my first in-person developer conference since late 2019. While there were still restrictions (wearing masks), it was a fantastic time to see people again. I was able to meet up with past colleagues and discover new people at lunch and through talks, an experience that immediately filled a void in my life. While I have participated in other virtual conferences since the pandemic started, the in-person session was a great experience. Everyone I talked to also shared the same feedback.
+These last two days were [KCDC](https://www.kcdc.info) in Kansas City for me. This was my first in-person developer conference since late 2019. While there were still restrictions (wearing masks), it was a fantastic time to see people again. I was able to meet up with past colleagues and discover new people at lunch and through talks, an experience that immediately filled a void in my life. While I have participated in other virtual conferences since the pandemic started, the in-person session was a great experience. Everyone I talked to also shared the same feedback.
 
 Many thanks to the organizers, sponsors, and speakers for making it happen! This post will just include some of my notes that I captured which I thought were readable enough for sharing, and references for notes on my talk that I also shared.
 
