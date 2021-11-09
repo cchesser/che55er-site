@@ -4,7 +4,7 @@ date: 2021-04-08
 aliases: ['/post/universal-diagrams/']
 resources:
 - name: featured-image-preview
-  src: "box-arrow.png"
+  src: "emotional-indicators.png"
 ---
 
 Diagraming is a powerful way of communicating ideas to others. In this past year, I have found how much I have missed the time of just working with a group and using a whiteboard to convey our ideas. In the past few months, I have referenced past diagrams or shared recent examples which included a few properties in the diagram that I believe are useful. In this short blog post, I will share some thoughts on the power of diagrams which use simple universal symbols.
