@@ -37,7 +37,7 @@ Here are some of the guides I have built. These are intended to be concise so th
 
 ### References:
 
-* [The Large Dog Method: A Path to Creative Thinking]({{< ref "/post/large-dog-method" >}}): past blog by me with more specifics
+* [The Large Dog Method: A Path to Creative Thinking]({{< ref "large-dog-method" >}}): past blog by me with more specifics
 * [Complexity is Outside the Code](https://www.youtube.com/watch?v=sIWekh32LG4): by Jessica Kerr
 * [Do schools kill creativity?](https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity): Sir Ken Robinson
 * [Good to Great](https://www.jimcollins.com/article_topics/articles/good-to-great.html): by Jim Collins
