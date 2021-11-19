@@ -6,7 +6,8 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Docs as Code - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="Docs as Code" />
-<meta property="og:description" content="KCDC 2021 Recap: Blog post that summarized my experience at the conference and all of my notes. Website Slides  Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation." />
+<meta property="og:description" content="Abstract Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.
+In this talk, we will explore how you can start managing your documentation like code." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://che55er.io/talks/docs-as-code/" /><meta property="og:image" content="https://che55er.io/talks/docs-as-code/docs-as-code.png"/><meta property="article:section" content="talks" />
 
@@ -15,11 +16,12 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://che55er.io/talks/docs-as-code/docs-as-code.png"/>
 <meta name="twitter:title" content="Docs as Code"/>
-<meta name="twitter:description" content="KCDC 2021 Recap: Blog post that summarized my experience at the conference and all of my notes. Website Slides  Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation."/>
+<meta name="twitter:description" content="Abstract Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.
+In this talk, we will explore how you can start managing your documentation like code."/>
 <meta name="application-name" content="thoughts">
 <meta name="apple-mobile-web-app-title" content="thoughts"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/talks/docs-as-code/" /><link rel="next" href="https://che55er.io/talks/innovation-invigoration/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/talks/docs-as-code/" /><link rel="prev" href="https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/" /><link rel="next" href="https://che55er.io/talks/chaos-with-care/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -33,7 +35,7 @@
                             "url": "https:\/\/che55er.io\/talks\/docs-as-code\/docs-as-code.png",
                             "width":  1704 ,
                             "height":  821 
-                        }],"genre": "talks","wordcount":  176 ,
+                        }],"genre": "talks","wordcount":  178 ,
         "url": "https:\/\/che55er.io\/talks\/docs-as-code\/","publisher": {
             "@type": "Organization",
             "name": "Carl Chesser","logo": "https:\/\/che55er.io\/images\/avatar.png"},"author": {
@@ -119,14 +121,16 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Docs as Code</h1><div class="content" id="content"><ul>
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Docs as Code</h1><div class="content" id="content"><h1 id="abstract">Abstract</h1>
+<p>Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.</p>
+<p>In this talk, we will explore how you can start managing your documentation like code. This will walk through the history of how different companies have approached improving their internal engineering documentation and the valuable common properties that have emerged from those methods. Examples will be shared on how you can enable this type of approach within your teams using open-source projects, managing content through a simple Markdown format that can deliver rich content within a familiar developer toolchain and workflow.</p>
+<p>If you want to improve your documentation and accelerate how your teams share their ideas, this talk is for you.</p>
+<h1 id="content">Content</h1>
+<ul>
 <li><a href="/post/kcdc-2021-recap" rel="">KCDC 2021 Recap</a>: Blog post that summarized my experience at the conference and all of my notes.</li>
 <li><a href="https://cchesser.github.io/docs-as-code/" target="_blank" rel="noopener noreffer">Website</a></li>
 <li><a href="https://cchesser.github.io/docs-as-code/slides/" target="_blank" rel="noopener noreffer">Slides</a></li>
 </ul>
-<p>Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.</p>
-<p>In this talk, we will explore how you can start managing your documentation like code. This will walk through the history of how different companies have approached improving their internal engineering documentation and the valuable common properties that have emerged from those methods. Examples will be shared on how you can enable this type of approach within your teams using open-source projects, managing content through a simple Markdown format that can deliver rich content within a familiar developer toolchain and workflow.</p>
-<p>If you want to improve your documentation and accelerate how your teams share their ideas, this talk is for you.</p>
 </div><div id="comments"></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"></div>

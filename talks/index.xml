@@ -50,18 +50,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</guid>
-      <description>This talk presented at QCon San Francisco 2019.
-
- Recording Slides Get the 8.5 x 11&amp;quot; PDF hand-out QCon SF 2019 Recap: Blog post that summarized my experience at the conference and all of my notes.  This guide includes a second page, to convert the guide into a paper airplane.</description>
-    </item>
-    
-    <item>
-      <title>Chaos with Care</title>
-      <link>https://che55er.io/talks/chaos-with-care/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>cchesser@gmail.com (Carl Chesser)</author>
-      <guid>https://che55er.io/talks/chaos-with-care/</guid>
-      <description>Slides  In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company.</description>
+      <description>QCon San Francisco 2019 recording Slides Get the 8.5 x 11&amp;quot; PDF hand-out QCon SF 2019 Recap: Blog post that summarized my experience at the conference and all of my notes.  This guide includes a second page, to convert the guide into a paper airplane.</description>
     </item>
     
     <item>
@@ -74,12 +63,32 @@
     </item>
     
     <item>
+      <title>Chaos with Care</title>
+      <link>https://che55er.io/talks/chaos-with-care/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/chaos-with-care/</guid>
+      <description>Slides  In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company.</description>
+    </item>
+    
+    <item>
       <title>Docs as Code</title>
       <link>https://che55er.io/talks/docs-as-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cchesser@gmail.com (Carl Chesser)</author>
       <guid>https://che55er.io/talks/docs-as-code/</guid>
-      <description>KCDC 2021 Recap: Blog post that summarized my experience at the conference and all of my notes. Website Slides  Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.</description>
+      <description>Abstract Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.
+In this talk, we will explore how you can start managing your documentation like code.</description>
+    </item>
+    
+    <item>
+      <title>Learn in Production with Traffic Management</title>
+      <link>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</guid>
+      <description>Abstract Our systems are continually evolving, spurring the necessity to focus on how we can introduce changes which minimize the risk of a “big bang” event. By examining how traffic flows through your distributed systems, you can find ways of testing and evaluating gradual changes. By understanding different ways of managing your traffic, you build new options for evolving and testing your systems.
+In this talk, we will cover approaches applied at Cerner Corporation when evolving their service ecosystem by leveraging different traffic management patterns.</description>
     </item>
     
   </channel>
