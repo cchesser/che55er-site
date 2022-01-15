@@ -72,6 +72,15 @@
     </item>
     
     <item>
+      <title>Words Matter</title>
+      <link>https://che55er.io/talks/words-matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/words-matter/</guid>
+      <description>We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept.</description>
+    </item>
+    
+    <item>
       <title>Docs as Code</title>
       <link>https://che55er.io/talks/docs-as-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
