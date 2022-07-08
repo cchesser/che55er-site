@@ -109,5 +109,14 @@ In this talk, we will cover approaches applied at Cerner Corporation when evolvi
       <description>This talk was presented at New Relic&amp;rsquo;s FutureStack 2022 conference, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization. This walks through some practical examples with how we focused on cultural aspects of learning and sharing approaches, while also including concrete examples in how we scaled and seeked ways in balancing consistency and autonomy in the usage of New Relic.</description>
     </item>
     
+    <item>
+      <title>Regex Express</title>
+      <link>https://che55er.io/talks/regex-express/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/regex-express/</guid>
+      <description>Learning References Coming soon!</description>
+    </item>
+    
   </channel>
 </rss>
