@@ -4,9 +4,16 @@
         <link>https://che55er.io/</link>
         <description>thoughts of Carl Chesser</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
-            <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><lastBuildDate>Fri, 03 Dec 2021 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><lastBuildDate>Sat, 24 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Ground Truth</title>
+    <link>https://che55er.io/posts/ground-truth/</link>
+    <pubDate>Sat, 24 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://che55er.io/posts/ground-truth/</guid>
+    <description><![CDATA[I wanted to discuss a term that I found memorable recently: ground truth. It resonated with me when I first heard it, as I’m routinely in discussions where we are articulating technical problems and how we plan to solve them. This act of describing the problem to an audience with varying levels of understanding can be challenging. We often have limited time in how we bring people to shared understanding. This restricts our ability to sufficiently describe all the history and contributing factors of that problem.]]></description>
+</item><item>
     <title>Habits through Preventional Goals</title>
     <link>https://che55er.io/posts/habits-through-preventional-goals/</link>
     <pubDate>Fri, 03 Dec 2021 00:00:00 &#43;0000</pubDate>
@@ -72,13 +79,5 @@ The Name You may be wondering why I&rsquo;m calling this &ldquo;The CHANGELOG.]]
     <guid>https://che55er.io/posts/qcon-sf-2019-recap/</guid>
     <description><![CDATA[This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.
 Overview QCon is a conference which organizes its talks into specific tracks.]]></description>
-</item><item>
-    <title>Decisions: The Pursuit of Options</title>
-    <link>https://che55er.io/posts/decisions-the-pursuit-of-options/</link>
-    <pubDate>Sun, 18 Aug 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://che55er.io/posts/decisions-the-pursuit-of-options/</guid>
-    <description><![CDATA[The Talk Back in June, I gave a talk at Cerner&rsquo;s DevCon conference on decision making, called: Decisions: The Pursuit of Options. The talk has been published on YouTube for your viewing pleasure:
-  The Guide Here is the guide that I produced for this talk, which is designed for a 11x17 print-out of the notes that were covered in the slides. You can find the print-out version and references in my Guides section.]]></description>
 </item></channel>
 </rss>
