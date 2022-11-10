@@ -1,0 +1,13 @@
+{{- $analytics := .Scratch.Get "analytics" | default dict -}}
+{{- if $analytics.enable -}}
+    {{- with $analytics.google.id -}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ . }}');
+    </script>
+    {{- end -}}
+{{- end -}}

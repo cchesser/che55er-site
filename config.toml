@@ -193,7 +193,7 @@ enableEmoji = true
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "UA-131402196-1"
+      id = "G-RHFJK2MHCT"
 
 [languages]
   [languages.en]
