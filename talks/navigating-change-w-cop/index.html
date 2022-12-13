@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Navigating Change with Communities of Practice - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="Navigating Change with Communities of Practice" />
+<meta property="og:description" content="Presentation was part of DevOps Enterprise Summit - Virtual 2022.
+Abstract Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://che55er.io/talks/navigating-change-w-cop/" /><meta property="og:image" content="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop-cover.png"/><meta property="article:section" content="talks" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop-cover.png"/>
+<meta name="twitter:title" content="Navigating Change with Communities of Practice"/>
+<meta name="twitter:description" content="Presentation was part of DevOps Enterprise Summit - Virtual 2022.
+Abstract Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected."/>
+<meta name="application-name" content="thoughts">
+<meta name="apple-mobile-web-app-title" content="thoughts"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/talks/navigating-change-w-cop/" /><link rel="next" href="https://che55er.io/talks/regex-express/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Navigating Change with Communities of Practice",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/che55er.io\/talks\/navigating-change-w-cop\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/che55er.io\/talks\/navigating-change-w-cop\/navigating-change-w-cop-cover.png",
+                            "width":  1597 ,
+                            "height":  472 
+                        }],"genre": "talks","wordcount":  212 ,
+        "url": "https:\/\/che55er.io\/talks\/navigating-change-w-cop\/","publisher": {
+            "@type": "Organization",
+            "name": "Carl Chesser","logo": "https:\/\/che55er.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Carl Chesser"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="thoughts"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/img/head.png"
+        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        data-sizes="auto"
+        alt="/img/head.png"
+        title="/img/head.png" />thoughts</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"><i class='fas fa-feather'></i>  blog </a><a class="menu-item" href="/blog-series/"><i class='fas fa-book'></i>  series </a><a class="menu-item" href="/talks/"><i class='fas fa-microphone'></i>  talks </a><a class="menu-item" href="/guides/"><i class='fas fa-map'></i>  guides </a><a class="menu-item" href="/articles/"><i class='fas fa-newspaper'></i>  articles </a><a class="menu-item" href="/projects/"><i class='fas fa-drafting-compass'></i>  projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="thoughts"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/img/head.png"
+        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        data-sizes="auto"
+        alt="/img/head.png"
+        title="/img/head.png" />thoughts</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title=""><i class='fas fa-feather'></i> blog</a><a class="menu-item" href="/blog-series/" title=""><i class='fas fa-book'></i> series</a><a class="menu-item" href="/talks/" title=""><i class='fas fa-microphone'></i> talks</a><a class="menu-item" href="/guides/" title=""><i class='fas fa-map'></i> guides</a><a class="menu-item" href="/articles/" title=""><i class='fas fa-newspaper'></i> articles</a><a class="menu-item" href="/projects/" title=""><i class='fas fa-drafting-compass'></i> projects</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Navigating Change with Communities of Practice</h1><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="navigating-change-w-cop.png"
+        data-srcset="/talks/navigating-change-w-cop/navigating-change-w-cop.png, navigating-change-w-cop.png 1.5x, /talks/navigating-change-w-cop/navigating-change-w-cop.png 2x"
+        data-sizes="auto"
+        alt="/talks/navigating-change-w-cop/navigating-change-w-cop.png"
+        title="/talks/navigating-change-w-cop/navigating-change-w-cop.png" /></p>
+<p><em>Presentation was part of <a href="https://doesus2022.sched.com/" target="_blank" rel="noopener noreffer">DevOps Enterprise Summit - Virtual 2022</a></em>.</p>
+<h1 id="abstract">Abstract</h1>
+<p>Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected. This should recognize that we cannot increase the cognitive load on our teams through excessive forms of communication. There must be a better way.</p>
+<p>Communities of Practice can serve as a way to enable horizontal communication, creating a support network of knowledge when navigating change, and embraces the influence of Conway’s Law on our systems. At Oracle Cerner, we have been working through how we form and leverage Communities of Practice to bring together active practitioners across organizational groups to support each other as we work through change. In this talk, we will share lessons learned in this approach and valuable resources we discovered through our journey.</p>
+<p>If you are a medium or large sized organization where it is challenging to navigate change consistently across all your teams, this talk is for you!</p>
+<h1 id="content">Content</h1>
+<ul>
+<li><a href="/slides/does22-navigating-change-w-communities-of-practice.pdf" rel="">Slides</a></li>
+</ul>
+</div><div id="comments"></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHFJK2MHCT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RHFJK2MHCT');
+    </script></body>
+</html>
