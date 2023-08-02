@@ -129,5 +129,14 @@ Learning Resources  RegExr: Interactive editor which visual signals matching, de
 Abstract Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected.</description>
     </item>
     
+    <item>
+      <title>NRQL Bonanza</title>
+      <link>https://che55er.io/talks/nrql-bonanza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/nrql-bonanza/</guid>
+      <description>This talk was part of a New Relic User Group session in August 2023. This short talk walks through some different examples of data you can access in New Relic &amp;hellip; which you may not have known about. This can include data about your data usage (ingestion), your agents (version compliance), and even the queries being executed. This also includes ways you can explore the data dictionary or execute queries through NerdGraph (GraphQL).</description>
+    </item>
+    
   </channel>
 </rss>
