@@ -3,7 +3,7 @@
 
 ![](navigating-change-w-cop.png)
 
-_*Updated*: Content updated from [2022 DevOps Enterprise Summit](../navigating-change-w-cop)._
+_Newer revision of content from [2022 DevOps Enterprise Summit](../navigating-change-w-cop)._
 
 # Abstract
 
