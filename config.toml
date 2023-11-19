@@ -1,6 +1,6 @@
 baseurl = "https://che55er.io"
 defaultContentLanguage = "en"
-theme = "doit"
+theme = "DoIt"
 title = "thoughts"
 publishDir = "_deploy"
 
