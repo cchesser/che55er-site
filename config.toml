@@ -1,6 +1,6 @@
 baseurl = "https://che55er.io"
 defaultContentLanguage = "en"
-theme = "loveit"
+theme = "doit"
 title = "thoughts"
 publishDir = "_deploy"
 
@@ -49,7 +49,6 @@ enableEmoji = true
     # whether to show Hugo and theme info
     hugo = false
     # whether to show copyright info
-    # 是否显示版权信息
     copyright = false
     # whether to show the author
     author = false
@@ -334,20 +333,14 @@ enableEmoji = true
         RSS = true
 
 # Markup related configuration in Hugo
-# Hugo 解析文档的配置
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
     codeFences = true
     guessSyntax = true
     lineNos = true
     lineNumbersInTable = true
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
   # Goldmark is from Hugo 0.60 the default library used for Markdown
-  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -359,10 +352,8 @@ enableEmoji = true
       typographer = true
     [markup.goldmark.renderer]
       # whether to use HTML tags directly in the document
-      # 是否在文档中直接使用 HTML 标签
       unsafe = true
   # Table Of Contents settings
-  # 目录设置
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
@@ -374,7 +365,6 @@ enableEmoji = true
   link = "https://che55er.io"
 
 # Sitemap config
-# 网站地图配置
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
