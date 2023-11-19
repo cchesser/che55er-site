@@ -1,11 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Words Matter - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="Words Matter" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Words Matter - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="Words Matter" />
 <meta property="og:description" content="We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://che55er.io/talks/words-matter/" /><meta property="og:image" content="https://che55er.io/talks/words-matter/words-matter.png"/><meta property="article:section" content="talks" />
@@ -16,10 +18,16 @@
 <meta name="twitter:image" content="https://che55er.io/talks/words-matter/words-matter.png"/>
 <meta name="twitter:title" content="Words Matter"/>
 <meta name="twitter:description" content="We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept."/>
+<meta name="twitter:site" content="@che55er"/>
 <meta name="application-name" content="thoughts">
-<meta name="apple-mobile-web-app-title" content="thoughts"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="thoughts">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@che55er" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/talks/words-matter/" /><link rel="prev" href="https://che55er.io/talks/docs-as-code/" /><link rel="next" href="https://che55er.io/talks/chaos-with-care/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://che55er.io/talks/words-matter/" /><link rel="prev" href="https://che55er.io/talks/docs-as-code/" /><link rel="next" href="https://che55er.io/talks/chaos-with-care/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -42,19 +50,28 @@
             },"description": ""
     }
     </script></head>
-    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<body header-desktop="auto" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"><i class='fas fa-feather'></i>  blog </a><a class="menu-item" href="/blog-series/"><i class='fas fa-book'></i>  series </a><a class="menu-item" href="/talks/"><i class='fas fa-microphone'></i>  talks </a><a class="menu-item" href="/guides/"><i class='fas fa-map'></i>  guides </a><a class="menu-item" href="/articles/"><i class='fas fa-newspaper'></i>  articles </a><a class="menu-item" href="/projects/"><i class='fas fa-drafting-compass'></i>  projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -70,8 +87,7 @@
                         </span>
                     </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -79,13 +95,13 @@
         <div class="header-wrapper">
             <div class="header-title">
                 <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -119,7 +135,7 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Words Matter</h1><div class="content" id="content">
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Words Matter</h1><div class="content" id="content">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/8cTV7Xd3K8s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -128,22 +144,26 @@
 <p>In this talk, we focus on how we can improve in communicating our technical ideas across the spectrum of stakeholders in our systems. We will walk through the art of boundary spanning, where we seek to effectively communicate across different groups. This will include ways to convey ideas with different audiences and how to readjust when misunderstandings arise. We will review concise ways of sharing software engineering concepts through laws and principles, but also approaches in guiding others who may not be familiar with the term. This will revisit timeless software engineering essays whose notoriety is based on their communication effectiveness. Finally, we will go through understanding different audiences and ways to associate relatable concepts to ensure a point is well understood.</p>
 <p>Also, here is the related <a href="/guides/words-matter-guide.pdf" rel=""><i class='fas fa-map'></i> Words Matter guide</a>.</p>
 </div><div id="comments"></div></div></div>
-            </main><footer class="footer">
+        </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"></div>
-        </div>
-    </footer></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script>
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHFJK2MHCT"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-RHFJK2MHCT');
-    </script></body>
+    </script></div>
+</body>
+
 </html>

@@ -1,11 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>guides - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="guides" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>guides - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="guides" />
 <meta property="og:description" content="Here are some of the guides I have built. These are intended to be concise so that they can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as basic set of notes that hopefully can further remind others of the content. Some of these are very simple, essentially just an image to help serve as a reminder of content." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://che55er.io/guides/" /><meta property="og:image" content="https://che55er.io/img/avatar-icon.png"/><meta property="article:section" content="" />
@@ -17,10 +19,16 @@
 
 <meta name="twitter:title" content="guides"/>
 <meta name="twitter:description" content="Here are some of the guides I have built. These are intended to be concise so that they can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as basic set of notes that hopefully can further remind others of the content. Some of these are very simple, essentially just an image to help serve as a reminder of content."/>
+<meta name="twitter:site" content="@che55er"/>
 <meta name="application-name" content="thoughts">
-<meta name="apple-mobile-web-app-title" content="thoughts"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="thoughts">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@che55er" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/guides/" /><link rel="prev" href="https://che55er.io/projects/" /><link rel="next" href="https://che55er.io/blog-series/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://che55er.io/guides/" /><link rel="prev" href="https://che55er.io/projects/" /><link rel="next" href="https://che55er.io/blog-series/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -38,19 +46,28 @@
             },"description": ""
     }
     </script></head>
-    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<body header-desktop="auto" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"><i class='fas fa-feather'></i>  blog </a><a class="menu-item" href="/blog-series/"><i class='fas fa-book'></i>  series </a><a class="menu-item" href="/talks/"><i class='fas fa-microphone'></i>  talks </a><a class="menu-item active" href="/guides/"><i class='fas fa-map'></i>  guides </a><a class="menu-item" href="/articles/"><i class='fas fa-newspaper'></i>  articles </a><a class="menu-item" href="/projects/"><i class='fas fa-drafting-compass'></i>  projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -66,8 +83,7 @@
                         </span>
                     </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -75,13 +91,13 @@
         <div class="header-wrapper">
             <div class="header-title">
                 <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -115,148 +131,160 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">guides</h1><h2 class="single-subtitle">guidance in simple illustrations</h2><div class="content" id="content"><p>Here are some of the guides I have built. These are intended to be concise so that they can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as basic set of notes that hopefully can further remind others of the content. Some of these are very simple, essentially just an image to help serve as a reminder of content.</p>
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">guides</h1><h2 class="single-subtitle">guidance in simple illustrations</h2><div class="content" id="content"><p>Here are some of the guides I have built. These are intended to be concise so that they can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as basic set of notes that hopefully can further remind others of the content. Some of these are very simple, essentially just an image to help serve as a reminder of content.</p>
 <hr>
-<h2 id="words-matter">Words Matter</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/words-matter-guide.png"
-        data-srcset="/img/words-matter-guide.png, /img/words-matter-guide.png 1.5x, /img/words-matter-guide.png 2x"
-        data-sizes="auto"
-        alt="/img/words-matter-guide.png"
-        title="Words Matter" /></p>
+<h2 id="words-matter" class="headerLink">
+    <a href="#words-matter" class="header-mark"></a>Words Matter</h2><p><figure><a class="lightgallery" href="/img/words-matter-guide.png" title="Words Matter" data-thumbnail="/img/words-matter-guide.png">
+        <img
+            
+            loading="lazy"
+            src="/img/words-matter-guide.png"
+            srcset="/img/words-matter-guide.png, /img/words-matter-guide.png 1.5x, /img/words-matter-guide.png 2x"
+            sizes="auto"
+            alt="Words Matter">
+    </a></figure></p>
 <p><a href="/guides/words-matter-guide.pdf" rel="">Get the 8.5 x 11&quot; PDF version with paper airplane pattern on the back</a></p>
 <p><button class="btn"><i class="fa fa-home"></i></button></p>
-<h3 id="references">References</h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=Zq2VcRZmz78" target="_blank" rel="noopener noreffer">Architect Elevator</a>: by Gregor Hohpe</li>
-<li><a href="https://itrevolution.com/the-idealcast-episode-8/" target="_blank" rel="noopener noreffer">The Idealcast - Episode 8</a>: by Gene Kim with guest Michael Nygard on <em>Architecture as the Organizing Logic for Components and the Means for their Construction</em>.</li>
-<li><a href="https://github.com/dwmkerr/hacker-laws" target="_blank" rel="noopener noreffer">Hacker Laws</a>: Great inventory of commonly referenced laws, theories, and principles in software development.</li>
+<h3 id="references" class="headerLink">
+    <a href="#references" class="header-mark"></a>References</h3><ul>
+<li><a href="https://www.youtube.com/watch?v=Zq2VcRZmz78" target="_blank" rel="noopener noreferrer">Architect Elevator</a>: by Gregor Hohpe</li>
+<li><a href="https://itrevolution.com/the-idealcast-episode-8/" target="_blank" rel="noopener noreferrer">The Idealcast - Episode 8</a>: by Gene Kim with guest Michael Nygard on <em>Architecture as the Organizing Logic for Components and the Means for their Construction</em>.</li>
+<li><a href="https://github.com/dwmkerr/hacker-laws" target="_blank" rel="noopener noreferrer">Hacker Laws</a>: Great inventory of commonly referenced laws, theories, and principles in software development.</li>
 </ul>
-<h2 id="hitchhikers-guide-to-meetings---virtual-edition">Hitchhiker&rsquo;s Guide to Meetings - Virtual Edition</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png"
-        data-srcset="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png, /img/hitchhikers-guide-to-meetings-virtual-edition-guide.png 1.5x, /img/hitchhikers-guide-to-meetings-virtual-edition-guide.png 2x"
-        data-sizes="auto"
-        alt="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png"
-        title="Hitchhiker&amp;rsquo;s Guide to Meetings - Virtual Edition" /></p>
+<h2 id="hitchhikers-guide-to-meetings---virtual-edition" class="headerLink">
+    <a href="#hitchhikers-guide-to-meetings---virtual-edition" class="header-mark"></a>Hitchhiker&rsquo;s Guide to Meetings - Virtual Edition</h2><p><figure><a class="lightgallery" href="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png" title="Hitchhiker&amp;rsquo;s Guide to Meetings - Virtual Edition" data-thumbnail="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png">
+        <img
+            
+            loading="lazy"
+            src="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png"
+            srcset="/img/hitchhikers-guide-to-meetings-virtual-edition-guide.png, /img/hitchhikers-guide-to-meetings-virtual-edition-guide.png 1.5x, /img/hitchhikers-guide-to-meetings-virtual-edition-guide.png 2x"
+            sizes="auto"
+            alt="Hitchhiker&amp;rsquo;s Guide to Meetings - Virtual Edition">
+    </a></figure></p>
 <p><a href="/guides/hitchhikers-guide-to-meetings-virtual-edition.pdf" rel="">Get the 8.5 x 11&quot; PDF version</a>, which is the updated version of the <em>Hitchhiker&rsquo;s Guide to Meetings</em> that includes newer content for virtual meetings.</p>
-<h2 id="innovation-invigoration">Innovation Invigoration</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/innovation-invigoration-guide.png"
-        data-srcset="/img/innovation-invigoration-guide.png, /img/innovation-invigoration-guide.png 1.5x, /img/innovation-invigoration-guide.png 2x"
-        data-sizes="auto"
-        alt="/img/innovation-invigoration-guide.png"
-        title="Innovation Invigoration" /></p>
+<h2 id="innovation-invigoration" class="headerLink">
+    <a href="#innovation-invigoration" class="header-mark"></a>Innovation Invigoration</h2><p><figure><a class="lightgallery" href="/img/innovation-invigoration-guide.png" title="Innovation Invigoration" data-thumbnail="/img/innovation-invigoration-guide.png">
+        <img
+            
+            loading="lazy"
+            src="/img/innovation-invigoration-guide.png"
+            srcset="/img/innovation-invigoration-guide.png, /img/innovation-invigoration-guide.png 1.5x, /img/innovation-invigoration-guide.png 2x"
+            sizes="auto"
+            alt="Innovation Invigoration">
+    </a></figure></p>
 <ul>
 <li><a href="/guides/innovation-invigoration-guide.pdf" rel="">11&quot; x 17&quot; - Complete Version</a>: This version may not be that convenient for most when at home, as we don&rsquo;t normally print on 11 x 17&quot; layouts. Therefore, check out the Home Edition 👇!</li>
-<li><a href="/guides/innovation-invigoration-guide-home-edition.pdf" rel="">Home Edition! 8.5 x 11&quot; version with paper airplane pattern on the back</a>: Check out <a href="https://twitter.com/che55er/status/1286332322774749184" target="_blank" rel="noopener noreffer">this video</a> to see how you can build it 🛩️! Noticed, this is themed as a pterodactyl for Cerner&rsquo;s DevCon 2020 theme.</li>
+<li><a href="/guides/innovation-invigoration-guide-home-edition.pdf" rel="">Home Edition! 8.5 x 11&quot; version with paper airplane pattern on the back</a>: Check out <a href="https://twitter.com/che55er/status/1286332322774749184" target="_blank" rel="noopener noreferrer">this video</a> to see how you can build it 🛩️! Noticed, this is themed as a pterodactyl for Cerner&rsquo;s DevCon 2020 theme.</li>
 </ul>
-<h3 id="references-1">References:</h3>
-<ul>
+<h3 id="references-1" class="headerLink">
+    <a href="#references-1" class="header-mark"></a>References:</h3><ul>
 <li><a href="https://che55er.io/posts/large-dog-method/" rel="">The Large Dog Method: A Path to Creative Thinking</a>: past blog by me with more specifics</li>
-<li><a href="https://www.youtube.com/watch?v=sIWekh32LG4" target="_blank" rel="noopener noreffer">Complexity is Outside the Code</a>: by Jessica Kerr</li>
-<li><a href="https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity" target="_blank" rel="noopener noreffer">Do schools kill creativity?</a>: Sir Ken Robinson</li>
-<li><a href="https://www.jimcollins.com/article_topics/articles/good-to-great.html" target="_blank" rel="noopener noreffer">Good to Great</a>: by Jim Collins</li>
-<li><a href="https://www.youtube.com/watch?v=f84n5oFoZBc" target="_blank" rel="noopener noreffer">Hammock Driven Development</a>: by Rich Hickey</li>
-<li><a href="https://www.youtube.com/watch?v=g-YScywp6AU" target="_blank" rel="noopener noreffer">3 tools to become more creative</a>: by Balder Onarheim</li>
+<li><a href="https://www.youtube.com/watch?v=sIWekh32LG4" target="_blank" rel="noopener noreferrer">Complexity is Outside the Code</a>: by Jessica Kerr</li>
+<li><a href="https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity" target="_blank" rel="noopener noreferrer">Do schools kill creativity?</a>: Sir Ken Robinson</li>
+<li><a href="https://www.jimcollins.com/article_topics/articles/good-to-great.html" target="_blank" rel="noopener noreferrer">Good to Great</a>: by Jim Collins</li>
+<li><a href="https://www.youtube.com/watch?v=f84n5oFoZBc" target="_blank" rel="noopener noreferrer">Hammock Driven Development</a>: by Rich Hickey</li>
+<li><a href="https://www.youtube.com/watch?v=g-YScywp6AU" target="_blank" rel="noopener noreferrer">3 tools to become more creative</a>: by Balder Onarheim</li>
 </ul>
 <hr>
-<h2 id="getting-started-with-chaos-experiments">Getting Started with Chaos Experiments</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/getting-started-w-chaos-experiments.png"
-        data-srcset="/img/getting-started-w-chaos-experiments.png, /img/getting-started-w-chaos-experiments.png 1.5x, /img/getting-started-w-chaos-experiments.png 2x"
-        data-sizes="auto"
-        alt="/img/getting-started-w-chaos-experiments.png"
-        title="Getting Started with Chaos Experiments" /></p>
+<h2 id="getting-started-with-chaos-experiments" class="headerLink">
+    <a href="#getting-started-with-chaos-experiments" class="header-mark"></a>Getting Started with Chaos Experiments</h2><p><figure><a class="lightgallery" href="/img/getting-started-w-chaos-experiments.png" title="Getting Started with Chaos Experiments" data-thumbnail="/img/getting-started-w-chaos-experiments.png">
+        <img
+            
+            loading="lazy"
+            src="/img/getting-started-w-chaos-experiments.png"
+            srcset="/img/getting-started-w-chaos-experiments.png, /img/getting-started-w-chaos-experiments.png 1.5x, /img/getting-started-w-chaos-experiments.png 2x"
+            sizes="auto"
+            alt="Getting Started with Chaos Experiments">
+    </a></figure></p>
 <p><a href="/guides/getting-started-w-chaos-exp-guide.pdf" rel="">Get the 8.5 x 11&quot; PDF version</a></p>
 <p><em>This guide includes a second page, to convert the guide into a paper airplane.</em></p>
-<h3 id="references-2">References:</h3>
-<ul>
-<li><a href="https://www.oreilly.com/library/view/chaos-engineering/9781491988459/" target="_blank" rel="noopener noreffer">Chaos Engineering</a>: Book by Ali Basiri, Nora Jones, Aaron Blohowiak, Lorin Hochstein, Casey Rosenthal that gives great guidance on getting started with chaos engineering principles.</li>
-<li><a href="https://github.com/dastergon/awesome-chaos-engineering" target="_blank" rel="noopener noreffer">Awesome Chaos Engineering</a>: A curated list of chaos engineering resources.</li>
-<li><a href="https://pragprog.com/book/mnee2/release-it-second-edition" target="_blank" rel="noopener noreffer">Release It! (2nd edition) - Design and Deploy Production-Ready Software</a>: Book by Michael Nygard on stability patterns that improve resiliency in your software systems.</li>
+<h3 id="references-2" class="headerLink">
+    <a href="#references-2" class="header-mark"></a>References:</h3><ul>
+<li><a href="https://www.oreilly.com/library/view/chaos-engineering/9781491988459/" target="_blank" rel="noopener noreferrer">Chaos Engineering</a>: Book by Ali Basiri, Nora Jones, Aaron Blohowiak, Lorin Hochstein, Casey Rosenthal that gives great guidance on getting started with chaos engineering principles.</li>
+<li><a href="https://github.com/dastergon/awesome-chaos-engineering" target="_blank" rel="noopener noreferrer">Awesome Chaos Engineering</a>: A curated list of chaos engineering resources.</li>
+<li><a href="https://pragprog.com/book/mnee2/release-it-second-edition" target="_blank" rel="noopener noreferrer">Release It! (2nd edition) - Design and Deploy Production-Ready Software</a>: Book by Michael Nygard on stability patterns that improve resiliency in your software systems.</li>
 </ul>
 <hr>
-<h2 id="decisions-the-pursuit-of-options">Decisions: The Pursuit of Options</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/decision-guide.png"
-        data-srcset="/img/decision-guide.png, /img/decision-guide.png 1.5x, /img/decision-guide.png 2x"
-        data-sizes="auto"
-        alt="/img/decision-guide.png"
-        title="Decisions: The Pursuit of Options" /></p>
+<h2 id="decisions-the-pursuit-of-options" class="headerLink">
+    <a href="#decisions-the-pursuit-of-options" class="header-mark"></a>Decisions: The Pursuit of Options</h2><p><figure><a class="lightgallery" href="/img/decision-guide.png" title="Decisions: The Pursuit of Options" data-thumbnail="/img/decision-guide.png">
+        <img
+            
+            loading="lazy"
+            src="/img/decision-guide.png"
+            srcset="/img/decision-guide.png, /img/decision-guide.png 1.5x, /img/decision-guide.png 2x"
+            sizes="auto"
+            alt="Decisions: The Pursuit of Options">
+    </a></figure></p>
 <p><a href="/guides/decision-guide-11-17.pdf" rel="">Get the 11x17&quot; PDF version</a></p>
-<h3 id="references-3">References:</h3>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank" rel="noopener noreffer">Thinking, Fast and Slow (Daniel Kahneman)</a></li>
-<li><a href="http://algorithmstoliveby.com/" target="_blank" rel="noopener noreffer">Algorithms to Live By: The Computer Science of Human Decisions (Brian Christian, Tom Griffiths)</a></li>
-<li><a href="https://medium.com/@copyconstruct/technical-decision-making-9b2817c18da4" target="_blank" rel="noopener noreffer">Technical Decision Making (Cindy Sridharan)</a></li>
-<li><a href="https://hbr.org/2017/01/are-you-solving-the-right-problems" target="_blank" rel="noopener noreffer">Harvard Business Review: Are You Solving the Right Problems?</a></li>
-<li><a href="https://www.newscientist.com/article/dn8732-sleeping-on-it-best-for-complex-decisions/" target="_blank" rel="noopener noreffer">New Scientist: &lsquo;Sleeping on it&rsquo; best for complex decisions</a></li>
-<li><a href="https://busterbenson.com/biases/" target="_blank" rel="noopener noreffer">Pocket Bias (Buster Benson)</a></li>
-<li><a href="http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions" target="_blank" rel="noopener noreffer">Documenting Architecture Decisions (Michael Nygard)</a></li>
-<li><a href="https://www.oreilly.com/library/view/97-things-every/9780596800611/" target="_blank" rel="noopener noreffer">97 Things Every Software Architect Should Know (Michael Nygard)</a></li>
+<h3 id="references-3" class="headerLink">
+    <a href="#references-3" class="header-mark"></a>References:</h3><ul>
+<li><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank" rel="noopener noreferrer">Thinking, Fast and Slow (Daniel Kahneman)</a></li>
+<li><a href="http://algorithmstoliveby.com/" target="_blank" rel="noopener noreferrer">Algorithms to Live By: The Computer Science of Human Decisions (Brian Christian, Tom Griffiths)</a></li>
+<li><a href="https://medium.com/@copyconstruct/technical-decision-making-9b2817c18da4" target="_blank" rel="noopener noreferrer">Technical Decision Making (Cindy Sridharan)</a></li>
+<li><a href="https://hbr.org/2017/01/are-you-solving-the-right-problems" target="_blank" rel="noopener noreferrer">Harvard Business Review: Are You Solving the Right Problems?</a></li>
+<li><a href="https://www.newscientist.com/article/dn8732-sleeping-on-it-best-for-complex-decisions/" target="_blank" rel="noopener noreferrer">New Scientist: &lsquo;Sleeping on it&rsquo; best for complex decisions</a></li>
+<li><a href="https://busterbenson.com/biases/" target="_blank" rel="noopener noreferrer">Pocket Bias (Buster Benson)</a></li>
+<li><a href="http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions" target="_blank" rel="noopener noreferrer">Documenting Architecture Decisions (Michael Nygard)</a></li>
+<li><a href="https://www.oreilly.com/library/view/97-things-every/9780596800611/" target="_blank" rel="noopener noreferrer">97 Things Every Software Architect Should Know (Michael Nygard)</a></li>
 </ul>
 <hr>
-<h2 id="cultivating-a-positive-team-culture">Cultivating a Positive Team Culture</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/positive-env.png"
-        data-srcset="/img/positive-env.png, /img/positive-env.png 1.5x, /img/positive-env.png 2x"
-        data-sizes="auto"
-        alt="/img/positive-env.png"
-        title="Cultivating a Positive Team Culture" /></p>
+<h2 id="cultivating-a-positive-team-culture" class="headerLink">
+    <a href="#cultivating-a-positive-team-culture" class="header-mark"></a>Cultivating a Positive Team Culture</h2><p><figure><a class="lightgallery" href="/img/positive-env.png" title="Cultivating a Positive Team Culture" data-thumbnail="/img/positive-env.png">
+        <img
+            
+            loading="lazy"
+            src="/img/positive-env.png"
+            srcset="/img/positive-env.png, /img/positive-env.png 1.5x, /img/positive-env.png 2x"
+            sizes="auto"
+            alt="Cultivating a Positive Team Culture">
+    </a></figure></p>
 <p><a href="/guides/positive-env-8.5x14.pdf" rel="">Get the 8.5x14&quot; PDF version</a></p>
 <hr>
-<h2 id="hitchikers-guide-to-meetings">Hitchiker&rsquo;s Guide to Meetings</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/hitchhikers-guide-v1.png"
-        data-srcset="/img/hitchhikers-guide-v1.png, /img/hitchhikers-guide-v1.png 1.5x, /img/hitchhikers-guide-v1.png 2x"
-        data-sizes="auto"
-        alt="/img/hitchhikers-guide-v1.png"
-        title="Hitchiker&amp;rsquo;s Guide to Meetings" /></p>
+<h2 id="hitchikers-guide-to-meetings" class="headerLink">
+    <a href="#hitchikers-guide-to-meetings" class="header-mark"></a>Hitchiker&rsquo;s Guide to Meetings</h2><p><figure><a class="lightgallery" href="/img/hitchhikers-guide-v1.png" title="Hitchiker&amp;rsquo;s Guide to Meetings" data-thumbnail="/img/hitchhikers-guide-v1.png">
+        <img
+            
+            loading="lazy"
+            src="/img/hitchhikers-guide-v1.png"
+            srcset="/img/hitchhikers-guide-v1.png, /img/hitchhikers-guide-v1.png 1.5x, /img/hitchhikers-guide-v1.png 2x"
+            sizes="auto"
+            alt="Hitchiker&amp;rsquo;s Guide to Meetings">
+    </a></figure></p>
 <p><a href="/guides/hitchhikers-guide-to-meetings-11-17.pdf" rel="">Get the 11x17&quot; PDF version</a></p>
 <hr>
-<h2 id="hitchikers-guide-to-meetings-add-ons">Hitchiker&rsquo;s Guide to Meetings (add-ons)</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/hitchhikers-guide-v2-update.jpg"
-        data-srcset="/img/hitchhikers-guide-v2-update.jpg, /img/hitchhikers-guide-v2-update.jpg 1.5x, /img/hitchhikers-guide-v2-update.jpg 2x"
-        data-sizes="auto"
-        alt="/img/hitchhikers-guide-v2-update.jpg"
-        title="Hitchiker&amp;rsquo;s Guide to Meetings - v2 updates" /></p>
+<h2 id="hitchikers-guide-to-meetings-add-ons" class="headerLink">
+    <a href="#hitchikers-guide-to-meetings-add-ons" class="header-mark"></a>Hitchiker&rsquo;s Guide to Meetings (add-ons)</h2><p><figure><a class="lightgallery" href="/img/hitchhikers-guide-v2-update.jpg" title="Hitchiker&amp;rsquo;s Guide to Meetings - v2 updates" data-thumbnail="/img/hitchhikers-guide-v2-update.jpg">
+        <img
+            
+            loading="lazy"
+            src="/img/hitchhikers-guide-v2-update.jpg"
+            srcset="/img/hitchhikers-guide-v2-update.jpg, /img/hitchhikers-guide-v2-update.jpg 1.5x, /img/hitchhikers-guide-v2-update.jpg 2x"
+            sizes="auto"
+            alt="Hitchiker&amp;rsquo;s Guide to Meetings - v2 updates">
+    </a></figure></p>
 <p>Some proposed updates to the <em>Hitchhiker&rsquo;s Guide to Meetings</em>, where logistical elements are included.</p>
 <hr>
 </div><div id="comments"></div></div></div>
-            </main><footer class="footer">
+        </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"></div>
-        </div>
-    </footer></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script>
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHFJK2MHCT"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-RHFJK2MHCT');
-    </script></body>
+    </script></div>
+</body>
+
 </html>

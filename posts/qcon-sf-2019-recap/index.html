@@ -1,13 +1,15 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>QCon San Francisco 2019 Recap - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="QCon San Francisco 2019 Recap" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>QCon San Francisco 2019 Recap - thoughts</title><meta name="Description" content="thoughts of Carl Chesser"><meta property="og:title" content="QCon San Francisco 2019 Recap" />
 <meta property="og:description" content="This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.
-Overview QCon is a conference which organizes its talks into specific tracks." />
+OverviewQCon is a conference which organizes its talks into specific tracks." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://che55er.io/posts/qcon-sf-2019-recap/" /><meta property="og:image" content="https://che55er.io/posts/qcon-sf-2019-recap/getting-started-w-chaos-experiments.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-11-14T00:00:00+00:00" />
@@ -17,11 +19,17 @@ Overview QCon is a conference which organizes its talks into specific tracks." /
 <meta name="twitter:image" content="https://che55er.io/posts/qcon-sf-2019-recap/getting-started-w-chaos-experiments.png"/>
 <meta name="twitter:title" content="QCon San Francisco 2019 Recap"/>
 <meta name="twitter:description" content="This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.
-Overview QCon is a conference which organizes its talks into specific tracks."/>
+OverviewQCon is a conference which organizes its talks into specific tracks."/>
+<meta name="twitter:site" content="@che55er"/>
 <meta name="application-name" content="thoughts">
-<meta name="apple-mobile-web-app-title" content="thoughts"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="thoughts">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@che55er" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://che55er.io/posts/qcon-sf-2019-recap/" /><link rel="prev" href="https://che55er.io/posts/decisions-the-pursuit-of-options/" /><link rel="next" href="https://che55er.io/posts/defrag-your-calendar/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://che55er.io/posts/qcon-sf-2019-recap/" /><link rel="prev" href="https://che55er.io/posts/decisions-the-pursuit-of-options/" /><link rel="next" href="https://che55er.io/posts/defrag-your-calendar/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -35,7 +43,7 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
                             "url": "https:\/\/che55er.io\/posts\/qcon-sf-2019-recap\/getting-started-w-chaos-experiments.png",
                             "width":  2082 ,
                             "height":  1594 
-                        }],"genre": "posts","wordcount":  908 ,
+                        }],"genre": "posts","wordcount":  895 ,
         "url": "https:\/\/che55er.io\/posts\/qcon-sf-2019-recap\/","datePublished": "2019-11-14T00:00:00+00:00","dateModified": "2019-11-14T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "Carl Chesser","logo": "https:\/\/che55er.io\/images\/avatar.png"},"author": {
@@ -44,19 +52,28 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
             },"description": ""
     }
     </script></head>
-    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<body header-desktop="auto" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"><i class='fas fa-feather'></i>  blog </a><a class="menu-item" href="/blog-series/"><i class='fas fa-book'></i>  series </a><a class="menu-item" href="/talks/"><i class='fas fa-microphone'></i>  talks </a><a class="menu-item" href="/guides/"><i class='fas fa-map'></i>  guides </a><a class="menu-item" href="/articles/"><i class='fas fa-newspaper'></i>  articles </a><a class="menu-item" href="/projects/"><i class='fas fa-drafting-compass'></i>  projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -72,8 +89,7 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
                         </span>
                     </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -81,13 +97,13 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
         <div class="header-wrapper">
             <div class="header-title">
                 <a href="/" title="thoughts"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/img/head.png"
-        data-srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
-        data-sizes="auto"
+        class="logo"
+        loading="lazy"
+        src="/img/head.png"
+        srcset="/img/head.png, /img/head.png 1.5x, /img/head.png 2x"
+        sizes="auto"
         alt="/img/head.png"
-        title="/img/head.png" />thoughts</a>
+        title="/img/head.png" >thoughts</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -121,13 +137,33 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">QCon San Francisco 2019 Recap</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://che55er.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Carl Chesser</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="Nov 14, 2019">Nov 14, 2019</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;908 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#notes">Notes</a>
+      <ul>
+        <li><a href="#managing-failure-modes-in-microservices-architecture">Managing Failure Modes in Microservices Architecture</a></li>
+        <li><a href="#making-npm-install-safe">Making npm Install Safe</a></li>
+        <li><a href="#incident-management-in-the-age-of-devops-and-sre">Incident Management in the Age of DevOps and SRE</a></li>
+        <li><a href="#security-and-compliance-theater">Security and Compliance Theater</a></li>
+        <li><a href="#microcultures-and-finding-your-place">Microcultures and Finding your Place</a></li>
+        <li><a href="#monitoring--tracing-at-netflix-streaming-data-infrastructure">Monitoring &amp; Tracing at Netflix Streaming Data Infrastructure</a></li>
+        <li><a href="#observability-and-the-development-process-not-just-for-ops-anymore">Observability and the Development Process: Not Just for Ops Anymore</a></li>
+        <li><a href="#how-to-invest-in-technical-infrastructure">How to Invest in Technical Infrastructure</a></li>
+        <li><a href="#when-machine-leaning-cant-replace-the-human">When Machine Leaning Can&rsquo;t Replace the Human</a></li>
+      </ul>
+    </li>
+    <li><a href="#my-talk">My Talk</a></li>
+    <li><a href="#wrap-up">Wrap-up</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">QCon San Francisco 2019 Recap</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://che55er.io" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Carl Chesser</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="Nov 14, 2019">Nov 14, 2019</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="Nov 14, 2019">Nov 14, 2019</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;895 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -153,122 +189,134 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
     <li><a href="#wrap-up">Wrap-up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on <a href="https://www.infoq.com/" target="_blank" rel="noopener noreffer">InfoQ</a>, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.</p>
-<h2 id="overview">Overview</h2>
-<p>QCon is a conference which organizes its talks into specific tracks. Track hosts that have been identified as experts in that domain, then do the work of identifying speakers to talk in these tracks. This approach makes it very clean on how they have direct selection on the talks to ensure they fulfill the targeted track and the speakers are known for being good at public speaking. As a result, majority of the talks are well prepared and are conveyed in an effective way. The conference was held all within a single location, Hyatt Regency in San Francisco, which made the logistics for attendees quite convenient. It was easy to get to and from talks, allowing you more time to strike conversations with others, and lowering the stress of having to determine where do I need to go next.</p>
+            </div><div class="content" id="content"><p>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on <a href="https://www.infoq.com/" target="_blank" rel="noopener noreferrer">InfoQ</a>, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.</p>
+<h2 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>Overview</h2><p>QCon is a conference which organizes its talks into specific tracks. Track hosts that have been identified as experts in that domain, then do the work of identifying speakers to talk in these tracks. This approach makes it very clean on how they have direct selection on the talks to ensure they fulfill the targeted track and the speakers are known for being good at public speaking. As a result, majority of the talks are well prepared and are conveyed in an effective way. The conference was held all within a single location, Hyatt Regency in San Francisco, which made the logistics for attendees quite convenient. It was easy to get to and from talks, allowing you more time to strike conversations with others, and lowering the stress of having to determine where do I need to go next.</p>
 <p>I was attending this conference as a speaker, so I had some added stress of preparing for my talk beforehand, but was really honored to have the opportunity to attend and speak. QCon does a fantastic job of preparing you for the talk, with resources on how to give a good talk and opportunities for others to review the talk for early feedback. While I was stressed on making sure I had prepared enough for my talk (my talk was on the last day of the conference), I was able to focus mostly on the other talks as I had finished my content earlier and had a chance to practice it to ensure it was within the targeted time.</p>
-<p>While at the conference, I had the opportunity to connect and talk with many other engineers and practitioners. By being in San Francisco, I was able to reconnect with a couple former colleagues which made it a really valuable time. I then was able to connect with other speakers which I found extremely valuable. For the last few months I have been having to dive deeper into container security, building minimal OS images, and scanning these for security related vulnerabilities. At a social dinner for speakers of the conference, I was able to connect with <a href="https://github.com/nishakm" target="_blank" rel="noopener noreffer">Nisha Kumar</a>, and was able to get a lot of valuable insight from her work on <a href="https://github.com/vmware/tern" target="_blank" rel="noopener noreffer">tern</a> and validate some of the container image building challenges we have been experiencing. When talking with others at lunch and breaks, I was always interested to find where others were from and what they were working on. Several times I found people some tie back to the Kansas City area (where I&rsquo;m from) or work in the related industry (healthcare). By having my talk announced before the conference, I also had some other planned meetings with companies and start-ups to learn more about what they were trying to solve, and how it related to challenges we were facing at our company. Having these scheduled meetings were valuable to have additional conversations that I wouldn&rsquo;t probably normally engage if I didn&rsquo;t plan beforehand.</p>
-<h2 id="notes">Notes</h2>
-<p>For me, I have found that I am able to retain and remember more content when I take notes by hand. This includes pairing notes with simple illustrations to help capture or highlight a point. Here are my notes from the conference for talks that I attended, that resulted in enough notes that I thought it was worth sharing.</p>
+<p>While at the conference, I had the opportunity to connect and talk with many other engineers and practitioners. By being in San Francisco, I was able to reconnect with a couple former colleagues which made it a really valuable time. I then was able to connect with other speakers which I found extremely valuable. For the last few months I have been having to dive deeper into container security, building minimal OS images, and scanning these for security related vulnerabilities. At a social dinner for speakers of the conference, I was able to connect with <a href="https://github.com/nishakm" target="_blank" rel="noopener noreferrer">Nisha Kumar</a>, and was able to get a lot of valuable insight from her work on <a href="https://github.com/vmware/tern" target="_blank" rel="noopener noreferrer">tern</a> and validate some of the container image building challenges we have been experiencing. When talking with others at lunch and breaks, I was always interested to find where others were from and what they were working on. Several times I found people some tie back to the Kansas City area (where I&rsquo;m from) or work in the related industry (healthcare). By having my talk announced before the conference, I also had some other planned meetings with companies and start-ups to learn more about what they were trying to solve, and how it related to challenges we were facing at our company. Having these scheduled meetings were valuable to have additional conversations that I wouldn&rsquo;t probably normally engage if I didn&rsquo;t plan beforehand.</p>
+<h2 id="notes" class="headerLink">
+    <a href="#notes" class="header-mark"></a>Notes</h2><p>For me, I have found that I am able to retain and remember more content when I take notes by hand. This includes pairing notes with simple illustrations to help capture or highlight a point. Here are my notes from the conference for talks that I attended, that resulted in enough notes that I thought it was worth sharing.</p>
 <p><em>Note: When doing other diagrams of systems, I have found where I like to include simple facial illustrations (happy, sad, confused faces) on pictures of infrastructure to quickly convey emotional state about that thing. It makes it very easy to express to others about these feelings (universal symbols that are quickly recognizable). This style might show up in some of these notes where I tried to convey if something is good, bad, confused, scared&hellip;</em></p>
-<h3 id="managing-failure-modes-in-microservices-architecture">Managing Failure Modes in Microservices Architecture</h3>
-<p>Talk by: Adrian Cockcroft <a href="https://twitter.com/adrianco" target="_blank" rel="noopener noreffer">@adrianco</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="managing-failure-modes.png"
-        data-srcset="/posts/qcon-sf-2019-recap/managing-failure-modes.png, managing-failure-modes.png 1.5x, /posts/qcon-sf-2019-recap/managing-failure-modes.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/managing-failure-modes.png"
-        title="/posts/qcon-sf-2019-recap/managing-failure-modes.png" /></p>
-<h3 id="making-npm-install-safe">Making npm Install Safe</h3>
-<p>Talk by: Kate Sills <a href="https://twitter.com/kate_sills" target="_blank" rel="noopener noreffer">@kate_sills</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="making-npm-install-safe.png"
-        data-srcset="/posts/qcon-sf-2019-recap/making-npm-install-safe.png, making-npm-install-safe.png 1.5x, /posts/qcon-sf-2019-recap/making-npm-install-safe.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/making-npm-install-safe.png"
-        title="/posts/qcon-sf-2019-recap/making-npm-install-safe.png" /></p>
-<h3 id="incident-management-in-the-age-of-devops-and-sre">Incident Management in the Age of DevOps and SRE</h3>
-<p>Talk by: Damon Edwards <a href="https://twitter.com/damonedwards" target="_blank" rel="noopener noreffer">@damonedwards</a></p>
+<h3 id="managing-failure-modes-in-microservices-architecture" class="headerLink">
+    <a href="#managing-failure-modes-in-microservices-architecture" class="header-mark"></a>Managing Failure Modes in Microservices Architecture</h3><p>Talk by: Adrian Cockcroft <a href="https://twitter.com/adrianco" target="_blank" rel="noopener noreferrer">@adrianco</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/managing-failure-modes.png" title="/posts/qcon-sf-2019-recap/managing-failure-modes.png" data-thumbnail="/posts/qcon-sf-2019-recap/managing-failure-modes.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/managing-failure-modes.png"
+            srcset="/posts/qcon-sf-2019-recap/managing-failure-modes.png, /posts/qcon-sf-2019-recap/managing-failure-modes.png 1.5x, /posts/qcon-sf-2019-recap/managing-failure-modes.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/managing-failure-modes.png" height="1404"  width="2723" >
+    </a></figure></p>
+<h3 id="making-npm-install-safe" class="headerLink">
+    <a href="#making-npm-install-safe" class="header-mark"></a>Making npm Install Safe</h3><p>Talk by: Kate Sills <a href="https://twitter.com/kate_sills" target="_blank" rel="noopener noreferrer">@kate_sills</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/making-npm-install-safe.png" title="/posts/qcon-sf-2019-recap/making-npm-install-safe.png" data-thumbnail="/posts/qcon-sf-2019-recap/making-npm-install-safe.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/making-npm-install-safe.png"
+            srcset="/posts/qcon-sf-2019-recap/making-npm-install-safe.png, /posts/qcon-sf-2019-recap/making-npm-install-safe.png 1.5x, /posts/qcon-sf-2019-recap/making-npm-install-safe.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/making-npm-install-safe.png" height="1833"  width="2587" >
+    </a></figure></p>
+<h3 id="incident-management-in-the-age-of-devops-and-sre" class="headerLink">
+    <a href="#incident-management-in-the-age-of-devops-and-sre" class="header-mark"></a>Incident Management in the Age of DevOps and SRE</h3><p>Talk by: Damon Edwards <a href="https://twitter.com/damonedwards" target="_blank" rel="noopener noreferrer">@damonedwards</a></p>
 <figure><img src="incident-mgmt-in-the-age-of-devops.png"/>
 </figure>
 
-<h3 id="security-and-compliance-theater">Security and Compliance Theater</h3>
-<p>Talk by: John Willis <a href="https://twitter.com/botchagalupe" target="_blank" rel="noopener noreffer">@botchagalupe</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="security-and-compliance-theater.png"
-        data-srcset="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png, security-and-compliance-theater.png 1.5x, /posts/qcon-sf-2019-recap/security-and-compliance-theater.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png"
-        title="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png" /></p>
-<h3 id="microcultures-and-finding-your-place">Microcultures and Finding your Place</h3>
-<p>Talk by: Mike McGarr <a href="https://twitter.com/SonOfGarr" target="_blank" rel="noopener noreffer">@SonOfGarr</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="microcultures-and-finding-your-place.png"
-        data-srcset="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png, microcultures-and-finding-your-place.png 1.5x, /posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png"
-        title="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png" /></p>
-<h3 id="monitoring--tracing-at-netflix-streaming-data-infrastructure">Monitoring &amp; Tracing at Netflix Streaming Data Infrastructure</h3>
-<p>Talk by: Allen Wang <a href="https://twitter.com/allenxwang" target="_blank" rel="noopener noreffer">@allenxwang</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="monitoring-tracing-streaming-data-infra.png"
-        data-srcset="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png, monitoring-tracing-streaming-data-infra.png 1.5x, /posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png"
-        title="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png" /></p>
-<h3 id="observability-and-the-development-process-not-just-for-ops-anymore">Observability and the Development Process: Not Just for Ops Anymore</h3>
-<p>Talk by: Christine Yen <a href="https://twitter.com/cyen" target="_blank" rel="noopener noreffer">@cyen</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="observability-and-the-dev-process.png"
-        data-srcset="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png, observability-and-the-dev-process.png 1.5x, /posts/qcon-sf-2019-recap/observability-and-the-dev-process.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png"
-        title="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png" /></p>
-<h3 id="how-to-invest-in-technical-infrastructure">How to Invest in Technical Infrastructure</h3>
-<p>Talk by: Will Larson <a href="https://twitter.com/lethain" target="_blank" rel="noopener noreffer">@lethain</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="how-to-invest-in-technical-infrastrucure.png"
-        data-srcset="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png, how-to-invest-in-technical-infrastrucure.png 1.5x, /posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png"
-        title="How to Invest in Technical Infrastructure notes" /></p>
-<h3 id="when-machine-leaning-cant-replace-the-human">When Machine Leaning Can&rsquo;t Replace the Human</h3>
-<p>Talk by: Pamela Gay <a href="https://twitter.com/starstryder" target="_blank" rel="noopener noreffer">@starstryder</a></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="when-machine-learning-cant-replace-the-human.png"
-        data-srcset="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png, when-machine-learning-cant-replace-the-human.png 1.5x, /posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png"
-        title="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png" /></p>
-<h2 id="my-talk">My Talk</h2>
-<p>The talk I shared was &ldquo;Building Confidence in Healthcare Systems with Chaos Engineering.&rdquo; This talk focused on the technology challenges we were facing, how the team introduced gameday exercises (which were chaos experiments) to evaluate the system designs, and the lessons learned along the way.</p>
-<p><a href="/slides/qcon-sf-2019-confidence-building-w-chaos-engineering.pdf" rel=""><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="slides-preview.png"
-        data-srcset="/posts/qcon-sf-2019-recap/slides-preview.png, slides-preview.png 1.5x, /posts/qcon-sf-2019-recap/slides-preview.png 2x"
-        data-sizes="auto"
-        alt="/posts/qcon-sf-2019-recap/slides-preview.png"
-        title="/posts/qcon-sf-2019-recap/slides-preview.png" /></a></p>
+<h3 id="security-and-compliance-theater" class="headerLink">
+    <a href="#security-and-compliance-theater" class="header-mark"></a>Security and Compliance Theater</h3><p>Talk by: John Willis <a href="https://twitter.com/botchagalupe" target="_blank" rel="noopener noreferrer">@botchagalupe</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png" title="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png" data-thumbnail="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png"
+            srcset="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png, /posts/qcon-sf-2019-recap/security-and-compliance-theater.png 1.5x, /posts/qcon-sf-2019-recap/security-and-compliance-theater.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/security-and-compliance-theater.png" height="2043"  width="2638" >
+    </a></figure></p>
+<h3 id="microcultures-and-finding-your-place" class="headerLink">
+    <a href="#microcultures-and-finding-your-place" class="header-mark"></a>Microcultures and Finding your Place</h3><p>Talk by: Mike McGarr <a href="https://twitter.com/SonOfGarr" target="_blank" rel="noopener noreferrer">@SonOfGarr</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png" title="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png" data-thumbnail="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png"
+            srcset="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png, /posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png 1.5x, /posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/microcultures-and-finding-your-place.png" height="2032"  width="2720" >
+    </a></figure></p>
+<h3 id="monitoring--tracing-at-netflix-streaming-data-infrastructure" class="headerLink">
+    <a href="#monitoring--tracing-at-netflix-streaming-data-infrastructure" class="header-mark"></a>Monitoring &amp; Tracing at Netflix Streaming Data Infrastructure</h3><p>Talk by: Allen Wang <a href="https://twitter.com/allenxwang" target="_blank" rel="noopener noreferrer">@allenxwang</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png" title="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png" data-thumbnail="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png"
+            srcset="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png, /posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png 1.5x, /posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/monitoring-tracing-streaming-data-infra.png" height="1978"  width="2686" >
+    </a></figure></p>
+<h3 id="observability-and-the-development-process-not-just-for-ops-anymore" class="headerLink">
+    <a href="#observability-and-the-development-process-not-just-for-ops-anymore" class="header-mark"></a>Observability and the Development Process: Not Just for Ops Anymore</h3><p>Talk by: Christine Yen <a href="https://twitter.com/cyen" target="_blank" rel="noopener noreferrer">@cyen</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png" title="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png" data-thumbnail="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png"
+            srcset="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png, /posts/qcon-sf-2019-recap/observability-and-the-dev-process.png 1.5x, /posts/qcon-sf-2019-recap/observability-and-the-dev-process.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/observability-and-the-dev-process.png" height="2048"  width="2732" >
+    </a></figure></p>
+<h3 id="how-to-invest-in-technical-infrastructure" class="headerLink">
+    <a href="#how-to-invest-in-technical-infrastructure" class="header-mark"></a>How to Invest in Technical Infrastructure</h3><p>Talk by: Will Larson <a href="https://twitter.com/lethain" target="_blank" rel="noopener noreferrer">@lethain</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png" title="How to Invest in Technical Infrastructure notes" data-thumbnail="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png"
+            srcset="/posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png, /posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png 1.5x, /posts/qcon-sf-2019-recap/how-to-invest-in-technical-infrastrucure.png 2x"
+            sizes="auto"
+            alt="How to Invest in Technical Infrastructure notes" height="2048"  width="2732" >
+    </a></figure></p>
+<h3 id="when-machine-leaning-cant-replace-the-human" class="headerLink">
+    <a href="#when-machine-leaning-cant-replace-the-human" class="header-mark"></a>When Machine Leaning Can&rsquo;t Replace the Human</h3><p>Talk by: Pamela Gay <a href="https://twitter.com/starstryder" target="_blank" rel="noopener noreferrer">@starstryder</a></p>
+<p><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png" title="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png" data-thumbnail="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png"
+            srcset="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png, /posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png 1.5x, /posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/when-machine-learning-cant-replace-the-human.png" height="1941"  width="2683" >
+    </a></figure></p>
+<h2 id="my-talk" class="headerLink">
+    <a href="#my-talk" class="header-mark"></a>My Talk</h2><p>The talk I shared was &ldquo;Building Confidence in Healthcare Systems with Chaos Engineering.&rdquo; This talk focused on the technology challenges we were facing, how the team introduced gameday exercises (which were chaos experiments) to evaluate the system designs, and the lessons learned along the way.</p>
+<p><a href="/slides/qcon-sf-2019-confidence-building-w-chaos-engineering.pdf" rel=""><figure><a class="lightgallery" href="/posts/qcon-sf-2019-recap/slides-preview.png" title="/posts/qcon-sf-2019-recap/slides-preview.png" data-thumbnail="/posts/qcon-sf-2019-recap/slides-preview.png">
+        <img
+            
+            loading="lazy"
+            src="/posts/qcon-sf-2019-recap/slides-preview.png"
+            srcset="/posts/qcon-sf-2019-recap/slides-preview.png, /posts/qcon-sf-2019-recap/slides-preview.png 1.5x, /posts/qcon-sf-2019-recap/slides-preview.png 2x"
+            sizes="auto"
+            alt="/posts/qcon-sf-2019-recap/slides-preview.png" height="1384"  width="2958" >
+    </a></figure></a></p>
 <p>Slides can be found <a href="/slides/qcon-sf-2019-confidence-building-w-chaos-engineering.pdf" rel="">here</a>.</p>
-<p><a href="/guides/getting-started-w-chaos-exp-guide.pdf" rel=""><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="getting-started-w-chaos-experiments.png"
-        data-srcset="getting-started-w-chaos-experiments.png, getting-started-w-chaos-experiments.png 1.5x, getting-started-w-chaos-experiments.png 2x"
-        data-sizes="auto"
-        alt="getting-started-w-chaos-experiments.png"
-        title="getting-started-w-chaos-experiments.png" /></a></p>
+<p><a href="/guides/getting-started-w-chaos-exp-guide.pdf" rel=""><figure><a class="lightgallery" href="getting-started-w-chaos-experiments.png" title="getting-started-w-chaos-experiments.png" data-thumbnail="getting-started-w-chaos-experiments.png">
+        <img
+            
+            loading="lazy"
+            src="getting-started-w-chaos-experiments.png"
+            srcset="getting-started-w-chaos-experiments.png, getting-started-w-chaos-experiments.png 1.5x, getting-started-w-chaos-experiments.png 2x"
+            sizes="auto"
+            alt="getting-started-w-chaos-experiments.png">
+    </a></figure></a></p>
 <p>Printout Guide can be found <a href="/guides/getting-started-w-chaos-exp-guide.pdf" rel="">here</a>.</p>
-<h2 id="wrap-up">Wrap-up</h2>
-<p>It was a great experience being at QCon. I really enjoyed getting to meet and talk with other engineers and the talks within this conference were strong. I hope it works out to attend future QCon conferences, and I&rsquo;m really thankful for the opportunity for speaking at this event.</p>
-</div><div class="post-footer" id="post-footer">
+<h2 id="wrap-up" class="headerLink">
+    <a href="#wrap-up" class="header-mark"></a>Wrap-up</h2><p>It was a great experience being at QCon. I really enjoyed getting to meet and talk with other engineers and the talks within this conference were strong. I hope it works out to attend future QCon conferences, and I&rsquo;m really thankful for the opportunity for speaking at this event.</p>
+</div>
+
+        <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -278,9 +326,7 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://che55er.io/posts/qcon-sf-2019-recap/" data-title="QCon San Francisco 2019 Recap" data-via="che55er"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://che55er.io/posts/qcon-sf-2019-recap/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://che55er.io/posts/qcon-sf-2019-recap/" data-title="QCon San Francisco 2019 Recap"><i class="fab fa-hacker-news fa-fw"></i></a></span>
-            </div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://che55er.io/posts/qcon-sf-2019-recap/" data-title="QCon San Francisco 2019 Recap" data-via="che55er"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://che55er.io/posts/qcon-sf-2019-recap/"><span class="fab fa-linkedin fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://che55er.io/posts/qcon-sf-2019-recap/" data-title="QCon San Francisco 2019 Recap"><span class="fab fa-hacker-news fa-fw"></span></button></div>
         </div>
     </div>
 
@@ -295,22 +341,26 @@ Overview QCon is a conference which organizes its talks into specific tracks."/>
             <a href="/posts/defrag-your-calendar/" class="next" rel="next" title="Defrag your Calendar">Defrag your Calendar<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"></div></article></div>
-            </main><footer class="footer">
+        </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"></div>
-        </div>
-    </footer></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script>
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHFJK2MHCT"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-RHFJK2MHCT');
-    </script></body>
+    </script></div>
+</body>
+
 </html>
