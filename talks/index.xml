@@ -66,14 +66,6 @@
       <description>We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept.</description>
     </item>
     <item>
-      <title>Diagramming as Code</title>
-      <link>https://che55er.io/talks/diagramming-as-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
-      <guid>https://che55er.io/talks/diagramming-as-code/</guid>
-      <description>AbstractIt is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date. What if we could make it easier to maintain visualizations of our systems, by removing the burden of classical diagramming tools or forcing people into a presentation building tool to illustrate their system?
-Treating our documentation like code can be applied to how we build diagrams, through textual languages that can represent our systems.</description>
-    </item>
-    <item>
       <title>Docs as Code</title>
       <link>https://che55er.io/talks/docs-as-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
@@ -126,6 +118,14 @@ AbstractChange is something we must continually navigate. In a large organizatio
       <guid>https://che55er.io/talks/navigating-change-w-cop-v2/</guid>
       <description>Newer revision of content from 2022 DevOps Enterprise Summit.
 AbstractChange is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent communication across large groups, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary.</description>
+    </item>
+    <item>
+      <title>Diagramming as Code</title>
+      <link>https://che55er.io/talks/diagramming-as-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <guid>https://che55er.io/talks/diagramming-as-code/</guid>
+      <description>AbstractIt is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date. What if we could make it easier to maintain visualizations of our systems, by removing the burden of classical diagramming tools or forcing people into a presentation building tool to illustrate their system?
+Treating our documentation like code can be applied to how we build diagrams, through textual languages that can represent our systems.</description>
     </item>
   </channel>
 </rss>
