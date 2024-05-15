@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/black.css">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+        <style>
+            .foreground-text-light {
+                background-color: rgba(255, 255, 255, .8);
+            }
+            .foreground-text-dark {
+                background-color: rgba(25, 25, 25, .8);
+            }
+        </style>
+    </head> 
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h2 class="r-fit-text">Diagramming as Code</h2>
+                    <img src="img/logo.png" />
+
+                    <table>
+                        <tr>
+                            <td style="vertical-align: middle;"><img src="img/me.png" width="100" /></td>
+                            <td style="vertical-align: middle;">
+                                Carl Chesser
+                                <br />
+                                <small><a href="https://twitter.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Visual vs. Textual -->
+                <section data-background-image="img/diagram-example.gif">
+                </section>
+
+                <!-- Intro -->
+                <section data-markdown>
+                    <textarea data-template>
+                        ## 🤨
+                        ## What is Diagramming as Code?
+                    
+                        A philosophy that you should be building diagrams with the same tools as code.
+                        This aligns with _Docs as Code_.
+                        ---
+                        ## What is Docs as Code?
+
+                        Well, it's documentation...
+
+                        🔤 Authored in Plain Text Markup <br />
+                        🌳 Managed in Version Control (git) <br />
+                        💬 Included in Code Reviews <br />
+                        🐞 Managed with an Issue Tracker <br />
+                        ---
+                        ## 🚀
+                        ## Quick Overview
+                        
+                        * graphviz
+                        * Mermaid
+                        * Diagrams
+                        * D2
+                        * draw.io
+                    </textarea>
+                </section>
+
+                <!-- Graphviz https://graphviz.org/ -->
+                <section >
+                    <h2>graphviz</h2>
+                    <p>License: Common Public License Version 1.0</p>
+                    <pre>
+                        <code data-trim data-noescape>
+                            digraph G {
+                                rankdir="LR"
+                                db[shape="cylinder"];
+                                a -> b -> db;
+                                b -> c -> db;
+                            }
+                        </code>
+                    </pre>
+                    <img src="img/graphviz-example.png" />
+                </section>
+
+                <!-- Mermaid -->
+                <section data-background-iframe="https://mermaid.js.org/" data-background-interactive>
+                    <div class="foreground-text-dark">
+                        <h2>Mermaid</h2>
+                        Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown <br />
+                        📄 License: MIT <br />
+                        ✨ Popular ✨ <br />
+                    </div>
+                </section>
+                <section>
+                    <h2>Mermaid Example</h2>
+                    <pre>
+                        <code data-trim data-noescape>
+                        flowchart LR
+                            a --> b --> id1[(d)]
+                            b --> c
+                            c --> id1[(d)]
+                        </code>
+                    </pre>
+                    <div class="mermaid" >
+                        <pre>
+                          %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+                          flowchart LR
+                            a --> b --> id1[(d)]
+                            b --> c
+                            c --> id1[(d)]
+                        </pre>
+                    </div>
+                </section>
+                <section data-background-video="video/dac-bg-mermaid-example.mp4" 
+                data-background-video-loop data-background-size="cover" >
+                    <div class="foreground-text-dark">
+                        <h2>Mermaid</h2>
+                        <p>Support for many different types of diagrams.</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>🪄</h2>
+                    <h2>Mermaid Integrations</h2>
+                    <table>
+                        <tr>
+                            <td>VSCode</td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/mermaid-vscode.gif" />
+                            </td>
+                            <td>
+                                <img src="img/mermaid-github-integration.gif" />
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section data-background-video="video/chatgpt-mermaid-example.mp4" 
+                    data-background-video-loop data-background-size="cover" >
+                    <div class="foreground-text-dark">
+                        <h2>Mermaid</h2>
+                        <p>Even understood by generative systems (ChatGPT).</p>
+                    </div>
+                </section>
+
+                <!-- Diagrams https://diagrams.mingrammer.com/ -->
+                <section data-background-iframe="https://diagrams.mingrammer.com/" data-background-interactive>
+                    <div class="foreground-text-dark">
+                        <h2>Diagrams</h2>
+                        🐍 Python package <br />
+                        📄 License: Mozilla <br />
+                        🔌 Utilizes graphviz <br />
+                    </div>
+                </section>
+                <section>
+                    <h3>Diagrams</h3>
+                        <pre>
+                            <code data-trim data-noescape>
+                                from diagrams import Diagram
+                                from diagrams.aws.compute import EC2
+                                from diagrams.aws.database import RDS
+                                from diagrams.aws.network import ELB
+                                
+                                with diagrams.Diagram("services"):
+                                    b_service = EC2("b")
+                                    db = RDS("db") 
+                                    ELB("a") >> b_service >> db
+                                    b_service >> EC2("c") >> db
+                            </code>
+                        </pre>
+
+                        <img src="img/diagrams-example.png" height="20%"/>
+                </section>
+                <section data-background-video="video/dac-bg-diagrams-example.mp4" 
+                data-background-video-loop data-background-size="cover" >
+                    <div class="foreground-text-dark">
+                        <h2>Diagrams</h2>
+                        <p>Large inventory of iconography.</p>
+                    </div>
+                </section>
+
+                <!-- D2 -->
+                <section data-background-iframe="https://d2lang.com/" data-background-interactive >
+                    <div class="foreground-text-dark">
+                        <h2>D2</h2>
+                        📄 License: Mozilla
+                    </div>
+                </section>
+                <section>
+                    <h2>D2 - Example</h2>
+                    <pre>
+                        <code data-trim data-noescape>
+                            direction: right
+                            a -> b -> db
+                            b -> c -> db
+                            db.shape: cylinder 
+                        </code>
+                    </pre>
+                    <img src="img/d2-example.png" />
+                </section>
+                <section data-background-video="video/dac-bg-d2-example.mp4" data-background-video-loop data-background-size="cover" >
+                    <div class="foreground-text-dark">
+                        <h2>D2</h2>
+                        <p>Different styles with animated flows!</p>
+                    </div>
+                </section>
+
+                <!-- draw.io -->
+                <section data-background-image="img/drawio-background.png" data-background-opacity="0.2">
+                    <div class="foreground-text-dark">
+                    <h2>draw.io</h2>
+                    ✏️ Some visuals need manual manipulation. <br />
+                    👨‍💻 Can use draw.io Desktop + source control changes.<br />
+                    📄 License: Apache License 2.0
+                    </div>
+                </section>
+                <section data-background-video="video/drawio-import-mermaid.mp4" 
+                data-background-video-loop data-background-size="cover" >
+                    <div class="foreground-text-dark">
+                        <h2>draw.io - Advanced Imports</h2>
+                        You can import diagrams through text and then edit!
+                    </div>
+                </section>
+                <section>
+                    <h2>✅</h2>
+                    <h2>Recap</h2>
+                    <ul>
+                        <li>graphviz</li>
+                        <li>Mermaid</li>
+                        <li>Diagrams</li>
+                        <li>D2</li>
+                        <li>draw.io</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Thank you! 🎉</h2>
+                    Carl Chesser
+                    <br />
+                    <small><a href="https://twitter.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/mermaid/mermaid.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                autoSlide: 15000,
+                  loop: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ]
+            });
+        </script>
+    </body>
+</html>
