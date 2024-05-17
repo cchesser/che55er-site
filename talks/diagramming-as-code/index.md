@@ -11,4 +11,6 @@ Treating our documentation like code can be applied to how we build diagrams, th
 
 * [DevOpsDays KC 2024](https://devopsdays.org/events/2024-kansas-city/program/carl-chesser-ignite)
 
+# Slides
 
+{{< slides "/slides/diagramming-as-code/" >}}

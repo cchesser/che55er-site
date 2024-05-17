@@ -4,9 +4,19 @@
         <link>https://che55er.io/</link>
         <description>thoughts of Carl Chesser</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
-            <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><lastBuildDate>Sat, 24 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><lastBuildDate>Fri, 17 May 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://che55er.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>DevOpsDays KC 2024 Recap</title>
+    <link>https://che55er.io/posts/devopsdayskc-2024/</link>
+    <pubDate>Fri, 17 May 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Carl Chesser</name>
+    </author><guid>https://che55er.io/posts/devopsdayskc-2024/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/devopsdayskc-2024/img/madrid-featured.png" referrerpolicy="no-referrer">
+            </div>DevOpsDays KC returned this week since 2019! It was awesome to see so many faces I hadn&rsquo;t seen in years. It was a nice two days, at the Madrid Theathre, local food trucks for lunch, and great discussions.
+Huge thanks goes out to the organizers for getting this conference re-established in KC! I also liked how the conference was started on Wednesday morning, stating that this event was intended to occur during the middle of the week, so you can share what you learned with others on Friday.]]></description>
+</item><item>
     <title>Ground Truth</title>
     <link>https://che55er.io/posts/ground-truth/</link>
     <pubDate>Sat, 24 Sep 2022 00:00:00 &#43;0000</pubDate><author>
@@ -89,15 +99,5 @@ The NameYou may be wondering why I&rsquo;m calling this &ldquo;The CHANGELOG.&rd
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/defrag-your-calendar/defrag-calendar.png" referrerpolicy="no-referrer">
             </div>Time is a one of your most valuable assets. As engineers grow with their skills and past contributions, they get invited to participate in more meetings within their day. These meetings get scheduled in time slots that show as available on their calendar, or sometimes even when they are already shown as busy - posing as a conflict. This can commonly result in their day being broken down into many different meetings, with small windows of free time on their schedule.]]></description>
-</item><item>
-    <title>QCon San Francisco 2019 Recap</title>
-    <link>https://che55er.io/posts/qcon-sf-2019-recap/</link>
-    <pubDate>Thu, 14 Nov 2019 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/qcon-sf-2019-recap/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/qcon-sf-2019-recap/getting-started-w-chaos-experiments.png" referrerpolicy="no-referrer">
-            </div>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems. This blog post will be a brief recap of my experience and the notes I took from the talks I attended.
-OverviewQCon is a conference which organizes its talks into specific tracks.]]></description>
 </item></channel>
 </rss>
