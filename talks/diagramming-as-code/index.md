@@ -14,3 +14,8 @@ Treating our documentation like code can be applied to how we build diagrams, th
 # Slides
 
 {{< slides "/slides/diagramming-as-code/" >}}
+
+# Recording
+
+{{< youtube id="uSepxVACfDA?start=318" loading=lazy >}}
+
