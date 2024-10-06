@@ -20,6 +20,7 @@ Below are resources and references from my Regex Express talk.
 * [iHateRegex](https://ihateregex.io/): An interactive editor in its playground, visualizes pattern matching (similar to Regexper), allows you to search other regular expression patterns, and submit ones.
 * [Regex Learn](https://regexlearn.com/): A site with a free 101 course, that guides through learning about regular expression where you are tested along the way. It includes other common resources like a [cheatsheet](https://regexlearn.com/cheatsheet) and [playground](https://regexlearn.com/playground) to test expressions on text.
 * [Regular Expressions for Regular Folk book](https://refrf.dev/): A full site with visual examples. The book itself is single page, which can make it easier for printing or saving to read later.
+* [Cyrilex](https://extendsclass.com/regex-tester.html): A simple interactive editor that generates visual diagrams from a provided regular expression.
 
 ## Games
 
