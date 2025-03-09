@@ -4,6 +4,7 @@ weight: 100
 resources:
 - name: featured-image-preview
   src: "regex-express.png"
+showSummary: false
 ---
 
 ![](regex-express-title.png)

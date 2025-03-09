@@ -12,4 +12,4 @@ We live in a complex and fast-growing industry. While other engineering discipli
 
 In this talk, we focus on how we can improve in communicating our technical ideas across the spectrum of stakeholders in our systems. We will walk through the art of boundary spanning, where we seek to effectively communicate across different groups. This will include ways to convey ideas with different audiences and how to readjust when misunderstandings arise. We will review concise ways of sharing software engineering concepts through laws and principles, but also approaches in guiding others who may not be familiar with the term. This will revisit timeless software engineering essays whose notoriety is based on their communication effectiveness. Finally, we will go through understanding different audiences and ways to associate relatable concepts to ensure a point is well understood.
 
-Also, here is the related [<i class='fas fa-map'></i> Words Matter guide](/guides/words-matter-guide.pdf).
+Also, here is the related [Words Matter guide](/guides/words-matter-guide.pdf).

@@ -1,7 +1,11 @@
 ---
 title: blog series
 subtitle: collections of blogs
-comments: false
+showDate: false
+showReadingTime: false
+showWordCount: false
+showComments: false
+showZenMode: false
 ---
 
 This is a collection of blogs that carried a similar theme, but were broken into individual posts.

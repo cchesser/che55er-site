@@ -1,8 +1,13 @@
 ---
 title: projects
-subtitle: other things that I work on
-comments: false
+description: other things that I work on
+showDate: false
+showReadingTime: false
+showWordCount: false
+showZenMode: false
 ---
+
+Other things that I work on...
 
 ## jvmperf.net - Java Performance Workshop
 

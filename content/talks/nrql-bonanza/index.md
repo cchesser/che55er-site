@@ -13,6 +13,6 @@ which you may not have known about. This can include data about your data usage
 This also includes ways you can explore the data dictionary or execute queries 
 through NerdGraph (GraphQL).
 
-<iframe src="https://cchesser.github.io/nrql-bonanza/" width="640" height="360" style="	aspect-ratio: 16 / 9; height: 100%; width: 100%;" frameborder="0"></iframe>
+{{< slides "https://cchesser.github.io/nrql-bonanza/" >}}
 
 _You can view [the full slides here](https://cchesser.github.io/nrql-bonanza/), which are implemented with [revealjs](https://revealjs.com/)._

@@ -1,0 +1,1 @@
+There are three services: location, alert, weather. Each have their own database. There is an API gateway that fronts access to all three services. The location service pulls from a CDN, and the other two services do not have any external dependencies. The lock service is utilized by all three prior to making any updates to their database.

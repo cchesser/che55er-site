@@ -63,7 +63,7 @@ If you haven’t tried this approach, I recommend at least trying it. If the col
 
 ## Conclusion
 
-I hope these points help further explain some of the additions I have recently made in the virtual edition of the guide. Feel free to check out my past talk on the [Hitchhiker’s Guide to Meetings]({{< ref "/talks#the-hitchhikers-guide-to-meetings" >}}) to learn more about the other points I share in the original guide and what has been carried over into the virtual edition. I would be curious to hear your thoughts on what other lessons you have found valuable in being effective within virtual meetings. 
+I hope these points help further explain some of the additions I have recently made in the virtual edition of the guide. Feel free to check out my past talk on the [Hitchhiker’s Guide to Meetings]({{< ref "/talks/hitchhikers-guide-to-meetings" >}}) to learn more about the other points I share in the original guide and what has been carried over into the virtual edition. I would be curious to hear your thoughts on what other lessons you have found valuable in being effective within virtual meetings. 
 
 Please, [send me an email with your thoughts](mailto:cchesser@gmail.com), I would love to include other ideas into the guide to further improve it. 
 

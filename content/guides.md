@@ -1,7 +1,9 @@
 ---
 title: guides
 subtitle: guidance in simple illustrations
-comments: false
+showDate: false
+showReadingTime: false
+showWordCount: false
 ---
 
 Here are some of the guides I have built. These are intended to be concise so that they can be printed on a single page. I prefer to build these guides based on talks I have given, where they serve as basic set of notes that hopefully can further remind others of the content. Some of these are very simple, essentially just an image to help serve as a reminder of content.
@@ -13,8 +15,6 @@ Here are some of the guides I have built. These are intended to be concise so th
 ![Words Matter](/img/words-matter-guide.png)
 
 [Get the 8.5 x 11" PDF version with paper airplane pattern on the back](/guides/words-matter-guide.pdf)
-
-<button class="btn"><i class="fa fa-home"></i></button>
 
 ### References
 
