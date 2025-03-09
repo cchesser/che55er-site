@@ -6,126 +6,171 @@
     <description>Recent content in talks on thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
-    <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster>
+    
     <atom:link href="https://che55er.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Diagnose Your Lethargic JVM</title>
       <link>https://che55er.io/talks/diagnose-your-lethargic-jvm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/diagnose-your-lethargic-jvm/</guid>
-      <description>If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development. This skill becomes even more critical once you are required to troubleshoot and evaluate your service in a unique production environment. Understanding what operations are consuming most of our CPU time, as well as, what areas of your code are wasting resources will greatly improve your ability to diagnose a sluggish JVM.</description>
+      <description>If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagnose-your-lethargic-jvm/diagnose-your-lethargic-jvm.png" />
     </item>
+    
     <item>
       <title>The Power of Pranks</title>
       <link>https://che55er.io/talks/the-power-of-pranks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/the-power-of-pranks/</guid>
-      <description>The most valuable asset in an organization is the people. Without people, you don&amp;rsquo;t have an organization (excluding robots). In the world of software development, many forces get applied to the people within your team which harm or degrade their quality of life. Fixed deadlines, the presence of Murphy&amp;rsquo;s Law in production environments, compilers which don&amp;rsquo;t understand your intentions, or just dealing with humans that don&amp;rsquo;t understand your code is working as designed.</description>
+      <description>The most valuable asset in an organization is the people. Without people, you don&amp;rsquo;t have an organization (excluding robots). In the world of software development, many forces get applied to the people within your team which harm or degrade their quality of life.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/the-power-of-pranks/the-power-of-pranks.png" />
     </item>
+    
     <item>
       <title>The Hitchhiker&#39;s Guide to Meetings</title>
       <link>https://che55er.io/talks/hitchhikers-guide-to-meetings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/hitchhikers-guide-to-meetings/</guid>
-      <description>Meetings, the human ritual of synchronous communication. They are considered the cornerstone activity of keeping teams aligned on their mission. As engineers, we encounter meetings routinely in order to facilitate team work in software development. While meetings are a core ritual to team work, we many times find meetings drain our efficiency of software development. As a result, we perceive meetings as a negative exercise, only hindering us from our larger goals of software creation.</description>
+      <description>Meetings, the human ritual of synchronous communication. They are considered the cornerstone activity of keeping teams aligned on their mission. As engineers, we encounter meetings routinely in order to facilitate team work in software development.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/hitchhikers-guide-to-meetings/hitchhikers-guide-to-meetings.png" />
     </item>
+    
     <item>
       <title>Decisions: The Pursuit of Options</title>
       <link>https://che55er.io/talks/decisions-the-pursuit-of-options/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/decisions-the-pursuit-of-options/</guid>
-      <description>One of the most powerful things we can do is make a decision. With the ever growing landscape of technology choices, we are faced with making a decision on a frequent basis. While decision making is not something we view as a core activity of engineering, it is the one thing we are doing at all levels of our architectures. This type of activity not only deserves our focus, but should also be considered as part of our craft that we pursue with improvement.</description>
+      <description>One of the most powerful things we can do is make a decision. With the ever growing landscape of technology choices, we are faced with making a decision on a frequent basis.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/decisions-the-pursuit-of-options/decisions-the-pursuit-of-options.png" />
     </item>
+    
     <item>
       <title>Building Confidence in Healthcare Systems Through Chaos Engineering</title>
       <link>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</guid>
-      <description>QCon San Francisco 2019 recording Slides Get the 8.5 x 11&amp;quot; PDF hand-out QCon SF 2019 Recap: Blog post that summarized my experience at the conference and all of my notes. This guide includes a second page, to convert the guide into a paper airplane.</description>
+      <description>QCon San Francisco 2019 recording Slides Get the 8.5 x 11&amp;quot; PDF hand-out QCon SF 2019 Recap: Blog post that summarized my experience at the conference and all of my notes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/building-confidence-in-healthcare-systems.png" />
     </item>
+    
     <item>
       <title>Innovation Invigoration</title>
       <link>https://che55er.io/talks/innovation-invigoration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/innovation-invigoration/</guid>
-      <description>When I began my career in software engineering, I was fueled by the joy of programming and working through unique problems knowing that an answer would be discoverable through my trusty debugger and perseverance. As my career grew in the field, I began to learn more of the challenging constraints with large systems, human organizations, and complexity that seemed untamable. Through additional exposure to these larger problems that no longer could be tackled through the use of my beloved debugger, I began to see how it required different care and feeding at both the personal and team level to overcome these challenges.</description>
+      <description>When I began my career in software engineering, I was fueled by the joy of programming and working through unique problems knowing that an answer would be discoverable through my trusty debugger and perseverance.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/innovation-invigoration/innovation-invigoration.png" />
     </item>
+    
     <item>
       <title>Chaos with Care</title>
       <link>https://che55er.io/talks/chaos-with-care/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/chaos-with-care/</guid>
-      <description>Slides In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company.</description>
+      <description>Slides In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/chaos-with-care/chaos-with-care.png" />
     </item>
+    
     <item>
       <title>Words Matter</title>
       <link>https://che55er.io/talks/words-matter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/words-matter/</guid>
-      <description>We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept.</description>
+      <description>We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/words-matter/words-matter.png" />
     </item>
+    
     <item>
       <title>Docs as Code</title>
       <link>https://che55er.io/talks/docs-as-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/docs-as-code/</guid>
-      <description>AbstractDocumentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.
-In this talk, we will explore how you can start managing your documentation like code.</description>
+      <description>Abstract # Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/docs-as-code/docs-as-code.png" />
     </item>
+    
     <item>
       <title>Learn in Production with Traffic Management</title>
       <link>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</guid>
-      <description>AbstractOur systems are continually evolving, spurring the necessity to focus on how we can introduce changes which minimize the risk of a “big bang” event. By examining how traffic flows through your distributed systems, you can find ways of testing and evaluating gradual changes. By understanding different ways of managing your traffic, you build new options for evolving and testing your systems.
-In this talk, we will cover approaches applied at Cerner Corporation when evolving their service ecosystem by leveraging different traffic management patterns.</description>
+      <description>Abstract # Our systems are continually evolving, spurring the necessity to focus on how we can introduce changes which minimize the risk of a “big bang” event. By examining how traffic flows through your distributed systems, you can find ways of testing and evaluating gradual changes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/learn-in-prod-w-traffic-mgmt.png" />
     </item>
+    
     <item>
       <title>Tend to your Observability Garden</title>
       <link>https://che55er.io/talks/tend-to-your-o11y-garden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/tend-to-your-o11y-garden/</guid>
-      <description>This talk was presented at New Relic&amp;rsquo;s FutureStack 2022 conference, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization. This walks through some practical examples with how we focused on cultural aspects of learning and sharing approaches, while also including concrete examples in how we scaled and seeked ways in balancing consistency and autonomy in the usage of New Relic.</description>
+      <description>This talk was presented at New Relic&amp;rsquo;s FutureStack 2022 conference, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/tend-to-your-o11y-garden/tend-to-your-o11y-garden.png" />
     </item>
+    
     <item>
       <title>Regex Express</title>
       <link>https://che55er.io/talks/regex-express/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/regex-express/</guid>
       <description>Below are resources and references from my Regex Express talk.
-Learning Resources RegExr: Interactive editor which visual signals matching, details on the matches, cheatsheet notes, ability to save favorite expressions. Rubular: A simple interactive editor that signals expression matches on a selection of text and is paired with visible quick reference. Rexegg: A full site of content dedicated to all things with regular expressions. This includes both basic to complex topics, making it a good resource for a large spectrum of learning.</description>
+Learning Resources # RegExr: Interactive editor which visual signals matching, details on the matches, cheatsheet notes, ability to save favorite expressions.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/regex-express/regex-express.png" />
     </item>
+    
     <item>
       <title>Navigating Change with Communities of Practice</title>
       <link>https://che55er.io/talks/navigating-change-w-cop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/navigating-change-w-cop/</guid>
       <description>Presentation was part of DevOps Enterprise Summit - Virtual 2022.
-AbstractChange is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected.</description>
+Abstract # Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop-cover.png" />
     </item>
+    
     <item>
       <title>NRQL Bonanza</title>
       <link>https://che55er.io/talks/nrql-bonanza/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/nrql-bonanza/</guid>
-      <description>This talk was part of a New Relic User Group session in August 2023. This short talk walks through some different examples of data you can access in New Relic &amp;hellip; which you may not have known about. This can include data about your data usage (ingestion), your agents (version compliance), and even the queries being executed. This also includes ways you can explore the data dictionary or execute queries through NerdGraph (GraphQL).</description>
+      <description>This talk was part of a New Relic User Group session in August 2023. This short talk walks through some different examples of data you can access in New Relic &amp;hellip; which you may not have known about.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/nrql-bonanza/nrql-bonanza.png" />
     </item>
+    
     <item>
       <title>Navigating Change with Communities of Practice (2023 revision)</title>
       <link>https://che55er.io/talks/navigating-change-w-cop-v2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/navigating-change-w-cop-v2/</guid>
       <description>Newer revision of content from 2022 DevOps Enterprise Summit.
-AbstractChange is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent communication across large groups, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary.</description>
+Abstract # Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop-cover.jpg" />
     </item>
+    
     <item>
       <title>Diagramming as Code</title>
       <link>https://che55er.io/talks/diagramming-as-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cchesser@gmail.com (Carl Chesser)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://che55er.io/talks/diagramming-as-code/</guid>
-      <description>AbstractIt is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date. What if we could make it easier to maintain visualizations of our systems, by removing the burden of classical diagramming tools or forcing people into a presentation building tool to illustrate their system?
-Treating our documentation like code can be applied to how we build diagrams, through textual languages that can represent our systems.</description>
+      <description>Abstract # It is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagramming-as-code/diagramming-as-code.png" />
     </item>
+    
   </channel>
 </rss>

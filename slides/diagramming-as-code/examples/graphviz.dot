@@ -1,0 +1,20 @@
+digraph {
+  rankdir="LR"
+  // the normal ranking algorithm doesn't know what to
+  // do with clusters with rank="same".
+  // If you opt in to the 'new' ranking algorithm, it
+  // works as expected.
+  newrank="true"
+
+  A -> B
+  A -> C
+  B -> C
+  C -> D
+
+  subgraph cluster_subs {
+    label="Bs and Cs"
+    rank="same"
+    B
+    C
+  }
+}

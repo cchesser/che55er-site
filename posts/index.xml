@@ -1,101 +1,243 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>All Posts - thoughts</title>
-        <link>https://che55er.io/posts/</link>
-        <description>All Posts | thoughts</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cchesser@gmail.com (Carl Chesser)</managingEditor>
-            <webMaster>cchesser@gmail.com (Carl Chesser)</webMaster><lastBuildDate>Fri, 17 May 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://che55er.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>DevOpsDays KC 2024 Recap</title>
-    <link>https://che55er.io/posts/devopsdayskc-2024/</link>
-    <pubDate>Fri, 17 May 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/devopsdayskc-2024/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/devopsdayskc-2024/img/madrid-featured.png" referrerpolicy="no-referrer">
-            </div>DevOpsDays KC returned this week since 2019! It was awesome to see so many faces I hadn&rsquo;t seen in years. It was a nice two days, at the Madrid Theathre, local food trucks for lunch, and great discussions.
-Huge thanks goes out to the organizers for getting this conference re-established in KC! I also liked how the conference was started on Wednesday morning, stating that this event was intended to occur during the middle of the week, so you can share what you learned with others on Friday.]]></description>
-</item><item>
-    <title>Ground Truth</title>
-    <link>https://che55er.io/posts/ground-truth/</link>
-    <pubDate>Sat, 24 Sep 2022 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/ground-truth/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/ground-truth/ground-truth-preview.png" referrerpolicy="no-referrer">
-            </div>I wanted to discuss a term that I found memorable recently: ground truth. It resonated with me when I first heard it, as I’m routinely in discussions where we are articulating technical problems and how we plan to solve them. This act of describing the problem to an audience with varying levels of understanding can be challenging. We often have limited time in how we bring people to shared understanding. This restricts our ability to sufficiently describe all the history and contributing factors of that problem.]]></description>
-</item><item>
-    <title>Habits through Preventional Goals</title>
-    <link>https://che55er.io/posts/habits-through-preventional-goals/</link>
-    <pubDate>Fri, 03 Dec 2021 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/habits-through-preventional-goals/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/habits-through-preventional-goals/drawings.jpg" referrerpolicy="no-referrer">
-            </div>Over the last year, I have found myself trying to establish new routines. With working more from home, I wanted to make subtle changes in different aspects in my life. For example, I previously used to enjoy podcasts on my drive to work. Now, I focus on listening to these while I do chores around the house. In this blog post, I will share how I found an effective way of establishing a new habit through something simple which happens to have science behind it.]]></description>
-</item><item>
-    <title>KCDC 2021 Recap</title>
-    <link>https://che55er.io/posts/kcdc-2021-recap/</link>
-    <pubDate>Fri, 17 Sep 2021 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/kcdc-2021-recap/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/kcdc-2021-recap/apollo-guidance.png" referrerpolicy="no-referrer">
-            </div>These last two days were KCDC in Kansas City for me. This was my first in-person developer conference since late 2019. While there were still restrictions (wearing masks), it was a fantastic time to see people again. I was able to meet up with past colleagues and discover new people at lunch and through talks, an experience that immediately filled a void in my life. While I have participated in other virtual conferences since the pandemic started, the in-person session was a great experience.]]></description>
-</item><item>
-    <title>Universal Diagrams</title>
-    <link>https://che55er.io/posts/universal-diagrams/</link>
-    <pubDate>Thu, 08 Apr 2021 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/universal-diagrams/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/universal-diagrams/emotional-indicators.png" referrerpolicy="no-referrer">
-            </div>Diagraming is a powerful way of communicating ideas to others. In this past year, I have found how much I have missed the time of just working with a group and using a whiteboard to convey our ideas. In the past few months, I have referenced past diagrams or shared recent examples which included a few properties in the diagram that I believe are useful. In this short blog post, I will share some thoughts on the power of diagrams which use simple universal symbols.]]></description>
-</item><item>
-    <title>CHANGELOG: What I&#39;ve Learned</title>
-    <link>https://che55er.io/posts/changelog-what-ive-learned/</link>
-    <pubDate>Tue, 01 Dec 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/changelog-what-ive-learned/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/changelog-what-ive-learned/changelog-recap-preview.png" referrerpolicy="no-referrer">
-            </div>Earlier this year, I shared a communication approach I was trying with my team, called a CHANGELOG. I have been applying this approach for the past six months and have learned a few lessons along the way. This post will recap some of these lessons learned, so it may better inform you the benefits and the costs of applying it.
-Improved 1:1 ConversationsA primary reason why I started applying the CHANGELOG, was to simplify the routine need of communicating current topics with team members.]]></description>
-</item><item>
-    <title>Hitchhiker&#39;s Guide to Meetings: Virtual Edition</title>
-    <link>https://che55er.io/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/</link>
-    <pubDate>Thu, 12 Nov 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/hitchhikers-guide-to-meetings-virtual-edition-guide.png" referrerpolicy="no-referrer">
-            </div>Two years ago, I worked on a guide that I called the Hitchhiker&rsquo;s Guide to Meetings. This guide highlighted many of the lessons I had learned over the years involving meetings at work. I have found having this guide to be a helpful reminder on things to continue to practice with the goal of optimizing time in meetings. With this year&rsquo;s change of virtual meetings being the primary means of engagement, I wanted to make an update to this guide to highlight some of these newer lessons with the virtual format.]]></description>
-</item><item>
-    <title>Seek the Second Story</title>
-    <link>https://che55er.io/posts/seek-the-second-story/</link>
-    <pubDate>Mon, 15 Jun 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/seek-the-second-story/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/seek-the-second-story/old-new-view.png" referrerpolicy="no-referrer">
-            </div>I recently listened to a talk that reminded me of some core lessons on how we can view &ldquo;human error,&rdquo; and how it can help us both with our work and personal lives. From that talk, the content from The Field Guide to Understanding &lsquo;Human Error&rsquo; by Sidney Dekker is referenced. This book continues to grow as the cornerstone reference on building a safety culture. I wanted to share a short blog post as a refresher on this content, and how we can improve our systems by not looking at &ldquo;human error&rdquo; as the cause, but as the symptom of a larger problem.]]></description>
-</item><item>
-    <title>Share a CHANGELOG</title>
-    <link>https://che55er.io/posts/share-a-changelog/</link>
-    <pubDate>Tue, 05 May 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/share-a-changelog/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/share-a-changelog/changelog.png" referrerpolicy="no-referrer">
-            </div>IntroductionI recently tried a new experiment at work which I&rsquo;m calling &ldquo;The CHANGELOG.&rdquo; My goal with this experiment is to improve the communication within my team and with all the product groups I routinely work with. I thought it would be helpful to share some of my notes here on what and why I decided to do it.
-The NameYou may be wondering why I&rsquo;m calling this &ldquo;The CHANGELOG.&rdquo; There is of course a reason, and it isn&rsquo;t to convey that I&rsquo;m yelling due to the capitalization of CHANGELOG.]]></description>
-</item><item>
-    <title>Defrag your Calendar</title>
-    <link>https://che55er.io/posts/defrag-your-calendar/</link>
-    <pubDate>Mon, 10 Feb 2020 00:00:00 &#43;0000</pubDate><author>
-        <name>Carl Chesser</name>
-    </author><guid>https://che55er.io/posts/defrag-your-calendar/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/defrag-your-calendar/defrag-calendar.png" referrerpolicy="no-referrer">
-            </div>Time is a one of your most valuable assets. As engineers grow with their skills and past contributions, they get invited to participate in more meetings within their day. These meetings get scheduled in time slots that show as available on their calendar, or sometimes even when they are already shown as busy - posing as a conflict. This can commonly result in their day being broken down into many different meetings, with small windows of free time on their schedule.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on thoughts</title>
+    <link>https://che55er.io/posts/</link>
+    <description>Recent content in Posts on thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+    <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://che55er.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOpsDays KC 2024 Recap</title>
+      <link>https://che55er.io/posts/devopsdayskc-2024/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/devopsdayskc-2024/</guid>
+      <description>DevOpsDays KC returned this week since 2019! It was awesome to see so many faces I hadn&amp;rsquo;t seen in years. It was a nice two days, at the Madrid Theathre, local food trucks for lunch, and great discussions.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/devopsdayskc-2024/img/madrid-featured.png" />
+    </item>
+    
+    <item>
+      <title>Ground Truth</title>
+      <link>https://che55er.io/posts/ground-truth/</link>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/ground-truth/</guid>
+      <description>I wanted to discuss a term that I found memorable recently: ground truth. It resonated with me when I first heard it, as I’m routinely in discussions where we are articulating technical problems and how we plan to solve them.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/ground-truth/ground-truth-preview.png" />
+    </item>
+    
+    <item>
+      <title>Habits through Preventional Goals</title>
+      <link>https://che55er.io/posts/habits-through-preventional-goals/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/habits-through-preventional-goals/</guid>
+      <description>Over the last year, I have found myself trying to establish new routines. With working more from home, I wanted to make subtle changes in different aspects in my life. For example, I previously used to enjoy podcasts on my drive to work.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/habits-through-preventional-goals/drawings.jpg" />
+    </item>
+    
+    <item>
+      <title>KCDC 2021 Recap</title>
+      <link>https://che55er.io/posts/kcdc-2021-recap/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/kcdc-2021-recap/</guid>
+      <description>These last two days were KCDC in Kansas City for me. This was my first in-person developer conference since late 2019. While there were still restrictions (wearing masks), it was a fantastic time to see people again.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/kcdc-2021-recap/apollo-guidance.png" />
+    </item>
+    
+    <item>
+      <title>Universal Diagrams</title>
+      <link>https://che55er.io/posts/universal-diagrams/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/universal-diagrams/</guid>
+      <description>Diagraming is a powerful way of communicating ideas to others. In this past year, I have found how much I have missed the time of just working with a group and using a whiteboard to convey our ideas.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/universal-diagrams/emotional-indicators.png" />
+    </item>
+    
+    <item>
+      <title>CHANGELOG: What I&#39;ve Learned</title>
+      <link>https://che55er.io/posts/changelog-what-ive-learned/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/changelog-what-ive-learned/</guid>
+      <description>Earlier this year, I shared a communication approach I was trying with my team, called a CHANGELOG. I have been applying this approach for the past six months and have learned a few lessons along the way.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/changelog-what-ive-learned/changelog-recap-preview.png" />
+    </item>
+    
+    <item>
+      <title>Hitchhiker&#39;s Guide to Meetings: Virtual Edition</title>
+      <link>https://che55er.io/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/</guid>
+      <description>Two years ago, I worked on a guide that I called the Hitchhiker&amp;rsquo;s Guide to Meetings. This guide highlighted many of the lessons I had learned over the years involving meetings at work.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/hitchhikers-guide-to-meetings-virtual-edition-guide/hitchhikers-guide-to-meetings-virtual-edition-guide.png" />
+    </item>
+    
+    <item>
+      <title>Seek the Second Story</title>
+      <link>https://che55er.io/posts/seek-the-second-story/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/seek-the-second-story/</guid>
+      <description>I recently listened to a talk that reminded me of some core lessons on how we can view &amp;ldquo;human error,&amp;rdquo; and how it can help us both with our work and personal lives.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/seek-the-second-story/old-new-view.png" />
+    </item>
+    
+    <item>
+      <title>Share a CHANGELOG</title>
+      <link>https://che55er.io/posts/share-a-changelog/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/share-a-changelog/</guid>
+      <description>Introduction # I recently tried a new experiment at work which I&amp;rsquo;m calling &amp;ldquo;The CHANGELOG.&amp;rdquo; My goal with this experiment is to improve the communication within my team and with all the product groups I routinely work with.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/share-a-changelog/changelog.png" />
+    </item>
+    
+    <item>
+      <title>Defrag your Calendar</title>
+      <link>https://che55er.io/posts/defrag-your-calendar/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/defrag-your-calendar/</guid>
+      <description>Time is a one of your most valuable assets. As engineers grow with their skills and past contributions, they get invited to participate in more meetings within their day. These meetings get scheduled in time slots that show as available on their calendar, or sometimes even when they are already shown as busy - posing as a conflict.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/defrag-your-calendar/defrag-calendar.png" />
+    </item>
+    
+    <item>
+      <title>QCon San Francisco 2019 Recap</title>
+      <link>https://che55er.io/posts/qcon-sf-2019-recap/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/qcon-sf-2019-recap/</guid>
+      <description>This was my first time attending QCon, and I was really impressed with the quality of the conference. I have been a long time consumer of content on InfoQ, so it was great to be there in person and meet more practitioners that are working on interesting problems.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/qcon-sf-2019-recap/getting-started-w-chaos-experiments.png" />
+    </item>
+    
+    <item>
+      <title>Decisions: The Pursuit of Options</title>
+      <link>https://che55er.io/posts/decisions-the-pursuit-of-options/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/decisions-the-pursuit-of-options/</guid>
+      <description>The Talk # Back in June, I gave a talk at Cerner&amp;rsquo;s DevCon conference on decision making, called: Decisions: The Pursuit of Options. The talk has been published on YouTube for your viewing pleasure:</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/decisions-the-pursuit-of-options/decision-guide.png" />
+    </item>
+    
+    <item>
+      <title>The Novelty Trap</title>
+      <link>https://che55er.io/posts/novelty-trap/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/novelty-trap/</guid>
+      <description>This post is the second part of my series that breaks down my guide on decision making. I wanted to briefly share our natural tendency to favor novelty and how that can introduce challenges when assessing technology in our systems.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/novelty-trap/novelty.png" />
+    </item>
+    
+    <item>
+      <title>The Power of Murphy&#39;s Law</title>
+      <link>https://che55er.io/posts/power-of-murphys-law/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/power-of-murphys-law/</guid>
+      <description>I recently built a guide on decision making, which included several different elements on how we form ideas and decisions. The purpose of this guide was to highlight common areas that typically cause strain on us humans when we are in the act of technical decision making.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/power-of-murphys-law/murphys-law.png" />
+    </item>
+    
+    <item>
+      <title>Visualize Progress through Contrast</title>
+      <link>https://che55er.io/posts/visualize-progress-through-contrast/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/visualize-progress-through-contrast/</guid>
+      <description>Over the past few weeks, I have been on a hiatus from my normal work at Cerner. During this time, I have been working on several home repair and improvement projects.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/visualize-progress-through-contrast/bar-vs-pie-chart.png" />
+    </item>
+    
+    <item>
+      <title>Learning with Preschoolers</title>
+      <link>https://che55er.io/posts/learning-with-preschoolers/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/learning-with-preschoolers/</guid>
+      <description>Last week, I had the honor of attending a preschool class to share the topic of software development. In order to explain this subject matter, I decided to prepare a few items and have them paired with a theme.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/learning-with-preschoolers/preschool-computer.jpg" />
+    </item>
+    
+    <item>
+      <title>Thank You Emails</title>
+      <link>https://che55er.io/posts/thank-you-emails/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/thank-you-emails/</guid>
+      <description>Here is a short post on the importance of thanking people, and a common way I achieve this through email. This is also the final part of my trilogy on guidance with email (Email Trilogy blog series).</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/thank-you-emails/thank-you.png" />
+    </item>
+    
+    <item>
+      <title>Drawing 101</title>
+      <link>https://che55er.io/posts/drawing-101/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/drawing-101/</guid>
+      <description>I previously posted a set of design principles about building presentation slides. In this post, I shared how you can improve the effectiveness of your visual aides, by authoring your own images.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/drawing-101/final.png" />
+    </item>
+    
+    <item>
+      <title>Think Twice Before Emailing</title>
+      <link>https://che55er.io/posts/think-twice-before-emailing/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/think-twice-before-emailing/</guid>
+      <description>I previously posted a short set of notes of how I apply my simple process of digesting emails. However, I think there are some other important rules of when to produce email.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/think-twice-before-emailing/keystrokes-gravestone.png" />
+    </item>
+    
+    <item>
+      <title>Design Principles of the pptx Language</title>
+      <link>https://che55er.io/posts/design-principles-of-the-pptx-language/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/design-principles-of-the-pptx-language/</guid>
+      <description>The pptx Language # A few months ago, I was speaking with a senior member of our engineering leadership team, and he stated that the only language he has been coding in lately, is pptx (referring to the file extension of Microsoft PowerPoint).</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/design-principles-of-the-pptx-language/human-attractions.png" />
+    </item>
+    
+    <item>
+      <title>Don&#39;t Let Donuts Taste Like Defects</title>
+      <link>https://che55er.io/posts/dont-let-donuts-taste-like-defects/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/dont-let-donuts-taste-like-defects/</guid>
+      <description>Over the course of my engineering career, I have seen and participated in different types of team traditions. Team traditions can help build the identity or brand of a team, which is generally helpful in supporting the overall health of the team.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/dont-let-donuts-taste-like-defects/donut.png" />
+    </item>
+    
+    <item>
+      <title>The Large Dog Method: A Path to Creative Thinking</title>
+      <link>https://che55er.io/posts/large-dog-method/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/large-dog-method/</guid>
+      <description>As I talk with other engineers, I have found a common question that typically arises on &amp;ldquo;How do you make time to stay current on technology?&amp;rdquo; Other flavors of the same question are, &amp;ldquo;What podcasts do you listen to?</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/large-dog-method/large-dog-method.png" />
+    </item>
+    
+    <item>
+      <title>Simple Email Process</title>
+      <link>https://che55er.io/posts/simple-email-process/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://che55er.io/posts/simple-email-process/</guid>
+      <description>As I have explored ways to be more productive, I generally find that everyone has a way in which they process their emails. Given that email is such a common element of communication that everyone deals with, and it has been around for a long time, there are generally several different ways of optimizing this continuous amount of content.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/posts/simple-email-process/simple-email-process.png" />
+    </item>
+    
+  </channel>
 </rss>
