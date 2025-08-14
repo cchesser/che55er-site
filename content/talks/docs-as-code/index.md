@@ -1,6 +1,6 @@
 ---
 title: Docs as Code
-weight: 70
+weight: -70
 resources:
 - name: featured-image-preview
   src: "docs-as-code.png"

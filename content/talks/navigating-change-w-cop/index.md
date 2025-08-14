@@ -1,6 +1,6 @@
 ---
 title: Navigating Change with Communities of Practice
-weight: 110
+weight: -110
 resources:
 - name: featured-image-preview
   src: "navigating-change-w-cop-cover.png"

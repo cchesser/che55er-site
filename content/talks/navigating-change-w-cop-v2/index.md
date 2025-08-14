@@ -1,6 +1,6 @@
 ---
 title: Navigating Change with Communities of Practice (2023 revision)
-weight: 140
+weight: -140
 resources:
 - name: featured-image-preview
   src: "navigating-change-w-cop-cover.jpg"

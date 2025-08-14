@@ -1,6 +1,6 @@
 ---
 title: 'Decisions: The Pursuit of Options'
-weight: 40
+weight: -40
 resources:
 - name: featured-image-preview
   src: "decisions-the-pursuit-of-options.png"

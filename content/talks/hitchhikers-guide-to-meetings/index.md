@@ -1,6 +1,6 @@
 ---
 title: "The Hitchhiker's Guide to Meetings"
-weight: 30
+weight: -30
 resources:
 - name: featured-image-preview
   src: "hitchhikers-guide-to-meetings.png"

@@ -1,6 +1,6 @@
 ---
 title: Diagnose Your Lethargic JVM
-weight: 10
+weight: -10
 resources:
 - name: featured-image-preview
   src: "diagnose-your-lethargic-jvm.png"

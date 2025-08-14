@@ -1,6 +1,6 @@
 ---
 title: Words Matter
-weight: 65
+weight: -65
 resources:
 - name: featured-image-preview
   src: "words-matter.png"

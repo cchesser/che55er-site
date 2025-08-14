@@ -1,6 +1,6 @@
 ---
 title: Tend to your Observability Garden
-weight: 90
+weight: -90
 resources:
 - name: featured-image-preview
   src: "tend-to-your-o11y-garden.png"

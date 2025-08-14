@@ -1,6 +1,6 @@
 ---
 title: NRQL Bonanza
-weight: 130
+weight: -130
 resources:
 - name: featured-image-preview
   src: "nrql-bonanza.png"

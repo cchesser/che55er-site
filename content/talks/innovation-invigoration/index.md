@@ -1,6 +1,6 @@
 ---
 title: Innovation Invigoration
-weight: 50
+weight: -50
 resources:
 - name: featured-image-preview
   src: "innovation-invigoration.png"

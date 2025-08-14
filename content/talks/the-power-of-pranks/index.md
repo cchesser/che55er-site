@@ -1,6 +1,6 @@
 ---
 title: The Power of Pranks
-weight: 20
+weight: -20
 resources:
 - name: featured-image-preview
   src: "the-power-of-pranks.png"

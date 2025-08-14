@@ -1,6 +1,6 @@
 ---
 title: Regex Express
-weight: 100
+weight: -100
 resources:
 - name: featured-image-preview
   src: "regex-express.png"

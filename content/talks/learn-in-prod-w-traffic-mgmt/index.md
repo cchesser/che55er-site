@@ -1,6 +1,6 @@
 ---
 title: Learn in Production with Traffic Management
-weight: 80
+weight: -80
 resources:
 - name: featured-image-preview
   src: "learn-in-prod-w-traffic-mgmt.png"

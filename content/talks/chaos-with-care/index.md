@@ -1,6 +1,6 @@
 ---
 title: Chaos with Care
-weight: 60
+weight: -60
 resources:
 - name: featured-image-preview
   src: "chaos-with-care.png"

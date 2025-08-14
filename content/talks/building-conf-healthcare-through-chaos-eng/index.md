@@ -1,6 +1,6 @@
 ---
 title: Building Confidence in Healthcare Systems Through Chaos Engineering
-weight: 50
+weight: -50
 resources:
 - name: featured-image-preview
   src: "building-confidence-in-healthcare-systems.png"
