@@ -1,1 +1,13 @@
-<a href="https://www.linkedin.com/in/{{ .Get 0 }}/"><span class="fab fa-linkedin fa-fw"></span> {{ .Get 0 }}</a>
+{{- $label := .Get "label" -}}
+{{- $linkedin_profile := .Get "ref" -}}
+{{- $linkedin_name := .Get "name" -}}
+{{- $icon := "linkedin" -}}
+<div class="flex mt-2 font-normal">
+  {{- $label | markdownify -}}
+  <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://www.linkedin.com/in/{{ $linkedin_profile }}/"  target="_blank">
+    <div class="flex flex-row items-center">
+      <div class="mr-1">{{ partial "icon" $icon }}</div>
+      <div>{{- $linkedin_name -}}</div>
+    </div>
+  </a>
+</div>

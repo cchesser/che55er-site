@@ -16,37 +16,37 @@ When listening to talks, I often try to take notes to help me keep focus on what
 
 ### Mastering the Fundamentals: Understanding DevOps in today's world
 
-Talk by: Laura Santamaria ({{< linkedin "lauraasantamaria" >}})
+{{< linkedin label="Talk by:" name="Laura Santamaria" ref="lauraasantamaria" >}}
 
 ![](img/mastering-the-fundamentals.jpg)
 
 ### Platform ROI: Why should your company invest?
 
-Talk by: JT Perry ({{< linkedin "jtperry" >}})
+{{< linkedin label="Talk by:" name="JT Perry" ref="jtperry" >}}
 
 ![](img/roi.jpg)
 
 ### Getting Good (or Better) at Code Review
 
-Talk by: Rhia Dixon ({{< linkedin "rhiadixon" >}})
+{{< linkedin label="Talk by:" name="Rhia Dixon" ref="rhiadixon" >}}
 
 ![](img/code-review.jpg)
 
 ###  The 4 Deadly Sins of Mentorship
 
-Talk by: Christina Aldan ({{< linkedin "luckygirliegirl" >}})
+{{< linkedin label="Talk by:" name="Christina Aldan" ref="luckygirliegirl" >}}
 
 ![](img/mentorship.jpg)
 
 ###  The Automation Firehose: Be Strategic and Tactical
 
-Talk by: Thomas Haver ({{< linkedin "thomas-haver" >}})
+{{< linkedin label="Talk by:" name="Thomas Haver" ref="thomas-haver" >}}
 
 ![](img/automation-firehose.jpg)
 
 ###  A Decade with DORA
 
-Talk by: Nathen Harvey ({{< linkedin "nathen" >}})
+{{< linkedin label="Talk by:" name="Nathen Harvey" ref="nathen" >}}
 
 ![](img/decade-of-dora.jpg)
 
