@@ -89,17 +89,17 @@ _This guide includes a second page, to convert the guide into a paper airplane._
 
 ---
 
-## Hitchiker's Guide to Meetings
+## Hitchhiker's Guide to Meetings
 
-![Hitchiker's Guide to Meetings](/img/hitchhikers-guide-v1.png)
+![Hitchhiker's Guide to Meetings](/img/hitchhikers-guide-v1.png)
 
 [Get the 11x17" PDF version](/guides/hitchhikers-guide-to-meetings-11-17.pdf)
 
 ---
 
-## Hitchiker's Guide to Meetings (add-ons)
+## Hitchhiker's Guide to Meetings (add-ons)
 
-![Hitchiker's Guide to Meetings - v2 updates](/img/hitchhikers-guide-v2-update.jpg)
+![Hitchhiker's Guide to Meetings - v2 updates](/img/hitchhikers-guide-v2-update.jpg)
 
 Some proposed updates to the _Hitchhiker's Guide to Meetings_, where logistical elements are included.
 

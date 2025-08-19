@@ -1,5 +1,5 @@
 ---
-title: "Learning through Repairs: Raypak E3T Single Phase Spa Hater"
+title: "Learning through Repairs: Raypak E3T Single Phase Spa Heater"
 date: 2025-05-29
 resources:
 - name: featured-image-preview

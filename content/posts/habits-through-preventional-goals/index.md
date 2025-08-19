@@ -24,7 +24,7 @@ I decided that I would draw a character, that would be something different each 
 
 By having the habit applied to an existing routine (school week), it was a healthy dose of doing something consistently. However, you also had a few breaks with the habit. This included weekends, holidays, and school breaks. Having some breaks known upfront, helped me practice stepping away and returning with my habit. While this was a somewhat simple task, I realized that I probably wouldn’t be the best at following it if I was expecting myself to do it every day of the year. I then found myself establishing a set time, after doing dishes, to do these drawings. Sometimes when this anchor period didn’t occur (doing dishes), I would almost forget to do the drawings, and would scramble to do them in the morning.
 
-When things would get busy, I would find myself getting quite quick at making these. This is where I felt it helped me improve in other cases, like notetaking, where I wouldn’t spend too much time on detail and would accept mediocre quality since it was understandable enough in what it was illustrating. Applying common things together for a drawing, since I was doing it often in other illustrations.
+When things would get busy, I would find myself getting quite quick at making these. This is where I felt it helped me improve in other cases, like note-taking, where I wouldn’t spend too much time on detail and would accept mediocre quality since it was understandable enough in what it was illustrating. Applying common things together for a drawing, since I was doing it often in other illustrations.
 
 ![](drawings.jpg)
 

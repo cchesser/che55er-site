@@ -11,7 +11,7 @@ I recently built a [guide on decision making](/guides#decisions-the-pursuit-of-o
 
 ## Murphy's Law
 
-Murphy's Law was something I learned early in my professional career. If you are not familar with this law, it was coined by [Edward A Murphy Jr.](https://en.wikipedia.org/wiki/Edward_A._Murphy_Jr) during his work on a high-speed rocket sled experiment for the US Air Force where he shared:
+Murphy's Law was something I learned early in my professional career. If you are not familiar with this law, it was coined by [Edward A Murphy Jr.](https://en.wikipedia.org/wiki/Edward_A._Murphy_Jr) during his work on a high-speed rocket sled experiment for the US Air Force where he shared:
 
 > Anything that can go wrong will go wrong.
 

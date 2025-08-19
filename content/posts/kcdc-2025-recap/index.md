@@ -4,6 +4,7 @@ date: 2025-08-18
 resources:
 - name: featured-image-preview
   src: "kcdc2025.png"
+
 ---
 
 Last week was the legendary [KCDC conference](https://www.kcdc.info/) in Kansas City. This was the first year that [DevOpsDays KC](https://devopsdays.org/events/2025-kansas-city/welcome/) combined with the event. It was a full-day event on Wednesday, which was paired with other workshops, before the sessions on Thursday and Friday. Right when I first arrived at the conference on Wednesday, I saw friends I hadn’t seen in over a year. Conferences like this are such a rich ground for networking. While we all enjoy going to the talks, the unique value in these events is connecting with people. DevOpsDays KC has a concept of open spaces, where there is a dedicated time window that people post discussion topics, and then form tables with different topics that people can join and discuss a topic. You can quickly connect with others on different topics by discussing the problem and sharing ideas on solutions in this space. I enjoyed the networking and time with others as part of DevOpsDays KC, and then other open times (like breakfast and lunch) during the conference to further meet and talk with others. Living and working in Kansas City, this conference enables you to meet and see other professionals in the area, while also connecting with others from all over the world.

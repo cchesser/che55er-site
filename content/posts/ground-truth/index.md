@@ -12,7 +12,7 @@ I wanted to discuss a term that I found memorable recently: ground truth. It res
 
 When digging into a problem, we seek to have a clear understanding of the environment. We collect information from our trusted sources. The shorter the distance that information travels when we receive it, the stronger its perceived value. For example, "seeing it with your own eyes" is a highly influential experience with information. However, there is a cost in getting close to these raw information sources. You can’t be everywhere at once or process all these lower-level representations of data. This cost can be reduced when we rely on secondary sources that provide reports or transformed representations of that information. This is helpful; however, it can disconnect us from what is truly happening. It may only tell part of the story.
 
-I recently finished Colin Powel’s book, [It Worked for Me](https://www.harpercollins.com/products/it-worked-for-me-colin-powell), which introduced the term ground truth. In his book, he repeatedly refers to the term "ground truth." In one chapter, he shares how he develops ways of getting to know what’s happening. Here is a small segment:
+I recently finished Colin Powel's book, [It Worked for Me](https://www.harpercollins.com/products/it-worked-for-me-colin-powell), which introduced the term ground truth. In his book, he repeatedly refers to the term "ground truth." In one chapter, he shares how he develops ways of getting to know what’s happening. Here is a small segment:
 
 > The more senior you become, the more staff you have to protect you from yourself and to push their own agenda. They mean well, but they can insulate you from ground truth. You have to get out and walk the floor. Have trusted agents and friends call you when they think the emperor has no clothes. In the Army, chaplains, inspectors general, and sergeants major can always give you a ground truth perspective. Above all, never forget you were ground truth once.
 
@@ -48,6 +48,6 @@ With this advice, don’t feel compelled to state everything paired with numeric
 
 ## Conclusion
 
-This isn’t easy. It takes time, patience, and discipline in maintaining a ground truth perspective. Beyond the knowledge you gain, it can expand your personal network with those possesing a close perspective and improves our empathy of the situation. It also takes practice and a conscious effort in the words we use when sharing our understanding to ensure it is effectively conveyed. If you catch yourself using an absolute or a generalized measure, work on following up with what you mean by its usage. 
+This isn’t easy. It takes time, patience, and discipline in maintaining a ground truth perspective. Beyond the knowledge you gain, it can expand your personal network with those possessing a close perspective and improves our empathy of the situation. It also takes practice and a conscious effort in the words we use when sharing our understanding to ensure it is effectively conveyed. If you catch yourself using an absolute or a generalized measure, work on following up with what you mean by its usage. 
 
 Stay curious, and keep finding ways to connect with your ground truth!
