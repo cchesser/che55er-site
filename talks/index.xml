@@ -15,13 +15,13 @@ data-zoom-src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-ha
 src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm.png">
 &lt;/figure>
 &lt;/p>
-&lt;h1 class="relative group">Abstract
+&lt;h2 class="relative group">Abstract
 &lt;div id="abstract" class="anchor">&lt;/div>
 &lt;span
 class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
 &lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
 &lt;/span>
-&lt;/h1>
+&lt;/h2>
 &lt;p>We are great at quickly gravitating to problems. Especially, with our deep understanding of the systems we own and operate. When things go wrong, great teams are quick to adapt, mitigate, and identify what we should do better in the future. However, it is easy for us to limit our minds based on our perspective of the system or how we have always done it.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis.png"/></item><item><title>Open Up your JVM with Open Source Tooling</title><link>https://che55er.io/talks/open-up-your-jvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/open-up-your-jvm/</guid><description>&lt;p>This talk was part of the Kansas City Java User Group on May 15, 2025.&lt;/p>
 &lt;p>When building and deploying Java applications, gaining insight into their performance characteristics is crucial. This talk will share methods and tools to help you gain a deeper understanding of what&amp;rsquo;s happening in your JVM. You&amp;rsquo;ll learn about improvements in how you can utilize these available tools in your development and evaluate performance issues (CPU, memory, and network) with your Java production workloads.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/open-up-your-jvm/open-up-your-jvm.png"/></item><item><title>Navigating Change with Communities of Practice (2023 revision)</title><link>https://che55er.io/talks/navigating-change-w-cop-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/navigating-change-w-cop-v2/</guid><description>&lt;p>
 &lt;figure>
