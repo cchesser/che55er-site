@@ -34,6 +34,7 @@ cks
 clipart
 cockcroft
 codebase
+compactSummary
 crystalize
 ctv
 cyen
