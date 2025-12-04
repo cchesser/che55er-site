@@ -1,299 +1,279 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talks on thoughts</title><link>https://che55er.io/talks/</link><description>Recent content in talks on thoughts</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://che55er.io/talks/index.xml" rel="self" type="application/rss+xml"/><item><title>Mind Hacks for Incident Analysis</title><link>https://che55er.io/talks/mind-hacks-for-incident-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/mind-hacks-for-incident-analysis/</guid><description>&lt;p>
-&lt;figure>
-&lt;img
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talks on thoughts</title><link>https://che55er.io/talks/</link><description>Recent content in talks on thoughts</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://che55er.io/talks/index.xml" rel="self" type="application/rss+xml"/><item><title>Mind Hacks for Incident Analysis</title><link>https://che55er.io/talks/mind-hacks-for-incident-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/mind-hacks-for-incident-analysis/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
-fetchpriority="low"
+fetchpriority="auto"
 alt=""
-srcset="
-/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_8ac1a6dc9aaf418d.png 330w,
-/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_2f6f7a91f7a63d8c.png 660w,
-/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_8a3bdf247f4dedac.png 1280w
-"
-data-zoom-src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm.png"
-src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm.png">
-&lt;/figure>
-&lt;/p>
-&lt;h2 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+width="1893"
+height="1094"
+src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_1c5b6980d8e601f3.png"
+srcset="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_1c5b6980d8e601f3.png 800w, https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm_hu_8a3bdf247f4dedac.png 1280w"
+sizes="(min-width: 768px) 50vw, 65vw"
+data-zoom-src="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis-sm.png"&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>We are great at quickly gravitating to problems. Especially, with our deep understanding of the systems we own and operate. When things go wrong, great teams are quick to adapt, mitigate, and identify what we should do better in the future. However, it is easy for us to limit our minds based on our perspective of the system or how we have always done it.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis.png"/></item><item><title>Open Up your JVM with Open Source Tooling</title><link>https://che55er.io/talks/open-up-your-jvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/open-up-your-jvm/</guid><description>&lt;p>This talk was part of the Kansas City Java User Group on May 15, 2025.&lt;/p>
-&lt;p>When building and deploying Java applications, gaining insight into their performance characteristics is crucial. This talk will share methods and tools to help you gain a deeper understanding of what&amp;rsquo;s happening in your JVM. You&amp;rsquo;ll learn about improvements in how you can utilize these available tools in your development and evaluate performance issues (CPU, memory, and network) with your Java production workloads.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/open-up-your-jvm/open-up-your-jvm.png"/></item><item><title>Navigating Change with Communities of Practice (2023 revision)</title><link>https://che55er.io/talks/navigating-change-w-cop-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/navigating-change-w-cop-v2/</guid><description>&lt;p>
-&lt;figure>
-&lt;img
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;We are great at quickly gravitating to problems. Especially, with our deep understanding of the systems we own and operate. When things go wrong, great teams are quick to adapt, mitigate, and identify what we should do better in the future. However, it is easy for us to limit our minds based on our perspective of the system or how we have always done it.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/mind-hacks-for-incident-analysis/mind-hacks-for-incident-analysis.png"/></item><item><title>Open Up your JVM with Open Source Tooling</title><link>https://che55er.io/talks/open-up-your-jvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/open-up-your-jvm/</guid><description>&lt;p&gt;This talk was part of the Kansas City Java User Group on May 15, 2025.&lt;/p&gt;
+&lt;p&gt;When building and deploying Java applications, gaining insight into their performance characteristics is crucial. This talk will share methods and tools to help you gain a deeper understanding of what&amp;rsquo;s happening in your JVM. You&amp;rsquo;ll learn about improvements in how you can utilize these available tools in your development and evaluate performance issues (CPU, memory, and network) with your Java production workloads.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/open-up-your-jvm/open-up-your-jvm.png"/></item><item><title>Navigating Change with Communities of Practice (2023 revision)</title><link>https://che55er.io/talks/navigating-change-w-cop-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/navigating-change-w-cop-v2/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
-fetchpriority="low"
+fetchpriority="auto"
 alt=""
-srcset="
-/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_9b888016d9f444a5.png 330w,
-/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_b9063a8407bfb493.png 660w,
-/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_2c79379b1f5378dd.png 1280w
-"
-data-zoom-src="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop.png"
-src="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop.png">
-&lt;/figure>
-&lt;/p>
-&lt;p>&lt;em>Newer revision of content from &lt;a
-href="../navigating-change-w-cop">2022 DevOps Enterprise Summit&lt;/a>.&lt;/em>&lt;/p>
-&lt;h1 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+width="2194"
+height="813"
+src="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_ecb22fca043b35a1.png"
+srcset="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_ecb22fca043b35a1.png 800w, https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop_hu_2c79379b1f5378dd.png 1280w"
+sizes="(min-width: 768px) 50vw, 65vw"
+data-zoom-src="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop.png"&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Newer revision of content from &lt;a
+href="../navigating-change-w-cop"&gt;2022 DevOps Enterprise Summit&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent communication across large groups, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected, without overloading teams through more channels of communication. There must be a better way.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop-cover.jpg"/></item><item><title>NRQL Bonanza</title><link>https://che55er.io/talks/nrql-bonanza/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/nrql-bonanza/</guid><description>&lt;p>This talk was part of a New Relic User Group session in August 2023. This short talk
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent communication across large groups, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected, without overloading teams through more channels of communication. There must be a better way.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop-v2/navigating-change-w-cop-cover.jpg"/></item><item><title>NRQL Bonanza</title><link>https://che55er.io/talks/nrql-bonanza/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/nrql-bonanza/</guid><description>&lt;p&gt;This talk was part of a New Relic User Group session in August 2023. This short talk
 walks through some different examples of data you can access in New Relic &amp;hellip;
 which you may not have known about. This can include data about your data usage
 (ingestion), your agents (version compliance), and even the queries being executed.
 This also includes ways you can explore the data dictionary or execute queries
-through NerdGraph (GraphQL).&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/nrql-bonanza/nrql-bonanza.png"/></item><item><title>Navigating Change with Communities of Practice</title><link>https://che55er.io/talks/navigating-change-w-cop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/navigating-change-w-cop/</guid><description>&lt;p>
-&lt;figure>
-&lt;img
+through NerdGraph (GraphQL).&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/nrql-bonanza/nrql-bonanza.png"/></item><item><title>Navigating Change with Communities of Practice</title><link>https://che55er.io/talks/navigating-change-w-cop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/navigating-change-w-cop/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
-fetchpriority="low"
+fetchpriority="auto"
 alt=""
-srcset="
-/talks/navigating-change-w-cop/navigating-change-w-cop_hu_9b888016d9f444a5.png 330w,
-/talks/navigating-change-w-cop/navigating-change-w-cop_hu_b9063a8407bfb493.png 660w,
-/talks/navigating-change-w-cop/navigating-change-w-cop_hu_2c79379b1f5378dd.png 1280w
-"
-data-zoom-src="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop.png"
-src="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop.png">
-&lt;/figure>
-&lt;/p>
-&lt;p>&lt;em>Presentation was part of &lt;a
+width="2194"
+height="813"
+src="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop_hu_ecb22fca043b35a1.png"
+srcset="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop_hu_ecb22fca043b35a1.png 800w, https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop_hu_2c79379b1f5378dd.png 1280w"
+sizes="(min-width: 768px) 50vw, 65vw"
+data-zoom-src="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop.png"&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Presentation was part of &lt;a
 href="https://doesus2022.sched.com/"
 target="_blank"
->DevOps Enterprise Summit - Virtual 2022&lt;/a>&lt;/em>.&lt;/p>
-&lt;h1 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+&gt;DevOps Enterprise Summit - Virtual 2022&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h1 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected. This should recognize that we cannot increase the cognitive load on our teams through excessive forms of communication. There must be a better way.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop-cover.png"/></item><item><title>Regex Express</title><link>https://che55er.io/talks/regex-express/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/regex-express/</guid><description>&lt;p>
-&lt;figure>
-&lt;img
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;Change is something we must continually navigate. In a large organization, change can be further challenging based on the number of people that must have a shared understanding in this navigation. This can be complicated with organizational boundaries that can limit consistent horizontal communication, allowing costly variance or great ideas only surfacing within a smaller team or organizational boundary. We must improve how we stay connected. This should recognize that we cannot increase the cognitive load on our teams through excessive forms of communication. There must be a better way.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/navigating-change-w-cop/navigating-change-w-cop-cover.png"/></item><item><title>Regex Express</title><link>https://che55er.io/talks/regex-express/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/regex-express/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
-fetchpriority="low"
+fetchpriority="auto"
 alt=""
-srcset="
-/talks/regex-express/regex-express-title_hu_6089391eba21799d.png 330w,
-/talks/regex-express/regex-express-title_hu_c784ed04bfe2c77b.png 660w,
-/talks/regex-express/regex-express-title_hu_849b2b5af5699ccd.png 1280w
-"
-data-zoom-src="https://che55er.io/talks/regex-express/regex-express-title.png"
-src="https://che55er.io/talks/regex-express/regex-express-title.png">
-&lt;/figure>
-&lt;/p>
-&lt;p>Below are resources and references from my Regex Express talk.&lt;/p>
-&lt;h2 class="relative group">Learning Resources
-&lt;div id="learning-resources" class="anchor">&lt;/div>
+width="2398"
+height="1267"
+src="https://che55er.io/talks/regex-express/regex-express-title_hu_631ca38109231676.png"
+srcset="https://che55er.io/talks/regex-express/regex-express-title_hu_631ca38109231676.png 800w, https://che55er.io/talks/regex-express/regex-express-title_hu_849b2b5af5699ccd.png 1280w"
+sizes="(min-width: 768px) 50vw, 65vw"
+data-zoom-src="https://che55er.io/talks/regex-express/regex-express-title.png"&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Below are resources and references from my Regex Express talk.&lt;/p&gt;
+&lt;h2 class="relative group"&gt;Learning Resources
+&lt;div id="learning-resources" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#learning-resources" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#learning-resources" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
 href="https://regexr.com/"
 target="_blank"
->RegExr&lt;/a>: Interactive editor which visual signals matching, details on the matches, cheatsheet notes, ability to save favorite expressions.&lt;/li>
-&lt;li>&lt;a
+&gt;RegExr&lt;/a&gt;: Interactive editor which visual signals matching, details on the matches, cheatsheet notes, ability to save favorite expressions.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://rubular.com/"
 target="_blank"
->Rubular&lt;/a>: A simple interactive editor that signals expression matches on a selection of text and is paired with visible quick reference.&lt;/li>
-&lt;li>&lt;a
+&gt;Rubular&lt;/a&gt;: A simple interactive editor that signals expression matches on a selection of text and is paired with visible quick reference.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://rexegg.com/"
 target="_blank"
->Rexegg&lt;/a>: A full site of content dedicated to all things with regular expressions. This includes both basic to complex topics, making it a good resource for a large spectrum of learning.&lt;/li>
-&lt;li>&lt;a
+&gt;Rexegg&lt;/a&gt;: A full site of content dedicated to all things with regular expressions. This includes both basic to complex topics, making it a good resource for a large spectrum of learning.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://regex101.com/"
 target="_blank"
->regular expressions 101&lt;/a>: An interactive editor, that provides different regular expression syntax flavors, quizzes, library of expressions. Some features require you to login with some common service providers (Google, GitHub, Twitter).&lt;/li>
-&lt;li>&lt;a
+&gt;regular expressions 101&lt;/a&gt;: An interactive editor, that provides different regular expression syntax flavors, quizzes, library of expressions. Some features require you to login with some common service providers (Google, GitHub, Twitter).&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://regexper.com/"
 target="_blank"
->Regexper&lt;/a>: Generates &amp;ldquo;railroad diagram&amp;rdquo; visuals of a supplied regular expression.&lt;/li>
-&lt;li>&lt;a
+&gt;Regexper&lt;/a&gt;: Generates &amp;ldquo;railroad diagram&amp;rdquo; visuals of a supplied regular expression.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://ihateregex.io/"
 target="_blank"
->iHateRegex&lt;/a>: An interactive editor in its playground, visualizes pattern matching (similar to Regexper), allows you to search other regular expression patterns, and submit ones.&lt;/li>
-&lt;li>&lt;a
+&gt;iHateRegex&lt;/a&gt;: An interactive editor in its playground, visualizes pattern matching (similar to Regexper), allows you to search other regular expression patterns, and submit ones.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://regexlearn.com/"
 target="_blank"
->Regex Learn&lt;/a>: A site with a free 101 course, that guides through learning about regular expression where you are tested along the way. It includes other common resources like a &lt;a
+&gt;Regex Learn&lt;/a&gt;: A site with a free 101 course, that guides through learning about regular expression where you are tested along the way. It includes other common resources like a &lt;a
 href="https://regexlearn.com/cheatsheet"
 target="_blank"
->cheatsheet&lt;/a> and &lt;a
+&gt;cheatsheet&lt;/a&gt; and &lt;a
 href="https://regexlearn.com/playground"
 target="_blank"
->playground&lt;/a> to test expressions on text.&lt;/li>
-&lt;li>&lt;a
+&gt;playground&lt;/a&gt; to test expressions on text.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://refrf.dev/"
 target="_blank"
->Regular Expressions for Regular Folk book&lt;/a>: A full site with visual examples. The book itself is single page, which can make it easier for printing or saving to read later.&lt;/li>
-&lt;/ul>
-&lt;h2 class="relative group">Games
-&lt;div id="games" class="anchor">&lt;/div>
+&gt;Regular Expressions for Regular Folk book&lt;/a&gt;: A full site with visual examples. The book itself is single page, which can make it easier for printing or saving to read later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class="relative group"&gt;Games
+&lt;div id="games" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#games" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#games" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
 href="https://regexcrossword.com/"
 target="_blank"
->Regex Cross­word&lt;/a>: A great website with a variety of levels on regex crossword puzzles.&lt;/li>
-&lt;li>&lt;a
+&gt;Regex Cross­word&lt;/a&gt;: A great website with a variety of levels on regex crossword puzzles.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://jimbly.github.io/regex-crossword/"
 target="_blank"
->Large Regex Crossword Puzzle example&lt;/a>: This is a single large crossword puzzle.&lt;/li>
-&lt;li>&lt;a
+&gt;Large Regex Crossword Puzzle example&lt;/a&gt;: This is a single large crossword puzzle.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://www.bbc.co.uk/programmes/articles/5LCB3rN2dWLqsmGMy5KYtBf/puzzle-for-today"
 target="_blank"
->Regular Expression Crossword puzzle from BBC&lt;/a>: &lt;em>Puzzle for Today&lt;/em> entry that introduced a regular expression crossword puzzle.&lt;/li>
-&lt;/ul>
-&lt;h2 class="relative group">Random
-&lt;div id="random" class="anchor">&lt;/div>
+&gt;Regular Expression Crossword puzzle from BBC&lt;/a&gt;: &lt;em&gt;Puzzle for Today&lt;/em&gt; entry that introduced a regular expression crossword puzzle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class="relative group"&gt;Random
+&lt;div id="random" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#random" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#random" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
 href="https://www.autoregex.xyz/"
 target="_blank"
->AutoRegex&lt;/a>: An online tool that allows you to use &lt;a
+&gt;AutoRegex&lt;/a&gt;: An online tool that allows you to use &lt;a
 href="https://en.wikipedia.org/wiki/GPT-3"
 target="_blank"
->GPT-3&lt;/a> to generate regular expressions from plain English, as well as, explain an expression in English. Requires an account (can create one on their site or use the Google identity provider).&lt;/li>
-&lt;li>&lt;a
+&gt;GPT-3&lt;/a&gt; to generate regular expressions from plain English, as well as, explain an expression in English. Requires an account (can create one on their site or use the Google identity provider).&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://codegolf.stackexchange.com/questions/28821/regex-that-only-matches-itself/31863#31863"
 target="_blank"
->Regex that only matches itself&lt;/a>: Stack Exchange post that shares a regular expression which only matches itself.&lt;/li>
-&lt;li>&lt;a
+&gt;Regex that only matches itself&lt;/a&gt;: Stack Exchange post that shares a regular expression which only matches itself.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf"
 target="_blank"
->Representation of Events in Nerve Nets and Finite Automata&lt;/a> (S.C. Kleene, December 15, 1951): Original paper by Steven Kleene which introduces the concept of &lt;em>regular events&lt;/em>. This paper influenced the concept of regular expressions; however, reading this paper won&amp;rsquo;t teach much on regular expression syntax, but rather how the concept originated.&lt;/li>
-&lt;li>&lt;a
+&gt;Representation of Events in Nerve Nets and Finite Automata&lt;/a&gt; (S.C. Kleene, December 15, 1951): Original paper by Steven Kleene which introduces the concept of &lt;em&gt;regular events&lt;/em&gt;. This paper influenced the concept of regular expressions; however, reading this paper won&amp;rsquo;t teach much on regular expression syntax, but rather how the concept originated.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/"
 target="_blank"
->Regular Expressions: Now You Have Two Problems&lt;/a>: Popular blog post by Jeff Atwood about regular expressions, their power, and guidance on their use.&lt;/li>
-&lt;li>&lt;a
+&gt;Regular Expressions: Now You Have Two Problems&lt;/a&gt;: Popular blog post by Jeff Atwood about regular expressions, their power, and guidance on their use.&lt;/li&gt;
+&lt;li&gt;&lt;a
 href="https://opensource.googleblog.com/2010/03/re2-principled-approach-to-regular.html"
 target="_blank"
->RE2: a principled approach to regular expression matching&lt;/a>: Blog post by Google on RE2, which is &lt;em>is based on automata theory and guarantees that searches complete in linear time with respect to the size of the input and in a fixed amount of stack space&lt;/em>.&lt;/li>
-&lt;/ul>
-&lt;h2 class="relative group">Humor
-&lt;div id="humor" class="anchor">&lt;/div>
+&gt;RE2: a principled approach to regular expression matching&lt;/a&gt;: Blog post by Google on RE2, which is &lt;em&gt;is based on automata theory and guarantees that searches complete in linear time with respect to the size of the input and in a fixed amount of stack space&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class="relative group"&gt;Humor
+&lt;div id="humor" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#humor" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;figure>
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regular_expressions.png" alt="" />
-&lt;/figure>
-&lt;figure>
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regex_golf.png" alt="" />
-&lt;/figure>
-&lt;figure>
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/perl_problems.png" alt="" />
-&lt;/figure></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/regex-express/regex-express.png"/></item><item><title>Tend to your Observability Garden</title><link>https://che55er.io/talks/tend-to-your-o11y-garden/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/tend-to-your-o11y-garden/</guid><description>&lt;p>This talk was presented at &lt;a
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#humor" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;figure&gt;
+&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regular_expressions.png" alt="" /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regex_golf.png" alt="" /&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/perl_problems.png" alt="" /&gt;
+&lt;/figure&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/regex-express/regex-express.png"/></item><item><title>Tend to your Observability Garden</title><link>https://che55er.io/talks/tend-to-your-o11y-garden/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/tend-to-your-o11y-garden/</guid><description>&lt;p&gt;This talk was presented at &lt;a
 href="https://newrelic.com/futurestack"
 target="_blank"
->New Relic&amp;rsquo;s FutureStack 2022 conference&lt;/a>, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization. This walks through some practical examples with how we focused on cultural aspects of learning and sharing approaches, while also including concrete examples in how we scaled and seeked ways in balancing consistency and autonomy in the usage of New Relic.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/tend-to-your-o11y-garden/tend-to-your-o11y-garden.png"/></item><item><title>Learn in Production with Traffic Management</title><link>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</guid><description>&lt;h1 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+&gt;New Relic&amp;rsquo;s FutureStack 2022 conference&lt;/a&gt;, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization. This walks through some practical examples with how we focused on cultural aspects of learning and sharing approaches, while also including concrete examples in how we scaled and seeked ways in balancing consistency and autonomy in the usage of New Relic.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/tend-to-your-o11y-garden/tend-to-your-o11y-garden.png"/></item><item><title>Learn in Production with Traffic Management</title><link>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</guid><description>&lt;h1 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>Our systems are continually evolving, spurring the necessity to focus on how we can introduce changes which minimize the risk of a “big bang” event. By examining how traffic flows through your distributed systems, you can find ways of testing and evaluating gradual changes. By understanding different ways of managing your traffic, you build new options for evolving and testing your systems.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/learn-in-prod-w-traffic-mgmt.png"/></item><item><title>Docs as Code</title><link>https://che55er.io/talks/docs-as-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/docs-as-code/</guid><description>&lt;h1 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;Our systems are continually evolving, spurring the necessity to focus on how we can introduce changes which minimize the risk of a “big bang” event. By examining how traffic flows through your distributed systems, you can find ways of testing and evaluating gradual changes. By understanding different ways of managing your traffic, you build new options for evolving and testing your systems.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/learn-in-prod-w-traffic-mgmt.png"/></item><item><title>Docs as Code</title><link>https://che55er.io/talks/docs-as-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/docs-as-code/</guid><description>&lt;h1 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/docs-as-code/docs-as-code.png"/></item><item><title>Words Matter</title><link>https://che55er.io/talks/words-matter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/words-matter/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8cTV7Xd3K8s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept. To be effective, we realize that words matter based on our audience.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/words-matter/words-matter.png"/></item><item><title>Chaos with Care</title><link>https://che55er.io/talks/chaos-with-care/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/chaos-with-care/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LiGVI0UzaNQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;ul>
-&lt;li>&lt;a
-href="https://che55er.io/slides/chaos-carnival-feb-2021.pdf">Slides&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company. From this talk, you will be equipped with ideas on how to safely grow your chaos engineering practice within your organization.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/chaos-with-care/chaos-with-care.png"/></item><item><title>Building Confidence in Healthcare Systems Through Chaos Engineering</title><link>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</guid><description>&lt;p>&lt;a
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;Documentation is a valuable means of scaling knowledge through your teams. Teams are continually challenged to do more, with less. However, making lean maintainable documentation is a challenge, especially when documentation systems are not aligned to your development toolchain. Any point of friction in maintaining your documentation increase your probability of having out-of-date and untrustworthy documentation.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/docs-as-code/docs-as-code.png"/></item><item><title>Words Matter</title><link>https://che55er.io/talks/words-matter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/words-matter/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8cTV7Xd3K8s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;We live in a complex and fast-growing industry. While other engineering disciplines have been around for 100s of years, software engineering is still in its infancy and changing often. We are asked to share ideas to influence change, but this can be challenging in this rapidly growing field. This requires conveying thoughts to different audiences which may also vary on their technical vocabulary. It may be easy to reference a software engineering principle or law that can elegantly describe a technical scenario, but it may be ineffective when conveyed to others who are not aware of that concept. To be effective, we realize that words matter based on our audience.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/words-matter/words-matter.png"/></item><item><title>Chaos with Care</title><link>https://che55er.io/talks/chaos-with-care/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/chaos-with-care/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LiGVI0UzaNQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href="https://che55er.io/slides/chaos-carnival-feb-2021.pdf"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this talk, we will discuss how to introduce and grow chaos engineering in your organization. This includes how to effectively communicate this approach with leadership and related teams, strategies on how to start small and expand into more risk adverse environments, and valuable lessons learned on making it effective within your systems. Approaches will include specific examples of how teams have applied chaos engineering at Cerner Corporation, a healthcare technology company. From this talk, you will be equipped with ideas on how to safely grow your chaos engineering practice within your organization.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/chaos-with-care/chaos-with-care.png"/></item><item><title>Building Confidence in Healthcare Systems Through Chaos Engineering</title><link>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/</guid><description>&lt;p&gt;&lt;a
 href="https://www.infoq.com/presentations/cerner-resiliency"
 target="_blank"
->
-&lt;figure>
-&lt;img
+&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
-fetchpriority="low"
+fetchpriority="auto"
 alt=""
-srcset="
-/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_4d166e22440827ad.png 330w,
-/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_de40a8f5ba544c77.png 660w,
-/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_7372491e6350505a.png 1280w
-"
-data-zoom-src="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview.png"
-src="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview.png">
-&lt;/figure>
-&lt;/a>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a
+width="2958"
+height="1384"
+src="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_19001fe04fcaf8ba.png"
+srcset="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_19001fe04fcaf8ba.png 800w, https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview_hu_7372491e6350505a.png 1280w"
+sizes="(min-width: 768px) 50vw, 65vw"
+data-zoom-src="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/slides-preview.png"&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
 href="https://www.infoq.com/presentations/cerner-resiliency"
 target="_blank"
->QCon San Francisco 2019 recording&lt;/a>&lt;/li>
-&lt;li>&lt;a
-href="https://che55er.io/slides/qcon-sf-2019-confidence-building-w-chaos-engineering.pdf">Slides&lt;/a>&lt;/li>
-&lt;li>&lt;a
-href="https://che55er.io/guides/getting-started-w-chaos-exp-guide.pdf">Get the 8.5 x 11&amp;quot; PDF hand-out&lt;/a>&lt;/li>
-&lt;li>&lt;a
-href="https://che55er.io/post/qcon-sf-2019-recap">QCon SF 2019 Recap&lt;/a>: Blog post that summarized my experience at the conference and all of my notes.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;em>This guide includes a second page, to convert the guide into a paper airplane.&lt;/em>&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/building-confidence-in-healthcare-systems.png"/></item><item><title>Innovation Invigoration</title><link>https://che55er.io/talks/innovation-invigoration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/innovation-invigoration/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/u-aA537qj3w?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>When I began my career in software engineering, I was fueled by the joy of programming and working through unique problems knowing that an answer would be discoverable through my trusty debugger and perseverance. As my career grew in the field, I began to learn more of the challenging constraints with large systems, human organizations, and complexity that seemed untamable. Through additional exposure to these larger problems that no longer could be tackled through the use of my beloved debugger, I began to see how it required different care and feeding at both the personal and team level to overcome these challenges. By investing in these areas, it would invigorate our creative process and deliver ideas that would contradict our traditional thinking.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/innovation-invigoration/innovation-invigoration.png"/></item><item><title>Decisions: The Pursuit of Options</title><link>https://che55er.io/talks/decisions-the-pursuit-of-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/decisions-the-pursuit-of-options/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/k3EaO9whVHI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>One of the most powerful things we can do is make a decision. With the ever growing landscape of technology choices, we are faced with making a decision on a frequent basis. While decision making is not something we view as a core activity of engineering, it is the one thing we are doing at all levels of our architectures. This type of activity not only deserves our focus, but should also be considered as part of our craft that we pursue with improvement.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/decisions-the-pursuit-of-options/decisions-the-pursuit-of-options.png"/></item><item><title>The Hitchhiker's Guide to Meetings</title><link>https://che55er.io/talks/hitchhikers-guide-to-meetings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/hitchhikers-guide-to-meetings/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xvELy0AioIY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>Meetings, the human ritual of synchronous communication. They are considered the cornerstone activity of keeping teams aligned on their mission. As engineers, we encounter meetings routinely in order to facilitate team work in software development. While meetings are a core ritual to team work, we many times find meetings drain our efficiency of software development. As a result, we perceive meetings as a negative exercise, only hindering us from our larger goals of software creation.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/hitchhikers-guide-to-meetings/hitchhikers-guide-to-meetings.png"/></item><item><title>The Power of Pranks</title><link>https://che55er.io/talks/the-power-of-pranks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/the-power-of-pranks/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5Aabg_IpXpk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>The most valuable asset in an organization is the people. Without people, you don&amp;rsquo;t have an organization (excluding robots). In the world of software development, many forces get applied to the people within your team which harm or degrade their quality of life. Fixed deadlines, the presence of Murphy&amp;rsquo;s Law in production environments, compilers which don&amp;rsquo;t understand your intentions, or just dealing with humans that don&amp;rsquo;t understand your code is working as designed. Face it, software development is tough and the only way you can survive it is by sticking together. The power of camaraderie within a team, is a force that can combat many of these ever-changing external forces that can damage your team. To build camaraderie, one must invest time and effort within the team.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/the-power-of-pranks/the-power-of-pranks.png"/></item><item><title>Diagnose Your Lethargic JVM</title><link>https://che55er.io/talks/diagnose-your-lethargic-jvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/diagnose-your-lethargic-jvm/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/WIpN_U1nMAI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;p>If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development. This skill becomes even more critical once you are required to troubleshoot and evaluate your service in a unique production environment. Understanding what operations are consuming most of our CPU time, as well as, what areas of your code are wasting resources will greatly improve your ability to diagnose a sluggish JVM.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagnose-your-lethargic-jvm/diagnose-your-lethargic-jvm.png"/></item><item><title>Diagramming as Code</title><link>https://che55er.io/talks/diagramming-as-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/diagramming-as-code/</guid><description>&lt;h1 class="relative group">Abstract
-&lt;div id="abstract" class="anchor">&lt;/div>
+&gt;QCon San Francisco 2019 recording&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href="https://che55er.io/slides/qcon-sf-2019-confidence-building-w-chaos-engineering.pdf"&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href="https://che55er.io/guides/getting-started-w-chaos-exp-guide.pdf"&gt;Get the 8.5 x 11&amp;quot; PDF hand-out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href="https://che55er.io/post/qcon-sf-2019-recap"&gt;QCon SF 2019 Recap&lt;/a&gt;: Blog post that summarized my experience at the conference and all of my notes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;This guide includes a second page, to convert the guide into a paper airplane.&lt;/em&gt;&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/building-conf-healthcare-through-chaos-eng/building-confidence-in-healthcare-systems.png"/></item><item><title>Innovation Invigoration</title><link>https://che55er.io/talks/innovation-invigoration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/innovation-invigoration/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/u-aA537qj3w?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;When I began my career in software engineering, I was fueled by the joy of programming and working through unique problems knowing that an answer would be discoverable through my trusty debugger and perseverance. As my career grew in the field, I began to learn more of the challenging constraints with large systems, human organizations, and complexity that seemed untamable. Through additional exposure to these larger problems that no longer could be tackled through the use of my beloved debugger, I began to see how it required different care and feeding at both the personal and team level to overcome these challenges. By investing in these areas, it would invigorate our creative process and deliver ideas that would contradict our traditional thinking.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/innovation-invigoration/innovation-invigoration.png"/></item><item><title>Decisions: The Pursuit of Options</title><link>https://che55er.io/talks/decisions-the-pursuit-of-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/decisions-the-pursuit-of-options/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/k3EaO9whVHI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;One of the most powerful things we can do is make a decision. With the ever growing landscape of technology choices, we are faced with making a decision on a frequent basis. While decision making is not something we view as a core activity of engineering, it is the one thing we are doing at all levels of our architectures. This type of activity not only deserves our focus, but should also be considered as part of our craft that we pursue with improvement.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/decisions-the-pursuit-of-options/decisions-the-pursuit-of-options.png"/></item><item><title>The Hitchhiker's Guide to Meetings</title><link>https://che55er.io/talks/hitchhikers-guide-to-meetings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/hitchhikers-guide-to-meetings/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xvELy0AioIY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Meetings, the human ritual of synchronous communication. They are considered the cornerstone activity of keeping teams aligned on their mission. As engineers, we encounter meetings routinely in order to facilitate team work in software development. While meetings are a core ritual to team work, we many times find meetings drain our efficiency of software development. As a result, we perceive meetings as a negative exercise, only hindering us from our larger goals of software creation.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/hitchhikers-guide-to-meetings/hitchhikers-guide-to-meetings.png"/></item><item><title>The Power of Pranks</title><link>https://che55er.io/talks/the-power-of-pranks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/the-power-of-pranks/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5Aabg_IpXpk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;The most valuable asset in an organization is the people. Without people, you don&amp;rsquo;t have an organization (excluding robots). In the world of software development, many forces get applied to the people within your team which harm or degrade their quality of life. Fixed deadlines, the presence of Murphy&amp;rsquo;s Law in production environments, compilers which don&amp;rsquo;t understand your intentions, or just dealing with humans that don&amp;rsquo;t understand your code is working as designed. Face it, software development is tough and the only way you can survive it is by sticking together. The power of camaraderie within a team, is a force that can combat many of these ever-changing external forces that can damage your team. To build camaraderie, one must invest time and effort within the team.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/the-power-of-pranks/the-power-of-pranks.png"/></item><item><title>Diagnose Your Lethargic JVM</title><link>https://che55er.io/talks/diagnose-your-lethargic-jvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/diagnose-your-lethargic-jvm/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/WIpN_U1nMAI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;If you are building Java Virtual Machine based services, a core measurement of your success is performance. The act of measuring and analyzing how your code is performing becomes an essential activity in all phases of your development. This skill becomes even more critical once you are required to troubleshoot and evaluate your service in a unique production environment. Understanding what operations are consuming most of our CPU time, as well as, what areas of your code are wasting resources will greatly improve your ability to diagnose a sluggish JVM.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagnose-your-lethargic-jvm/diagnose-your-lethargic-jvm.png"/></item><item><title>Diagramming as Code</title><link>https://che55er.io/talks/diagramming-as-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/diagramming-as-code/</guid><description>&lt;h1 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;p>It is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date. What if we could make it easier to maintain visualizations of our systems, by removing the burden of classical diagramming tools or forcing people into a presentation building tool to illustrate their system?&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagramming-as-code/diagramming-as-code.png"/></item></channel></rss>
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;
+&lt;p&gt;It is easy for documentation with our projects to get stale. This can especially be true with diagrams. This powerful visualization that illustrates our systems, can quickly become misleading when they become out of date. What if we could make it easier to maintain visualizations of our systems, by removing the burden of classical diagramming tools or forcing people into a presentation building tool to illustrate their system?&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/diagramming-as-code/diagramming-as-code.png"/></item></channel></rss>
