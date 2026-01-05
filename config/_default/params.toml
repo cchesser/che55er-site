@@ -1,4 +1,4 @@
-colorScheme = "slate"
+colorScheme = "one-light"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 
