@@ -1,6 +1,6 @@
 ---
 title: Mind Hacks for Incident Analysis
-weight: -160
+weight: -170
 resources:
 - name: featured-image-preview
   src: "mind-hacks-for-incident-analysis.png"

@@ -1,6 +1,6 @@
 ---
 title: Open Up your JVM with Open Source Tooling
-weight: -150
+weight: -165
 resources:
 - name: featured-image-preview
   src: "open-up-your-jvm.png"

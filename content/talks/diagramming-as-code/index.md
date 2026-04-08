@@ -1,6 +1,6 @@
 ---
 title: Diagramming as Code
-weight: 150
+weight: -150
 resources:
 - name: featured-image-preview
   src: "diagramming-as-code.png"
