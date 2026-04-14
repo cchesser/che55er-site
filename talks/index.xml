@@ -90,123 +90,14 @@ srcset="https://che55er.io/talks/regex-express/regex-express-title_hu_631ca38109
 sizes="(min-width: 768px) 50vw, 65vw"
 data-zoom-src="https://che55er.io/talks/regex-express/regex-express-title.png"&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Below are resources and references from my Regex Express talk.&lt;/p&gt;
-&lt;h2 class="relative group"&gt;Learning Resources
-&lt;div id="learning-resources" class="anchor"&gt;&lt;/div&gt;
+&lt;h2 class="relative group"&gt;Abstract
+&lt;div id="abstract" class="anchor"&gt;&lt;/div&gt;
 &lt;span
 class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
-&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#learning-resources" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abstract" aria-label="Anchor"&gt;#&lt;/a&gt;
 &lt;/span&gt;
 &lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-href="https://regexr.com/"
-target="_blank"
-&gt;RegExr&lt;/a&gt;: Interactive editor which visual signals matching, details on the matches, cheatsheet notes, ability to save favorite expressions.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://rubular.com/"
-target="_blank"
-&gt;Rubular&lt;/a&gt;: A simple interactive editor that signals expression matches on a selection of text and is paired with visible quick reference.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://rexegg.com/"
-target="_blank"
-&gt;Rexegg&lt;/a&gt;: A full site of content dedicated to all things with regular expressions. This includes both basic to complex topics, making it a good resource for a large spectrum of learning.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://regex101.com/"
-target="_blank"
-&gt;regular expressions 101&lt;/a&gt;: An interactive editor, that provides different regular expression syntax flavors, quizzes, library of expressions. Some features require you to login with some common service providers (Google, GitHub, Twitter).&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://regexper.com/"
-target="_blank"
-&gt;Regexper&lt;/a&gt;: Generates &amp;ldquo;railroad diagram&amp;rdquo; visuals of a supplied regular expression.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://ihateregex.io/"
-target="_blank"
-&gt;iHateRegex&lt;/a&gt;: An interactive editor in its playground, visualizes pattern matching (similar to Regexper), allows you to search other regular expression patterns, and submit ones.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://regexlearn.com/"
-target="_blank"
-&gt;Regex Learn&lt;/a&gt;: A site with a free 101 course, that guides through learning about regular expression where you are tested along the way. It includes other common resources like a &lt;a
-href="https://regexlearn.com/cheatsheet"
-target="_blank"
-&gt;cheatsheet&lt;/a&gt; and &lt;a
-href="https://regexlearn.com/playground"
-target="_blank"
-&gt;playground&lt;/a&gt; to test expressions on text.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://refrf.dev/"
-target="_blank"
-&gt;Regular Expressions for Regular Folk book&lt;/a&gt;: A full site with visual examples. The book itself is single page, which can make it easier for printing or saving to read later.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 class="relative group"&gt;Games
-&lt;div id="games" class="anchor"&gt;&lt;/div&gt;
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
-&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#games" aria-label="Anchor"&gt;#&lt;/a&gt;
-&lt;/span&gt;
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-href="https://regexcrossword.com/"
-target="_blank"
-&gt;Regex Cross­word&lt;/a&gt;: A great website with a variety of levels on regex crossword puzzles.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://jimbly.github.io/regex-crossword/"
-target="_blank"
-&gt;Large Regex Crossword Puzzle example&lt;/a&gt;: This is a single large crossword puzzle.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://www.bbc.co.uk/programmes/articles/5LCB3rN2dWLqsmGMy5KYtBf/puzzle-for-today"
-target="_blank"
-&gt;Regular Expression Crossword puzzle from BBC&lt;/a&gt;: &lt;em&gt;Puzzle for Today&lt;/em&gt; entry that introduced a regular expression crossword puzzle.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 class="relative group"&gt;Random
-&lt;div id="random" class="anchor"&gt;&lt;/div&gt;
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
-&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#random" aria-label="Anchor"&gt;#&lt;/a&gt;
-&lt;/span&gt;
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-href="https://www.autoregex.xyz/"
-target="_blank"
-&gt;AutoRegex&lt;/a&gt;: An online tool that allows you to use &lt;a
-href="https://en.wikipedia.org/wiki/GPT-3"
-target="_blank"
-&gt;GPT-3&lt;/a&gt; to generate regular expressions from plain English, as well as, explain an expression in English. Requires an account (can create one on their site or use the Google identity provider).&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://codegolf.stackexchange.com/questions/28821/regex-that-only-matches-itself/31863#31863"
-target="_blank"
-&gt;Regex that only matches itself&lt;/a&gt;: Stack Exchange post that shares a regular expression which only matches itself.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf"
-target="_blank"
-&gt;Representation of Events in Nerve Nets and Finite Automata&lt;/a&gt; (S.C. Kleene, December 15, 1951): Original paper by Steven Kleene which introduces the concept of &lt;em&gt;regular events&lt;/em&gt;. This paper influenced the concept of regular expressions; however, reading this paper won&amp;rsquo;t teach much on regular expression syntax, but rather how the concept originated.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/"
-target="_blank"
-&gt;Regular Expressions: Now You Have Two Problems&lt;/a&gt;: Popular blog post by Jeff Atwood about regular expressions, their power, and guidance on their use.&lt;/li&gt;
-&lt;li&gt;&lt;a
-href="https://opensource.googleblog.com/2010/03/re2-principled-approach-to-regular.html"
-target="_blank"
-&gt;RE2: a principled approach to regular expression matching&lt;/a&gt;: Blog post by Google on RE2, which is &lt;em&gt;is based on automata theory and guarantees that searches complete in linear time with respect to the size of the input and in a fixed amount of stack space&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 class="relative group"&gt;Humor
-&lt;div id="humor" class="anchor"&gt;&lt;/div&gt;
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
-&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#humor" aria-label="Anchor"&gt;#&lt;/a&gt;
-&lt;/span&gt;
-&lt;/h2&gt;
-&lt;figure&gt;
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regular_expressions.png" alt="" /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/regex_golf.png" alt="" /&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-&lt;img class="my-0 rounded-md" src="https://imgs.xkcd.com/comics/perl_problems.png" alt="" /&gt;
-&lt;/figure&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/regex-express/regex-express.png"/></item><item><title>Tend to your Observability Garden</title><link>https://che55er.io/talks/tend-to-your-o11y-garden/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/tend-to-your-o11y-garden/</guid><description>&lt;p&gt;This talk was presented at &lt;a
+&lt;p&gt;Text is everywhere. Every day we digest copious amounts of textual data from our source code, emails, and websites. With this large buffet of text, we often wish to quickly process the content by filtering, transforming, or extracting meaningful elements without much effort. Regular expressions are a powerful way of identifying patterns in text. We just need to activate this power with some of our existing tooling so we can process text faster!&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/regex-express/regex-express.png"/></item><item><title>Tend to your Observability Garden</title><link>https://che55er.io/talks/tend-to-your-o11y-garden/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/tend-to-your-o11y-garden/</guid><description>&lt;p&gt;This talk was presented at &lt;a
 href="https://newrelic.com/futurestack"
 target="_blank"
 &gt;New Relic&amp;rsquo;s FutureStack 2022 conference&lt;/a&gt;, which focused on sharing lessons learned when dealing with some of the sociotechnical challenges in system observability within a large organization. This walks through some practical examples with how we focused on cultural aspects of learning and sharing approaches, while also including concrete examples in how we scaled and seeked ways in balancing consistency and autonomy in the usage of New Relic.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/tend-to-your-o11y-garden/tend-to-your-o11y-garden.png"/></item><item><title>Learn in Production with Traffic Management</title><link>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/learn-in-prod-w-traffic-mgmt/</guid><description>&lt;h1 class="relative group"&gt;Abstract
