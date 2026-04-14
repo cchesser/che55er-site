@@ -4,10 +4,23 @@ weight: -100
 resources:
 - name: featured-image-preview
   src: "regex-express.png"
-showSummary: false
 ---
 
 ![](regex-express-title.png)
+
+## Abstract
+
+Text is everywhere. Every day we digest copious amounts of textual data from our source code, emails, and websites. With this large buffet of text, we often wish to quickly process the content by filtering, transforming, or extracting meaningful elements without much effort. Regular expressions are a powerful way of identifying patterns in text. We just need to activate this power with some of our existing tooling so we can process text faster!
+
+In this talk, we will walk through how to leverage regular expressions in your daily interactions with text. We will briefly cover introductory material on regular expressions, and then move into how we can do enjoyable things with this power using common tooling for text editing. Examples will be shown on how you can use a text editor as your canvas to match, extract, and transform textual data with regular expressions. This will also highlight other websites and tools that you may use routinely, but never knew its hidden capabilities of regular expressions!
+
+After this talk, you will be excited to use regular expressions more in your life. You will be inspired with learning resources to continually improve this skill in describing patterns, which can take your daily text processing methods onto the express highway.
+
+## Content
+
+* [Slides](/slides/regex-express.pdf)
+
+## Notes
 
 Below are resources and references from my Regex Express talk.
 
