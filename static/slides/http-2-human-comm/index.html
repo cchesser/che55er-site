@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>What HTTP Can Teach Us About Better Human Communication</title>
+
+        <link rel="stylesheet" href="../_shared/revealjs/dist/reset.css">
+        <link rel="stylesheet" href="../_shared/revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="../_shared/revealjs/dist/theme/black.css">
+        <link rel="stylesheet" href="../_shared/revealjs/plugin/highlight/monokai.css">
+
+        <style>
+            :root {
+                --accent: #2dd4bf;
+                --accent-strong: #5eead4;
+                --ink: #f8fafc;
+                --muted: #cbd5e1;
+                --surface: #111827;
+                --surface-soft: #1e293b;
+            }
+
+            body {
+                background: #020617;
+            }
+
+            .reveal {
+                color: var(--ink);
+            }
+
+            .reveal h1, .reveal h2, .reveal h3 {
+                color: var(--ink);
+                text-transform: none;
+            }
+
+            .reveal .accent {
+                color: var(--accent);
+            }
+
+            .reveal strong {
+                color: var(--accent-strong);
+            }
+
+            .reveal .small {
+                font-size: 0.7em;
+                color: var(--muted);
+            }
+
+            .reveal pre {
+                box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+            }
+
+            .reveal pre code {
+                border: 1px solid rgba(148, 163, 184, 0.28);
+                border-radius: 8px;
+            }
+
+            .reveal blockquote {
+                border-left: 4px solid var(--accent);
+                box-shadow: none;
+                color: var(--ink);
+                font-size: 0.82em;
+                line-height: 1.35;
+                padding: 0.5rem 0 0.5rem 1rem;
+                text-align: left;
+            }
+
+            .reveal .status-code {
+                color: var(--accent-strong);
+                font-size: 2.35em;
+                line-height: 1;
+                margin: 0.15em 0 0.35em;
+            }
+
+            .reveal .human-signal {
+                color: var(--ink);
+                font-size: 1.25em;
+                line-height: 1.3;
+            }
+
+            .reveal .status-note {
+                color: var(--muted);
+                font-size: 0.75em;
+                margin-top: 1.25rem;
+            }
+
+            .reveal .source-note {
+                color: var(--muted);
+                font-size: 0.48em;
+                margin-top: 1.25rem;
+            }
+
+            .reveal .example-response {
+                background: linear-gradient(135deg, var(--surface), var(--surface-soft));
+                border: 1px solid rgba(148, 163, 184, 0.28);
+                border-radius: 8px;
+                color: var(--ink);
+                font-size: 0.74em;
+                line-height: 1.45;
+                margin-top: 1rem;
+                padding: 1rem 1.25rem;
+                text-align: left;
+            }
+
+            .reveal .speaker-card {
+                margin-top: 1.5rem;
+            }
+
+            .reveal .references-link {
+                display: inline-block;
+                font-size: 0.55em;
+                margin-top: 1rem;
+            }
+
+            .reveal code {
+                color: var(--accent-strong);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h2>What HTTP Can Teach Us About Better Human Communication</h2>
+                    <img src="img/logo.png" width="400"/>
+                    <table class="speaker-card">
+                        <tr>
+                            <td style="vertical-align: middle;"><img src="../_shared/img/me.png" width="100" /></td>
+                            <td style="vertical-align: middle;">
+                                Carl Chesser
+                                <br />
+                                <small><a href="https://x.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <aside class="notes">
+                        Focus the talk on upfront clarity to prevent follow-up noise.
+                    </aside>
+                </section>
+                <section data-autoslide="7500">
+                    <h2>🧪</h2>
+                    <h3>The Year Was 1989</h3>
+                    <p>At CERN in Geneva, software engineer Tim Berners-Lee was facing a problem that had little to do with e-commerce or social media.</p>
+                    <p class="accent fragment" data-autoslide="7500">The challenge was collaboration.</p>
+                </section>
+                <section data-autoslide="5000">
+                    <h2>🚀</h2>
+                    <h3>HTTP Was Born</h3>
+                    <p>Tim Berners-Lee's early HTTP was a tiny request/response idea with one basic operation:</p>
+                    <code>GET /document</code>
+                    <p class="accent fragment" data-autoslide="5000">No status codes, no headers, if you could connect, you could get information.</p>
+                    <p class="source-note fragment" data-autoslide="5000">RFC 9110 describes HTTP as beginning in 1990 as a simple low-latency GET mechanism.</p>
+                </section>
+
+                <section data-autoslide="10000">
+                    <h2>📈</h2>
+                    <h3>Then the Web Got Complicated</h3>
+                    <p>HTTP/0.9 was enough for simple retrieval. HTTP/1.0 added the language needed for richer information exchange: methods, headers, metadata, and status codes.</p>
+                    <blockquote>"Creating the web was really an act of desperation..."</blockquote>
+                    <p class="source-note fragment" data-autoslide="5000">Tim Berners-Lee, reflecting on information-sharing difficulty at CERN.</p>
+                </section>
+
+                <section>
+                    <h2>🔁</h2>
+                    <h3>The Real Problem</h3>
+                    <p>Human communication is complex. Our contracts are often vague.</p>
+                    <p class="accent">Vague contracts create expensive retries.</p>
+                </section>
+
+                <section>
+                    <h2>📋</h2>
+                    <h3>Make The Request Contract Explicit</h3>
+                    <p>Good APIs define behavior up front: input, output, errors, response time.</p>
+                    <ul>
+                        <li><strong>Intent:</strong> requesting information, needing to make a decision</li>
+                        <li><strong>Payload:</strong> context, deadline, priority, owner</li>
+                        <li><strong>Definition of done:</strong> what "complete" means</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>⏱️</h2>
+                    <h3>Define Response Timing Up Front</h3>
+                    <ul>
+                        <li>Ack SLA: "You will hear back within X hours"</li>
+                        <li>Update cadence: "If pending, updates every X hours/days"</li>
+                        <li>Delivery window: "Expected result by [date + time]"</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>📣</h2>
+                    <h3>Be Explicit About The Next Response</h3>
+                    <p>Vague acknowledgement creates polling.</p>
+                    <div class="example-response">
+                        <strong>Example Response:</strong> "Will look at it."
+                    </div>
+                    <div class="example-response">
+                        <strong>Better Response:</strong> "Yes, I can review it today and will respond by 3 PM with feedback on next steps."
+                    </div>
+                    <p class="accent">Including when the response will be returned in the acknowledgment lowers the cost of communication.</p>
+                </section>
+
+                <section data-autoslide="3750">
+                    <h2>🧭</h2>
+                    <h3>What a Next Update Time Contains</h3>
+                    <ul>
+                        <li><strong>When:</strong> an exact time or date, not "soon"</li>
+                        <li class="fragment" data-autoslide="3750"><strong>What:</strong> decision, progress note, blocker, or revised ETA</li>
+                        <li class="fragment" data-autoslide="3750"><strong>Fallback:</strong> what happens if there is no progress yet</li>
+                    </ul>
+                    <p class="accent fragment" data-autoslide="3750">By including what your response will contain, you help the requester understand the scope.</p>
+                </section>
+
+                <section>
+                    <h2>✅</h2>
+                    <h3>202 Accepted: Useful Pattern</h3>
+                    <div class="example-response">
+                        <strong>202 Accepted.</strong> I have the request and started review. Next update: 2 PM Central. If I do not have an answer by then, I will send the current blocker and a revised ETA.
+                    </div>
+                    <p class="status-note">The update promise is the important part.</p>
+                </section>
+
+                <section data-autoslide="5000">
+                    <h2>🕒</h2>
+                    <h3>Fallback Path Example</h3>
+                    <ul>
+                        <li class="fragment" data-autoslide="5000">"If this becomes urgent before then, use the incident channel."</li>
+                    </ul>
+                    <p class="accent fragment" data-autoslide="5000">A fallback path tells people what to do before the next scheduled update.</p>
+                </section>
+
+                <section>
+                    <h3>HTTP Status As Human Signal</h3>
+                    <p class="status-code"><code>202 Accepted</code></p>
+                    <p class="human-signal">"I heard you, but it's still in progress."</p>
+                    <p class="status-note">Use it with a next update time.</p>
+                </section>
+
+                <section data-autoslide="10000">
+                    <h2>💡</h2>
+                    <h3>Why 202 Exists</h3>
+                    <p>HTTP needed a way to say: "I accepted this, but the work is not done yet."</p>
+                    <p class="accent">It was built for asynchronous work so connections could quickly be freed (efficiency).</p>
+                    <p class="source-note fragment" data-autoslide="5000">RFC 9110 describes 202 as intentionally noncommittal and points to status monitors or fulfillment estimates.</p>
+                </section>
+
+                <section>
+                    <h3>HTTP Status As Human Signal</h3>
+                    <p class="status-code"><code>301 Moved Permanently</code></p>
+                    <p class="human-signal">"The owner or support path changed."</p>
+                    <p class="status-note">Helpful response: "I no longer support this. Please contact the platform team in #platform-help for future requests."</p>
+                </section>
+
+                <section>
+                    <h3>HTTP Status As Human Signal</h3>
+                    <p class="status-code"><code>429 Too Many Requests</code></p>
+                    <p class="human-signal">"I'm overloaded right now."</p>
+                    <p class="status-note">Use it with a reset time or a smaller request.</p>
+                </section>
+                <section data-autoslide="10000">
+                    <h2>🚦</h2>
+                    <h3>Why 429 Exists</h3>
+                    <p><code>429 Too Many Requests</code> was added later, in April 2012, in RFC 6585 to make rate limiting explicit.</p>
+                    <p class="accent">The request may be valid, but there are too many requests in a period of time.</p>
+                    <p class="source-note fragment" data-autoslide="5000">RFC 6585 specifies 429 responses can include details and a <code>Retry-After</code> header.</p>
+                </section>
+
+                <section>
+                    <h3>HTTP Status As Human Signal</h3>
+                    <p class="status-code"><code>503 Service Unavailable</code></p>
+                    <p class="human-signal">"I'm out of the office until June 3rd."</p>
+                    <p class="status-note">Automatic signals help others know when you are unavailable to respond.</p>
+                </section>
+
+                <section>
+                    <h2>🔄</h2>
+                    <h3>Polling vs Predictability</h3>
+                    <p><strong>Without contract:</strong> "Just checking in on that earlier email..."</p>
+                    <p><strong>With contract:</strong> The requester knows when to expect a response and does not have to poll.</p>
+                    <p class="accent">When timing is explicit, clients stop polling.</p>
+                </section>
+
+                <section>
+                    <h2>🛠️</h2>
+                    <h3>Start This Week</h3>
+                    <ol>
+                        <li>When acknowledging work, include what you will do and <span class="accent">when you will respond</span>.</li>
+                        <li>Consider what are <span class="accent">valid fallbacks</span> to include in communication.</li>
+                        <li>Use <span class="accent">out of office email status / Slack status</span> to communicate when you can't respond (503).</li>
+                    </ol>
+                    <p class="small">Clear expectations are the fastest way to reduce uncertainty and noise.</p>
+                </section>
+
+                <section>
+                    <h2>Thank You</h2>
+                    <img src="img/logo.png" width="400"/>
+                    <table class="speaker-card">
+                        <tr>
+                            <td style="vertical-align: middle;"><img src="../_shared/img/me.png" width="100" /></td>
+                            <td style="vertical-align: middle;">
+                                Carl Chesser
+                                <br />
+                                <small><a href="https://x.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><a class="references-link" href="references.html">References</a></p>
+                </section>
+            </div>
+        </div>
+
+        <script src="../_shared/revealjs/dist/reveal.js"></script>
+        <script src="../_shared/revealjs/plugin/notes/notes.js"></script>
+        <script src="../_shared/revealjs/plugin/markdown/markdown.js"></script>
+        <script src="../_shared/revealjs/plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                hash: true,
+                autoSlide: 15000,
+                autoSlideMethod: Reveal.next,
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
