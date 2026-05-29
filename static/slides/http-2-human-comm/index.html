@@ -150,16 +150,19 @@
                     <h3>HTTP Was Born</h3>
                     <p>Tim Berners-Lee's early HTTP was a tiny request/response idea with one basic operation:</p>
                     <code>GET /document</code>
-                    <p class="accent fragment" data-autoslide="5000">No status codes, no headers, if you could connect, you could get information.</p>
-                    <p class="source-note fragment" data-autoslide="5000">RFC 9110 describes HTTP as beginning in 1990 as a simple low-latency GET mechanism.</p>
+                    <p class="accent fragment" data-fragment-index="1" data-autoslide="5000">No status codes, no headers, if you could connect, you could get information.</p>
+                    <p class="source-note fragment" data-fragment-index="1" data-autoslide="5000">RFC 9110 describes HTTP as beginning in 1990 as a simple low-latency GET mechanism.</p>
                 </section>
 
                 <section data-autoslide="10000">
                     <h2>📈</h2>
                     <h3>Then the Web Got Complicated</h3>
-                    <p>HTTP/0.9 was enough for simple retrieval. HTTP/1.0 added the language needed for richer information exchange: methods, headers, metadata, and status codes.</p>
-                    <blockquote>"Creating the web was really an act of desperation..."</blockquote>
-                    <p class="source-note fragment" data-autoslide="5000">Tim Berners-Lee, reflecting on information-sharing difficulty at CERN.</p>
+                    <ul>
+                        <li>HTTP/0.9 was enough for simple retrieval.</li>
+                        <li>HTTP/1.0 added the language needed for richer information exchange: methods, headers, metadata, and status codes.</li>
+                    </ul>
+                    <blockquote class="fragment" data-fragment-index="1" data-autoslide="5000">"Creating the web was really an act of desperation..."</blockquote>
+                    <p class="source-note fragment" data-fragment-index="1" data-autoslide="5000">Tim Berners-Lee, reflecting on information-sharing difficulty at CERN.</p>
                 </section>
 
                 <section>
@@ -169,14 +172,14 @@
                     <p class="accent">Vague contracts create expensive retries.</p>
                 </section>
 
-                <section>
+                <section data-autoslide="5000">
                     <h2>📋</h2>
                     <h3>Make The Request Contract Explicit</h3>
-                    <p>Good APIs define behavior up front: input, output, errors, response time.</p>
+                    <p>Good APIs define behavior up front.</p>
                     <ul>
-                        <li><strong>Intent:</strong> requesting information, needing to make a decision</li>
-                        <li><strong>Payload:</strong> context, deadline, priority, owner</li>
-                        <li><strong>Definition of done:</strong> what "complete" means</li>
+                        <li class="fragment" data-autoslide="3000"><strong>Intent:</strong> "i need information on..."</li>
+                        <li class="fragment" data-autoslide="3000"><strong>Payload:</strong>"why I need this information..." </li>
+                        <li class="fragment" data-autoslide="3000"><strong>Definition of done:</strong> what "complete" means for getting info</li>
                     </ul>
                 </section>
 
@@ -208,10 +211,25 @@
                     <h3>What a Next Update Time Contains</h3>
                     <ul>
                         <li><strong>When:</strong> an exact time or date, not "soon"</li>
-                        <li class="fragment" data-autoslide="3750"><strong>What:</strong> decision, progress note, blocker, or revised ETA</li>
+                        <li class="fragment" data-autoslide="3750"><strong>What:</strong> decision, progress note, blocker</li>
                         <li class="fragment" data-autoslide="3750"><strong>Fallback:</strong> what happens if there is no progress yet</li>
                     </ul>
-                    <p class="accent fragment" data-autoslide="3750">By including what your response will contain, you help the requester understand the scope.</p>
+                    <p class="accent fragment" data-autoslide="5750">By including what your response will contain, you help the requester understand the scope.</p>
+                </section>
+
+                <section>
+                    <h3>HTTP Status As Human Signal</h3>
+                    <p class="status-code"><code>202 Accepted</code></p>
+                    <p class="human-signal">"I heard you, but it's still in progress."</p>
+                    <p class="status-note">Use it with a next update time.</p>
+                </section>
+
+                <section data-autoslide="7000">
+                    <h2>💡</h2>
+                    <h3>Why 202 Exists</h3>
+                    <p>HTTP needed a way to say: "I accepted this, but the work is not done yet."</p>
+                    <p class="accent fragment" data-fragment-index="1" data-autoslide="5000">It was built for asynchronous work so connections could quickly be freed (efficiency).</p>
+                    <p class="source-note fragment" data-fragment-index="1" data-autoslide="5000">RFC 9110 describes 202 as intentionally noncommittal and points to status monitors or fulfillment estimates.</p>
                 </section>
 
                 <section>
@@ -226,25 +244,8 @@
                 <section data-autoslide="5000">
                     <h2>🕒</h2>
                     <h3>Fallback Path Example</h3>
-                    <ul>
-                        <li class="fragment" data-autoslide="5000">"If this becomes urgent before then, use the incident channel."</li>
-                    </ul>
+                    <p>"If this becomes urgent before then, use the incident channel."</p>
                     <p class="accent fragment" data-autoslide="5000">A fallback path tells people what to do before the next scheduled update.</p>
-                </section>
-
-                <section>
-                    <h3>HTTP Status As Human Signal</h3>
-                    <p class="status-code"><code>202 Accepted</code></p>
-                    <p class="human-signal">"I heard you, but it's still in progress."</p>
-                    <p class="status-note">Use it with a next update time.</p>
-                </section>
-
-                <section data-autoslide="10000">
-                    <h2>💡</h2>
-                    <h3>Why 202 Exists</h3>
-                    <p>HTTP needed a way to say: "I accepted this, but the work is not done yet."</p>
-                    <p class="accent">It was built for asynchronous work so connections could quickly be freed (efficiency).</p>
-                    <p class="source-note fragment" data-autoslide="5000">RFC 9110 describes 202 as intentionally noncommittal and points to status monitors or fulfillment estimates.</p>
                 </section>
 
                 <section>
