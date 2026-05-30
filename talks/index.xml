@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talks on thoughts</title><link>https://che55er.io/talks/</link><description>Recent content in talks on thoughts</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://che55er.io/talks/index.xml" rel="self" type="application/rss+xml"/><item><title>Mind Hacks for Incident Analysis</title><link>https://che55er.io/talks/mind-hacks-for-incident-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/mind-hacks-for-incident-analysis/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talks on thoughts</title><link>https://che55er.io/talks/</link><description>Recent content in talks on thoughts</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://che55er.io/talks/index.xml" rel="self" type="application/rss+xml"/><item><title>What HTTP Can Teach Us About Better Human Communication</title><link>https://che55er.io/talks/http-human-communication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/http-human-communication/</guid><description>&lt;h2 class="relative group"&gt;Description
+&lt;div id="description" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#description" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;In DevOps, our systems rely on clear contracts, acknowledgements, and predictable responses - but our communication often doesn’t. The result is endless “just checking in” pings, unnecessary meetings, and avoidable interruptions.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/http-human-communication/slides-preview.png"/></item><item><title>A Practical Guide to JVM Native Memory in Kubernetes</title><link>https://che55er.io/talks/guide-to-jvm-native-memory-k8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/guide-to-jvm-native-memory-k8s/</guid><description>&lt;h2 class="relative group"&gt;Description
+&lt;div id="description" class="anchor"&gt;&lt;/div&gt;
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+&lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#description" aria-label="Anchor"&gt;#&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;Most JVM tuning stops at the heap, but in Kubernetes, that&amp;rsquo;s often why you&amp;rsquo;re overprovisioning memory and still getting OOMKilled. Native memory (metaspace, threads, direct buffers, and more) quietly consumes a significant portion of your container limits, leading teams to oversize requests &amp;ldquo;just to be safe&amp;rdquo; and pay for it.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://che55er.io/talks/guide-to-jvm-native-memory-k8s/featured.png"/></item><item><title>Mind Hacks for Incident Analysis</title><link>https://che55er.io/talks/mind-hacks-for-incident-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://che55er.io/talks/mind-hacks-for-incident-analysis/</guid><description>&lt;p&gt;&lt;figure&gt;&lt;img
 class="my-0 rounded-md"
 loading="lazy"
 decoding="async"
