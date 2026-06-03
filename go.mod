@@ -1,5 +1,5 @@
 module github.com/cchesser/che55er-site
 
-require github.com/nunocoracao/blowfish/v2 v2.93.0
+require github.com/nunocoracao/blowfish/v2 v2.103.0
 
 go 1.22.3

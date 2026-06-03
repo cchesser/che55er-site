@@ -8,3 +8,5 @@ github.com/nunocoracao/blowfish/v2 v2.89.1 h1:Y2GssdIeel5ee6+WP8DHttn2BbQWX7ak5B
 github.com/nunocoracao/blowfish/v2 v2.89.1/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=
 github.com/nunocoracao/blowfish/v2 v2.93.0 h1:Icew7jladCzzfEVFmxP8rZWodDdE2moPAJZhfJvT8vU=
 github.com/nunocoracao/blowfish/v2 v2.93.0/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=
+github.com/nunocoracao/blowfish/v2 v2.103.0 h1:zwGBHMMgpd76+AWC7VxWLuZFctwj24J9FOqCO2OML+8=
+github.com/nunocoracao/blowfish/v2 v2.103.0/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=
