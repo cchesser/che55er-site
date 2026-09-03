@@ -1,43 +1,1054 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Why Your Systems Behave Strangely</title>
-<link rel="stylesheet" href="../_shared/revealjs/dist/reset.css"><link rel="stylesheet" href="../_shared/revealjs/dist/reveal.css"><link rel="stylesheet" href="../_shared/revealjs/dist/theme/white.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<style>
-:root{--paper:#f3fbff;--ink:#111;--muted:#5f6470;--line:#d8d3c4;--accent:#8fd3ff;--blue:#1f8fcb;--soft:#e3f5ff;--r-background-color:var(--paper)}html,.reveal-viewport,body{background:var(--paper);color:var(--ink)}.reveal{color:var(--ink)}.reveal .slides{text-align:left}.reveal h1,.reveal h2,.reveal h3{color:var(--ink);line-height:1.05;text-transform:none}.reveal h1{font-size:2.35em}.reveal h2{font-size:1.8em}.reveal section:not(.title-slide) h2{font-size:1.5em}.reveal h3{font-size:1.2em}.reveal p,.reveal li{line-height:1.3}.reveal li{margin:.28em 0}.reveal strong,.accent{color:var(--blue)}.muted,.small{color:var(--muted)}.small{font-size:.62em}.title-slide{text-align:center}.title-slide-title{font-size:1.2em!important;margin:0;white-space:nowrap}.title-main{display:block;font-weight:800}.title-subtitle{color:var(--muted);display:block;font-size:.68em;font-weight:400;margin-top:.2em}.title-slide-image{height:auto;max-width:72%}.speaker-card{border-collapse:collapse;margin-top:1.4rem}.speaker-card td{border:0;padding:.2rem .55rem .2rem 0;vertical-align:middle}.title-slide .speaker-card{display:table;font-size:.82em;margin:1.5rem auto 0;text-align:left;width:auto}.title-slide .speaker-card img{height:auto;width:100px}.two-col,.three-col,.four-col{display:grid;gap:1rem}.two-col{grid-template-columns:1fr 1fr}.three-col{grid-template-columns:repeat(3,1fr)}.four-col{grid-template-columns:repeat(4,1fr)}.concept-card,.example-card{background:#ffffffb0;border:2px solid var(--line);border-radius:8px;padding:.7rem .85rem}.example-card{background:var(--soft);border-color:var(--accent)}.flow-row{align-items:center;display:grid;gap:.5rem;grid-template-columns:1fr auto 1fr auto 1fr;margin-top:1rem}.arrow{color:var(--blue);font-size:2em;text-align:center}.arrow:before{content:'\\f061';font-family:'Font Awesome 6 Free';font-weight:900}.reveal blockquote{border-left:5px solid var(--blue);box-shadow:none;color:var(--ink);font-size:.9em;line-height:1.35;padding:.35rem 0 .35rem 1rem;width:90%}.reveal table{font-size:.58em;width:100%}.reveal th{color:var(--blue)}.reveal th,.reveal td{padding:.22em .35em;vertical-align:top}@media(max-width:780px){.two-col,.three-col,.four-col,.flow-row{grid-template-columns:1fr}.title-slide-title{white-space:normal}}
-</style>
-<style>
-html,.reveal-viewport,body,.reveal{background-color:#f3fbff;background-image:url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 0V32M0 32H32' fill='none' stroke='%238fd3ff' stroke-opacity='0.42' stroke-width='1' stroke-dasharray='2 6'/%3E%3C/svg%3E");background-size:32px 32px}
-<style>.arrow:before{content:"\f061";font-family:"Font Awesome 6 Free";font-weight:900}</style></head>
-<body><div class="reveal"><div class="slides">
-<section class="title-slide"><h1 class="title-slide-title"><span class="title-main">Why Your Systems Behave Strangely</span><span class="title-subtitle">Systems Thinking for Software Architects</span></h1><img class="title-slide-image" src="img/systems-thinking.png" alt="Systems thinking illustration" width="700"><table class="speaker-card"><tr><td style="vertical-align: middle;"><img src="../_shared/img/me.png" width="100" alt="Carl Chesser"></td><td style="vertical-align: middle;">Carl Chesser<br><small><a href="https://x.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small></td></tr></table><aside class="notes">Welcome everyone. We will look at distributed software through the lens of systems thinking, then apply Donella Meadows&apos; leverage points to software design.</aside></section>
-<section><h2>We&apos;ve All Fixed One Thing and Broken Another</h2><ul><li>Added database connections <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> exhausted database memory</li><li>Auto-scaled a service <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> triggered a cascading outage</li><li>Increased retries <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> made an overloaded dependency worse</li></ul><aside class="notes">These are often locally rational decisions that interact badly with the larger system.</aside></section>
-<section><h2>What Is Linear Thinking?</h2><div class="concept-card"><p class="accent">Linear thinking assumes a predictable chain of cause and effect: A causes B.</p><ul><li>One action has one primary result.</li><li>More input produces roughly more output.</li><li>Fix the broken component and the system is fixed.</li></ul></div><p class="small">Useful for simple, isolated mechanisms.</p><aside class="notes">Linear thinking is a straightforward mental model: identify a cause, predict its effect, and correct the part that failed.</aside></section>
-<section><h2>What Is Non-Linear Thinking?</h2><div class="example-card"><p class="accent">Non-linear thinking recognizes that cause and effect are not proportional.</p></div><div class="two-col"><div class="concept-card"><h3>Linear</h3><p>A causes B. More input creates roughly more output.</p></div><div class="example-card"><h3>Non-linear</h3><p>Feedback and thresholds mean a small change can create a much larger result.</p></div></div><aside class="notes">In a non-linear system, relationships between parts change the outcome. A service can be healthy at 70% utilization and behave very differently at 90%, when queues grow and retries begin.</aside></section>
-<section><h2>The “Root Cause” Trap</h2><!-- TODO: Add image here --></section>
-<section><h2>The Iceberg Model</h2><div class="three-col"><div class="concept-card"><h3>Events · React</h3><p>“Checkout timed out at 2:15 PM.”</p></div><div class="concept-card"><h3>Patterns · Anticipate</h3><p>“Timeouts spike during every promotion.”</p></div><div class="example-card"><h3>Structure · Design</h3><p>Synchronous calls, unbounded retries, and no backpressure create a predictable failure mode.</p></div></div><aside class="notes">Events are the visible surface. Patterns tell us what keeps happening. Structure explains why the pattern keeps happening.</aside></section>
-<section><h2>System Anatomy: Stocks, Flows &amp; Delays</h2><div class="three-col"><div class="concept-card"><h3>Stocks</h3><p>What accumulates?</p><p>Requests, queue messages, connections, memory, cached data.</p></div><div class="concept-card"><h3>Flows</h3><p>What changes the stocks?</p><p>Requests/sec, message consumption, throughput.</p></div><div class="example-card"><h3>Delays</h3><p>How long before the system knows or reacts?</p><p>Telemetry, network, queue, deployment, human response.</p></div></div><aside class="notes">Ask: what is accumulating, what is moving, and how quickly does the system respond?</aside></section>
-<section><h2>The Retry Storm</h2><div class="flow-row"><div class="concept-card">Dependency slows</div><div class="arrow"></div><div class="concept-card">Client times out</div><div class="arrow"></div><div class="example-card">Client retries</div></div><div class="flow-row"><div class="concept-card">More load</div><div class="arrow"></div><div class="concept-card">Dependency slows further</div><div class="arrow"></div><div class="example-card">↺</div></div><p class="accent">The feedback structure turns a small failure into a large failure.</p></section>
-<section><h2>Balancing Feedback Loops</h2><div class="two-col"><div class="concept-card"><h3>Reinforcing</h3><p>Failure <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Retry <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> More Load <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> More Failure</p></div><div class="example-card"><h3>Balancing</h3><p>Failure <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Detect <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Reduce Load <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Recover</p></div></div><h3>Architectural patterns</h3><p>Circuit breakers · Rate limiting · Backpressure · Load shedding · Health checks · Autoscaling · Fail-fast</p><aside class="notes">These patterns sense system state and change behavior in response. They actively try to restore stability.</aside></section>
-<section><h2>The Leverage Ladder</h2><div class="four-col"><div class="concept-card"><h3>10–12 · Tune</h3><p>Parameters, buffers, structure</p></div><div class="concept-card"><h3>7–9 · Control</h3><p>Delays and feedback loops</p></div><div class="concept-card"><h3>4–6 · Change</h3><p>Information, rules, self-organization</p></div><div class="example-card"><h3>1–3 · Question</h3><p>Goals, paradigms, transcendence</p></div></div><p class="accent">From tuning the system to questioning the system.</p><aside class="notes">The question is not whether an intervention is good. It is: what part of the system are we actually changing?</aside></section>
-<section><h2>TUNE: #12 Parameters</h2><p>Change a constant, threshold, or parameter.</p><div class="three-col"><div class="concept-card"><h3>Examples</h3><p>HTTP timeout · Retry count · Thread pool · DB connection limit</p></div><div class="concept-card"><h3>More examples</h3><p>Cache TTL · CPU/memory · Batch size · Rate-limit value</p></div><div class="example-card"><h3>Example</h3><p><code>DB connection pool: 50</code> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> <code>200</code></p></div></div><blockquote>Did we change the system, or how hard we push it?</blockquote><aside class="notes">Parameters are useful, but low-leverage. A larger pool may simply transfer the bottleneck to the database.</aside></section>
-<section><h2>TUNE: #11 Buffers</h2><p>Increase or redesign the capacity of a stabilizing stock.</p><div class="two-col"><div class="concept-card"><h3>Examples</h3><p>Kafka topics · Message queues · Worker pools · Connection pools · Caches · DLQs</p></div><div class="example-card"><h3>Question</h3><p>Are we solving the imbalance—or storing the imbalance?</p><p>Producers ↓<br>┌──────── QUEUE ────────┐<br>Consumers ↑</p></div></div><aside class="notes">Buffers buy time, but if inflow consistently exceeds outflow, the stock eventually fills.</aside></section>
-<section><h2>TUNE: #10 Structure of Stocks &amp; Flows</h2><p>Change the topology through which data, requests, and resources flow.</p><div class="two-col"><div class="concept-card"><h3>Before</h3><p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Inventory DB <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Payment DB <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Order DB</p></div><div class="example-card"><h3>After</h3><p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> <code>OrderCreated</code> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Event Bus <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Inventory · Payment · Fulfillment · Analytics</p></div></div><p class="accent">What if the problem is not capacity—but the path the work is taking?</p></section>
-<section><h2>CONTROL: #9 Delays</h2><p>Change how quickly the system knows and reacts.</p><div class="three-col"><div class="concept-card"><h3>Reduce delay</h3><p>Polling <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> events<br>Batch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> streaming<br>Slow telemetry <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> real-time</p></div><div class="concept-card"><h3>Speed feedback</h3><p>Long deployment cycles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> continuous delivery<br>Slow reconciliation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> faster feedback</p></div><div class="example-card"><h3>Question</h3><p>How long does the system operate on stale information?</p></div></div><aside class="notes">A control loop that reacts too slowly can overshoot; one that reacts too quickly can oscillate.</aside></section>
-<section><h2>CONTROL: #8 Balancing Feedback</h2><p>Strengthen the mechanism that pushes the system toward stability.</p><div class="three-col"><div class="concept-card"><h3>Circuit breaker</h3><p>Failure ↑ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Stop calls <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Dependency recovers</p></div><div class="concept-card"><h3>Rate limiter</h3><p>Demand ↑ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Restrict inflow <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Protect capacity</p></div><div class="example-card"><h3>Backpressure</h3><p>Consumer slows <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Producer slows <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Queue stabilizes</p></div></div><p>Also: load shedding and fail-fast behavior.</p></section>
-<section><h2>CONTROL: #7 Reinforcing Feedback</h2><p>Reduce the gain of the runaway loop.</p><div class="two-col"><div class="concept-card"><h3>Interventions</h3><p>Exponential backoff · Jitter · Retry budgets · Request coalescing · Cache-stampede protection · Bounded concurrency</p></div><div class="example-card"><h3>The distinction</h3><p><strong>#8:</strong> Strengthen balancing — stop when unhealthy.</p><p><strong>#7:</strong> Weaken reinforcing — do not generate synchronized load.</p></div></div></section>
-<section><h2>CHANGE: #6 Information Flows</h2><p>Give the system information it did not have.</p><div class="two-col"><div class="concept-card"><h3>Without context</h3><p>Request timeout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> “Something failed”</p></div><div class="example-card"><h3>With context</h3><p>Latency 1.8s · Error rate 23% · Queue depth 91% · Capacity 82% · Health DEGRADED</p></div></div><p>OpenTelemetry · Tracing · Metrics · Events · Service discovery · Dependency graphs · Cost telemetry</p><blockquote>Who knows what—and when do they know it?</blockquote></section>
-<section><h2>CHANGE: #5 Rules</h2><p>Change what the system is allowed to do.</p><div class="three-col"><div class="concept-card"><h3>Rules</h3><p>API contracts · Quotas · RBAC · Network policies · SLOs · Admission policies</p></div><div class="concept-card"><h3>Example</h3><p>“No tenant may consume more than 20% of shared capacity.”</p></div><div class="example-card"><h3>Question</h3><p>What rules cause locally rational behavior to produce healthy—or unhealthy—global behavior?</p></div></div></section>
-<section><h2>CHANGE: #4 Self-Organization</h2><p>Give the system the ability to change itself.</p><div class="flow-row"><div class="concept-card">Desired state</div><div class="arrow"></div><div class="example-card">Controller</div><div class="arrow"></div><div class="concept-card">Actual state ↺ reconcile</div></div><p>Kubernetes controllers · Operators · GitOps · Autoscaling · Canaries · Self-healing infrastructure · Plugins</p><blockquote>Who has the authority to change the structure of the system?</blockquote></section>
-<section><h2>QUESTION: #3 Change the Goal</h2><div class="two-col"><div class="concept-card"><h3>Old goal</h3><p>Checkout must synchronously confirm inventory before responding.</p><p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> synchronous inventory <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> respond</p></div><div class="example-card"><h3>Actual goal?</h3><p>Never sell inventory we do not have.</p><p>Reservation system <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> eventually consistent workflow</p></div></div><p class="accent">Are we optimizing the right thing?</p><aside class="notes">Goals determine architecture. The business requirement may be preventing overselling; synchronous consistency may only be an implementation assumption.</aside></section>
-<section><h2>QUESTION: #2 Change the Paradigm</h2><div class="two-col"><div class="concept-card"><h3>From</h3><p>“A distributed system should behave like a local function call.”</p></div><div class="example-card"><h3>To</h3><p>“Distributed systems are inherently asynchronous and failure-prone.”</p></div></div><p>Event-driven workflows · Eventual consistency · Sagas · Compensation · Idempotency · Immutable events</p><blockquote>What assumption are we treating as a law of nature?</blockquote></section>
-<section><h2>QUESTION: #1 Transcend Paradigms</h2><p class="accent">The architecture is not the truth.</p><p>Monolith <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Microservices <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Serverless <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Event-driven <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> “What&apos;s next?”</p><div class="two-col"><div class="concept-card"><h3>The capability</h3><p>Recognize that every architecture is a model—and models can become wrong.</p></div><div class="example-card"><h3>Make change possible</h3><p>Replaceable components · Stable interfaces · Composable systems · Explicit boundaries · Evolutionary architecture</p></div></div><blockquote>How easily can we change our minds?</blockquote></section>
-<section><h2>Release It! Is Systems Thinking in Disguise</h2><table><thead><tr><th>Release It! pattern</th><th>Systems thinking</th></tr></thead><tbody><tr><td>Timeout</td><td>Limits exposure to delay</td></tr><tr><td>Circuit breaker</td><td>Strengthens balancing feedback</td></tr><tr><td>Bulkhead</td><td>Isolates stocks and flows</td></tr><tr><td>Rate limiter / backpressure</td><td>Controls inflow and couples production to capacity</td></tr><tr><td>Load shedding / fail fast</td><td>Protects stability and reduces delay</td></tr><tr><td>Backoff / jitter</td><td>Reduces reinforcing-loop gain and synchronized amplification</td></tr></tbody></table><blockquote>Release It! gives patterns for controlling dynamics. Meadows gives vocabulary for understanding why they work.</blockquote></section>
-<section><h2>Case Study: The Database Bottleneck</h2><table><thead><tr><th>Leverage</th><th>Intervention</th><th>What changes?</th></tr></thead><tbody><tr><td>#12 Parameter</td><td>Increase DB connections</td><td>A number</td></tr><tr><td>#11 Buffer</td><td>Add queue capacity</td><td>Accumulation</td></tr><tr><td>#10 Structure</td><td>Decouple DB workflows</td><td>Flow topology</td></tr><tr><td>#9 / #8 / #7</td><td>Reduce delay; circuit breaker; backoff + jitter</td><td>Timing, stability, amplification</td></tr><tr><td>#6 / #5 / #4</td><td>Signals; quotas; automated adaptation</td><td>Information, rules, agency</td></tr><tr><td>#3 / #2 / #1</td><td>Reservation goal; async paradigm; evolvable architecture</td><td>Success, assumptions, models</td></tr></tbody></table><aside class="notes">Walk from the bottom of the table toward the top. Each intervention changes a different aspect of the system; no level is automatically good or bad.</aside></section>
-<section><h2>Interactive Exercise: What Would You Do?</h2><div class="example-card"><h3>Black Friday checkout is failing</h3><ul><li>Requests time out; inventory DB is at 95% CPU</li><li>Clients retry three times; queue depth is growing</li><li>Autoscaling is adding checkout instances</li></ul></div><p class="accent">What would you change?</p><p>Classify the answers: timeout/DB capacity <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #12 · queue <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #11 · flow <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #10 · signals <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #9/#6 · circuit breaker <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #8 · backoff/jitter <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #7 · rules <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #5 · adaptation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #4 · goal <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #3 · assumptions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #2</p><aside class="notes">Let the audience propose solutions first. Then classify their answers and show that most instincts live at the bottom of the ladder.</aside></section>
-<section><h2>Post-Incident Analysis: Climb the Ladder</h2><ol><li><strong>What happened?</strong> Event: checkout timed out.</li><li><strong>What pattern produced it?</strong> Timeouts happen during traffic spikes.</li><li><strong>What structure produced the pattern?</strong> Synchronous dependency + retries + no backpressure.</li><li><strong>What feedback loops were involved?</strong> Retry amplification + insufficient balancing.</li><li><strong>What intervention are we proposing?</strong> Parameter, buffer, feedback, information, rule, goal, or paradigm?</li></ol><aside class="notes">If every action item is configuration or retraining, we may be fixing symptoms. Ask whether the postmortem can introduce a mechanism or change the structural condition.</aside></section>
-<section><h2>Architectural Takeaways</h2><ol><li><strong>Beware the Event Trap:</strong> Events are symptoms; structure generates behavior over time.</li><li><strong>Find the Loops:</strong> Ask what amplifies failure and what counteracts it.</li><li><strong>Find Stocks, Flows &amp; Delays:</strong> What accumulates, moves, and waits?</li><li><strong>Climb the Leverage Ladder:</strong> Do not stop at parameters when the problem is structural.</li><li><strong>Question the Goal:</strong> Sometimes the highest-leverage change is changing what success means.</li></ol><blockquote>Good architecture does not just survive failure. It changes the dynamics that produce failure.</blockquote><aside class="notes">Close by returning to the questions: what structure created this behavior, what flow is overwhelming what stock, what loop are we creating, and how easily can we change our minds?</aside></section>
-<section><h2>Appendix: Meadows&apos; 12 Leverage Points</h2><ol><li><strong>#12</strong> Constants, parameters, numbers</li><li><strong>#11</strong> Sizes of buffers relative to flows</li><li><strong>#10</strong> Structure of material stocks and flows</li><li><strong>#9</strong> Lengths of delays relative to system change</li><li><strong>#8</strong> Strength of negative feedback loops</li><li><strong>#7</strong> Gain around driving positive feedback loops</li><li><strong>#6</strong> Structure of information flows</li><li><strong>#5</strong> Rules of the system</li><li><strong>#4</strong> Power to add, change, evolve, or self-organize structure</li><li><strong>#3</strong> Goals of the system</li><li><strong>#2</strong> Mindset or paradigm</li><li><strong>#1</strong> Power to transcend paradigms</li></ol><p class="small">Source: Donella Meadows, <em>Leverage Points: Places to Intervene in a System</em>.</p></section>
-</div></div><script src="../_shared/revealjs/dist/reveal.js"></script><script src="../_shared/revealjs/plugin/notes/notes.js"></script><script>Reveal.initialize({hashOneBasedIndex: true,hash:true,plugins:[RevealNotes]});</script>
-</body></html>
+    <style>
+        .iceberg-switch {
+            align-items: start !important
+        }
+
+        .iceberg-switch>* {
+            height: calc(100% - 2rem) !important;
+            margin: 0 !important
+        }
+
+        .outline-slide .outline-layout>img {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        @media(max-width:780px) {
+            .outline-slide .outline-layout>img {
+                position: static;
+                transform: none
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Why Your Systems Behave Strangely</title>
+    <link rel="stylesheet" href="../_shared/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="../_shared/revealjs/dist/reveal.css">
+    <link rel="stylesheet" href="../_shared/revealjs/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --paper: #f3fbff;
+            --ink: #111;
+            --muted: #5f6470;
+            --line: #d8d3c4;
+            --accent: #8fd3ff;
+            --blue: #1f8fcb;
+            --soft: #e3f5ff;
+            --r-background-color: var(--paper)
+        }
+
+        html,
+        .reveal-viewport,
+        body {
+            background: var(--paper);
+            color: var(--ink)
+        }
+
+        .reveal {
+            color: var(--ink)
+        }
+
+        .reveal .slides {
+            text-align: left
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            color: var(--ink);
+            line-height: 1.05;
+            text-transform: none
+        }
+
+        .reveal h1 {
+            font-size: 2.35em
+        }
+
+        .reveal h2 {
+            font-size: 1.8em
+        }
+
+        .reveal section:not(.title-slide) h2 {
+            font-size: 1.5em
+        }
+
+        .reveal h3 {
+            font-size: 1.2em
+        }
+
+        .reveal p,
+        .reveal li {
+            line-height: 1.3
+        }
+
+        .reveal li {
+            margin: .28em 0
+        }
+
+        .reveal strong,
+        .accent {
+            color: var(--blue)
+        }
+
+        .muted,
+        .small {
+            color: var(--muted)
+        }
+
+        .small {
+            font-size: .62em
+        }
+
+        .title-slide {
+            text-align: center
+        }
+
+        .title-slide-title {
+            font-size: 1.2em !important;
+            margin: 0;
+            white-space: nowrap
+        }
+
+        .title-main {
+            display: block;
+            font-weight: 800
+        }
+
+        .title-subtitle {
+            color: var(--muted);
+            display: block;
+            font-size: .68em;
+            font-weight: 400;
+            margin-top: .2em
+        }
+
+        .title-slide-image {
+            height: auto;
+            max-width: 72%
+        }
+
+        .speaker-card {
+            border-collapse: collapse;
+            margin-top: 1.4rem
+        }
+
+        .speaker-card td {
+            border: 0;
+            padding: .2rem .55rem .2rem 0;
+            vertical-align: middle
+        }
+
+        .title-slide .speaker-card {
+            display: table;
+            font-size: .82em;
+            margin: 1.5rem auto 0;
+            text-align: left;
+            width: auto
+        }
+
+        .title-slide .speaker-card img {
+            height: auto;
+            width: 100px
+        }
+
+        .two-col,
+        .three-col,
+        .four-col {
+            display: grid;
+            gap: 1rem
+        }
+
+        .two-col {
+            grid-template-columns: 1fr 1fr
+        }
+
+        .three-col {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .four-col {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .concept-card,
+        .example-card {
+            background: #ffffffb0;
+            border: 2px solid var(--line);
+            border-radius: 8px;
+            padding: .7rem .85rem
+        }
+
+        .example-card {
+            background: var(--soft);
+            border-color: var(--accent)
+        }
+
+        .flow-row {
+            align-items: center;
+            display: grid;
+            gap: .5rem;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            margin-top: 1rem
+        }
+
+        .arrow {
+            color: var(--blue);
+            font-size: 2em;
+            text-align: center
+        }
+
+        .arrow:before {
+            content: '\\f061';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900
+        }
+
+        .reveal blockquote {
+            border-left: 5px solid var(--blue);
+            box-shadow: none;
+            color: var(--ink);
+            font-size: .9em;
+            line-height: 1.35;
+            padding: .35rem 0 .35rem 1rem;
+            width: 90%
+        }
+
+        .reveal table {
+            font-size: .58em;
+            width: 100%
+        }
+
+        .reveal th {
+            color: var(--blue)
+        }
+
+        .reveal th,
+        .reveal td {
+            padding: .22em .35em;
+            vertical-align: top
+        }
+
+        @media(max-width:780px) {
+
+            .two-col,
+            .three-col,
+            .four-col,
+            .flow-row {
+                grid-template-columns: 1fr
+            }
+
+            .title-slide-title {
+                white-space: normal
+            }
+        }
+    </style>
+    <style>
+        html,
+        .reveal-viewport,
+        body,
+        .reveal {
+            background-color: #f3fbff;
+            background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 0V32M0 32H32' fill='none' stroke='%238fd3ff' stroke-opacity='0.42' stroke-width='1' stroke-dasharray='2 6'/%3E%3C/svg%3E");
+            background-size: 32px 32px
+        }
+    </style>
+    <style>
+        .arrow:before {
+            content: "\f061";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900
+        }
+
+        .question-slide {
+            text-align: center
+        }
+
+        .question-slide .question {
+            font-size: 1.7em
+        }
+
+        .question-slide .answer {
+            color: var(--blue);
+            font-size: 1.35em;
+            font-weight: 700
+        }
+
+        .question-slide .answer-main {
+            display: block;
+            white-space: nowrap
+        }
+
+        .question-slide .answer-subtext {
+            color: var(--muted);
+            display: block;
+            font-size: .58em;
+            font-weight: 400;
+            margin-top: .25em
+        }
+
+        .question-layout,
+        .book-layout {
+            align-items: center;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr 1fr;
+            text-align: left
+        }
+
+        .question-layout>img,
+        .book-layout>img {
+            max-height: 28rem;
+            max-width: 100%;
+            object-fit: contain
+        }
+
+        .outline-layout {
+            align-items: center;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr 1fr
+        }
+
+        .outline-layout>img {
+            max-height: 30rem;
+            max-width: 100%;
+            object-fit: contain
+        }
+
+        .system-quote {
+            font-size: .82em;
+            max-width: 92%
+        }
+
+        .retry-layout {
+            align-items: center;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr 1fr
+        }
+
+        .retry-layout>img {
+            max-height: 30rem;
+            max-width: 100%;
+            object-fit: contain
+        }
+
+        .retry-loop {
+            border: 3px solid var(--blue);
+            border-radius: 28px;
+            padding: 1rem 1.2rem;
+            text-align: center
+        }
+
+        .retry-node {
+            background: #ffffffb0;
+            border: 2px solid var(--line);
+            border-radius: 8px;
+            padding: .45rem
+        }
+
+        .retry-node.emphasis {
+            background: var(--soft);
+            border-color: var(--accent)
+        }
+
+        .retry-arrow {
+            color: var(--blue);
+            font-size: 1.3em;
+            line-height: 1.1;
+            margin: .12rem
+        }
+
+        .retry-return {
+            align-items: center;
+            color: var(--blue);
+            display: flex;
+            gap: .45rem;
+            justify-content: center;
+            margin-top: .35rem
+        }
+
+        .retry-return .fa-fire {
+            color: var(--warning)
+        }
+
+        .retry-flow-image {
+            max-width: 100%;
+            width: 100%
+        }
+
+        .retry-subtext {
+            font-size: .72em;
+            line-height: 1.3;
+            margin: .8rem 0 0
+        }
+
+        .iceberg-switch {
+            align-items: center;
+            display: grid;
+            height: calc(100vh - 12rem);
+            justify-items: center;
+            margin: 0 auto
+        }
+
+        .iceberg-switch>* {
+            grid-area: 1 / 1;
+            height: 100%;
+            max-height: none;
+            max-width: 100%;
+            object-fit: contain
+        }
+
+        .feedback-card-title {
+            margin-bottom: .1em
+        }
+
+        .feedback-loop-label {
+            color: var(--muted);
+            font-size: .6em;
+            margin: .15em 0 .65em
+        }
+
+        .feedback-loop-label i {
+            color: var(--blue);
+            margin-right: .18em
+        }
+
+        .feedback-example {
+            font-size: .7em;
+            line-height: 1.3
+        }
+
+        .feedback-flow {
+            display: inline-block;
+            white-space: nowrap
+        }
+
+        @media(max-width:780px) {
+
+            .retry-layout,
+            .question-layout,
+            .book-layout {
+                grid-template-columns: 1fr
+            }
+
+            .iceberg-switch {
+                height: calc(100vh - 10rem)
+            }
+
+            .feedback-flow {
+                white-space: normal
+            }
+
+            .question-slide .answer-main {
+                white-space: normal
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="title-slide">
+                <h1 class="title-slide-title"><span class="title-main">Why Your Systems Behave Strangely</span><span
+                        class="title-subtitle">Systems Thinking for Software Architects</span></h1><img
+                    class="title-slide-image" src="img/systems-thinking.png" alt="Systems thinking illustration"
+                    width="700">
+                <table class="speaker-card">
+                    <tr>
+                        <td style="vertical-align: middle;"><img src="../_shared/img/me.png" width="100"
+                                alt="Carl Chesser"></td>
+                        <td style="vertical-align: middle;">Carl Chesser<br><small><a
+                                    href="https://x.com/che55er">@che55er</a> | <a
+                                    href="https://che55er.io/">che55er.io</a></small></td>
+                    </tr>
+                </table>
+                <aside class="notes">Welcome everyone. We will look at distributed software through the lens of systems
+                    thinking, then apply Donella Meadows&apos; leverage points to software design.</aside>
+            </section>
+            <section class="outline-slide">
+                <h2>Today&apos;s Outline</h2>
+                <div class="retry-layout">
+                    <div>
+                        <ul>
+                            <li><strong>Basics:</strong> Definitions and non-linear thinking.</li>
+                            <li><strong>Anatomy:</strong> Stocks, flows, delays, and types of feedback loops.</li>
+                            <li><strong>Leverage Points:</strong> Where are effective areas to intervene in our systems.
+                            </li>
+                        </ul>
+                    </div><img src="img/systems-thinking.png">
+                </div>
+            </section>
+            <section>
+                <h2>Thinking in Systems</h2>
+                <div class="book-layout">
+                    <div>
+                        <p class="accent">Much of today&apos;s vocabulary and framing comes from Donella Meadows&apos;
+                            <em>Thinking in Systems</em>.</p>
+                        <p>We&apos;ll use its ideas to ask better architecture questions about behavior, feedback, and
+                            leverage.</p>
+                    </div><img src="img/thinking-in-systems.jpg" alt="Cover of Thinking in Systems by Donella Meadows">
+                </div>
+            </section>
+            <section>
+                <h2>What Is a System?</h2>
+                <blockquote class="system-quote fragment">A set of elements or parts that is coherently organized and
+                    interconnected in a pattern or structure that produces a characteristic set of behaviors, often
+                    classified as its "function" or "purpose."<br><span class="muted">— Donella Meadows, <em>Thinking
+                            in Systems</em></span></blockquote>
+            </section>
+            <section>
+                <h2 style="white-space: nowrap;">Fixed One Thing <i class="fa-solid fa-arrow-right"></i> Broken Another <i class="fa-solid fa-burst"></i></h2>
+                <ul>
+                    <li class="fragment">Added database connections <i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i> exhausted database memory</li>
+                    <li class="fragment">Auto-scaled a service <i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i> triggered a cascading outage</li>
+                    <li class="fragment">Increased retries <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        made an overloaded dependency worse</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Linear Thinking</h2>
+                <p style="font-size: 0.6em; color: gray;">Reductionistic thinking, breaking something down into parts.</p>
+                <img style="max-width: 72%" src="img/linear.png" />
+            </section>
+            <section>
+                <h2>What Is Linear Thinking?</h2>
+                <div class="concept-card">
+                    <p class="accent">Linear thinking assumes a predictable chain of cause and effect: A <i class="fa-solid fa-arrow-right"></i> B.</p>
+                    <ul>
+                        <li class="fragment">One action has one primary result.</li>
+                        <li class="fragment">More input produces roughly more output.</li>
+                        <li class="fragment">Fix the broken component and the system is fixed.</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>What Is Non-Linear Thinking?</h2>
+                <div class="example-card">
+                    <p class="accent">Non-linear thinking recognizes that <strong>systems rarely behave as simple chains
+                            of cause and effect</strong>.</p>
+                    <p>Multiple things interact, effects can feed back into their causes, and a small change can
+                        sometimes produce a huge result, or almost no result.</p>
+                </div>
+                <p style="font-size: 0.6em;">Behavior of the whole system cannot always be predicted simply by
+                    adding up the behavior of its individual parts.</p>
+            </section>
+            <section>
+                <h2>The "Root Cause" Trap</h2>
+                <ul>
+                    <li class="fragment">Traditional Root Cause Analysis (RCA) looks for <strong>a single case</strong>.</li>
+                    <li class="fragment">In complex systems, <strong>there is rarely a single root cause</strong>.</li>
+                    <li class="fragment">Attributing outages to "human error" or "a bad deployment" stops learning.</li>
+                    <li class="fragment"><strong>Systems View:</strong> The system structure allowed a routine event to trigger a failure.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>The Iceberg Model</h2>
+                <div class="iceberg-switch r-stretch"><img class="fragment fade-out" data-fragment-index="1"
+                        src="img/iceberg-1.png" alt="Iceberg model showing events, patterns, and system structure"><img
+                        class="fragment" data-fragment-index="1" src="img/iceberg-2.png"
+                        alt="Iceberg model with deeper systems-thinking layers"></div>
+                <aside class="notes">Use the first image to introduce the iceberg, then advance once to replace it with
+                    the deeper view.</aside>
+            </section>
+            <section>
+                <h2>System Anatomy: Stocks, Flows &amp; Delays</h2>
+                <ul>
+                    <li class="fragment"><strong>Stocks:</strong> What accumulates? Requests, queue messages,
+                        connections, memory, and cached data.</li>
+                    <li class="fragment"><strong>Flows:</strong> What changes the stocks? Requests per second, message
+                        consumption, and processing throughput.</li>
+                    <li class="fragment"><strong>Delays:</strong> How long before the system knows or reacts? Telemetry,
+                        network, queue, deployment, and human response time.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>The Retry Storm</h2>
+                <div class="retry-layout">
+                    <div class="fragment"><img class="retry-flow-image" src="img/retry-storm-flow.png"
+                            alt="Retry storm flow diagram">
+                        <p class="retry-subtext">Each failure causes clients to retry. Those retries add additional load
+                            to an already struggling system, which causes more failures, which triggers even more
+                            retries.</p>
+                    </div><img src="img/retry-storm.png" alt="Retry storm feedback loop">
+                </div>
+            </section>
+            <section>
+                <h2>Feedback Loops</h2>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3 class="feedback-card-title">Reinforcing loop</h3>
+                        <p class="feedback-loop-label"><i class="fa-solid fa-arrow-up-wide-short"
+                                aria-hidden="true"></i>(amplifies)</p>
+                        <p>A change amplifies itself, causing more change in the same direction.</p>
+                        <p class="feedback-example"><strong>Example:</strong> <span class="feedback-flow">Money <i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i> investment <i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i> more money</span><br>The
+                            more money you have, the more you can invest; successful investments give you more money to
+                            invest.</p>
+                    </div>
+                    <div class="example-card fragment">
+                        <h3 class="feedback-card-title">Balancing loop</h3>
+                        <p class="feedback-loop-label"><i class="fa-solid fa-scale-balanced"
+                                aria-hidden="true"></i>(stabilizes)</p>
+                        <p>A change triggers a response that pushes the system back toward a goal or target.</p>
+                        <p class="feedback-example"><strong>Example:</strong><br><span class="feedback-flow">Room temp
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> thermostat <i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i> furnace</span><br>If the
+                            room gets too cold, the thermostat turns on the furnace, which raises the temperature back
+                            toward the set point.</p>
+                    </div>
+                </div>
+                <aside class="notes">Reinforcing loops amplify change. Balancing loops counteract change and push the
+                    system toward a target.</aside>
+            </section>
+            <section class="question-slide">
+                <div class="question-layout">
+                    <div>
+                        <p class="question">What kind of feedback loop was the retry storm?</p>
+                        <p class="answer fragment"><span class="answer-main">Reinforcing feedback loop</span><span
+                                class="answer-subtext">(a harmful one)</span></p>
+                    </div><img src="img/retry-storm.png" alt="Retry storm feedback loop">
+                </div>
+            </section>
+            <section>
+                <h2>Fulcrum Hunting</h2>
+                <p style="font-size: 0.6em;">Seeking leverage points in our systems.</p>
+                <img style="max-width: 72%" src="img/fulcrum.png">
+            </section>
+            <section>
+                <h2>Leverage Points</h2>
+                <div class="four-col">
+                    <p style="font-size: 0.6em;">Twelve leverage points in four categories:</p>
+                    <div class="concept-card">
+                        <h3>10–12 · Tune</h3>
+                        <p>Parameters, buffers, structure</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>7–9 · Control</h3>
+                        <p>Delays and feedback loops</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>4–6 · Change</h3>
+                        <p>Information, rules, self-organization</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>1–3 · Question</h3>
+                        <p>Goals, paradigms, transcendence</p>
+                    </div>
+                </div>
+                <p class="accent">From tuning the system to questioning the system.</p>
+                <aside class="notes">The question is not whether an intervention is good. It is: what part of the system
+                    are we actually changing?</aside>
+            </section>
+            <section>
+                <h2>TUNE: #12 Parameters</h2>
+                <p>Change a constant, threshold, or parameter.</p>
+                <div class="three-col">
+                    <div class="concept-card">
+                        <h3>Examples</h3>
+                        <p>HTTP timeout · Retry count · Thread pool · DB connection limit</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>More examples</h3>
+                        <p>Cache TTL · CPU/memory · Batch size · Rate-limit value</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Example</h3>
+                        <p><code>DB connection pool: 50</code> <i class="fa-solid fa-arrow-right"
+                                aria-hidden="true"></i> <code>200</code></p>
+                    </div>
+                </div>
+                <blockquote>Did we change the system, or how hard we push it?</blockquote>
+                <aside class="notes">Parameters are useful, but low-leverage. A larger pool may simply transfer the
+                    bottleneck to the database.</aside>
+            </section>
+            <section>
+                <h2>TUNE: #11 Buffers</h2>
+                <p>Increase or redesign the capacity of a stabilizing stock.</p>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>Examples</h3>
+                        <p>Kafka topics · Message queues · Worker pools · Connection pools · Caches · DLQs</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Question</h3>
+                        <p>Are we solving the imbalance—or storing the imbalance?</p>
+                        <p>Producers ↓<br>┌──────── QUEUE ────────┐<br>Consumers ↑</p>
+                    </div>
+                </div>
+                <aside class="notes">Buffers buy time, but if inflow consistently exceeds outflow, the stock eventually
+                    fills.</aside>
+            </section>
+            <section>
+                <h2>TUNE: #10 Structure of Stocks &amp; Flows</h2>
+                <p>Change the topology through which data, requests, and resources flow.</p>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>Before</h3>
+                        <p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Inventory DB <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Payment DB <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Order DB</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>After</h3>
+                        <p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> <code>OrderCreated</code>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Event Bus <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Inventory · Payment ·
+                            Fulfillment · Analytics</p>
+                    </div>
+                </div>
+                <p class="accent">What if the problem is not capacity—but the path the work is taking?</p>
+            </section>
+            <section>
+                <h2>CONTROL: #9 Delays</h2>
+                <p>Change how quickly the system knows and reacts.</p>
+                <div class="three-col">
+                    <div class="concept-card">
+                        <h3>Reduce delay</h3>
+                        <p>Polling <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> events<br>Batch <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> streaming<br>Slow telemetry <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> real-time</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Speed feedback</h3>
+                        <p>Long deployment cycles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> continuous
+                            delivery<br>Slow reconciliation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            faster feedback</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Question</h3>
+                        <p>How long does the system operate on stale information?</p>
+                    </div>
+                </div>
+                <aside class="notes">A control loop that reacts too slowly can overshoot; one that reacts too quickly
+                    can oscillate.</aside>
+            </section>
+            <section>
+                <h2>CONTROL: #8 Balancing Feedback</h2>
+                <p>Strengthen the mechanism that pushes the system toward stability.</p>
+                <div class="three-col">
+                    <div class="concept-card">
+                        <h3>Circuit breaker</h3>
+                        <p>Failure ↑ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Stop calls <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Dependency recovers</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Rate limiter</h3>
+                        <p>Demand ↑ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Restrict inflow <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Protect capacity</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Backpressure</h3>
+                        <p>Consumer slows <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Producer slows <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> Queue stabilizes</p>
+                    </div>
+                </div>
+                <p>Also: load shedding and fail-fast behavior.</p>
+            </section>
+            <section>
+                <h2>CONTROL: #7 Reinforcing Feedback</h2>
+                <p>Reduce the gain of the runaway loop.</p>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>Interventions</h3>
+                        <p>Exponential backoff · Jitter · Retry budgets · Request coalescing · Cache-stampede protection
+                            · Bounded concurrency</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>The distinction</h3>
+                        <p><strong>#8:</strong> Strengthen balancing — stop when unhealthy.</p>
+                        <p><strong>#7:</strong> Weaken reinforcing — do not generate synchronized load.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>CHANGE: #6 Information Flows</h2>
+                <p>Give the system information it did not have.</p>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>Without context</h3>
+                        <p>Request timeout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> “Something failed”
+                        </p>
+                    </div>
+                    <div class="example-card">
+                        <h3>With context</h3>
+                        <p>Latency 1.8s · Error rate 23% · Queue depth 91% · Capacity 82% · Health DEGRADED</p>
+                    </div>
+                </div>
+                <p>OpenTelemetry · Tracing · Metrics · Events · Service discovery · Dependency graphs · Cost telemetry
+                </p>
+                <blockquote>Who knows what—and when do they know it?</blockquote>
+            </section>
+            <section>
+                <h2>CHANGE: #5 Rules</h2>
+                <p>Change what the system is allowed to do.</p>
+                <div class="three-col">
+                    <div class="concept-card">
+                        <h3>Rules</h3>
+                        <p>API contracts · Quotas · RBAC · Network policies · SLOs · Admission policies</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Example</h3>
+                        <p>“No tenant may consume more than 20% of shared capacity.”</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Question</h3>
+                        <p>What rules cause locally rational behavior to produce healthy—or unhealthy—global behavior?
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>CHANGE: #4 Self-Organization</h2>
+                <p>Give the system the ability to change itself.</p>
+                <div class="flow-row">
+                    <div class="concept-card">Desired state</div>
+                    <div class="arrow"></div>
+                    <div class="example-card">Controller</div>
+                    <div class="arrow"></div>
+                    <div class="concept-card">Actual state ↺ reconcile</div>
+                </div>
+                <p>Kubernetes controllers · Operators · GitOps · Autoscaling · Canaries · Self-healing infrastructure ·
+                    Plugins</p>
+                <blockquote>Who has the authority to change the structure of the system?</blockquote>
+            </section>
+            <section>
+                <h2>QUESTION: #3 Change the Goal</h2>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>Old goal</h3>
+                        <p>Checkout must synchronously confirm inventory before responding.</p>
+                        <p>Checkout <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> synchronous inventory <i
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i> respond</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Actual goal?</h3>
+                        <p>Never sell inventory we do not have.</p>
+                        <p>Reservation system <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> eventually
+                            consistent workflow</p>
+                    </div>
+                </div>
+                <p class="accent">Are we optimizing the right thing?</p>
+                <aside class="notes">Goals determine architecture. The business requirement may be preventing
+                    overselling; synchronous consistency may only be an implementation assumption.</aside>
+            </section>
+            <section>
+                <h2>QUESTION: #2 Change the Paradigm</h2>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>From</h3>
+                        <p>“A distributed system should behave like a local function call.”</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>To</h3>
+                        <p>“Distributed systems are inherently asynchronous and failure-prone.”</p>
+                    </div>
+                </div>
+                <p>Event-driven workflows · Eventual consistency · Sagas · Compensation · Idempotency · Immutable events
+                </p>
+                <blockquote>What assumption are we treating as a law of nature?</blockquote>
+            </section>
+            <section>
+                <h2>QUESTION: #1 Transcend Paradigms</h2>
+                <p class="accent">The architecture is not the truth.</p>
+                <p>Monolith <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Microservices <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> Serverless <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> Event-driven <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> “What&apos;s next?”</p>
+                <div class="two-col">
+                    <div class="concept-card">
+                        <h3>The capability</h3>
+                        <p>Recognize that every architecture is a model—and models can become wrong.</p>
+                    </div>
+                    <div class="example-card">
+                        <h3>Make change possible</h3>
+                        <p>Replaceable components · Stable interfaces · Composable systems · Explicit boundaries ·
+                            Evolutionary architecture</p>
+                    </div>
+                </div>
+                <blockquote>How easily can we change our minds?</blockquote>
+            </section>
+            <section>
+                <h2>Release It! Is Systems Thinking in Disguise</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Release It! pattern</th>
+                            <th>Systems thinking</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Timeout</td>
+                            <td>Limits exposure to delay</td>
+                        </tr>
+                        <tr>
+                            <td>Circuit breaker</td>
+                            <td>Strengthens balancing feedback</td>
+                        </tr>
+                        <tr>
+                            <td>Bulkhead</td>
+                            <td>Isolates stocks and flows</td>
+                        </tr>
+                        <tr>
+                            <td>Rate limiter / backpressure</td>
+                            <td>Controls inflow and couples production to capacity</td>
+                        </tr>
+                        <tr>
+                            <td>Load shedding / fail fast</td>
+                            <td>Protects stability and reduces delay</td>
+                        </tr>
+                        <tr>
+                            <td>Backoff / jitter</td>
+                            <td>Reduces reinforcing-loop gain and synchronized amplification</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <blockquote>Release It! gives patterns for controlling dynamics. Meadows gives vocabulary for
+                    understanding why they work.</blockquote>
+            </section>
+            <section>
+                <h2>Case Study: The Database Bottleneck</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leverage</th>
+                            <th>Intervention</th>
+                            <th>What changes?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12 Parameter</td>
+                            <td>Increase DB connections</td>
+                            <td>A number</td>
+                        </tr>
+                        <tr>
+                            <td>#11 Buffer</td>
+                            <td>Add queue capacity</td>
+                            <td>Accumulation</td>
+                        </tr>
+                        <tr>
+                            <td>#10 Structure</td>
+                            <td>Decouple DB workflows</td>
+                            <td>Flow topology</td>
+                        </tr>
+                        <tr>
+                            <td>#9 / #8 / #7</td>
+                            <td>Reduce delay; circuit breaker; backoff + jitter</td>
+                            <td>Timing, stability, amplification</td>
+                        </tr>
+                        <tr>
+                            <td>#6 / #5 / #4</td>
+                            <td>Signals; quotas; automated adaptation</td>
+                            <td>Information, rules, agency</td>
+                        </tr>
+                        <tr>
+                            <td>#3 / #2 / #1</td>
+                            <td>Reservation goal; async paradigm; evolvable architecture</td>
+                            <td>Success, assumptions, models</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <aside class="notes">Walk from the bottom of the table toward the top. Each intervention changes a
+                    different aspect of the system; no level is automatically good or bad.</aside>
+            </section>
+            <section>
+                <h2>Interactive Exercise: What Would You Do?</h2>
+                <div class="example-card">
+                    <h3>Black Friday checkout is failing</h3>
+                    <ul>
+                        <li class="fragment">Requests time out; inventory DB is at 95% CPU</li>
+                        <li class="fragment">Clients retry three times; queue depth is growing</li>
+                        <li class="fragment">Autoscaling is adding checkout instances</li>
+                    </ul>
+                </div>
+                <p class="accent">What would you change?</p>
+                <p>Classify the answers: timeout/DB capacity <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    #12 · queue <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> #11 · flow <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #10 · signals <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #9/#6 · circuit breaker <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #8 · backoff/jitter <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #7 · rules <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #5 · adaptation <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #4 · goal <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #3 · assumptions <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i> #2</p>
+                <aside class="notes">Let the audience propose solutions first. Then classify their answers and show that
+                    most instincts live at the bottom of the ladder.</aside>
+            </section>
+            <section>
+                <h2>Post-Incident Analysis: Climb the Ladder</h2>
+                <ol>
+                    <li class="fragment"><strong>What happened?</strong> Event: checkout timed out.</li>
+                    <li class="fragment"><strong>What pattern produced it?</strong> Timeouts happen during traffic
+                        spikes.</li>
+                    <li class="fragment"><strong>What structure produced the pattern?</strong> Synchronous dependency +
+                        retries + no backpressure.</li>
+                    <li class="fragment"><strong>What feedback loops were involved?</strong> Retry amplification +
+                        insufficient balancing.</li>
+                    <li class="fragment"><strong>What intervention are we proposing?</strong> Parameter, buffer,
+                        feedback, information, rule, goal, or paradigm?</li>
+                </ol>
+                <aside class="notes">If every action item is configuration or retraining, we may be fixing symptoms. Ask
+                    whether the postmortem can introduce a mechanism or change the structural condition.</aside>
+            </section>
+            <section>
+                <h2>Architectural Takeaways</h2>
+                <ol>
+                    <li class="fragment"><strong>Beware the Event Trap:</strong> Events are symptoms; structure
+                        generates behavior over time.</li>
+                    <li class="fragment"><strong>Find the Loops:</strong> Ask what amplifies failure and what
+                        counteracts it.</li>
+                    <li class="fragment"><strong>Find Stocks, Flows &amp; Delays:</strong> What accumulates, moves, and
+                        waits?</li>
+                    <li class="fragment"><strong>Climb the Leverage Ladder:</strong> Do not stop at parameters when the
+                        problem is structural.</li>
+                    <li class="fragment"><strong>Question the Goal:</strong> Sometimes the highest-leverage change is
+                        changing what success means.</li>
+                </ol>
+                <blockquote>Good architecture does not just survive failure. It changes the dynamics that produce
+                    failure.</blockquote>
+                <aside class="notes">Close by returning to the questions: what structure created this behavior, what
+                    flow is overwhelming what stock, what loop are we creating, and how easily can we change our minds?
+                </aside>
+            </section>
+            <section>
+                <h2>Appendix: Meadows&apos; 12 Leverage Points</h2>
+                <ol>
+                    <li class="fragment"><strong>#12</strong> Constants, parameters, numbers</li>
+                    <li class="fragment"><strong>#11</strong> Sizes of buffers relative to flows</li>
+                    <li class="fragment"><strong>#10</strong> Structure of material stocks and flows</li>
+                    <li class="fragment"><strong>#9</strong> Lengths of delays relative to system change</li>
+                    <li class="fragment"><strong>#8</strong> Strength of negative feedback loops</li>
+                    <li class="fragment"><strong>#7</strong> Gain around driving positive feedback loops</li>
+                    <li class="fragment"><strong>#6</strong> Structure of information flows</li>
+                    <li class="fragment"><strong>#5</strong> Rules of the system</li>
+                    <li class="fragment"><strong>#4</strong> Power to add, change, evolve, or self-organize structure
+                    </li>
+                    <li class="fragment"><strong>#3</strong> Goals of the system</li>
+                    <li class="fragment"><strong>#2</strong> Mindset or paradigm</li>
+                    <li class="fragment"><strong>#1</strong> Power to transcend paradigms</li>
+                </ol>
+                <p class="small">Source: Donella Meadows, <em>Leverage Points: Places to Intervene in a System</em>.</p>
+            </section>
+        </div>
+    </div>
+    <script src="../_shared/revealjs/dist/reveal.js"></script>
+    <script src="../_shared/revealjs/plugin/notes/notes.js"></script>
+    <script>Reveal.initialize({ hashOneBasedIndex: true, hash: true, plugins: [RevealNotes] });</script>
+</body>
+
+</html>
