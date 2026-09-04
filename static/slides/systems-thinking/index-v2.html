@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Why Your Systems Behave Strangely</title>
+
+        <link rel="stylesheet" href="../_shared/revealjs/dist/reset.css">
+        <link rel="stylesheet" href="../_shared/revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="../_shared/revealjs/dist/theme/white.css">
+
+        <style>
+            :root {
+                --paper: #f3fbff;
+                --paper-soft: #e8f6fd;
+                --ink: #111111;
+                --muted: #5f6470;
+                --line: #d8d3c4;
+                --accent: #8fd3ff;
+                --accent-strong: #1f8fcb;
+                --accent-soft: #e3f5ff;
+                --success: #477b45;
+                --warning: #c46a21;
+                --r-background-color: var(--paper);
+                --engineering-paper:
+                    url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 0V32M0 32H32' fill='none' stroke='%238fd3ff' stroke-opacity='0.42' stroke-width='1' stroke-dasharray='2 6'/%3E%3C/svg%3E");
+            }
+
+            html,
+            .reveal-viewport,
+            body {
+                background-color: var(--paper);
+                background-image: var(--engineering-paper);
+                background-size: 32px 32px;
+            }
+
+            .reveal {
+                background-color: transparent;
+                background-image: var(--engineering-paper);
+                background-size: 32px 32px;
+                color: var(--ink);
+            }
+
+            .reveal .backgrounds {
+                background-color: transparent;
+                background-image: var(--engineering-paper);
+                background-size: 32px 32px;
+            }
+
+            .reveal .slides {
+                text-align: left;
+            }
+
+            .reveal section {
+                box-sizing: border-box;
+            }
+
+            .reveal h1,
+            .reveal h2,
+            .reveal h3 {
+                color: var(--ink);
+                letter-spacing: 0;
+                line-height: 1.05;
+                text-transform: none;
+            }
+
+            .reveal h1 {
+                font-size: 2.35em;
+            }
+
+            .reveal h2 {
+                font-size: 1.8em;
+            }
+
+            .reveal h3 {
+                font-size: 1.2em;
+            }
+
+            .reveal p,
+            .reveal li {
+                line-height: 1.32;
+            }
+
+            .reveal ul,
+            .reveal ol {
+                margin-left: 1.05em;
+            }
+
+            .reveal li {
+                margin: 0.32em 0;
+            }
+
+            .reveal strong,
+            .reveal .accent {
+                color: var(--accent-strong);
+            }
+
+            .reveal .muted {
+                color: var(--muted);
+            }
+
+            .reveal .small {
+                color: var(--muted);
+                font-size: 0.62em;
+            }
+
+            .reveal .center {
+                text-align: center;
+            }
+
+            .reveal .speaker-card {
+                border-collapse: collapse;
+                margin-top: 1.4rem;
+            }
+
+            .reveal .title-slide {
+                align-items: center;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+            }
+
+            .reveal .title-slide-title {
+                font-size: 1.2em;
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            .reveal .title-slide-title .title-main {
+                display: block;
+                font-weight: 800;
+            }
+
+            .reveal .title-slide-title .title-subtitle {
+                color: var(--muted);
+                display: block;
+                font-size: 0.68em;
+                font-weight: 400;
+                margin-top: 0.2em;
+            }
+
+            .reveal .title-slide-image {
+                height: auto;
+                max-width: 72%;
+            }
+
+            .reveal .title-slide .speaker-card {
+                font-size: 0.82em;
+                margin: 0 auto;
+            }
+
+            .reveal .title-slide .speaker-card img {
+                height: auto;
+                width: 80px;
+            }
+
+            .reveal .speaker-card td {
+                border: 0;
+                padding: 0.2rem 0.55rem 0.2rem 0;
+                vertical-align: middle;
+            }
+
+            .reveal .two-col {
+                align-items: start;
+                display: grid;
+                gap: 1.2rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .reveal .three-col {
+                display: grid;
+                gap: 0.75rem;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .reveal .concept-card,
+            .reveal .example-card,
+            .reveal .recap-card {
+                background: rgba(255, 255, 255, 0.58);
+                border: 2px solid var(--line);
+                border-radius: 8px;
+                box-sizing: border-box;
+                padding: 0.75rem 0.9rem;
+            }
+
+            .reveal .concept-card h3,
+            .reveal .example-card h3,
+            .reveal .recap-card h3 {
+                margin-bottom: 0.32em;
+            }
+
+            .reveal .example-card {
+                background: var(--accent-soft);
+                border-color: var(--accent);
+            }
+
+            .reveal .recap-card {
+                min-height: 7rem;
+            }
+
+            .reveal .system-map {
+                align-items: stretch;
+                display: grid;
+                gap: 0.55rem;
+                grid-template-columns: repeat(5, 1fr);
+                margin: 1rem 0 0.7rem;
+            }
+
+            .reveal .system-node {
+                align-items: center;
+                background: #ffffff;
+                border: 2px solid var(--ink);
+                border-radius: 8px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                min-height: 5.2rem;
+                padding: 0.45rem;
+                text-align: center;
+            }
+
+            .reveal .flow-row,
+            .reveal .loop-row {
+                align-items: center;
+                display: grid;
+                gap: 0.5rem;
+                grid-template-columns: 1fr auto 1fr auto 1fr;
+                margin-top: 1rem;
+            }
+
+            .reveal .arrow {
+                align-items: center;
+                color: var(--accent-strong);
+                display: flex;
+                height: 1.4rem;
+                justify-content: center;
+                width: 2.6rem;
+            }
+
+            .reveal .arrow::before {
+                background: currentColor;
+                content: "";
+                display: block;
+                height: 1.05rem;
+                mask: url("data:image/svg+xml,%3Csvg width='64' height='24' viewBox='0 0 64 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12H56M45 3L56 12L45 21' stroke='black' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+                -webkit-mask: url("data:image/svg+xml,%3Csvg width='64' height='24' viewBox='0 0 64 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12H56M45 3L56 12L45 21' stroke='black' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+                width: 2.6rem;
+            }
+
+            .reveal .arrow-left::before {
+                transform: rotate(180deg);
+            }
+
+            .reveal .stock-flow {
+                align-items: center;
+                display: grid;
+                gap: 0.7rem;
+                grid-template-columns: 1fr auto 1.2fr auto 1fr;
+                margin-top: 1.1rem;
+            }
+
+            .reveal .stock {
+                background: #ffffff;
+                border: 3px solid var(--ink);
+                border-radius: 8px;
+                padding: 0.9rem;
+                text-align: center;
+            }
+
+            .reveal .green-status {
+                color: var(--success);
+                font-weight: 700;
+            }
+
+            .reveal .warning-status {
+                color: var(--warning);
+                font-weight: 700;
+            }
+
+            .reveal .illustration-slot {
+                align-items: center;
+                background:
+                    linear-gradient(90deg, rgba(31, 143, 203, 0.08) 1px, transparent 1px),
+                    linear-gradient(180deg, rgba(31, 143, 203, 0.08) 1px, transparent 1px),
+                    #ffffff;
+                background-size: 28px 28px;
+                border: 2px dashed var(--accent-strong);
+                border-radius: 8px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 10rem;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .reveal .illustration-slot .filename {
+                color: var(--accent-strong);
+                font-size: 0.68em;
+                margin-bottom: 0.5rem;
+            }
+
+            .reveal .illustration-slot .prompt {
+                color: var(--muted);
+                font-size: 0.62em;
+            }
+
+            .reveal blockquote {
+                border-left: 5px solid var(--accent-strong);
+                box-shadow: none;
+                color: var(--ink);
+                font-size: 0.9em;
+                line-height: 1.35;
+                padding: 0.35rem 0 0.35rem 1rem;
+                text-align: left;
+                width: 90%;
+            }
+
+            .reveal .references-link {
+                display: inline-block;
+                font-size: 0.55em;
+                margin-top: 1rem;
+            }
+
+            .reveal .section-kicker {
+                color: var(--accent-strong);
+                font-size: 0.62em;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                margin-bottom: 0.45rem;
+                text-transform: uppercase;
+            }
+
+            @media (max-width: 780px) {
+                .reveal .two-col,
+                .reveal .three-col,
+                .reveal .system-map,
+                .reveal .flow-row,
+                .reveal .loop-row,
+                .reveal .stock-flow {
+                    grid-template-columns: 1fr;
+                }
+
+                .reveal .arrow {
+                    transform: rotate(90deg);
+                }
+
+                .reveal .title-slide-title {
+                    white-space: normal;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section class="title-slide">
+                    <h1 class="title-slide-title"><span class="title-main">Why Your Systems Behave Strangely</span><span class="title-subtitle">Systems Thinking for Software Architects</span></h1>
+                    <img class="title-slide-image" src="img/systems-thinking.png" alt="Systems thinking illustration" width="700" />
+                    <table class="speaker-card">
+                        <tr>
+                            <td><img src="../_shared/img/me.png" width="100" alt="Carl Chesser" /></td>
+                            <td>
+                                Carl Chesser
+                                <br />
+                                <small><a href="https://x.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                            </td>
+                        </tr>
+                    </table>
+                    <aside class="notes">
+                        Open by saying this is a software architecture talk, but the first part is vocabulary. The goal is to make the later architecture decisions easier to see.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>A Familiar Architecture Surprise</h2>
+                    <p>Every service meets its own contract.</p>
+                    <p class="fragment">Every dashboard looks green.</p>
+                    <p class="fragment">The user journey still feels broken.</p>
+                    <p class="accent fragment">The problem is often the system behavior, not one broken part.</p>
+                    <aside class="notes">
+                        Start with the abstract's motivation. This is the feeling we are trying to explain.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Book Behind The Lens</h2>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Thinking in Systems</h3>
+                            <p>Donella Meadows gives us a simple vocabulary for complex behavior.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>For architects</h3>
+                            <p>That vocabulary helps us reason about dependencies, queues, incentives, and surprises.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Introduce Meadows early. Keep it approachable: this is not theory for its own sake; it is language for things architects already experience.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Why This Matters In Software</h2>
+                    <p>Software teams are building faster, with more automation and more distributed dependencies.</p>
+                    <p class="fragment">A single event can cross services, queues, teams, and physical workflows.</p>
+                    <p class="fragment">The speed of the response does not guarantee the quality of the behavior.</p>
+                    <p class="accent fragment">Systems thinking helps us see what the architecture is accumulating.</p>
+                    <aside class="notes">
+                        Ground this in distributed software. The more quickly we change connected systems, the more useful pattern-level thinking becomes.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Today&apos;s Map</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>First</h3>
+                            <p>Learn the core systems-thinking concepts.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Then</h3>
+                            <p>Apply each concept to one real example.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Finally</h3>
+                            <p>Use leverage points to improve the architecture.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Set expectations for the flow without talking about timing.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Concept first</p>
+                    <h2>Everything Is A System</h2>
+                    <p>A system is a set of parts that interact to produce behavior.</p>
+                    <p class="fragment">A team is a system.</p>
+                    <p class="fragment">A bus network is a system.</p>
+                    <p class="fragment">A software architecture is a system.</p>
+                    <aside class="notes">
+                        Keep this plain. The main move is to shift attention from parts to behavior.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Three Things To Look For</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Elements</h3>
+                            <p>The parts you can name.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Connections</h3>
+                            <p>How the parts affect each other.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Purpose</h3>
+                            <p>What the system is trying to do.</p>
+                        </div>
+                    </div>
+                    <p class="small">Meadows uses these as a starting point for understanding system behavior.</p>
+                    <aside class="notes">
+                        This is the basic frame for the rest of the talk.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Concept first</p>
+                    <h2>Events Are Easy To Notice</h2>
+                    <div class="three-col">
+                        <div class="concept-card"><h3>3:05 PM</h3><p>A bus is late.</p></div>
+                        <div class="concept-card"><h3>3:08 PM</h3><p>Fans refresh the app.</p></div>
+                        <div class="example-card"><h3>3:12 PM</h3><p>The update API slows down.</p></div>
+                    </div>
+                    <p class="accent fragment">Events are vivid. That is why we organize our stories around them.</p>
+                    <aside class="notes">
+                        Events are exciting, urgent, and easy to narrate. They also invite a short-term response.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>But Events Are Not The Behavior</h2>
+                    <p>One late bus is an event.</p>
+                    <p class="fragment">Late buses every Saturday are a pattern.</p>
+                    <p class="fragment">A growing delay after every demand spike is a dynamic pattern of behavior.</p>
+                    <p class="accent fragment">The pattern tells us more about the system than any single event.</p>
+                    <aside class="notes">
+                        Make the distinction explicit: events happen, patterns persist, and system structure generates the pattern.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Three Ways To Look At The Same System</h2>
+                    <div class="three-col">
+                        <div class="concept-card"><h3>Event</h3><p>What happened?</p></div>
+                        <div class="concept-card"><h3>Pattern</h3><p>What keeps happening?</p></div>
+                        <div class="example-card"><h3>Structure</h3><p>What relationships make it likely?</p></div>
+                    </div>
+                    <p class="small">Systems thinking moves us from reaction toward explanation.</p>
+                    <aside class="notes">
+                        This is the central teaching frame for the first half.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Linear Thinking Tells A Clean Story</h2>
+                    <div class="flow-row">
+                        <div class="concept-card">Bus is late</div>
+                        <div class="arrow" aria-label="causes"></div>
+                        <div class="concept-card">Fans are upset</div>
+                        <div class="arrow" aria-label="causes"></div>
+                        <div class="concept-card">Add more buses</div>
+                    </div>
+                    <p class="accent">A causes B, so fix A.</p>
+                    <aside class="notes">
+                        Linear thinking is useful for simple mechanisms. The trouble starts when the response changes the conditions that created the event.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Non-Linear Systems Answer Back</h2>
+                    <div class="flow-row">
+                        <div class="concept-card">Add capacity</div>
+                        <div class="arrow" aria-label="changes"></div>
+                        <div class="example-card">More people choose the route</div>
+                        <div class="arrow" aria-label="changes"></div>
+                        <div class="concept-card">The bottleneck moves</div>
+                    </div>
+                    <p>Small changes can have large effects. Large changes can have almost none.</p>
+                    <p class="accent fragment">Cause and effect are not always proportional.</p>
+                    <aside class="notes">
+                        Introduce non-linearity as response that changes with conditions, thresholds, capacity, and feedback.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Accumulation Changes The Shape Of The Problem</h2>
+                    <p>A <strong>stock</strong> is something that can build up or drain down. A <strong>flow</strong> changes it.</p>
+                    <div class="stock-flow">
+                        <div class="concept-card">Arrivals</div>
+                        <div class="arrow" aria-label="increases"></div>
+                        <div class="stock">People waiting</div>
+                        <div class="arrow" aria-label="decreases"></div>
+                        <div class="concept-card">Boardings</div>
+                    </div>
+                    <p class="fragment">When arrivals briefly exceed boardings, the queue grows.</p>
+                    <p class="accent fragment">When the queue grows, the next event happens in a different system.</p>
+                    <aside class="notes">
+                        Stocks are memory. The system carries yesterday's imbalance into today's experience.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Look At Behavior Over Time</h2>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Event view</h3>
+                            <p>Why was this bus late?</p>
+                            <p>Who should respond?</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Pattern view</h3>
+                            <p>Why does delay grow after 3 PM?</p>
+                            <p>What repeats each match day?</p>
+                        </div>
+                    </div>
+                    <p class="accent">Plot the behavior before explaining the event.</p>
+                    <aside class="notes">
+                        This is where simple time-series sketches or your illustration can do a lot of work later.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Delays Hide The Real Cause</h2>
+                    <p>An action can change the system now, while its consequences appear later.</p>
+                    <ul>
+                        <li class="fragment">A capacity change affects demand after people notice it.</li>
+                        <li class="fragment">A queue grows before a dashboard shows the trend.</li>
+                        <li class="fragment">A notification changes arrival behavior after it is sent.</li>
+                    </ul>
+                    <p class="accent fragment">By the time the effect arrives, we may be responding to a different event.</p>
+                    <aside class="notes">
+                        Delay is the bridge between linear stories and non-linear behavior.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Three Things To Look For</h2>
+                    <div class="three-col">
+                        <div class="concept-card"><h3>Elements</h3><p>The parts you can name.</p></div>
+                        <div class="concept-card"><h3>Connections</h3><p>How the parts affect one another.</p></div>
+                        <div class="example-card"><h3>Purpose</h3><p>What behavior the system is trying to produce.</p></div>
+                    </div>
+                    <p class="small">Now we can use the three-part systems frame without mistaking a component list for an explanation.</p>
+                    <aside class="notes">
+                        Revisit Meadows' frame after the event/pattern discussion. It should now feel more useful.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Feedback Makes Behavior Circular</h2>
+                    <p>A system's output can become an input.</p>
+                    <div class="two-col">
+                        <div class="concept-card"><h3>Reinforcing</h3><p>Change feeds more change.</p></div>
+                        <div class="example-card"><h3>Balancing</h3><p>Change activates a constraint or correction.</p></div>
+                    </div>
+                    <p class="accent">This is where a simple cause-and-effect story starts to bend.</p>
+                    <aside class="notes">
+                        Define feedback before the case study. The MatchBus loops later should feel like applications of this vocabulary.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Purpose Changes What Counts As Success</h2>
+                    <div class="two-col">
+                        <div class="concept-card"><h3>Local success</h3><p>More requests accepted. Faster response time. Higher throughput.</p></div>
+                        <div class="example-card"><h3>System success</h3><p>The promised journey works for the people using it.</p></div>
+                    </div>
+                    <p class="fragment">The metric is part of the system because it changes what people optimize.</p>
+                    <aside class="notes">
+                        This sets up the later human/process scan. Metrics are information and incentives at once.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Now We Can Read An Architecture Differently</h2>
+                    <p>We will use these questions in the second half:</p>
+                    <ol>
+                        <li>What events are grabbing our attention?</li>
+                        <li>What patterns are accumulating over time?</li>
+                        <li>Where are the delays, thresholds, and feedback loops?</li>
+                        <li>What purpose does the architecture actually reward?</li>
+                    </ol>
+                    <p class="accent">Now: MatchBus KC.</p>
+                    <aside class="notes">
+                        This is the handoff into the latter half. Pause here and reset the audience's frame.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Our Case Study: MatchBus KC</h2>
+                    <p><strong>MatchBus KC</strong> is a software system that helps move World Cup fans by bus to Kansas City's Arrowhead stadium.</p>
+                    <div class="system-map">
+                        <div class="system-node">Fans</div>
+                        <div class="system-node">Transit App</div>
+                        <div class="system-node">Bus Fleet</div>
+                        <div class="system-node">Stadium Gates</div>
+                        <div class="system-node">Operations Center</div>
+                    </div>
+                    <p class="small">We will start with the technical dependency design, then scan out to the larger busing system.</p>
+                    <aside class="notes">
+                        Introduce the case only now. The business workflow is simple; the architecture and its behavior are the focus.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Two Systems At Once</h2>
+                    <div class="two-col">
+                        <div class="concept-card"><h3>Software system</h3><p>Reservations, trip updates, bus telemetry, capacity estimates, alerts, and operator tools.</p></div>
+                        <div class="example-card"><h3>System around it</h3><p>Fans, pickup lots, buses, roads, drivers, gates, staff, weather, and time.</p></div>
+                    </div>
+                    <p class="accent">The software is inside the busing system, not above it.</p>
+                    <aside class="notes">
+                        This is the boundary move. We start technically, then widen the boundary when the behavior demands it.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Apply the lens</p>
+                    <h2>MatchBus Stocks</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Fans waiting</h3>
+                            <p>People at pickup lots, on buses, and at gates.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Buses available</h3>
+                            <p>Buses ready, loading, driving, delayed, or returning.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Update requests</h3>
+                            <p>People asking the software, "Where is my bus?"</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        The important new stock is update requests, because it sets up the software overload failure.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>MatchBus Flows</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Fan flow</h3>
+                            <p>Arrive, board, ride, unload, enter.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Bus flow</h3>
+                            <p>Stage, load, drive, unload, return.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Data flow</h3>
+                            <p>Telemetry, estimates, alerts, updates.</p>
+                        </div>
+                    </div>
+                    <p class="accent">Backlog appears when inflow is higher than outflow for long enough.</p>
+                    <aside class="notes">
+                        Make the concept concrete and approachable.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Queues Are Stocks In Both Systems</h2>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Physical queue</h3>
+                            <p>Fans waiting to board a bus.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Software queue</h3>
+                            <p>Trip update requests waiting to be handled.</p>
+                        </div>
+                    </div>
+                    <p class="small">Different materials, same systems idea.</p>
+                    <aside class="notes">
+                        This reinforces "everything is a system" without heavy language.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Apply the lens</p>
+                    <h2>MatchBus Delays</h2>
+                    <p>A delay is the time between a change and when the system reacts to it.</p>
+                    <ul>
+                        <li class="fragment">Traffic slows a bus before the estimate changes.</li>
+                        <li class="fragment">A dashboard updates after the queue has already grown.</li>
+                        <li class="fragment">Fans react after a notification is sent.</li>
+                    </ul>
+                    <aside class="notes">
+                        Delays are one of the big reasons systems surprise us.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Delayed Truth In Software</h2>
+                    <div class="flow-row">
+                        <div class="concept-card">Bus delay starts at 3:10</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Telemetry catches up at 3:18</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Fans still see old ETA</div>
+                    </div>
+                    <p class="accent">A fast answer can still be the wrong answer for the moment.</p>
+                    <aside class="notes">
+                        Keep the language simple. This is stale data and eventual consistency in systems-thinking language.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Dangerous Question</h2>
+                    <p>"Is the dependency healthy?"</p>
+                    <p class="fragment">A better question is:</p>
+                    <p class="accent fragment">"Is this answer fresh enough for the promise we are making?"</p>
+                    <aside class="notes">
+                        This makes the delay concept useful for architecture reviews.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Apply the lens</p>
+                    <h2>MatchBus Feedback Loops</h2>
+                    <p>A feedback loop happens when an action changes the system, and that change affects the next action.</p>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Reinforcing</h3>
+                            <p>More creates more.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Balancing</h3>
+                            <p>The system pushes back toward stability.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Define both types before applying them.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Reinforcing Loop: Demand Surge</h2>
+                    <div class="loop-row">
+                        <div class="concept-card">App says "leave now"</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">More fans arrive together</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Boarding delay grows</div>
+                    </div>
+                    <p class="accent">The app can create the peak it is trying to manage.</p>
+                    <aside class="notes">
+                        Use this as an easy, human example of a reinforcing loop.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Software Failure: Where Is My Bus?</h2>
+                    <ol>
+                        <li>A few buses fall behind.</li>
+                        <li class="fragment">Fans refresh the app for updates.</li>
+                        <li class="fragment">The update API and worker queue get overloaded.</li>
+                        <li class="fragment">Updates get slower and older.</li>
+                        <li class="fragment">More fans refresh because they do not trust the app.</li>
+                    </ol>
+                    <p class="accent fragment">The software system becomes part of the delay.</p>
+                    <aside class="notes">
+                        This is the explicit software failure the user requested. Tie it to real distributed systems: overload, retries, polling, stale reads.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Overload Loop</h2>
+                    <div class="loop-row">
+                        <div class="concept-card">Update delay grows</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Fans refresh more</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Request queue grows</div>
+                    </div>
+                    <div class="loop-row">
+                        <div class="concept-card">Updates get older</div>
+                        <div class="arrow arrow-left" aria-label="leads back to"></div>
+                        <div class="concept-card">Workers fall behind</div>
+                        <div class="arrow arrow-left" aria-label="leads back to"></div>
+                        <div class="concept-card">Request queue grows</div>
+                    </div>
+                    <p class="small">This is a reinforcing loop: more delay creates more load, which creates more delay.</p>
+                    <aside class="notes">
+                        This should be memorable for software engineers.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>A Balancing Loop</h2>
+                    <div class="flow-row">
+                        <div class="concept-card">Boarding queue rises</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="example-card">App recommends later windows</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Arrival rate smooths out</div>
+                    </div>
+                    <p class="small">Balancing loops are how systems regain control.</p>
+                    <aside class="notes">
+                        Keep this optimistic and practical.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Software Balancing Moves</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Protect</h3>
+                            <p>Rate limit refreshes and collapse duplicate requests.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Tell the truth</h3>
+                            <p>Show "last updated" and confidence, not just an ETA.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Push updates</h3>
+                            <p>Notify fans when status changes instead of making them poll.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        These are architectural controls tied to the feedback-loop concept.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Apply the lens</p>
+                    <h2>MatchBus Boundaries</h2>
+                    <p>A boundary is what you decide to include when you explain the system.</p>
+                    <p class="fragment">Small boundary: the update API.</p>
+                    <p class="fragment">Bigger boundary: the app, fans, buses, gates, staff, and decisions they make.</p>
+                    <p class="accent fragment">Different boundary, different architecture problem.</p>
+                    <aside class="notes">
+                        This is a simple and important systems-thinking move.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Green Services, Bad Journey</h2>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Small boundary</h3>
+                            <ul>
+                                <li class="green-status">Reservation API: green</li>
+                                <li class="green-status">Notifications: green</li>
+                                <li class="green-status">Maps integration: green</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Bigger boundary</h3>
+                            <ul>
+                                <li class="warning-status">Fans are confused</li>
+                                <li class="warning-status">Buses are late</li>
+                                <li class="warning-status">App updates are stale</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        This directly supports the abstract's distributed-systems surprise.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>People Are Part Of The System</h2>
+                    <div class="flow-row">
+                        <div class="concept-card">App status is unclear</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Staff manually redirect fans</div>
+                        <div class="arrow" aria-label="leads to"></div>
+                        <div class="concept-card">Boarding slows down</div>
+                    </div>
+                    <p class="small">Manual work is not outside the architecture if the system depends on it.</p>
+                    <aside class="notes">
+                        Keep this respectful. Human work is a real dependency.
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="section-kicker">Apply the lens</p>
+                    <h2>MatchBus Leverage Points</h2>
+                    <p>A leverage point is a place where a change can shift system behavior.</p>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Low leverage</h3>
+                            <p>Make one part faster.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Medium leverage</h3>
+                            <p>Change a feedback path or rule.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>High leverage</h3>
+                            <p>Change what the system optimizes for.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Keep Meadows' leverage points accessible. Avoid the full ladder unless asked.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Leverage In MatchBus KC</h2>
+                    <div class="three-col">
+                        <div class="concept-card">
+                            <h3>Numbers</h3>
+                            <p>Add API capacity or more workers.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Feedback</h3>
+                            <p>Feed queue depth, bus delay, and gate speed back into recommendations.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Goal</h3>
+                            <p>Optimize for fans inside before kickoff, not just app response time.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        This applies leverage points to both software and the larger busing system.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Architecture Changes That Matter</h2>
+                    <ul>
+                        <li>Make trip windows capacity-aware before fans commit.</li>
+                        <li>Show freshness and confidence for every estimate.</li>
+                        <li>Use push updates to reduce refresh storms.</li>
+                        <li>Give operators one place to update app, signs, and staff scripts.</li>
+                        <li>Measure the full journey, not just service uptime.</li>
+                    </ul>
+                    <aside class="notes">
+                        These should feel concrete and reusable.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>The Pattern To Practice</h2>
+                    <ol>
+                        <li>Start with the recurring pattern, not the loudest event.</li>
+                        <li>Describe the elements, connections, and purpose.</li>
+                        <li>Mark stocks, flows, delays, and non-linear thresholds.</li>
+                        <li>Look for reinforcing and balancing feedback loops.</li>
+                        <li>Scan out to human and process dependencies.</li>
+                        <li>Choose leverage points that improve the whole behavior.</li>
+                    </ol>
+                    <aside class="notes">
+                        This is the takeaway method: move from event, to pattern, to structure, then choose an intervention.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>What To Try This Week</h2>
+                    <div class="two-col">
+                        <div class="concept-card">
+                            <h3>Pick one workflow</h3>
+                            <p>A checkout, deploy, approval, onboarding, incident, or "green but bad" experience.</p>
+                        </div>
+                        <div class="example-card">
+                            <h3>Map behavior</h3>
+                            <p>Plot behavior over time. Find where work builds up, truth gets stale, feedback is missing, or people become the fallback.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Land the tone: this is useful immediately.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Key Points</h2>
+                    <div class="three-col">
+                        <div class="recap-card">
+                            <h3>1</h3>
+                            <p>Events are vivid, but patterns explain behavior.</p>
+                        </div>
+                        <div class="recap-card">
+                            <h3>2</h3>
+                            <p>Linear stories break down at thresholds and capacity limits.</p>
+                        </div>
+                        <div class="recap-card">
+                            <h3>3</h3>
+                            <p>Stocks, flows, and delays create memory and accumulation.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        First recap slide.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Key Points</h2>
+                    <div class="three-col">
+                        <div class="recap-card">
+                            <h3>4</h3>
+                            <p>Feedback loops make behavior reinforcing or balancing.</p>
+                        </div>
+                        <div class="recap-card">
+                            <h3>5</h3>
+                            <p>Boundaries decide whether we see software, workflow, or people.</p>
+                        </div>
+                        <div class="recap-card">
+                            <h3>6</h3>
+                            <p>Leverage lives in feedback, constraints, and purpose.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Second recap slide.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>One Sentence To Take Home</h2>
+                    <p class="accent">Before fixing the event, map the pattern the whole system is producing.</p>
+                    <p class="small">Then scan outward until the humans and processes carrying the design are visible.</p>
+                    <aside class="notes">
+                        Close before Q&A.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Thank You</h2>
+                    <p>Questions?</p>
+                    <table class="speaker-card">
+                        <tr>
+                            <td><img src="../_shared/img/me.png" width="100" alt="Carl Chesser" /></td>
+                            <td>
+                                Carl Chesser
+                                <br />
+                                <small><a href="https://x.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><a class="references-link" href="references.html">References</a></p>
+                </section>
+            </div>
+        </div>
+
+        <script src="../_shared/revealjs/dist/reveal.js"></script>
+        <script src="../_shared/revealjs/plugin/notes/notes.js"></script>
+        <script>
+            Reveal.initialize({
+                hash: true,
+                plugins: [ RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
