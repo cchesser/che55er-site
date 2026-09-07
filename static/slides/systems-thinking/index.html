@@ -6,20 +6,28 @@
         align-items: start !important;
       }
 
+      .question-slide .question-layout > img {
+        max-height: 40vh;
+      }
+
       .iceberg-switch > * {
         height: calc(100% - 2rem) !important;
         margin: 0 !important;
       }
 
-      .outline-slide .outline-layout > img {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
       .centered {
         text-align: center;
+      }
+
+      .fulcrum-image {
+        height: calc(100% - 2rem) !important;
+        max-height: 40vh;
+        width: 72%;
+        vertical-align: top;
+      }
+
+      .highlighted {
+        color: var(--blue);
       }
 
       .leverage-layers {
@@ -117,8 +125,9 @@
 
       .leverage-points-slide .resp-height {
         height: 60vh;
-        /* height: min(80vh, 24rem); */
         max-height: calc(100vh - 14rem);
+        max-width: 100%;
+        object-fit: contain;
       }
 
       .leverage-points-slide .two-col {
@@ -129,18 +138,59 @@
         white-space: nowrap;
       }
 
-      @media (max-width: 780px) {
-        .outline-slide .outline-layout > img {
-          position: static;
-          transform: none;
-        }
+      .summary-cards {
+        display: grid;
+        gap: 0.55rem 0.55rem;
+        grid-template-columns: 1fr 1fr;
+      }
 
+      .summary-card {
+        align-items: start;
+        display: grid;
+        gap: 0.30rem;
+        grid-template-columns: 9rem minmax(0, 1fr);
+        text-align: left;
+      }
+
+      .summary-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 75%;
+      }
+
+      .summary-card img {
+        height: 10rem;
+        max-width: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      .summary-card h3,
+      .summary-card p {
+        margin: 0;
+      }
+
+      .reveal .summary-card h3 {
+        color: var(--blue);
+        font-size: 0.75em;
+      }
+
+      .reveal .summary-card p {
+        font-size: 0.7em;
+        line-height: 1.25;
+      }
+
+      @media (max-width: 780px) {
         .leverage-layer {
           grid-template-columns: 1fr;
           width: 100% !important;
         }
 
         .leverage-points-slide .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-cards {
           grid-template-columns: 1fr;
         }
       }
@@ -220,17 +270,23 @@
         color: var(--blue);
       }
 
-      .muted,
-      .small {
+      .muted {
         color: var(--muted);
-      }
-
-      .small {
-        font-size: 0.62em;
       }
 
       .title-slide {
         text-align: center;
+      }
+
+      .closing-slide {
+        position: relative;
+      }
+
+      .closing-slide .closing-qr {
+  position: absolute;
+  bottom: 0;      /* Forces it to the top edge */
+  left: 0;    /* Forces it to the right edge */
+  width: 200px;
       }
 
       .title-slide-title {
@@ -321,18 +377,6 @@
         margin-top: 1rem;
       }
 
-      .arrow {
-        color: var(--blue);
-        font-size: 2em;
-        text-align: center;
-      }
-
-      .arrow:before {
-        content: "\\f061";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-      }
-
       .reveal blockquote {
         border-left: 5px solid var(--blue);
         box-shadow: none;
@@ -382,12 +426,6 @@
       }
     </style>
     <style>
-      .arrow:before {
-        content: "\f061";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-      }
-
       .question-slide {
         text-align: center;
       }
@@ -431,19 +469,6 @@
         object-fit: contain;
       }
 
-      .outline-layout {
-        align-items: center;
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .outline-layout > img {
-        max-height: 30rem;
-        max-width: 100%;
-        object-fit: contain;
-      }
-
       .system-quote {
         font-size: 0.82em;
         max-width: 92%;
@@ -460,45 +485,6 @@
         max-height: 30rem;
         max-width: 100%;
         object-fit: contain;
-      }
-
-      .retry-loop {
-        border: 3px solid var(--blue);
-        border-radius: 28px;
-        padding: 1rem 1.2rem;
-        text-align: center;
-      }
-
-      .retry-node {
-        background: #ffffffb0;
-        border: 2px solid var(--line);
-        border-radius: 8px;
-        padding: 0.45rem;
-      }
-
-      .retry-node.emphasis {
-        background: var(--soft);
-        border-color: var(--accent);
-      }
-
-      .retry-arrow {
-        color: var(--blue);
-        font-size: 1.3em;
-        line-height: 1.1;
-        margin: 0.12rem;
-      }
-
-      .retry-return {
-        align-items: center;
-        color: var(--blue);
-        display: flex;
-        gap: 0.45rem;
-        justify-content: center;
-        margin-top: 0.35rem;
-      }
-
-      .retry-return .fa-fire {
-        color: var(--warning);
       }
 
       .retry-flow-image {
@@ -609,11 +595,6 @@
               </td>
             </tr>
           </table>
-          <aside class="notes">
-            Welcome everyone. We will look at distributed software through the
-            lens of systems thinking, then apply Donella Meadows&apos; leverage
-            points to software design.
-          </aside>
         </section>
         <section class="outline-slide">
           <h2>Today&apos;s Outline</h2>
@@ -662,7 +643,7 @@
             interconnected in a pattern or structure that produces a
             characteristic set of behaviors, often classified as its "function"
             or "purpose."<br /><span class="muted"
-              >— Donella Meadows, <em>Thinking in Systems</em></span
+              >- Donella Meadows, <em>Thinking in Systems</em></span
             >
           </blockquote>
         </section>
@@ -670,7 +651,7 @@
           <h2 style="white-space: nowrap">
             Fixed One Thing <i class="fa-solid fa-arrow-right"></i> Broken
             Another
-            <i class="fa-solid fa-burst"></i>
+            <i class="highlighted fa-solid fa-burst"></i>
           </h2>
           <ul>
             <li class="fragment">
@@ -691,14 +672,14 @@
           </ul>
         </section>
         <section class="image-focus-slide">
-          <h2>Linear Thinking</h2>
+          <h2>Linear Thinking <i class="highlighted fa-solid fa-brain"></i></h2>
           <p class="subtext">
             Reductionistic thinking, breaking something down into parts.
           </p>
           <img style="max-width: 72%" src="img/linear.png" />
         </section>
         <section>
-          <h2>What Is Linear Thinking?</h2>
+          <h2>What Is Linear Thinking? <i class="highlighted fa-solid fa-brain"></i></h2>
           <div class="concept-card">
             <p class="accent">
               Linear thinking assumes a predictable chain of cause and effect: A
@@ -714,7 +695,7 @@
           </div>
         </section>
         <section>
-          <h2>What Is Non-Linear Thinking?</h2>
+          <h2>What Is Non-Linear Thinking? <i class="highlighted fa-solid fa-brain"></i></h2>
           <div class="example-card">
             <p class="accent">
               Non-linear thinking recognizes that
@@ -735,7 +716,7 @@
           </p>
         </section>
         <section>
-          <h2>The "Root Cause" Trap</h2>
+          <h2>The "Root Cause" Trap <i class="highlighted fa-solid fa-triangle-exclamation"></i></h2>
           <ul>
             <li class="fragment">
               Traditional Root Cause Analysis (RCA) looks for
@@ -755,7 +736,7 @@
             </li>
           </ul>
         </section>
-        <section class="image-focus-slide">
+        <section class="image-focus-slide centered">
           <h2>The Iceberg Model</h2>
           <div class="iceberg-switch r-stretch">
             <img
@@ -770,10 +751,6 @@
               alt="Iceberg model with deeper systems-thinking layers"
             />
           </div>
-          <aside class="notes">
-            Use the first image to introduce the iceberg, then advance once to
-            replace it with the deeper view.
-          </aside>
         </section>
         <section>
           <h2>System Anatomy: Stocks, Flows &amp; Delays</h2>
@@ -861,10 +838,6 @@
               </p>
             </div>
           </div>
-          <aside class="notes">
-            Reinforcing loops amplify change. Balancing loops counteract change
-            and push the system toward a target.
-          </aside>
         </section>
         <section class="question-slide">
           <div class="question-layout">
@@ -886,8 +859,9 @@
             Seeking <strong>leverage points</strong> in our systems.
           </p>
           <img
-            style="height: calc(100% - 2rem) !important; vertical-align: top"
+            class="fulcrum-image"
             src="img/fulcrum.png"
+            alt="Fulcrum representing a leverage point"
           />
         </section>
         <section class="leverage-points-slide">
@@ -1008,8 +982,9 @@
             would apply them in our software systems.
           </p>
         </section>
-        <section class="socio-technical-slide">
-          <h2>Software Systems are Socio-Technical</h2>
+        <section class="socio-technical-slide centered">
+          <h2 >Software Systems are Socio-Technical</h2>
+
           <p>
             A software system is shaped by both its
             <strong>technical components</strong> and the
@@ -1098,10 +1073,6 @@
               </p>
             </div>
           </div>
-          <aside class="notes">
-            Buffers buy time, but if inflow consistently exceeds outflow, the
-            stock eventually fills.
-          </aside>
         </section>
         <section class="leverage-point-slide">
           <h2>
@@ -1232,12 +1203,12 @@
         </section>
         <section>
           <div class="centered">
-            <h2>Bulkheads <i class="fa-solid fa-ship"></i></h2>
+            <h2>Bulkheads <i class="highlighted fa-solid fa-ship"></i></h2>
             <p class="subtext">Applies across multiple leverage points.</p>
           </div>
           <div class="leverage-description">
             <div class="fragment">
-              <span class="leverage-tag-large">#10) Structure of Stocks &amp; Flows</span> Partitions shared resources, such as threads, connections, worker pools, or queue capacity, so one failing component cannot consume resources needed by others. 
+              <span class="leverage-tag-large">#10) Structure of Stocks &amp; Flows</span> Partitions shared resources, such as threads, connections, or worker pools, so one failing component cannot consume resources needed by others. 
             </div>
             <div class="fragment">
               <span class="leverage-tag-large">#8) Balancing Feedback</span>
@@ -1277,7 +1248,7 @@
         </section>
         <section>
           <div class="centered">
-            <h2>Circuit Breakers <i class="fa-solid fa-bolt"></i></h2>
+            <h2>Circuit Breakers <i class="highlighted fa-solid fa-bolt"></i></h2>
             <p class="subtext">Applies across multiple leverage points.</p>
           </div>
           <div class="leverage-description">
@@ -1327,7 +1298,7 @@
               <h3>Example</h3>
               <p>
                 Make teams accountable for both feature delivery and production
-                reliability—not feature throughput alone.
+                reliability, not feature throughput alone.
               </p>
             </div>
           </div>
@@ -1395,15 +1366,13 @@
               <h3>Intervention</h3>
               <ul>
                 <li>Software built once to continuously evolving system</li>
-                <li>Dev builds, Ops runs to lifecycle ownership</li>
-                <li>Prevent change to make change safe</li>
+                <li>Treat infrastructure as disposable rather than precious</li>
               </ul>
             </div>
             <div class="example-card fragment">
               <h3>Example</h3>
               <p>
-                Replace “design it correctly up front” with an architecture that
-                learns and adapts safely.
+                Moving from monthly large monthly releases to favor releases that are small, frequent, observable, and reversible.
               </p>
             </div>
           </div>
@@ -1433,44 +1402,56 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="summary-slide">
           <h2>Summary</h2>
-          <ol>
-            <li class="fragment">
-              <strong>Beware the Event Trap:</strong> Events are symptoms;
-              structure generates behavior over time.
-            </li>
-            <li class="fragment">
-              <strong>Find the Loops:</strong> Ask what amplifies failure and
-              what counteracts it.
-            </li>
-            <li class="fragment">
-              <strong>Find Stocks, Flows &amp; Delays:</strong> What
-              accumulates, moves, and waits?
-            </li>
-            <li class="fragment">
-              <strong>Climb the Leverage Ladder:</strong> Do not stop at
-              parameters when the problem is structural.
-            </li>
-            <li class="fragment">
-              <strong>Question the Goal:</strong> Sometimes the highest-leverage
-              change is changing what success means.
-            </li>
-          </ol>
-          <blockquote>
-            Good architecture does not just survive failure. It changes the
-            dynamics that produce failure.
-          </blockquote>
+          <div class="summary-cards">
+            <div class="summary-card fragment">
+              <img src="img/iceberg-diving.png" alt="Diver exploring an iceberg" />
+              <div>
+                <h3>Beware the Event Trap</h3>
+                <p>Events are symptoms; structure generates behavior over time.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/retry-storm.png" alt="Retry storm feedback loop" />
+              <div>
+                <h3>Find the Loops</h3>
+                <p>Ask what amplifies failure and what counteracts it.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/stocks-flows.png" alt="Stocks and flows diagram" />
+              <div>
+                <h3>Find Stocks, Flows &amp; Delays</h3>
+                <p>What accumulates, moves, and waits?</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/fulcrum.png" alt="Fulcrum representing leverage" />
+              <div>
+                <h3>Traverse the Leverage Ladder</h3>
+                <p>Do not stop at parameters when the problem is structural.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/thinking-goal.png" alt="Person thinking about a goal" />
+              <div>
+                <h3>Question the Goal</h3>
+                <p>Sometimes the highest-leverage change is changing what success means.</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section>
-          <h2>References <i class="fa-solid fa-book-bookmark"></i></h2>
+          <h2>References <i class="highlighted fa-solid fa-book-bookmark"></i></h2>
           <ul>
             <li>Meadows, Donella H. Thinking in Systems: A Primer (2008).</li>
             <li>Montalion, Diana. Learning Systems Thinking (2024).</li>
+            <li>Nygard, Michael. Release It! Second Edition Design and Deploy Production-Ready Software (2018).</li>
           </ul>
         </section>
-        <section class="title-slide">
-          <h1 class="title-slide-title">
+        <section class="title-slide closing-slide">
+          <h1>
             <span class="title-main">Thank you!</span>
           </h1>
           <img
@@ -1496,11 +1477,11 @@
               </td>
             </tr>
           </table>
-          <aside class="notes">
-            Welcome everyone. We will look at distributed software through the
-            lens of systems thinking, then apply Donella Meadows&apos; leverage
-            points to software design.
-          </aside>
+          <img
+            class="closing-qr"
+            src="img/qr-code.png"
+            alt="QR code for more information"
+          />
         </section>
       </div>
     </div>
