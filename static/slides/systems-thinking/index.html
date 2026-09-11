@@ -1,0 +1,1502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      .iceberg-switch {
+        align-items: start !important;
+      }
+
+      .question-slide .question-layout > img {
+        max-height: 40vh;
+      }
+
+      .iceberg-switch > * {
+        height: calc(100% - 2rem) !important;
+        margin: 0 !important;
+      }
+
+      .centered {
+        text-align: center;
+      }
+
+      .fulcrum-image {
+        height: calc(100% - 2rem) !important;
+        max-height: 40vh;
+        width: 72%;
+        vertical-align: top;
+      }
+
+      .highlighted {
+        color: var(--blue);
+      }
+
+      .leverage-layers {
+        display: grid;
+        gap: 0.3rem;
+        margin: 0.5rem auto 0;
+        max-width: 88%;
+      }
+
+      .leverage-layer {
+        align-items: baseline;
+        box-sizing: border-box;
+        display: grid;
+        font-size: 0.75em;
+        gap: 0.65rem;
+        grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
+        margin: 0 auto;
+        padding: 0.25rem 0.6rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .leverage-layer h3,
+      .leverage-layer p {
+        margin: 0;
+        min-width: 0;
+      }
+
+      .leverage-layer h3 {
+        white-space: nowrap;
+      }
+
+      .leverage-layer h3 strong {
+        color: var(--ink);
+      }
+
+      .leverage-layer .layer-label {
+        color: var(--blue);
+        font-size: 0.75em;
+        font-weight: 400;
+      }
+
+      .leverage-title-icon {
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        display: inline !important;
+        height: 1em !important;
+        margin: 0 0 0 0.25em !important;
+        vertical-align: -0.12em;
+        width: auto !important;
+      }
+
+      .leverage-tag-large {
+        background: var(--soft);
+        border: 2px solid var(--accent);
+        border-radius: 6px;
+        color: var(--blue);
+        display: inline-block;
+        font-size: 0.75em;
+        font-weight: 700;
+        line-height: 1;
+        padding: 0.25em 0.4em;
+        vertical-align: 0.14em;
+        white-space: nowrap;
+      }
+
+      .leverage-description {
+        font-size: 0.75em;
+        padding-left: 0;
+      }
+
+      .leverage-description div {
+        margin: 0.7em 0;
+      }
+
+      .leverage-tag {
+        background: var(--soft);
+        border: 2px solid var(--accent);
+        border-radius: 6px;
+        color: var(--blue);
+        display: inline-block;
+        font-size: 0.55em;
+        font-weight: 700;
+        line-height: 1;
+        padding: 0.25em 0.4em;
+        vertical-align: 0.14em;
+        white-space: nowrap;
+      }
+
+      .leverage-point-slide h2 {
+        font-size: 1.2em !important;
+        white-space: nowrap;
+      }
+
+      .leverage-points-slide .resp-height {
+        height: 60vh;
+        max-height: calc(100vh - 14rem);
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .leverage-points-slide .two-col {
+        grid-template-columns: 0.65fr 1.35fr;
+      }
+
+      .socio-technical-slide h2 {
+        white-space: nowrap;
+      }
+
+      .summary-cards {
+        display: grid;
+        gap: 0.55rem 0.55rem;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .summary-card {
+        align-items: start;
+        display: grid;
+        gap: 0.30rem;
+        grid-template-columns: 9rem minmax(0, 1fr);
+        text-align: left;
+      }
+
+      .summary-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 75%;
+      }
+
+      .summary-card img {
+        height: 10rem;
+        max-width: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      .summary-card h3,
+      .summary-card p {
+        margin: 0;
+      }
+
+      .reveal .summary-card h3 {
+        color: var(--blue);
+        font-size: 0.75em;
+      }
+
+      .reveal .summary-card p {
+        font-size: 0.7em;
+        line-height: 1.25;
+      }
+
+      @media (max-width: 780px) {
+        .leverage-layer {
+          grid-template-columns: 1fr;
+          width: 100% !important;
+        }
+
+        .leverage-points-slide .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Why Your Systems Behave Strangely</title>
+    <link rel="stylesheet" href="../_shared/revealjs/dist/reset.css" />
+    <link rel="stylesheet" href="../_shared/revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../_shared/revealjs/dist/theme/white.css" />
+    <link rel="stylesheet" href="../_shared/fontawesome/css/all.css" />
+    <style>
+      :root {
+        --paper: #f3fbff;
+        --ink: #111;
+        --muted: #5f6470;
+        --line: #d8d3c4;
+        --accent: #8fd3ff;
+        --blue: #1f8fcb;
+        --soft: #e3f5ff;
+        --r-background-color: var(--paper);
+      }
+
+      html,
+      .reveal-viewport,
+      body {
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      .reveal {
+        color: var(--ink);
+      }
+
+      .reveal .slides {
+        text-align: left;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: var(--ink);
+        line-height: 1.05;
+        text-transform: none;
+      }
+
+      .reveal h1 {
+        font-size: 2.35em;
+      }
+
+      .reveal h2 {
+        font-size: 1.8em;
+      }
+
+      .reveal section:not(.title-slide) h2 {
+        font-size: 1.5em;
+      }
+
+      .reveal h3 {
+        font-size: 1.2em;
+      }
+
+      .reveal p,
+      .reveal li {
+        line-height: 1.3;
+      }
+
+      .reveal li {
+        margin: 0.28em 0;
+      }
+
+      .reveal strong,
+      .accent {
+        color: var(--blue);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .title-slide {
+        text-align: center;
+      }
+
+      .closing-slide {
+        position: relative;
+      }
+
+      .closing-slide .closing-qr {
+  position: absolute;
+  bottom: 0;      /* Forces it to the top edge */
+  left: 0;    /* Forces it to the right edge */
+  width: 200px;
+      }
+
+      .title-slide-title {
+        font-size: 1.2em !important;
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      .title-main {
+        display: block;
+        font-weight: 800;
+      }
+
+      .title-subtitle {
+        color: var(--muted);
+        display: block;
+        font-size: 0.68em;
+        font-weight: 400;
+        margin-top: 0.2em;
+      }
+
+      .title-slide-image {
+        height: auto;
+        max-width: 72%;
+      }
+
+      .speaker-card {
+        border-collapse: collapse;
+        margin-top: 1.4rem;
+      }
+
+      .speaker-card td {
+        border: 0;
+        padding: 0.2rem 0.55rem 0.2rem 0;
+        vertical-align: middle;
+      }
+
+      .title-slide .speaker-card {
+        display: table;
+        font-size: 0.82em;
+        margin: 1.5rem auto 0;
+        text-align: left;
+        width: auto;
+      }
+
+      .title-slide .speaker-card img {
+        height: auto;
+        width: 100px;
+      }
+
+      .two-col,
+      .three-col,
+      .four-col {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .three-col {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .four-col {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .concept-card,
+      .example-card {
+        background: #ffffffb0;
+        border: 2px solid var(--line);
+        border-radius: 8px;
+        padding: 0.7rem 0.85rem;
+      }
+
+      .example-card {
+        background: var(--soft);
+        border-color: var(--accent);
+      }
+
+      .flow-row {
+        align-items: center;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        margin-top: 1rem;
+      }
+
+      .reveal blockquote {
+        border-left: 5px solid var(--blue);
+        box-shadow: none;
+        color: var(--ink);
+        font-size: 0.9em;
+        line-height: 1.35;
+        padding: 0.35rem 0 0.35rem 1rem;
+        width: 90%;
+      }
+
+      .reveal table {
+        font-size: 0.58em;
+        width: 100%;
+      }
+
+      .reveal th {
+        color: var(--blue);
+      }
+
+      .reveal th,
+      .reveal td {
+        padding: 0.22em 0.35em;
+        vertical-align: top;
+      }
+
+      @media (max-width: 780px) {
+        .two-col,
+        .three-col,
+        .four-col,
+        .flow-row {
+          grid-template-columns: 1fr;
+        }
+
+        .title-slide-title {
+          white-space: normal;
+        }
+      }
+    </style>
+    <style>
+      html,
+      .reveal-viewport,
+      body,
+      .reveal {
+        background-color: #f3fbff;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 0V32M0 32H32' fill='none' stroke='%238fd3ff' stroke-opacity='0.82' stroke-width='1' stroke-dasharray='2 6'/%3E%3C/svg%3E");
+        background-size: 32px 32px;
+      }
+    </style>
+    <style>
+      .question-slide {
+        text-align: center;
+      }
+
+      .question-slide .question {
+        font-size: 1.7em;
+      }
+
+      .question-slide .answer {
+        color: var(--blue);
+        font-size: 1.35em;
+        font-weight: 700;
+      }
+
+      .question-slide .answer-main {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .question-slide .answer-subtext {
+        color: var(--muted);
+        display: block;
+        font-size: 0.58em;
+        font-weight: 400;
+        margin-top: 0.25em;
+      }
+
+      .question-layout,
+      .book-layout {
+        align-items: center;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+      }
+
+      .question-layout > img,
+      .book-layout > img {
+        max-height: 28rem;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .system-quote {
+        font-size: 0.82em;
+        max-width: 92%;
+      }
+
+      .retry-layout {
+        align-items: center;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .retry-layout > img {
+        max-height: 30rem;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .retry-flow-image {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .subtext,
+      .retry-subtext {
+        font-size: 0.72em;
+        line-height: 1.3;
+        margin: 0.8rem 0 0;
+      }
+
+      .iceberg-switch {
+        align-items: center;
+        display: grid;
+        height: calc(100vh - 12rem);
+        justify-items: center;
+        margin: 0 auto;
+      }
+
+      .iceberg-switch > * {
+        grid-area: 1 / 1;
+        height: 100%;
+        max-height: none;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .feedback-card-title {
+        margin-bottom: 0.1em;
+      }
+
+      .feedback-loop-label {
+        color: var(--muted);
+        font-size: 0.6em;
+        margin: 0.15em 0 0.65em;
+      }
+
+      .feedback-loop-label i {
+        color: var(--blue);
+        margin-right: 0.18em;
+      }
+
+      .feedback-example {
+        font-size: 0.7em;
+        line-height: 1.3;
+      }
+
+      .feedback-flow {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 780px) {
+        .retry-layout,
+        .question-layout,
+        .book-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .iceberg-switch {
+          height: calc(100vh - 10rem);
+        }
+
+        .feedback-flow {
+          white-space: normal;
+        }
+
+        .question-slide .answer-main {
+          white-space: normal;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="title-slide">
+          <h1 class="title-slide-title">
+            <span class="title-main">Why Your Systems Behave Strangely</span
+            ><span class="title-subtitle"
+              >Systems Thinking for Software Architects</span
+            >
+          </h1>
+          <img
+            class="title-slide-image"
+            src="img/systems-thinking.png"
+            alt="Systems thinking illustration"
+            width="700"
+          />
+          <table class="speaker-card">
+            <tr>
+              <td style="vertical-align: middle">
+                <img
+                  src="../_shared/img/me.png"
+                  width="100"
+                  alt="Carl Chesser"
+                />
+              </td>
+              <td style="vertical-align: middle">
+                Carl Chesser<br /><small
+                  ><a href="https://x.com/che55er">@che55er</a> |
+                  <a href="https://che55er.io/">che55er.io</a></small
+                >
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section class="outline-slide">
+          <h2>Today&apos;s Outline</h2>
+          <div class="retry-layout">
+            <div>
+              <ul>
+                <li>
+                  <strong>Basics:</strong> Definitions and non-linear thinking.
+                </li>
+                <li>
+                  <strong>Anatomy:</strong> Stocks, flows, delays, and types of
+                  feedback loops.
+                </li>
+                <li>
+                  <strong>Leverage Points:</strong> Where are effective areas to
+                  intervene in our systems.
+                </li>
+              </ul>
+            </div>
+            <img src="img/systems-thinking.png" />
+          </div>
+        </section>
+        <section>
+          <h2>Thinking in Systems</h2>
+          <div class="book-layout">
+            <div>
+              <p class="accent">
+                Much of today&apos;s vocabulary and framing comes from Donella
+                Meadows&apos; <em>Thinking in Systems</em>.
+              </p>
+              <p>
+                We&apos;ll use its ideas to ask better architecture questions
+                about behavior, feedback, and leverage.
+              </p>
+            </div>
+            <img
+              src="img/thinking-in-systems.png"
+              alt="Thinking in Systems by Donella Meadows"
+            />
+          </div>
+        </section>
+        <section>
+          <h2>What is a System?</h2>
+          <blockquote class="system-quote fragment">
+            A set of <strong>elements</strong> or parts that is coherently organized and
+            <strong>interconnected</strong> in a pattern or structure that produces a
+            characteristic set of <strong>behaviors</strong>, often classified as its "function"
+            or "purpose."<br /><span class="muted"
+              >- Donella Meadows, <em>Thinking in Systems</em></span
+            >
+          </blockquote>
+        </section>
+        <section>
+          <h2>Zipper Merge</h2>
+          <img src="img/zipper-merge.png" />
+        </section>
+        <section>
+          <h2 style="white-space: nowrap">
+            Fixed One Thing <i class="fa-solid fa-arrow-right"></i> Broken
+            Another
+            <i class="highlighted fa-solid fa-burst"></i>
+          </h2>
+          <ul>
+            <li class="fragment">
+              Added database connections
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              exhausted database memory
+            </li>
+            <li class="fragment">
+              Auto-scaled a service
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              triggered a cascading outage
+            </li>
+            <li class="fragment">
+              Increased retries
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> made an
+              overloaded dependency worse
+            </li>
+          </ul>
+        </section>
+        <section class="image-focus-slide">
+          <h2>Linear Thinking <i class="highlighted fa-solid fa-brain"></i></h2>
+          <p class="subtext">
+            Reductionistic thinking, breaking something down into parts.
+          </p>
+          <img style="max-width: 72%" src="img/linear.png" />
+        </section>
+        <section>
+          <h2>What Is Linear Thinking? <i class="highlighted fa-solid fa-brain"></i></h2>
+          <div class="concept-card">
+            <p class="accent">
+              Linear thinking assumes a predictable chain of cause and effect: A
+              <i class="fa-solid fa-arrow-right"></i> B.
+            </p>
+            <ul>
+              <li class="fragment">One action has one primary result.</li>
+              <li class="fragment">More input produces roughly more output.</li>
+              <li class="fragment">
+                Fix the broken component and the system is fixed.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>What Is Non-Linear Thinking? <i class="highlighted fa-solid fa-brain"></i></h2>
+          <div class="example-card">
+            <p class="accent">
+              Non-linear thinking recognizes that
+              <strong
+                >systems rarely behave as simple chains of cause and
+                effect</strong
+              >.
+            </p>
+            <p>
+              Multiple things interact, effects can feed back into their causes,
+              and a small change can sometimes produce a huge result, or almost
+              no result.
+            </p>
+          </div>
+          <p class="subtext">
+            Behavior of the whole system cannot always be predicted simply by
+            adding up the behavior of its individual parts.
+          </p>
+        </section>
+        <section>
+          <h2>The "Root Cause" Trap <i class="highlighted fa-solid fa-triangle-exclamation"></i></h2>
+          <ul>
+            <li class="fragment">
+              Traditional Root Cause Analysis (RCA) looks for
+              <strong>a single case</strong>.
+            </li>
+            <li class="fragment">
+              In complex systems,
+              <strong>there is rarely a single root cause</strong>.
+            </li>
+            <li class="fragment">
+              Attributing outages to "human error" or "a bad deployment" stops
+              learning.
+            </li>
+            <li class="fragment">
+              <strong>Systems View:</strong> The system structure allowed a
+              routine event to trigger a failure.
+            </li>
+          </ul>
+        </section>
+        <section class="image-focus-slide centered">
+          <h2>The Iceberg Model</h2>
+          <div class="iceberg-switch r-stretch">
+            <img
+              class="fragment fade-out"
+              data-fragment-index="1"
+              src="img/iceberg-1.png"
+              alt="Iceberg model showing events, patterns, and system structure"
+            /><img
+              class="fragment"
+              data-fragment-index="1"
+              src="img/iceberg-2.png"
+              alt="Iceberg model with deeper systems-thinking layers"
+            />
+          </div>
+        </section>
+        <section>
+          <h2>System Anatomy: Stocks, Flows &amp; Delays</h2>
+          <ul>
+            <li class="fragment">
+              <strong>Stocks:</strong> What accumulates? Requests, queue
+              messages, connections, memory, and cached data.
+            </li>
+            <li class="fragment">
+              <strong>Flows:</strong> What changes the stocks? Requests per
+              second, message consumption, and processing throughput.
+            </li>
+            <li class="fragment">
+              <strong>Delays:</strong> How long before the system knows or
+              reacts? Telemetry, network, queue, deployment, and human response
+              time.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>The Retry Storm</h2>
+          <div class="retry-layout">
+            <div class="fragment">
+              <img
+                class="retry-flow-image"
+                src="img/retry-storm-flow.png"
+                alt="Retry storm flow diagram"
+              />
+              <p class="retry-subtext">
+                Each failure causes clients to retry. Those retries add
+                additional load to an already struggling system, which causes
+                more failures, which triggers even more retries.
+              </p>
+            </div>
+            <img src="img/retry-storm.png" alt="Retry storm feedback loop" />
+          </div>
+        </section>
+        <section>
+          <h2>Feedback Loops</h2>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3 class="feedback-card-title">Reinforcing loop</h3>
+              <p class="feedback-loop-label">
+                <i
+                  class="fa-solid fa-arrow-up-wide-short"
+                  aria-hidden="true"
+                ></i
+                >(amplifies)
+              </p>
+              <p>
+                A change amplifies itself, causing more change in the same
+                direction.
+              </p>
+              <p class="feedback-example">
+                <strong>Example:</strong>
+                <span class="feedback-flow"
+                  >Money
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  investment
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  more money</span
+                ><br />The more money you have, the more you can invest;
+                successful investments give you more money to invest.
+              </p>
+            </div>
+            <div class="example-card fragment">
+              <h3 class="feedback-card-title">Balancing loop</h3>
+              <p class="feedback-loop-label">
+                <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i
+                >(stabilizes)
+              </p>
+              <p>
+                A change triggers a response that pushes the system back toward
+                a goal or target.
+              </p>
+              <p class="feedback-example">
+                <strong>Example:</strong><br /><span class="feedback-flow"
+                  >Room temp
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  thermostat
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  furnace</span
+                ><br />If the room gets too cold, the thermostat turns on the
+                furnace, which raises the temperature back toward the set point.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="question-slide">
+          <div class="question-layout">
+            <div>
+              <p class="question">
+                What kind of feedback loop was the retry storm?
+              </p>
+              <p class="answer fragment">
+                <span class="answer-main">Reinforcing feedback loop</span
+                ><span class="answer-subtext">(a harmful one)</span>
+              </p>
+            </div>
+            <img src="img/retry-storm.png" alt="Retry storm feedback loop" />
+          </div>
+        </section>
+        <section class="centered">
+          <h2>Fulcrum Hunting</h2>
+          <p style="font-size: 0.8em">
+            Seeking <strong>leverage points</strong> in our systems.
+          </p>
+          <img
+            class="fulcrum-image"
+            src="img/fulcrum.png"
+            alt="Fulcrum representing a leverage point"
+          />
+        </section>
+        <section class="leverage-points-slide">
+          <h2>
+            Leverage Points
+            <img
+              class="leverage-title-icon"
+              src="img/fulcrum.png"
+              alt="Fulcrum"
+            />
+          </h2>
+          <div class="two-col">
+            <div>
+              <img
+                class="resp-height"
+                src="img/effort.png"
+                alt="Effort required to change system behavior"
+              />
+            </div>
+            <div>
+              <ol reversed style="font-size: 0.50em">
+                <li>
+                  <strong>Numbers</strong>: Constants and parameters such as
+                  subsidies, taxes, and standards.
+                </li>
+                <li>
+                  <strong>Buffers</strong>: The sizes of stablilizing stocks
+                  relative to their flows
+                </li>
+                <li>
+                  <strong>Stock and Flow Structures</strong>: Physical systems
+                  and their nodes of intersection.
+                </li>
+                <li>
+                  <strong>Delays</strong>: The lengths of time relative to the
+                  rates of system changes.
+                </li>
+                <li>
+                  <strong>Balancing Feedback Loops</strong>: The strength of the
+                  feedbacks relative to the impacts they are trying to correct.
+                </li>
+                <li>
+                  <strong>Reinforcing Feedback Loops</strong>: The strength of
+                  the gain of driving loops.
+                </li>
+                <li>
+                  <strong>Information Flows</strong>: The structure of who does
+                  and does not have access to information.
+                </li>
+                <li>
+                  <strong>Rules</strong>: Incentives, punishments, contraints.
+                </li>
+                <li>
+                  <strong>Self-Organization</strong>: The power to add, change,
+                  or evolve system structure.
+                </li>
+                <li><strong>Goals</strong>: The purpose of the system.</li>
+                <li>
+                  <strong>Paradigms</strong>: The mind-set out of which the
+                  system - it's goals, structure, rules, delays, parameters -
+                  arises.
+                </li>
+                <li><strong>Transcending Paradigms</strong></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>
+            Explore the Leverage Points
+            <img
+              class="leverage-title-icon"
+              src="img/fulcrum.png"
+              alt="Fulcrum"
+            />
+          </h2>
+          <div class="leverage-layers">
+            <div class="concept-card leverage-layer">
+              <h3>
+                <strong>10-12</strong>
+                <span class="layer-label"
+                  >(Tune <i class="fa-solid fa-sliders"></i>)</span
+                >
+              </h3>
+              <p>Parameters, buffers, structure</p>
+            </div>
+            <div class="concept-card leverage-layer">
+              <h3>
+                <strong>7-9</strong>
+                <span class="layer-label"
+                  >(Control
+                  <i class="fa-solid fa-arrows-split-up-and-left"></i>)</span
+                >
+              </h3>
+              <p>Delays and feedback loops</p>
+            </div>
+            <div class="concept-card leverage-layer">
+              <h3>
+                <strong>4-6</strong>
+                <span class="layer-label"
+                  >(Change <i class="fa-solid fa-gavel"></i>)</span
+                >
+              </h3>
+              <p>Information, rules, self-organization</p>
+            </div>
+            <div class="concept-card leverage-layer">
+              <h3>
+                <strong>1-3</strong>
+                <span class="layer-label"
+                  >(Question <i class="fa-solid fa-brain"></i>)</span
+                >
+              </h3>
+              <p>Goals, paradigms, transcendence</p>
+            </div>
+          </div>
+          <p style="font-size: 0.6em">
+            Categorizing our leverage points as we look at examples of how we
+            would apply them in our software systems.
+          </p>
+        </section>
+        <section class="socio-technical-slide centered">
+          <h2 >Software Systems are Socio-Technical</h2>
+
+          <p>
+            A software system is shaped by both its
+            <strong>technical components</strong> and the
+            <strong>people / organizations</strong> around it.
+          </p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>
+                Technical
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+              </h3>
+              <ul>
+                <li>Code and hardware</li>
+                <li>Networks and infrastructure</li>
+              </ul>
+            </div>
+            <div class="concept-card">
+              <h3>
+                Social
+                <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              </h3>
+              <ul>
+                <li>People and teams</li>
+                <li>Organizational policies and user behavior</li>
+              </ul>
+            </div>
+          </div>
+          <p class="subtext fragment">
+            When we evaluate leverage points, we must consider both the
+            technical and social dimensions of the system.
+          </p>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Tune <i class="fa-solid fa-sliders" aria-hidden="true"></i
+            ></span>
+            #12) Parameters, buffers, structure
+          </h2>
+          <p>Change a constant, threshold, or parameter.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>HTTP timeout</li>
+                <li>Thread pool</li>
+                <li>DB connection limit</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                <code>DB connection pool: 50</code>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <code>200</code>
+              </p>
+            </div>
+          </div>
+          <p class="fragment subtext">
+            Parameters are useful, but low-leverage. A larger pool may simply
+            transfer the bottleneck to the database.
+          </p>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Tune <i class="fa-solid fa-sliders" aria-hidden="true"></i
+            ></span>
+            #11) Buffers
+          </h2>
+          <p>Increase or redesign the capacity of a stabilizing stock.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Message queues</li>
+                <li>Capacity headroom</li>
+                <li>Ready engineering backlog</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                A service receives 10,000 events/sec but processes 5,000. Add a
+                durable queue to absorb several minutes of traffic.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Tune <i class="fa-solid fa-sliders" aria-hidden="true"></i
+            ></span>
+            #10) Structure of Stocks &amp; Flows
+          </h2>
+          <p>
+            Change the topology through which data, requests, and resources
+            flow.
+          </p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Monolith to services</li>
+                <li>Synchronous to asynchronous processing</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Replace a synchronous payment API call with Payment Event
+                <i class="fa-solid fa-arrow-right"></i> Queue
+                <i class="fa-solid fa-arrow-right"></i> Payment Worker, then
+                return an immediate response.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Control
+              <i
+                class="fa-solid fa-arrows-split-up-and-left"
+                aria-hidden="true"
+              ></i
+            ></span>
+            #9) Delays
+          </h2>
+          <p>Change how quickly the system knows and reacts.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Faster monitoring and observability</li>
+                <li>Shorter deployment pipelines</li>
+                <li>Quicker user feedback</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Use automated tests, telemetry, monitoring, and canaries to
+                reduce bug detection from three weeks to five minutes.
+              </p>
+            </div>
+          </div>
+          <p class="fragment subtext">
+            A control loop that reacts too slowly can overshoot; one that reacts
+            too quickly can oscillate. <i class="fa-solid fa-water"></i>
+          </p>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Control
+              <i
+                class="fa-solid fa-arrows-split-up-and-left"
+                aria-hidden="true"
+              ></i
+            ></span>
+            #8) Balancing Feedback
+          </h2>
+          <p>
+            Strengthen the mechanism that pushes the system toward stability.
+          </p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Autoscaling</li>
+                <li>Circuit breakers</li>
+                <li>Automated rollback</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                When error rate rises, automatically roll back the deployment
+                instead of waiting for engineers to notice.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Control
+              <i
+                class="fa-solid fa-arrows-split-up-and-left"
+                aria-hidden="true"
+              ></i
+            ></span>
+            #7) Reinforcing Feedback
+          </h2>
+          <p>Reduce the gain of the runaway loop.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Retry-storm controls</li>
+                <li>Technical-debt reduction</li>
+                <li>Design for adoption network effects</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Add exponential backoff, jitter, and bounded retries to reduce
+                retry-storm amplification.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="centered">
+            <h2>Bulkheads <i class="highlighted fa-solid fa-ship"></i></h2>
+            <p class="subtext">Applies across multiple leverage points.</p>
+          </div>
+          <div class="leverage-description">
+            <div class="fragment">
+              <span class="leverage-tag-large">#10) Structure of Stocks &amp; Flows</span> Partitions shared resources, such as threads, connections, or worker pools, so one failing component cannot consume resources needed by others. 
+            </div>
+            <div class="fragment">
+              <span class="leverage-tag-large">#8) Balancing Feedback</span>
+             Create a stabilizing boundary by limiting the amount of capacity that can be consumed by a failing dependency.
+            </div>
+            <div class="fragment">
+              <span class="leverage-tag-large">#7) Reinforcing Feedback</span>
+              Reduce the amplification of cascading failures by preventing one failure from consuming shared resources and triggering additional failures elsewhere.
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Change <i class="fa-solid fa-gavel" aria-hidden="true"></i
+            ></span>
+            #6) Information Flows
+          </h2>
+          <p>Give the system information it did not have.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Production observability</li>
+                <li>Architecture decision records</li>
+                <li>Product telemetry</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Route customer failures directly into telemetry and engineering
+                dashboards so developers learn about them immediately.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="centered">
+            <h2>Circuit Breakers <i class="highlighted fa-solid fa-bolt"></i></h2>
+            <p class="subtext">Applies across multiple leverage points.</p>
+          </div>
+          <div class="leverage-description">
+            <div class="fragment">
+              <span class="leverage-tag-large">#9) Delays</span> Automates the
+              response to failure, reducing the time between detecting unhealthy
+              behavior and changing the system's behavior.
+            </div>
+            <div class="fragment">
+              <span class="leverage-tag-large">#8) Balancing Feedback</span>
+              Detects unhealthy behavior and automatically reduces or stops
+              requests, creating a balancing response that helps prevent further
+              damage and allows the dependency to recover.
+            </div>
+            <div class="fragment">
+              <span class="leverage-tag-large">#7) Reinforcing Feedback</span>
+              Reduces the amplification of failure cascades by preventing
+              failures from generating additional load, retries, and resource
+              exhaustion.
+            </div>
+            <div class="fragment">
+              <span class="leverage-tag-large">#6) Information Flows</span>
+              Turns information about failures, latency, and dependency health
+              into actionable information that directly changes how future
+              requests are handled.
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Change <i class="fa-solid fa-gavel" aria-hidden="true"></i
+            ></span>
+            #5) Rules
+          </h2>
+          <p>Change what the system is allowed to do.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Deployment policies</li>
+                <li>Reliability-focused team incentives</li>
+                <li>Architectural constraints</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Make teams accountable for both feature delivery and production
+                reliability, not feature throughput alone.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Change <i class="fa-solid fa-gavel" aria-hidden="true"></i
+            ></span>
+            #4) Self-Organization
+          </h2>
+          <p>Give the system the ability to change itself.</p>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Platform teams</li>
+                <li>Plugin architectures</li>
+                <li>Autonomous teams</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Give each team ownership to deploy and operate its service, with
+                automated guardrails.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Question <i class="fa-solid fa-brain" aria-hidden="true"></i
+            ></span>
+            #3) Change the Goal
+          </h2>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Feature delivery to customer outcomes</li>
+                <li>Utilization to reliability</li>
+                <li>Growth to sustainable growth</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Change success from number of features released to customer
+                problems solved.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Question <i class="fa-solid fa-brain" aria-hidden="true"></i
+            ></span>
+            #2) Change the Paradigm
+          </h2>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Software built once to continuously evolving system</li>
+                <li>Treat infrastructure as disposable rather than precious</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Moving from monthly large monthly releases to favor releases that are small, frequent, observable, and reversible.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="leverage-point-slide">
+          <h2>
+            <span class="leverage-tag"
+              >Question <i class="fa-solid fa-brain" aria-hidden="true"></i
+            ></span>
+            #1) Transcend Paradigms
+          </h2>
+          <div class="two-col">
+            <div class="concept-card">
+              <h3>Intervention</h3>
+              <ul>
+                <li>Avoid architectural dogma</li>
+                <li>Treat methodologies as tools</li>
+                <li>Question existing assumptions</li>
+              </ul>
+            </div>
+            <div class="example-card fragment">
+              <h3>Example</h3>
+              <p>
+                Ask what problem microservices solve before assuming they are
+                the right structure.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="summary-slide">
+          <h2>Summary</h2>
+          <div class="summary-cards">
+            <div class="summary-card fragment">
+              <img src="img/iceberg-diving.png" alt="Diver exploring an iceberg" />
+              <div>
+                <h3>Beware the Event Trap</h3>
+                <p>Events are symptoms; structure generates behavior over time.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/retry-storm.png" alt="Retry storm feedback loop" />
+              <div>
+                <h3>Find the Loops</h3>
+                <p>Ask what amplifies failure and what counteracts it.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/stocks-flows.png" alt="Stocks and flows diagram" />
+              <div>
+                <h3>Find Stocks, Flows &amp; Delays</h3>
+                <p>What accumulates, moves, and waits?</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/fulcrum.png" alt="Fulcrum representing leverage" />
+              <div>
+                <h3>Traverse the Leverage Ladder</h3>
+                <p>Do not stop at parameters when the problem is structural.</p>
+              </div>
+            </div>
+            <div class="summary-card fragment">
+              <img src="img/thinking-goal.png" alt="Person thinking about a goal" />
+              <div>
+                <h3>Question the Goal</h3>
+                <p>Sometimes the highest-leverage change is changing what success means.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>References <i class="highlighted fa-solid fa-book-bookmark"></i></h2>
+          <ul>
+            <li>Meadows, Donella H. Thinking in Systems: A Primer (2008).</li>
+            <li>Montalion, Diana. Learning Systems Thinking (2024).</li>
+            <li>Nygard, Michael. Release It! Second Edition Design and Deploy Production-Ready Software (2018).</li>
+          </ul>
+        </section>
+        <section class="title-slide closing-slide">
+          <h1>
+            <span class="title-main">Thank you!</span>
+          </h1>
+          <img
+            class="title-slide-image"
+            src="img/systems-thinking.png"
+            alt="Systems thinking illustration"
+            width="700"
+          />
+          <table class="speaker-card">
+            <tr>
+              <td style="vertical-align: middle">
+                <img
+                  src="../_shared/img/me.png"
+                  width="100"
+                  alt="Carl Chesser"
+                />
+              </td>
+              <td style="vertical-align: middle">
+                Carl Chesser<br /><small
+                  ><a href="https://x.com/che55er">@che55er</a> |
+                  <a href="https://che55er.io/">che55er.io</a></small
+                >
+              </td>
+            </tr>
+          </table>
+          <img
+            class="closing-qr"
+            src="img/qr-code.png"
+            alt="QR code for more information"
+          />
+        </section>
+      </div>
+    </div>
+    <script src="../_shared/revealjs/dist/reveal.js"></script>
+    <script src="../_shared/revealjs/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hashOneBasedIndex: true,
+        hash: true,
+        plugins: [RevealNotes],
+      });
+    </script>
+  </body>
+</html>
