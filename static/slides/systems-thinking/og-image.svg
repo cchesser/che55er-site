@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Why Your Systems Behave Strangely — Systems Thinking for Software Architects</title>
+  <clipPath id="canvas">
+    <rect width="1200" height="630" />
+  </clipPath>
+  <g clip-path="url(#canvas)">
+    <image href="preview.png" x="-50" y="-46" width="1300" height="721.5" />
+  </g>
+</svg>
