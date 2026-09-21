@@ -16,9 +16,7 @@ In conversations with other engineers, I heard a recurring concern: as engineers
 
 People described situations where they increasingly needed an AI agent to answer questions that they previously would have been able to answer themselves. This includes questions about how the system worked or how to quickly diagnose a problem.
 
-There was also a related concern around software quality.
-
-AI can produce code that looks perfectly reasonable in isolation, but that doesn't necessarily mean it is the right code for the system. Engineers can end up adding more and more code that appears valid while gradually moving the repository away from clean design principles or the architectural direction the team intended.
+There was also a related concern around software quality. AI can produce code that looks perfectly reasonable in isolation, but that doesn't necessarily mean it is the right code for the system. Engineers can end up adding more and more code that appears valid while gradually moving the repository away from clean design principles or the architectural direction the team intended.
 
 The more we use AI to generate and modify software, the more important it becomes that engineers maintain a strong understanding of the systems they are building. AI can accelerate the production of code. It doesn't automatically improve our understanding of that code, especially when the gain of understanding is associated with effort. This is something that came up in a popular talk: [How My Team Got Worse With AI: The Hidden Tax of Generated Code](#how-my-team-got-worse-with-ai-the-hidden-tax-of-generated-code)
 
@@ -37,15 +35,28 @@ I wasn't able to attend as many sessions this year as I would have liked because
 ## Notes
 
 {{< notes-gallery >}}
-  {{< note-card title="WTH is Chaos Engineering?! A Quick Look at Breaking Things on Purpose" speaker="Kiah Imani" linkedin="kiah-tolliver" image="kcdc26-chaos-engineering.png" >}}
-  {{< note-card title="How My Team Got Worse With AI: The Hidden Tax of Generated Code" speaker="Fernando Cargnelutti" linkedin="pablofernandocargnelutti" image="kcdc26-how-my-team-got-worse-w-ai.png" >}}
-  {{< note-card title="Managing your time for work, learning, and fun" speaker="Jeanne Boyarsky" linkedin="jeanne-boyarsky" image="kcdc26-managing-your-time.png" >}}
-  {{< note-card title="Optimizing Feedback Loops: The Hidden Architecture of High-Performance Teams" speaker="Preston Chandler" linkedin="prestonchandler" image="kcdc26-optimizing-feedback-loops.png" >}}
-  {{< note-card title="Refactoring Your Technical Identity" speaker="Chris Ayers" linkedin="chris-l-ayers" image="kcdc26-refactor-tech-identity.png" >}}
-  {{< note-card title="The Golden Path Starts at Home: Engineering Developer Experience from Laptop to Production" speaker="DaShaun Carter, Tim Sparg " linkedin="dashaun" image="kcdc26-the-golden-path-starts-at-home.png" >}}
+  {{< note-card title="WTH is Chaos Engineering?! A Quick Look at Breaking Things on Purpose" image="kcdc26-chaos-engineering.png" >}}
+    {{< note-speaker name="Kiah Imani" linkedin="kiah-tolliver" >}}
+  {{< /note-card >}}
+  {{< note-card title="How My Team Got Worse With AI: The Hidden Tax of Generated Code" image="kcdc26-how-my-team-got-worse-w-ai.png" >}}
+    {{< note-speaker name="Fernando Cargnelutti" linkedin="pablofernandocargnelutti" >}}
+  {{< /note-card >}}
+  {{< note-card title="Managing your time for work, learning, and fun" image="kcdc26-managing-your-time.png" >}}
+    {{< note-speaker name="Jeanne Boyarsky" linkedin="jeanne-boyarsky" >}}
+  {{< /note-card >}}
+  {{< note-card title="Optimizing Feedback Loops: The Hidden Architecture of High-Performance Teams" image="kcdc26-optimizing-feedback-loops.png" >}}
+    {{< note-speaker name="Preston Chandler" linkedin="prestonchandler" >}}
+  {{< /note-card >}}
+  {{< note-card title="Refactoring Your Technical Identity" image="kcdc26-refactor-tech-identity.png" >}}
+    {{< note-speaker name="Chris Ayers" linkedin="chris-l-ayers" >}}
+  {{< /note-card >}}
+  {{< note-card title="The Golden Path Starts at Home: Engineering Developer Experience from Laptop to Production" image="kcdc26-the-golden-path-starts-at-home.png" >}}
+    {{< note-speaker name="DaShaun Carter" linkedin="dashaun" >}}
+    {{< note-speaker name="Tim Sparg" linkedin="timothysparg" >}}
+  {{< /note-card >}}
 {{< /notes-gallery >}}
 
-# My Talks
+## My Talks
 
 This year I returned as a speaker at KCDC and gave two talks: 
 
@@ -54,7 +65,7 @@ This year I returned as a speaker at KCDC and gave two talks:
 
 It was a bigger workload doing the two talks, as the _Heap Space Nine_ talk, was much more development, testing, and exploring options (building an MCP servr that enabled OQL to traverse the heap space with AI). The systems thinking talk was one that I felt was very applicable to a larger audience, so I wanted to make sure I had good examples people could takeaway and apply in their work. Much of the slides in that talk are pretty self-explanatory; however, there was one slide that I added the night before as I thought it would be a good element to include, which is about the _zipper merge_.
 
-# The Zipper Merge
+## The Zipper Merge
 
 There was one slide in my systems thinking talk that simply showed an illustration of a car traffic zipper merge.
 
@@ -78,6 +89,6 @@ But changing information isn't necessarily enough when the incentives and goals 
 
 Something that seems incredibly simple can actually expose a much deeper systems problem. The difficulty isn't understanding the concept. The difficulty is getting individual behavior aligned with the goal of the overall system. And that's something we see constantly in software systems as well. Organizations can create incentives that encourage behaviors that make sense for an individual group but work against the larger system. Later in the talk we highlight the different leverage points, and then hit on how changing goals in the system can be one of th hardest things to change (like with the zipper merge).
 
-# Conclusion
+## Conclusion
 
 Overall, it was another great year at the Kansas City Developer Conference. I hope some of these notes may help you, and I look forward to KCDC in 2027!

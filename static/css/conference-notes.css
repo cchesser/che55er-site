@@ -27,18 +27,25 @@
   line-height: 1.4;
 }
 
-.conference-note-card__speaker {
+.conference-note-card__speakers {
   margin: 0.65rem 0 0;
   font-size: 0.9rem;
 }
 
-.conference-note-card__speaker span {
+.conference-note-card__speaker-label {
   color: currentColor;
   opacity: 0.7;
 }
 
-.conference-note-card__speaker a {
+.conference-note-card__speaker-list {
   margin-left: 0.35rem;
+}
+
+.conference-note-card__speaker:not(:last-child)::after {
+  content: ", ";
+}
+
+.conference-note-card__speaker a {
   text-decoration: none;
 }
 

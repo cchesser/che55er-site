@@ -1,14 +1,12 @@
 {{- $title := .Get "title" -}}
-{{- $speaker := .Get "speaker" -}}
-{{- $linkedin := .Get "linkedin" -}}
 {{- $image := .Page.Resources.GetMatch (.Get "image") -}}
 <article class="conference-note-card">
   <div class="conference-note-card__details">
     <h3 class="conference-note-card__title">{{ $title }}</h3>
-    <p class="conference-note-card__speaker">
-      <span>Speaker</span>
-      <a href="https://www.linkedin.com/in/{{ $linkedin }}/" target="_blank" rel="noopener noreferrer">{{ $speaker }}</a>
-    </p>
+    <div class="conference-note-card__speakers">
+      <span class="conference-note-card__speaker-label">Speakers</span>
+      <span class="conference-note-card__speaker-list">{{ .Inner }}</span>
+    </div>
   </div>
   {{ with $image }}
     <a class="conference-note-card__image-link" href="{{ .RelPermalink }}" aria-label="View handwritten notes for {{ $title }}">
