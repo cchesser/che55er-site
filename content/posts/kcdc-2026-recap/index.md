@@ -35,12 +35,25 @@ I wasn't able to attend as many sessions this year as I would have liked because
 ## Notes
 
 {{< notes-gallery >}}
-  {{< note-card title="WTH is Chaos Engineering?! A Quick Look at Breaking Things on Purpose" speaker="Kiah Imani" linkedin="kiah-tolliver" image="kcdc26-chaos-engineering.png" >}}
-  {{< note-card title="How My Team Got Worse With AI: The Hidden Tax of Generated Code" speaker="Fernando Cargnelutti" linkedin="pablofernandocargnelutti" image="kcdc26-how-my-team-got-worse-w-ai.png" >}}
-  {{< note-card title="Managing your time for work, learning, and fun" speaker="Jeanne Boyarsky" linkedin="jeanne-boyarsky" image="kcdc26-managing-your-time.png" >}}
-  {{< note-card title="Optimizing Feedback Loops: The Hidden Architecture of High-Performance Teams" speaker="Preston Chandler" linkedin="prestonchandler" image="kcdc26-optimizing-feedback-loops.png" >}}
-  {{< note-card title="Refactoring Your Technical Identity" speaker="Chris Ayers" linkedin="chris-l-ayers" image="kcdc26-refactor-tech-identity.png" >}}
-  {{< note-card title="The Golden Path Starts at Home: Engineering Developer Experience from Laptop to Production" speaker="DaShaun Carter, Tim Sparg " linkedin="dashaun" image="kcdc26-the-golden-path-starts-at-home.png" >}}
+  {{< note-card title="WTH is Chaos Engineering?! A Quick Look at Breaking Things on Purpose" image="kcdc26-chaos-engineering.png" >}}
+    {{< note-speaker name="Kiah Imani" linkedin="kiah-tolliver" >}}
+  {{< /note-card >}}
+  {{< note-card title="How My Team Got Worse With AI: The Hidden Tax of Generated Code" image="kcdc26-how-my-team-got-worse-w-ai.png" >}}
+    {{< note-speaker name="Fernando Cargnelutti" linkedin="pablofernandocargnelutti" >}}
+  {{< /note-card >}}
+  {{< note-card title="Managing your time for work, learning, and fun" image="kcdc26-managing-your-time.png" >}}
+    {{< note-speaker name="Jeanne Boyarsky" linkedin="jeanne-boyarsky" >}}
+  {{< /note-card >}}
+  {{< note-card title="Optimizing Feedback Loops: The Hidden Architecture of High-Performance Teams" image="kcdc26-optimizing-feedback-loops.png" >}}
+    {{< note-speaker name="Preston Chandler" linkedin="prestonchandler" >}}
+  {{< /note-card >}}
+  {{< note-card title="Refactoring Your Technical Identity" image="kcdc26-refactor-tech-identity.png" >}}
+    {{< note-speaker name="Chris Ayers" linkedin="chris-l-ayers" >}}
+  {{< /note-card >}}
+  {{< note-card title="The Golden Path Starts at Home: Engineering Developer Experience from Laptop to Production" image="kcdc26-the-golden-path-starts-at-home.png" >}}
+    {{< note-speaker name="DaShaun Carter" linkedin="dashaun" >}}
+    {{< note-speaker name="Tim Sparg" linkedin="timothysparg" >}}
+  {{< /note-card >}}
 {{< /notes-gallery >}}
 
 ## My Talks

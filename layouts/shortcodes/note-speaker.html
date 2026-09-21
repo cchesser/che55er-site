@@ -1,0 +1,9 @@
+{{- $name := .Get "name" -}}
+{{- $linkedin := .Get "linkedin" -}}
+<span class="conference-note-card__speaker">
+  {{- if $linkedin -}}
+    <a href="https://www.linkedin.com/in/{{ $linkedin }}/" target="_blank" rel="noopener noreferrer">{{ $name }}</a>
+  {{- else -}}
+    {{ $name }}
+  {{- end -}}
+</span>
