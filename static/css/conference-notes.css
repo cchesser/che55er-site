@@ -1,0 +1,71 @@
+/* Scoped to the KCDC recap Notes gallery. */
+.conference-notes-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.conference-note-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 8%);
+}
+
+.conference-note-card__details {
+  padding: 1.1rem 1.2rem 1rem;
+}
+
+.conference-note-card__title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.conference-note-card__speaker {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+
+.conference-note-card__speaker span {
+  color: currentColor;
+  opacity: 0.7;
+}
+
+.conference-note-card__speaker a {
+  margin-left: 0.35rem;
+  text-decoration: none;
+}
+
+.conference-note-card__speaker a:hover {
+  text-decoration: underline;
+}
+
+.conference-note-card__image-link {
+  display: block;
+  margin-top: auto;
+  background: rgb(0 0 0 / 4%);
+}
+
+.conference-note-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 180ms ease;
+}
+
+.conference-note-card__image-link:hover .conference-note-card__image {
+  transform: scale(1.015);
+}
+
+@media (max-width: 700px) {
+  .conference-notes-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
