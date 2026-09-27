@@ -57,7 +57,7 @@
                 {{ $amazonURL := $book.amazon_url | default (printf "https://www.amazon.com/s?k=%s" ($amazonQuery | urlquery)) }}
                 {{ $goodreadsURL := printf "https://www.goodreads.com/book/isbn/%s" $book.isbn }}
                 {{ with $book.goodreads_id }}
-                  {{ $goodreadsURL = printf "https://www.goodreads.com/book/show/%s" . }}
+                  {{ $goodreadsURL = printf "https://www.goodreads.com/book/show/%d" . }}
                 {{ end }}
 
                 <button type="button" class="reading-book" aria-haspopup="dialog" aria-label="View details for {{ $book.title }} by {{ $book.author }}">
