@@ -1,0 +1,190 @@
+{{ define "main" }}
+  {{ $shelves := collections.NewScratch }}
+  {{ $bookCount := 0 }}
+  {{ range $year, $books := hugo.Data.reading.years }}
+    {{ $bookCount = add $bookCount (len $books) }}
+    {{ $shelves.Add "years" (slice (dict "year" $year "books" $books)) }}
+  {{ end }}
+  {{ $years := sort ($shelves.Get "years") "year" "desc" }}
+
+  <article class="reading-page">
+    <header class="reading-header">
+      <h1 class="reading-title">{{ .Title }}</h1>
+      {{ with .Description }}
+        <p class="reading-description">{{ . }}</p>
+      {{ end }}
+      <p class="reading-meta">{{ $bookCount }} books across {{ len $years }} years</p>
+    </header>
+
+    <nav class="reading-years" aria-label="Reading years">
+      {{ range $years }}
+        <a href="#year-{{ .year }}">{{ .year }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="reading-shelves">
+      {{ range $years }}
+        {{ $year := .year }}
+        {{ $books := .books }}
+        <section id="year-{{ $year }}" class="reading-year" aria-labelledby="year-title-{{ $year }}">
+          <details {{ if eq $year "2026" }}open{{ end }}>
+            <summary>
+              <span id="year-title-{{ $year }}">{{ $year }}</span>
+              <span class="reading-year-count">{{ len $books }} books</span>
+            </summary>
+            <div class="book-gallery">
+              {{ range $books }}
+                {{ $book := . }}
+                {{ $localCover := false }}
+                {{ with $book.cover_url }}
+                  {{ $url := . | replaceRE "\\{" "%7B" | replaceRE "\\}" "%7D" }}
+                  {{ with try (resources.GetRemote $url) }}
+                    {{ with .Err }}
+                      {{ errorf "Failed to download cover image for %q (ISBN: %s) from %q: %s" $book.title $book.isbn $url . }}
+                    {{ else with .Value }}
+                      {{ if ne .MediaType.MainType "image" }}
+                        {{ errorf "Cover URL for %q (ISBN: %s) did not return an image (media type: %s): %q" $book.title $book.isbn .MediaType.Type $url }}
+                      {{ end }}
+                      {{ $ext := path.Ext (urls.Parse $url).Path | default (printf ".%s" .MediaType.SubType) | lower }}
+                      {{ $targetPath := printf "reading/covers/%s%s" ($book.isbn | default ($book.title | urlize)) $ext }}
+                      {{ $localCover = . | resources.Copy $targetPath }}
+                    {{ else }}
+                      {{ errorf "Unable to get remote cover image for %q (ISBN: %s) from %q" $book.title $book.isbn $url }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ $amazonQuery := printf "%s %s" $book.title ($book.author | default "") }}
+                {{ $amazonURL := $book.amazon_url | default (printf "https://www.amazon.com/s?k=%s" ($amazonQuery | urlquery)) }}
+                {{ $goodreadsURL := printf "https://www.goodreads.com/book/isbn/%s" $book.isbn }}
+                {{ with $book.goodreads_id }}
+                  {{ $goodreadsURL = printf "https://www.goodreads.com/book/show/%s" . }}
+                {{ end }}
+
+                <button type="button" class="reading-book" aria-haspopup="dialog" aria-label="View details for {{ $book.title }} by {{ $book.author }}">
+                  <div class="reading-cover">
+                    {{ with $localCover }}
+                      <img src="{{ .RelPermalink }}" alt="Cover of {{ $book.title }}" loading="lazy" class="nozoom" onerror="this.hidden=true;this.parentElement.classList.add('reading-cover--missing');" />
+                    {{ else }}
+                      <span class="reading-cover-fallback reading-cover--missing" aria-hidden="true">{{ $book.title }}</span>
+                    {{ end }}
+                    <span class="reading-cover-fallback" aria-hidden="true">{{ $book.title }}</span>
+                    {{ if $book.favorite }}
+                      <span class="reading-favorite" title="A favorite" aria-label="Favorite book">
+                        {{ partial "icon" "star" }}
+                      </span>
+                    {{ end }}
+                  </div>
+                  <div class="reading-book-details">
+                    <h2>{{ $book.title }}</h2>
+                    {{ with $book.author }}<p>{{ . }}</p>{{ end }}
+                  </div>
+
+                  <template class="reading-book-expanded-template">
+                    <div class="reading-modal-layout">
+                      <div class="reading-modal-cover-wrap">
+                        <div class="reading-cover reading-modal-cover">
+                          {{ with $localCover }}
+                            <img src="{{ .RelPermalink }}" alt="Cover of {{ $book.title }}" class="nozoom" />
+                          {{ else }}
+                            <span class="reading-cover-fallback reading-cover--missing" aria-hidden="true">{{ $book.title }}</span>
+                          {{ end }}
+                          {{ if $book.favorite }}
+                            <span class="reading-favorite" title="A favorite" aria-label="Favorite book">
+                              {{ partial "icon" "star" }}
+                            </span>
+                          {{ end }}
+                        </div>
+                      </div>
+                      <div class="reading-modal-details">
+                        <div class="reading-modal-header">
+                          {{ if $book.favorite }}
+                            <span class="reading-favorite-pill">
+                              <span class="reading-pill-icon">{{ partial "icon" "star" }}</span>
+                              <span>Favorite</span>
+                            </span>
+                          {{ end }}
+                          <h2 class="reading-modal-title">{{ $book.title }}</h2>
+                          {{ with $book.author }}<p class="reading-modal-author">by <strong>{{ . }}</strong></p>{{ end }}
+                        </div>
+
+                        <div class="reading-modal-meta">
+                          <span><strong>Year read:</strong> {{ $year }}</span>
+                          <span><strong>ISBN:</strong> {{ $book.isbn }}</span>
+                        </div>
+
+                        {{ with $book.notes }}
+                          <div class="reading-modal-notes">
+                            <span class="reading-modal-notes-heading">Notes</span>
+                            <div class="reading-modal-notes-text">
+                              {{ . | markdownify }}
+                            </div>
+                          </div>
+                        {{ end }}
+
+                        <div class="reading-modal-actions">
+                          <a class="reading-modal-goodreads-link" href="{{ $goodreadsURL }}" target="_blank" rel="noopener noreferrer">
+                            <span class="reading-modal-goodreads-icon" aria-hidden="true">{{ partial "icon" "goodreads" }}</span>
+                            <span>View on Goodreads</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </button>
+              {{ end }}
+            </div>
+          </details>
+        </section>
+      {{ end }}
+    </div>
+
+    <div id="reading-modal" class="reading-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="reading-modal-card">
+        <button type="button" class="reading-modal-close-btn" aria-label="Close details">&times;</button>
+        <div id="reading-modal-content" class="reading-modal-content"></div>
+      </div>
+    </div>
+  </article>
+
+  <script>
+    (function () {
+      const modal = document.getElementById('reading-modal');
+      const modalContent = document.getElementById('reading-modal-content');
+      if (!modal || !modalContent) return;
+
+      function openModal(template) {
+        modalContent.innerHTML = '';
+        modalContent.appendChild(template.content.cloneNode(true));
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('reading-modal-open');
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('reading-modal-open');
+      }
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.reading-book');
+        if (btn) {
+          const template = btn.querySelector('.reading-book-expanded-template');
+          if (template) {
+            openModal(template);
+            return;
+          }
+        }
+        if (e.target === modal || e.target.closest('.reading-modal-close-btn')) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+{{ end }}

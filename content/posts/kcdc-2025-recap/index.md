@@ -17,98 +17,52 @@ When attending talks, I like to take handwritten notes that help highlight the c
 
 While these are not all the notes that I took, these were the ones that had the most content, which often signal to me that I was capturing more things from the talk as it was occurring.
 
-### Modern Problems Require Modern Solutions: Finding Your Meme Twin with Embeddings & Vector Databases
-
-{{< linkedin label="Speaker:" name="Guy Royse" ref="groyse" >}}
-{{< gallery >}}
-  <img src="kcdc2025-meme.png" class="grid-w75" />
-{{< /gallery >}}
-
----
-
-### Understanding Nuclear Power
-
-{{< linkedin label="Speaker:" name="Richard Campbell" ref="richjcampbell" >}}
-{{< gallery >}}
-  <img src="kcdc2025-nuclear.png" class="grid-w75" />
-{{< /gallery >}}
-
----
-
-### Digging into the Matrix: Practicing Code Archaeology
-
-{{< linkedin label="Speaker:" name="Arthur Doler" ref="arthurdoler" >}}
-{{< gallery >}}
-  <img src="kcdc2025-digging-into-the-matrix.png" class="grid-w85" />
-{{< /gallery >}}
+{{< notes-gallery >}}
+  {{< note-card title="Modern Problems Require Modern Solutions: Finding Your Meme Twin with Embeddings & Vector Databases" image="kcdc2025-meme.png" >}}
+    {{< note-speaker name="Guy Royse" linkedin="groyse" >}}
+  {{< /note-card >}}
+  {{< note-card title="Understanding Nuclear Power" image="kcdc2025-nuclear.png" >}}
+    {{< note-speaker name="Richard Campbell" linkedin="richjcampbell" >}}
+  {{< /note-card >}}
+  {{< note-card title="Digging into the Matrix: Practicing Code Archaeology" image="kcdc2025-digging-into-the-matrix.png" >}}
+    {{< note-speaker name="Arthur Doler" linkedin="arthurdoler" >}}
+  {{< /note-card >}}
+{{< /notes-gallery >}}
 
 Slides and notes from his presentation [can be found here](https://speakerdeck.com/arthurdoler/digging-into-the-matrix-practicing-code-archaeology).
 
 ---
 
-### Don’t Let Your Org Chart Write Bad Code
-
-{{< linkedin label="Speaker:" name="Luis Fernandez" ref="iamluisfernandez" >}}
-{{< gallery >}}
-  <img src="kcdc2025-orgcode.png" class="grid-w85" />
-{{< /gallery >}}
+{{< notes-gallery >}}
+  {{< note-card title="Don’t Let Your Org Chart Write Bad Code" image="kcdc2025-orgcode.png" >}}
+    {{< note-speaker name="Luis Fernandez" linkedin="iamluisfernandez" >}}
+  {{< /note-card >}}
+{{< /notes-gallery >}}
 
 Here is the additional references and content that he shared (check out Conway's original paper on [_How Do Committees Invent?_](http://www.melconway.com/Home/pdf/committees.pdf)): https://guisho.com/c/kcdc25
 
 ---
 
-### Securing and Scaling MCP Servers With OAuth 2.1
-
-{{< linkedin label="Speaker:" name="Kevin Gao" ref="kevinjamesgao" >}}
-
-{{< gallery >}}
-  <img src="kcdc2025-mcp.png" class="grid-w85" />
-{{< /gallery >}}
-
----
-
-### How To Start Loving Command-Line Tools 
-
-{{< linkedin label="Speaker:" name="Ryan Price" ref="ryapric" >}}
-{{< gallery >}}
-  <img src="kcdc2025-command-line.png" class="grid-w50" />
-{{< /gallery >}}
-
----
-
-### Crisis Coding: Navigating Impossible Deadlines
-
-{{< linkedin label="Speaker:" name="Drew Spencer" ref="drew-spencer-b4683669" >}}
-{{< gallery >}}
-  <img src="kcdc2025-crisis-coding.png" class="grid-w75" />
-{{< /gallery >}}
-
----
-
-### Delivery at the Speed of Code with InnerSource
-
-{{< linkedin label="Speaker:" name="Russ Rutledge" ref="russellrutledge" >}}
-{{< gallery >}}
-  <img src="kcdc2025-innersource.png" class="grid-w85" />
-{{< /gallery >}}
-
----
-
-### AI + IoT + Raspberry Pi = Magic
-
-{{< linkedin label="Speaker:" name="Shashank Daté" ref="shashankdate" >}}
-{{< gallery >}}
-  <img src="kcdc2025-ai-pi.png" class="grid-w50" />
-{{< /gallery >}}
-
----
-
-### The Chips and Pickle Story: What's Really Behind Infamous, Historic UI Failures?
-
-{{< linkedin label="Speaker:" name="Dean Schuster" ref="dean-schuster" >}}
-{{< gallery >}}
-  <img src="kcdc2025-ui-failures.png" class="grid-w50" />
-{{< /gallery >}}
+{{< notes-gallery >}}
+  {{< note-card title="Securing and Scaling MCP Servers With OAuth 2.1" image="kcdc2025-mcp.png" >}}
+    {{< note-speaker name="Kevin Gao" linkedin="kevinjamesgao" >}}
+  {{< /note-card >}}
+  {{< note-card title="How To Start Loving Command-Line Tools" image="kcdc2025-command-line.png" >}}
+    {{< note-speaker name="Ryan Price" linkedin="ryapric" >}}
+  {{< /note-card >}}
+  {{< note-card title="Crisis Coding: Navigating Impossible Deadlines" image="kcdc2025-crisis-coding.png" >}}
+    {{< note-speaker name="Drew Spencer" linkedin="drew-spencer-b4683669" >}}
+  {{< /note-card >}}
+  {{< note-card title="Delivery at the Speed of Code with InnerSource" image="kcdc2025-innersource.png" >}}
+    {{< note-speaker name="Russ Rutledge" linkedin="russellrutledge" >}}
+  {{< /note-card >}}
+  {{< note-card title="AI + IoT + Raspberry Pi = Magic" image="kcdc2025-ai-pi.png" >}}
+    {{< note-speaker name="Shashank Daté" linkedin="shashankdate" >}}
+  {{< /note-card >}}
+  {{< note-card title="The Chips and Pickle Story: What's Really Behind Infamous, Historic UI Failures?" image="kcdc2025-ui-failures.png" >}}
+    {{< note-speaker name="Dean Schuster" linkedin="dean-schuster" >}}
+  {{< /note-card >}}
+{{< /notes-gallery >}}
 
 ## My Talk
 

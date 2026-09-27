@@ -2,3 +2,5 @@
 _deploy
 resources
 dictionary.dic
+tmp
+.internal

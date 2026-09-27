@@ -13,11 +13,8 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.166.0'
-          extended: true
+      - name: Setup mise and project tools
+        uses: jdx/mise-action@v4
 
       - name: Build
         run: hugo --minify

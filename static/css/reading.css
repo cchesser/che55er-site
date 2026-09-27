@@ -1,0 +1,579 @@
+/* Reading Bookshelf Styles */
+.reading-page {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Header */
+.reading-header {
+  margin: 1rem 0 2rem;
+  max-width: 48rem;
+}
+
+.reading-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.reading-description {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-neutral-600, #475569);
+}
+
+:root[class~="dark"] .reading-description,
+html.dark .reading-description,
+body.dark .reading-description {
+  color: var(--color-neutral-400, #94a3b8);
+}
+
+.reading-meta {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-neutral-500, #64748b);
+}
+
+/* Year quick-navigation */
+.reading-years {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0 2.25rem;
+}
+
+.reading-years a {
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 999px;
+  color: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, transform 0.18s;
+}
+
+.reading-years a:hover,
+.reading-years a:focus-visible {
+  background: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+  color: #ffffff;
+  outline: none;
+  transform: translateY(-2px);
+}
+
+/* Year Shelf Section */
+.reading-year {
+  border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  scroll-margin-top: 5rem;
+}
+
+.reading-year details {
+  padding: 0.2rem 0 1.75rem;
+}
+
+.reading-year summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.reading-year summary::-webkit-details-marker {
+  display: none;
+}
+
+.reading-year summary::after {
+  color: var(--color-primary-600);
+  content: '+';
+  font-size: 1.4rem;
+  margin-left: 0.8rem;
+  order: 3;
+}
+
+.reading-year details[open] summary::after {
+  content: '−';
+}
+
+.reading-year-count {
+  color: var(--color-neutral-500);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+/* Gallery Grid */
+.book-gallery {
+  display: grid;
+  align-items: start;
+  gap: 1.5rem 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr));
+  padding: 0.65rem 0 0.4rem;
+}
+
+/* Book Card Button */
+.reading-book {
+  align-self: start;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  text-decoration: none;
+  transition: transform 0.24s ease;
+}
+
+.reading-book:hover,
+.reading-book:focus-visible {
+  outline: none;
+  transform: translateY(-6px);
+}
+
+/* Cover Image Container */
+.reading-cover {
+  aspect-ratio: 2 / 3;
+  background: linear-gradient(145deg, var(--color-primary-600), var(--color-secondary-500, #64748b));
+  border-radius: 0.45rem;
+  box-shadow: 0 0.35rem 0.85rem rgb(0 0 0 / 16%);
+  overflow: hidden;
+  position: relative;
+}
+
+.reading-cover::after {
+  background: linear-gradient(110deg, transparent 38%, rgb(255 255 255 / 23%) 49%, transparent 60%);
+  content: '';
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-110%);
+  transition: transform 0.5s ease, opacity 0.25s;
+}
+
+.reading-book:hover .reading-cover::after,
+.reading-book:focus-visible .reading-cover::after {
+  opacity: 1;
+  transform: translateX(110%);
+}
+
+.reading-cover img {
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: block;
+}
+
+.reading-cover-fallback {
+  align-items: center;
+  color: white;
+  display: none;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  height: 100%;
+  line-height: 1.25;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.reading-cover--missing .reading-cover-fallback {
+  display: flex;
+}
+
+/* Favorite Star Badge */
+.reading-favorite {
+  align-items: center;
+  background: #f5b700;
+  border-radius: 50%;
+  color: #261a00;
+  display: flex;
+  height: 1.75rem;
+  justify-content: center;
+  position: absolute;
+  right: 0.45rem;
+  top: 0.45rem;
+  width: 1.75rem;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 28%);
+}
+
+.reading-favorite .icon,
+.reading-favorite svg {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+}
+
+/* Card details underneath cover */
+.reading-book-details {
+  padding: 0.65rem 0.1rem 0;
+}
+
+.reading-book-details h2 {
+  font-size: 0.92rem;
+  line-height: 1.25;
+  margin: 0;
+  font-weight: 700;
+}
+
+.reading-book-details p,
+.reading-book-details span {
+  color: var(--color-neutral-500);
+  display: block;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  margin: 0.2rem 0 0;
+}
+
+.reading-book:focus-visible .reading-cover {
+  box-shadow: 0 0 0 3px var(--color-primary-500), 0 0.45rem 1rem rgb(0 0 0 / 18%);
+}
+
+.reading-credit {
+  color: var(--color-neutral-500);
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+/* Body lock when modal is open */
+body.reading-modal-open {
+  overflow: hidden;
+}
+
+/* Themed Enlarged Card Modal Overlay */
+.reading-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  /* Keep the surrounding bookshelf visually receded while a card is open. */
+  background: rgb(0 0 0 / 84%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s ease, visibility 0.22s ease;
+}
+
+.reading-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reading-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 44rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 0.85rem;
+  /* Deliberately opaque surfaces: theme neutrals can be translucent. */
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 65%);
+  transform: scale(0.96) translateY(10px);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 2rem 1.75rem;
+  box-sizing: border-box;
+}
+
+.reading-modal-backdrop.is-open .reading-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+:root[class~="dark"] .reading-modal-card,
+html.dark .reading-modal-card,
+body.dark .reading-modal-card {
+  background: #111827;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+/* Close Button */
+.reading-modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  color: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease;
+  z-index: 10;
+}
+
+.reading-modal-close-btn:hover {
+  background: #e2e8f0;
+  transform: scale(1.06);
+}
+
+:root[class~="dark"] .reading-modal-close-btn,
+html.dark .reading-modal-close-btn,
+body.dark .reading-modal-close-btn {
+  border-color: #475569;
+  background: #1e293b;
+}
+
+:root[class~="dark"] .reading-modal-close-btn:hover,
+html.dark .reading-modal-close-btn:hover,
+body.dark .reading-modal-close-btn:hover {
+  background: #334155;
+}
+
+/* Modal Content Layout (Enlarged Card) */
+.reading-modal-layout {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.reading-modal-cover-wrap {
+  flex-shrink: 0;
+  width: 12rem;
+}
+
+.reading-modal-cover {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 25%);
+}
+
+.reading-modal-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.reading-modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-right: 2.2rem;
+}
+
+.reading-favorite-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #f5b700;
+  color: #261a00;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.reading-pill-icon {
+  display: flex;
+  align-items: center;
+}
+
+.reading-pill-icon svg,
+.reading-pill-icon .icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: currentColor;
+}
+
+.reading-modal-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.reading-modal-author {
+  margin: 0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+:root[class~="dark"] .reading-modal-author,
+html.dark .reading-modal-author,
+body.dark .reading-modal-author {
+  color: #e2e8f0;
+}
+
+.reading-modal-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+:root[class~="dark"] .reading-modal-meta,
+html.dark .reading-modal-meta,
+body.dark .reading-modal-meta {
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+.reading-modal-meta strong {
+  color: currentColor;
+}
+
+/* Notes Section */
+.reading-modal-notes {
+  background: #f1f5f9;
+  border-left: 3px solid var(--color-primary-600);
+  border-radius: 0.35rem;
+  padding: 0.85rem 1.1rem;
+}
+
+:root[class~="dark"] .reading-modal-notes,
+html.dark .reading-modal-notes,
+body.dark .reading-modal-notes {
+  background: #1e293b;
+}
+
+.reading-modal-notes-heading {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #075985;
+  margin-bottom: 0.35rem;
+}
+
+.reading-modal-notes-text {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.reading-modal-notes-text p {
+  margin: 0 0 0.5rem;
+}
+
+.reading-modal-notes-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Modal action links */
+.reading-modal-actions {
+  margin-top: 0.4rem;
+}
+
+.reading-modal-goodreads-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #075985;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.reading-modal-goodreads-link:hover {
+  color: #0c4a6e;
+  text-decoration: underline;
+}
+
+.reading-modal-goodreads-icon {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.reading-modal-goodreads-icon svg,
+.reading-modal-goodreads-icon .icon {
+  display: block;
+  height: 1em;
+  width: 1em;
+}
+
+:root[class~="dark"] .reading-modal-notes-heading,
+:root[class~="dark"] .reading-modal-goodreads-link,
+html.dark .reading-modal-notes-heading,
+html.dark .reading-modal-goodreads-link,
+body.dark .reading-modal-notes-heading,
+body.dark .reading-modal-goodreads-link {
+  color: #7dd3fc;
+}
+
+:root[class~="dark"] .reading-modal-goodreads-link:hover,
+html.dark .reading-modal-goodreads-link:hover,
+body.dark .reading-modal-goodreads-link:hover {
+  color: #bae6fd;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 38rem) {
+  .reading-page {
+    padding-inline: 1rem;
+  }
+  .book-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 0.75rem;
+  }
+  .reading-modal-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .reading-modal-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  .reading-modal-cover-wrap {
+    width: 9rem;
+  }
+  .reading-modal-header {
+    align-items: center;
+    padding-right: 0;
+  }
+  .reading-modal-meta {
+    justify-content: center;
+  }
+  .reading-modal-notes {
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .reading-modal-actions {
+    display: flex;
+    justify-content: center;
+  }
+}

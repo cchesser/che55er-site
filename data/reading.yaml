@@ -1,0 +1,540 @@
+---
+years:
+  '2026':
+  - title: The Little Things
+    author: Andy Andrews
+    isbn: '9780718095215'
+    goodreads_id: 30649398
+    cover_url: https://img1.od-cdn.com/ImageType-100/2824-1/{1985CCD0-AC69-453A-92C5-CFE79B29A054}Img100.jpg
+    favorite: false
+  - title: The Traveler's Gift
+    author: Andy Andrews
+    isbn: '9781608144075'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1556-1/{ADE01B13-6994-49BD-87F7-33950BDF69EA}Img100.jpg
+    favorite: false
+  - title: Staying Up, Up, Up in a Down, Down World
+    author: Zig Ziglar
+    isbn: '9781608143979'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1556-1/{618F9592-20DE-4607-825C-B77E79710418}Img100.jpg
+    favorite: false
+  - title: How to Get What You Want
+    author: Zig Ziglar
+    isbn: '9780743539142'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{95595702-6AC8-4890-B34B-61B93A3060CD}Img100.jpg
+    favorite: true
+  - title: Raising Positive Kids in a Negative World
+    author: Zig Ziglar, Tom Ziglar
+    isbn: '9781469099965'
+    goodreads_id: 808019
+    cover_url: https://img1.od-cdn.com/ImageType-100/1088-1/{C91F9DE1-4353-424E-AFF7-A03F06E8F956}Img100.jpg
+    favorite: false
+  - title: Grit, Spit, and Never Quit
+    author: Rob Riggle
+    isbn: '9781668648391'
+    cover_url: https://img1.od-cdn.com/ImageType-100/4575-1/{4DA5A247-6520-43FC-B093-1CC75965A493}IMG100.JPG
+    favorite: false
+  - title: Unbroken
+    author: Laura Hillenbrand
+    isbn: '9780739319703'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{8929EED1-F6D3-49A2-866F-988F4742DA47}Img100.jpg
+    favorite: true
+  - title: The Inner Game of Tennis
+    author: W. Timothy Gallwey
+    isbn: '9780739368459'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{E718BC73-757C-4DA3-9DB3-948D3E33B1DD}IMG100.JPG
+    favorite: true
+  - title: Thinking in Systems
+    author: Donella Meadows
+    isbn: '9781603588478'
+    goodreads_id: 3828902
+    cover_url: https://covers.openlibrary.org/b/isbn/9781603588478-L.jpg?default=false
+    favorite: true
+  - title: Out of the Silent Planet
+    author: C.S. Lewis
+    isbn: '9780007157150'
+    goodreads_id: 25350
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1310984018i/25350.jpg
+    favorite: true
+  - title: Big Dumb Eyes
+    author: Nate Bargatze
+    isbn: '9781668648421'
+    cover_url: https://img3.od-cdn.com/ImageType-100/4575-1/{F50290AD-F87A-4908-A6C3-3A6B034DF886}IMG100.JPG
+    favorite: false
+  - title: 7 Rules of Power
+    author: Jeffrey Pfeffer
+    isbn: '9781666560121'
+    cover_url: https://img2.od-cdn.com/ImageType-100/2343-1/{BE4C5B4B-7FFB-4B1B-BD61-6D52E3C971DC}IMG100.JPG
+    favorite: true
+  '2025':
+  - title: King Solomon's Mines
+    author: H. Rider Haggard
+    isbn: '9780812966299'
+    goodreads_id: 23814
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1418964233i/23814.jpg
+    favorite: true
+  - title: 'Slow Productivity: The Lost Art of Accomplishment Without Burnout'
+    author: Cal Newport
+    isbn: '9780593544853'
+    goodreads_id: 197773418
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1692883158i/197773418.jpg
+    favorite: true
+  - title: The Tao of Bill Murray
+    author: Gavin Edwards, R. Sikoryak
+    isbn: '9780735210318'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{87EAB72F-433D-4DA9-A70A-A95ABDF9FC1A}Img100.jpg
+    favorite: false
+  - title: Robinson Crusoe
+    author: Daniel Defoe
+    isbn: '1948132192'
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1541386101i/42631589.jpg
+    favorite: true
+  - title: Hillbilly Elegy
+    author: J. D. Vance
+    isbn: '9780062477521'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0293-1/{CAE33633-B80B-4017-8C75-C9D465FF793F}Img100.jpg
+    favorite: true
+    notes: A deeply personal memoir reflecting on family, culture, and socioeconomic challenges in Appalachia and the Rust Belt.
+  - title: You Never Know
+    author: Tom Selleck, Ellis Henican
+    isbn: '9780062945792'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0293-1/{1B595569-98F2-4E9E-BCEE-55396E68C39A}IMG100.JPG
+    favorite: true
+  - title: The Princess Bride
+    author: William Goldman
+    isbn: '9780345418265'
+    goodreads_id: 21787
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1327903636i/21787.jpg
+    favorite: true
+  - title: Truman
+    author: David McCullough
+    isbn: '9780743519700'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{C57A82DB-FDEB-484C-80F6-89C52A76BA07}Img100.jpg
+    favorite: true
+  - title: Surely You Can't Be Serious
+    author: David Zucker, Jim Abrahams, Jerry Zucker
+    isbn: '9781250289322'
+    cover_url: https://img3.od-cdn.com/ImageType-100/2390-1/{21437383-8D7F-41EA-ACA0-9A0B9B531695}IMG100.JPG
+    favorite: true
+  - title: True Grit
+    author: Charles Portis
+    isbn: '9781585673698'
+    goodreads_id: 43612456
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1302852893i/10035073.jpg
+    favorite: true
+  '2024':
+  - title: Surely You Can't Be Serious
+    author: David Zucker, Jim Abrahams, Jerry Zucker
+    isbn: '9781250290427'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1493-1/{41F45944-2A75-4DC2-A63D-CBFE61B5FBD7}IMG100.JPG
+    favorite: true
+  - title: As You Wish
+    author: Cary Elwes, Joe Layden
+    isbn: '9781442383463'
+    cover_url: https://img1.od-cdn.com/ImageType-100/5054-1/{40EF8F15-76BF-479C-A903-818B7AA3D3F1}Img100.jpg
+    favorite: true
+  - title: John Adams
+    author: David McCullough
+    isbn: '9780743550864'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{7B73B911-600E-4429-AE25-4786AE68DD7F}Img100.jpg
+    favorite: true
+  - title: Mindset
+    author: Carol S. Dweck
+    isbn: '9781588365231'
+    cover_url: https://covers.openlibrary.org/b/isbn/9781588365231-L.jpg?default=false
+    favorite: false
+  - title: Digital Minimalism
+    author: Cal Newport
+    isbn: '9780525643555'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{B606F2D5-1645-44A6-B6C1-3DD4602E3A3A}Img100.jpg
+    favorite: true
+  - title: The 5AM Club
+    author: Robin Sharma
+    isbn: '9781443457996'
+    cover_url: https://img1.od-cdn.com/ImageType-100/0293-1/{AEEFB1E3-C861-4F16-89F4-4CA4F00E9A3D}Img100.jpg
+    favorite: false
+  - title: The Pioneers
+    author: David McCullough
+    isbn: '9781508279099'
+    cover_url: https://img3.od-cdn.com/ImageType-100/5054-1/{545EFF52-FDE3-474A-BC48-0765ABEBE8C5}Img100.jpg
+    favorite: false
+  - title: The American Spirit
+    author: David McCullough
+    isbn: '9781508238713'
+    cover_url: https://img1.od-cdn.com/ImageType-100/5054-1/{9AD708F0-80C8-478C-BB95-976EDE7593A8}Img100.jpg
+    favorite: false
+  - title: Never Give Up
+    author: Tom Brokaw
+    isbn: '9780593742754'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{FD6ED8FF-C56A-4170-8903-4F25CFD20F0A}IMG100.JPG
+    favorite: true
+  - title: Be Useful
+    author: Arnold Schwarzenegger
+    isbn: '9780593791615'
+    cover_url: https://img2.od-cdn.com/ImageType-100/1191-1/{5C4DCD43-E2DE-40C9-836A-6A13EBD90615}IMG100.JPG
+    favorite: true
+  - title: The Wisdom of the Bullfrog
+    author: Admiral William H. McRaven
+    isbn: '9781549164712'
+    cover_url: https://img1.od-cdn.com/ImageType-100/4575-1/{4A19AB51-4B48-4EE7-9587-15234B6FAA70}IMG100.JPG
+    favorite: true
+  - title: On Writing Well, 30th Anniversary Edition
+    author: William Zinsser
+    isbn: '9780062250506'
+    cover_url: https://img2.od-cdn.com/ImageType-100/0293-1/{2288E528-E106-4508-AF4B-D91AD76555D0}Img100.jpg
+    favorite: false
+  - title: Thinking in Bets
+    author: Annie Duke
+    isbn: '9780525532545'
+    goodreads_id: 35957157
+    cover_url: https://img2.od-cdn.com/ImageType-100/1191-1/{6FBDFFEA-2CB4-4C66-B71E-C7D129FCA3F6}Img100.jpg
+    favorite: false
+  - title: The Ruthless Elimination of Hurry
+    author: John Mark Comer
+    isbn: '9780593216248'
+    goodreads_id: 43982455
+    cover_url: https://covers.openlibrary.org/b/isbn/9780593216248-L.jpg?default=false
+    favorite: false
+  - title: The Four Loves
+    author: C. S. Lewis
+    isbn: '9781418590468'
+    cover_url: https://covers.openlibrary.org/b/isbn/9781418590468-L.jpg?default=false
+    favorite: false
+  '2023':
+  - title: The Hobbit
+    author: J.R.R. Tolkien
+    isbn: '0544174224'
+    goodreads_id: 17464890
+    cover_url: https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1369870816i/17464890.jpg
+    favorite: true
+  - title: The Screwtape Letters
+    author: C. S. Lewis
+    isbn: '9780062243737'
+    cover_url: https://img2.od-cdn.com/ImageType-100/0293-1/{63918149-2797-47E0-9895-DBEE60F97563}IMG100.JPG
+    favorite: true
+  - title: The World According to Mister Rogers
+    author: Fred Rogers
+    isbn: '9781401398682'
+    cover_url: https://covers.openlibrary.org/b/isbn/9781401398682-L.jpg?default=false
+    favorite: true
+  - title: Atomic Habits
+    author: James Clear
+    isbn: '9781524779269'
+    cover_url: https://img2.od-cdn.com/ImageType-100/1191-1/{7AD5EDFA-C544-4B69-80A2-9356BB99E131}Img100.jpg
+    favorite: true
+  - title: The Stories We Tell
+    author: Joanna Gaines
+    isbn: '9781400333899'
+    goodreads_id: 61953559
+    cover_url: https://img2.od-cdn.com/ImageType-100/0354-1/{B74C25DD-3E4D-45D4-BE0E-2D571430D56D}IMG100.JPG
+    favorite: false
+  - title: Tuesdays with Morrie
+    author: Mitch Albom
+    isbn: '9780739311134'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{F6E07153-B545-45DC-9CF2-292A0FD14B5B}IMG100.JPG
+    favorite: false
+  - title: How Happiness Happens
+    author: Max Lucado
+    isbn: '9780718074265'
+    goodreads_id: 42772053
+    cover_url: https://img3.od-cdn.com/ImageType-100/2824-1/{FDF54CBE-B801-4EAA-BCEB-CA587D936355}Img100.jpg
+    favorite: false
+  - title: 101 Essays That Will Change the Way You Think
+    author: Brianna Wiest
+    isbn: '9781977386861'
+    goodreads_id: 32998876
+    cover_url: https://img1.od-cdn.com/ImageType-100/1219-1/{60CE4E98-7A3D-4575-B6F5-A2DFF7DA2DC1}IMG100.JPG
+    favorite: false
+  - title: The Mister Rogers Effect
+    author: Dr. Anita Knight Kuhnley
+    isbn: '9781545915707'
+    goodreads_id: 51122520
+    cover_url: https://img2.od-cdn.com/ImageType-100/1181-1/{E7FAD797-A233-434D-97FF-9CD64232D9CC}Img100.jpg
+    favorite: false
+  - title: So Many Steves
+    author: Steve Martin, Adam Gopnik
+    isbn: '9798985080216'
+    cover_url: https://covers.openlibrary.org/b/isbn/9798985080216-L.jpg?default=false
+    favorite: false
+  - title: Getting Things Done
+    author: David Allen
+    isbn: '9780698161863'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1523-1/{143BD84F-790F-4734-BE68-DB7799C85384}Img100.jpg
+    favorite: true
+  - title: Anxious for Nothing
+    author: Max Lucado
+    isbn: '9780718098971'
+    cover_url: https://img1.od-cdn.com/ImageType-100/2824-1/{EE41508B-349B-4A9B-9C5D-84071404EEEC}Img100.jpg
+    favorite: false
+  - title: No Pain, No Gaines
+    author: Chip Gaines
+    isbn: '9780785237945'
+    goodreads_id: 56168175
+    cover_url: https://img1.od-cdn.com/ImageType-100/0354-1/{26043441-ABD8-4388-BA5E-BE8C5CB662AB}Img100.jpg
+    favorite: false
+  - title: The Answer Is . . .
+    author: Alex Trebek
+    isbn: '9781797115894'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{EC499293-2A9D-4C51-ADDE-4FC1A327F2AE}Img100.jpg
+    favorite: false
+  - title: Can't Hurt Me
+    author: David Goggins
+    isbn: '9781544512266'
+    cover_url: https://img1.od-cdn.com/ImageType-100/2281-1/{ED912E01-9A4D-4D88-9B08-A33452182C26}IMG100.JPG
+    favorite: true
+  - title: Dare to Lead
+    author: Brené Brown
+    isbn: '9781984844224'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{42626811-1908-4B8D-8A28-B6F1F18402F7}Img100.jpg
+    favorite: false
+  - title: The Power of Regret
+    author: Daniel H. Pink
+    isbn: '9780593555576'
+    goodreads_id: 58446721
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{FEB70111-1423-4170-9198-DAF501556C38}Img100.jpg
+    favorite: false
+  - title: Still Foolin' 'Em
+    author: Billy Crystal
+    isbn: '9781427229250'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1493-1/{9819263D-E746-44AF-A295-D1B68ECDAE70}Img100.jpg
+    favorite: false
+  - title: I Know Why the Caged Bird Sings
+    author: Maya Angelou
+    isbn: '9780307879387'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{22BA17D1-E669-4096-9522-FDC7CD9FE9AB}Img100.jpg
+    favorite: false
+  '2022':
+  - title: Extreme Ownership
+    author: Jocko Willink, Leif Babin
+    isbn: '9781427264305'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1493-1/{0F9331A5-1584-40D8-B8F4-0967CDFD89D3}IMG100.JPG
+    favorite: true
+  - title: But Enough About Me
+    author: Burt Reynolds, Jon Winokur
+    isbn: '9780698409699'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{115EFD00-667D-45C7-8BE9-DA254B1F2624}Img100.jpg
+    favorite: false
+  - title: Is this Anything?
+    author: Jerry Seinfeld
+    isbn: '9781797113067'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{907B16F9-D55C-45D9-BE36-18C136376158}Img100.jpg
+    favorite: false
+  - title: Coming Back Stronger
+    author: Drew Brees, Christ Fabry
+    isbn: '9781414339450'
+    cover_url: https://covers.openlibrary.org/b/isbn/9781414339450-L.jpg?default=false
+    favorite: true
+  - title: It Worked For Me
+    author: Colin Powell
+    isbn: '9780062135155'
+    cover_url: https://img2.od-cdn.com/ImageType-100/0293-1/{7D59C6C1-AD82-4548-83A5-2018B8701405}Img100.jpg
+    favorite: true
+  - title: Greenlights
+    author: Matthew McConaughey
+    isbn: '9780593294185'
+    goodreads_id: 52838315
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{17FF81C0-4980-47EA-869F-81F43FF256D1}IMG100.JPG
+    favorite: true
+  - title: No Time Like the Future
+    author: Michael J. Fox
+    isbn: '9781250771513'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1493-1/{9F167596-F25B-4C8C-9891-00126EFED87F}IMG100.JPG
+    favorite: true
+  - title: Daring Greatly
+    author: Brené Brown
+    isbn: '9781984839282'
+    cover_url: https://img2.od-cdn.com/ImageType-100/1191-1/{DA19D5D9-254F-410E-96D1-E2326CB872A7}Img100.jpg
+    favorite: false
+  - title: The 5 Second Rule
+    author: Mel Robbins
+    isbn: '9781682612392'
+    cover_url: https://img2.od-cdn.com/ImageType-100/4051-1/{FD61B338-7960-4215-8DE8-C514BC8D973A}IMG100.JPG
+    favorite: false
+  - title: Team of Teams
+    author: General Stanley McChrystal, Tantum Collins, David Silverman
+    isbn: '9780698189607'
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{9B351052-2E15-4517-A418-CB176E95F1A5}Img100.jpg
+    favorite: false
+  '2021':
+  - title: How to Stop Worrying and Start Living
+    author: Dale Carnegie
+    isbn: '9780743543187'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{1E217D98-18A3-428D-901D-FBE3EB479C43}IMG100.JPG
+    favorite: true
+  - title: The SPEED of Trust
+    author: Stephen M.R. Covey
+    isbn: '9780743561983'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{729EB6F8-7E4B-4A51-B0F4-9294E83FA51A}Img100.jpg
+    favorite: true
+  - title: Smart Talk
+    author: Lisa B. Marshall
+    isbn: '9781427229281'
+    goodreads_id: 15793102
+    cover_url: https://img2.od-cdn.com/ImageType-100/1493-1/{BD193422-C70E-4532-B98A-8D044685512F}Img100.jpg
+    favorite: false
+  - title: 12 Rules for Life
+    author: Jordan B. Peterson
+    isbn: '9780735275850'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{C27AB72C-AA23-4324-9BDC-65BEBAB5FEA5}IMG100.JPG
+    favorite: true
+  - title: Reply All... and Other Ways to Tank Your Career
+    author: Richie Frieman
+    isbn: '9781427233493'
+    goodreads_id: 17286950
+    cover_url: https://img1.od-cdn.com/ImageType-100/1493-1/{4FE6576E-110E-4AEC-9109-A4CA8ADAA819}Img100.jpg
+    favorite: false
+  - title: Talking to Strangers
+    author: Malcolm Gladwell
+    isbn: '9781549150340'
+    cover_url: https://img1.od-cdn.com/ImageType-100/0887-1/{06052ABF-9472-4A56-82D6-466BEE89F153}Img100.jpg
+    favorite: false
+  - title: How to Talk to Anyone
+    author: Leil Lowndes
+    isbn: '9781593163051'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0482-1/{C319BC3A-7929-471D-A594-20BFC11E5D5A}Img100.jpg
+    favorite: false
+  '2020':
+  - title: The 7 Habits of Highly Effective People
+    author: Stephen R. Covey
+    isbn: '9781442350816'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{CFABC359-4362-4793-9E7D-8B15581717F0}IMG100.JPG
+    favorite: true
+  - title: Good to Great
+    author: Jim Collins
+    isbn: '9780062045874'
+    cover_url: https://img2.od-cdn.com/ImageType-100/0293-1/{33FC081B-E9BD-4504-A89C-205E498FA695}Img100.jpg
+    favorite: true
+  '2019':
+  - title: Endurance
+    author: Scott Kelly
+    isbn: '9781524734183'
+    goodreads_id: 29947651
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{0D894538-59A2-48C9-AC39-498B9A92FC06}Img100.jpg
+    favorite: false
+  - title: 10% Happier
+    author: Dan Harris
+    isbn: '9780062331892'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0293-1/{EC989FF7-1CCE-4E63-8E98-1A9115DCC6CF}Img100.jpg
+    favorite: false
+  - title: How Successful People Think
+    author: John C. Maxwell
+    isbn: '9781600246104'
+    cover_url: https://img2.od-cdn.com/ImageType-100/4575-1/{2C878ECB-FE8C-444A-854B-63AB5065ED08}IMG100.JPG
+    favorite: false
+  - title: Pre-Suasion
+    author: Robert Cialdini
+    isbn: '9781508223207'
+    cover_url: https://img1.od-cdn.com/ImageType-100/5054-1/{E08F312D-ABCE-4F7E-8DBB-5747543EC610}Img100.jpg
+    favorite: false
+  - title: Thinking
+    author: John Brockman
+    isbn: '9781494582005'
+    goodreads_id: 17349252
+    cover_url: https://img3.od-cdn.com/ImageType-100/1219-1/{5D19A7A1-6191-49C2-B0DA-5828449D2825}Img100.jpg
+    favorite: false
+  - title: Elastic
+    author: Leonard Mlodinow
+    isbn: '9780147521958'
+    goodreads_id: 34342016
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{2E1032F1-4903-49E1-82F4-8095A168DDBB}Img100.jpg
+    favorite: false
+  '2018':
+  - title: Deep Work
+    author: Cal Newport
+    isbn: '9781478930082'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0887-1/{665F472C-4CDD-425F-A585-7B61C25864F3}Img100.jpg
+    favorite: true
+  - title: The Purpose Driven Life
+    author: Rick Warren
+    isbn: '9780310329992'
+    goodreads_id: 56495
+    cover_url: https://img2.od-cdn.com/ImageType-100/0354-1/{CA8C8DC7-B863-4E1F-8055-12B95A075F24}IMG100.JPG
+    favorite: false
+  - title: The Little Book of Hygge
+    author: Meik Wiking
+    isbn: '9780062676467'
+    cover_url: https://img1.od-cdn.com/ImageType-100/0293-1/{BBC27896-7C87-438A-88C1-3AC74F9E2941}Img100.jpg
+    favorite: false
+  - title: What the Most Successful People Do Before Breakfast
+    author: Laura Vanderkam
+    isbn: '9781469001234'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1088-1/{FBA8056F-E2A8-4282-A230-903913E628CE}Img100.jpg
+    favorite: false
+  - title: Smarter Faster Better
+    author: Charles Duhigg
+    isbn: '9780449806494'
+    cover_url: https://img3.od-cdn.com/ImageType-100/1191-1/{15BECE6A-BE11-4B6A-8355-944B5AA031A3}Img100.jpg
+    favorite: false
+  - title: Capital Gaines
+    author: Chip Gaines
+    isbn: '9780785216223'
+    cover_url: https://img3.od-cdn.com/ImageType-100/2824-1/{6CA8E015-3075-40B7-A4E5-A1CFDE2130ED}Img100.jpg
+    favorite: true
+  - title: How to Win Friends and Influence People
+    author: Dale Carnegie
+    isbn: '9780743544719'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{E30A6B4E-30B5-4A09-97AB-274494C3C193}IMG100.JPG
+    favorite: true
+  - title: Thinking, Fast and Slow
+    author: Daniel Kahneman
+    isbn: '9780739357996'
+    cover_url: https://img2.od-cdn.com/ImageType-100/1191-1/{D634F1A6-E460-4147-B12D-5CD7E73DE26E}Img100.jpg
+    favorite: true
+  - title: Dealing with People You Can't Stand
+    author: Rick Brinkman, Rick Kirschner
+    isbn: '9780071785730'
+    cover_url: https://img3.od-cdn.com/ImageType-100/0018-1/{623F6376-024D-4B1C-92A4-9B3FDB26ABA1}Img100.jpg
+    favorite: false
+  - title: Talk Like TED
+    author: Carmine Gallo
+    isbn: '9781427236203'
+    goodreads_id: 17910144
+    cover_url: https://img1.od-cdn.com/ImageType-100/1493-1/{150AF823-5574-4587-A0ED-2C893BF1FC6F}Img100.jpg
+    favorite: false
+  - title: Verbal Judo, Updated Edition
+    author: George J. Thompson PhD, Jerry B. Jenkins
+    isbn: '9781470860172'
+    goodreads_id: 865508
+    cover_url: https://img3.od-cdn.com/ImageType-100/0887-1/{21C924D6-EED8-4487-835E-81D5BBCD240F}Img100.jpg
+    favorite: true
+  - title: Unshakeable
+    author: Tony Robbins, Peter Mallouk
+    isbn: '9781508232711'
+    cover_url: https://img1.od-cdn.com/ImageType-100/5054-1/{EC974AFE-571A-4703-8A6C-139DC4A8CE76}Img100.jpg
+    favorite: false
+  - title: Awaken the Giant Within
+    author: Tony Robbins
+    isbn: '9780743568456'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{3D3F778B-83CD-4653-BCAB-80627FB068A0}Img100.jpg
+    favorite: false
+  - title: Find Your Why
+    author: Simon Sinek, David Mead, Peter Docker
+    isbn: '9781524703929'
+    goodreads_id: 29496432
+    cover_url: https://img1.od-cdn.com/ImageType-100/1191-1/{B7EEEBA8-3247-401B-9D60-C14516BA5EAC}Img100.jpg
+    favorite: true
+  - title: Grit
+    author: Angela Duckworth
+    isbn: '9781442397149'
+    cover_url: https://img2.od-cdn.com/ImageType-100/5054-1/{416074D3-1D9A-4C57-9656-B4683724DD5F}Img100.jpg
+    favorite: false
+  - title: Make Your Bed
+    author: Admiral William H. McRaven
+    isbn: '9781478968177'
+    cover_url: https://img1.od-cdn.com/ImageType-100/4575-1/{FEF8CC71-F4A4-40A5-92FB-F003A0B3AD21}Img100.jpg
+    favorite: true
+  - title: Death by Meeting
+    author: Patrick Lencioni
+    isbn: '9781593974497'
+    goodreads_id: 49040
+    cover_url: https://img3.od-cdn.com/ImageType-100/1493-1/{4BE570AC-86A7-4DE1-BB05-91CBD7633FE1}Img100.jpg
+    favorite: false
+  - title: Death by Meeting
+    author: Patrick M. Lencioni
+    isbn: '9780470893876'
+    cover_url: https://img2.od-cdn.com/ImageType-100/0128-1/{DD737151-42E2-4B71-924F-E7D5B391CD77}Img100.jpg
+    favorite: false
+  - title: Let's Stop Meeting Like This
+    author: Dick Axelrod, Emily Axelrod
+    isbn: '9781626560857'
+    cover_url: https://img3.od-cdn.com/ImageType-100/6852-1/{F2EEB139-45CE-40CE-B944-566BA6167386}IMG100.JPG
+    favorite: false
